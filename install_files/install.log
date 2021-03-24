@@ -1,0 +1,251 @@
+.=====================================================================.
+                                                                       
+  .d8888b.   .o8888b.  db  .d8888b.  d8888b. d88888b d8888b.  .d888b.  
+ .8P    Y8. d8P    Y8  88 .8P    Y8. 88  `8D 88'     88  `8D .8P , Y8. 
+ 88      88 8P     .ooo88 88      88 88oooY' 88oooo  88oobY' 88  |  88 
+ 88      88 8b     `~~~88 88      88 88~~~b. 88~~~~  88`8b   88  |/ 88 
+ `8b    d8' Y8b    d8  88 `8b    d8' 88   8D 88.     88 `88. `8b | d8' 
+  `Y8888P'   `Y8888P'  YP  `Y8888P'  Y8888P' Y88888P 88   YD  `Y888P'  
+                                                                       
+`========================== INSTALLATION LOG ========================='
+
+[2021/03/24 06:29:49] Host: Linux desktop 5.8.0-48-generic #54~20.04.1-Ubuntu SMP Sat Mar 20 13:40:25 UTC 2021 x86_64
+[2021/03/24 06:29:49] PHP version: 7.4.15
+[2021/03/24 06:29:49] Server software: Apache/2.4.46 (Unix) OpenSSL/1.1.1i PHP/7.4.15 mod_perl/2.0.11 Perl/v5.32.1
+[2021/03/24 06:29:49] Operating system: Linux
+[2021/03/24 06:29:49] Memory limit: 512M
+[2021/03/24 06:29:49] Max execution time: 3600
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:49] Postback payload: Array
+(
+    [code] => phpVersion
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:49] System check: phpVersion
+[2021/03/24 06:29:49] Requirement phpVersion +OK
+[2021/03/24 06:29:49] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:49] Postback payload: Array
+(
+    [code] => curlLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:49] System check: curlLibrary
+[2021/03/24 06:29:49] Requirement curlLibrary +OK
+[2021/03/24 06:29:49] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:50] Postback payload: Array
+(
+    [code] => jsonLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:50] System check: jsonLibrary
+[2021/03/24 06:29:50] Requirement jsonLibrary +OK
+[2021/03/24 06:29:50] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:50] Postback payload: Array
+(
+    [code] => liveConnection
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:50] System check: liveConnection
+[2021/03/24 06:29:51] Server request: ping
+[2021/03/24 06:29:51] Request information: Array
+(
+    [url] => http://gateway.octobercms.com/api/ping
+    [content_type] => application/json
+    [http_code] => 200
+    [header_size] => 705
+    [request_size] => 181
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.482975
+    [namelookup_time] => 0.037662
+    [connect_time] => 0.246758
+    [pretransfer_time] => 0.246824
+    [size_upload] => 42
+    [size_download] => 12
+    [speed_download] => 24
+    [speed_upload] => 86
+    [download_content_length] => -1
+    [upload_content_length] => 42
+    [starttransfer_time] => 0.482927
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 54.148.226.30
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 80
+    [local_ip] => 192.168.0.110
+    [local_port] => 60670
+    [http_version] => 2
+    [protocol] => 1
+    [ssl_verifyresult] => 0
+    [scheme] => HTTP
+)
+
+[2021/03/24 06:29:51] Requirement liveConnection +OK
+[2021/03/24 06:29:51] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:51] Postback payload: Array
+(
+    [code] => writePermission
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:51] System check: writePermission
+[2021/03/24 06:29:51] Requirement writePermission +OK
+[2021/03/24 06:29:51] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:52] Postback payload: Array
+(
+    [code] => pdoLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:52] System check: pdoLibrary
+[2021/03/24 06:29:52] Requirement pdoLibrary +OK
+[2021/03/24 06:29:52] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:52] Postback payload: Array
+(
+    [code] => mbstringLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:52] System check: mbstringLibrary
+[2021/03/24 06:29:52] Requirement mbstringLibrary +OK
+[2021/03/24 06:29:52] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:53] Postback payload: Array
+(
+    [code] => fileinfoLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:53] System check: fileinfoLibrary
+[2021/03/24 06:29:53] Requirement fileinfoLibrary +OK
+[2021/03/24 06:29:53] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:53] Postback payload: Array
+(
+    [code] => sslLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:53] System check: sslLibrary
+[2021/03/24 06:29:53] Requirement sslLibrary +OK
+[2021/03/24 06:29:53] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:54] Postback payload: Array
+(
+    [code] => gdLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:54] System check: gdLibrary
+[2021/03/24 06:29:54] Requirement gdLibrary +OK
+[2021/03/24 06:29:54] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:54] Postback payload: Array
+(
+    [code] => zipLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:54] System check: zipLibrary
+[2021/03/24 06:29:54] Requirement zipLibrary +OK
+[2021/03/24 06:29:54] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:55] Postback payload: Array
+(
+    [code] => filterLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:55] System check: filterLibrary
+[2021/03/24 06:29:55] Requirement filterLibrary +OK
+[2021/03/24 06:29:55] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:55] Postback payload: Array
+(
+    [code] => hashLibrary
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:55] System check: hashLibrary
+[2021/03/24 06:29:55] Requirement hashLibrary +OK
+[2021/03/24 06:29:55] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2021/03/24 06:29:56] Postback payload: Array
+(
+    [code] => allowUrlFopenConfig
+    [handler] => onCheckRequirement
+)
+
+[2021/03/24 06:29:56] System check: allowUrlFopenConfig
+[2021/03/24 06:29:56] Requirement allowUrlFopenConfig +OK
+[2021/03/24 06:29:56] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
