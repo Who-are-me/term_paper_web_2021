@@ -131,4 +131,7 @@
   'Backend\\Widgets\\Lists' => 'modules/backend/widgets/Lists.php',
   'Backend\\Widgets\\Toolbar' => 'modules/backend/widgets/Toolbar.php',
   'Backend\\Classes\\ListColumn' => 'modules/backend/classes/ListColumn.php',
+  'Cms\\Twig\\ComponentNode' => 'modules/cms/twig/ComponentNode.php',
+  'Cms\\Classes\\ComponentPartial' => 'modules/cms/classes/ComponentPartial.php',
+  'Cms\\Helpers\\File' => 'modules/cms/helpers/File.php',
 );
