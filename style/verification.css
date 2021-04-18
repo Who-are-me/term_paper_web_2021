@@ -1,0 +1,25 @@
+.container {
+    margin: 15% auto;
+    padding: 5px;
+    width: 50%;
+	border: 2px solid #9daab3;
+	border-radius: 17px;
+    text-align: center;
+}
+
+.ins {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    height: 30px;
+}
+
+.in {
+    float:right;
+    width: 250px;
+}
+
+.text-in {
+    float:left;
+    padding-left: 10%;
+}
