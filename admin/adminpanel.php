@@ -4,7 +4,7 @@
 session_start();
 
 if(empty($_SERVER['HTTP_REFERER']) || ($_SESSION["verification"] != true)) {
-  header('Location: /coursework.loc/error404.html');
+  header('Location: /coursework.loc/404.html');
   exit;
 }
 
@@ -21,6 +21,8 @@ if(empty($_SERVER['HTTP_REFERER']) || ($_SESSION["verification"] != true)) {
     <div class="menu">
         <div class="menuItem" style="text-align: center;">Меню</div>
         <div class="menuItem"><a href="#">На початок</a></div>
+        <div class="menuItem"><a href="index.html">Вихід</a></div>
+        <div class="menuItem"><a href="../">Вийти на головну</a></div>
     </div>
 
     <header class="header">

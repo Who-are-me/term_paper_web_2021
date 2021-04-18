@@ -1,3 +1,18 @@
+<?php
+require_once 'include/connection_db.php';
+
+$variables = mysqli_query($connection, "select * from `content`");
+
+$vars = [];
+
+while($var = mysqli_fetch_assoc($variables)) {
+  $vars["title"] = $var["title"];
+  $vars["text"] = $var["text"];
+}
+
+// 52.58
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -18,10 +33,19 @@
     </div>
 
     <header class="header">
-        <h1><div>Контакти розробника</div></h1>
+        <h1><div>
+          <?php  
+            echo $vars["title"];
+          ?>
+        </div></h1>
     </header>
 
     <section class="content">
+
+      <?php  
+        echo $vars["text"];
+      ?>
+
         <h3>GitHub</h3>
         <img src="image/git.webp" width="100%">
         <pre>   https://github.com/Who-are-me</pre>
