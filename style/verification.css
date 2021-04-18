@@ -7,16 +7,19 @@
     text-align: center;
 }
 
+h2 {
+    margin-bottom: 7%;
+}
+
 .ins {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 7%;
     height: 30px;
 }
 
 .in {
     float:right;
-    width: 250px;
 }
 
 .text-in {
