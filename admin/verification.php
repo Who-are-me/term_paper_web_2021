@@ -13,37 +13,13 @@ $result = mysqli_query($connection, $query);
 
 $cat = mysqli_fetch_assoc($result);
 
-if(empty($cat)) {
-    echo file_get_contents("index.html");
+if(empty($cat) || (md5($_POST['password']) !== $cat['password'])) {
+    mysqli_close($connection);
+    echo file_get_contents("re-sign.html");
     exit();
 }
-
-
-if(md5($_POST['password']) === $cat['password']) {
-    echo "yes";
-}
 else {
-    echo "no";
+    mysqli_close($connection);
+    header( "Location: adminpanel.php" );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-mysqli_close($connection);
+?>

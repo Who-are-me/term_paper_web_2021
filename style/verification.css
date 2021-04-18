@@ -26,3 +26,9 @@ h2 {
     float:left;
     padding-left: 10%;
 }
+
+.error-title {
+    width: 5% 50%;
+    margin: auto;
+    background: brown;
+}

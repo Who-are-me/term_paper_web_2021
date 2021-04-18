@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 
+<?php
+if (empty($_SERVER['HTTP_REFERER'])) {
+  header('Location: /coursework.loc/');
+  exit;
+}
+
+?>
+
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Course work</title>
-    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <title>admin panel</title>
+    <link rel="stylesheet" type="text/css" href="../style/main.css">
   </head>
 
   <body class="container">
@@ -23,11 +31,11 @@
 
     <section class="content">
         <h3>GitHub</h3>
-        <img src="image/git.webp" width="100%">
+        <img src="../image/git.webp" width="100%">
         <pre>   https://github.com/Who-are-me</pre>
 
         <h3>Gmail</h3>
-        <img src="image/gmail.png" width="100%">
+        <img src="../image/gmail.png" width="100%">
         <pre>   vasyastorchak74@gmail.com</pre>
     </section>
 
