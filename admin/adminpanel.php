@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <?php
 session_start();
 
@@ -8,7 +7,6 @@ if(empty($_SERVER['HTTP_REFERER']) || ($_SESSION["verification"] != true)) {
   exit;
 }
 ?>
-
 <html>
   <head>
     <meta charset="utf-8">
