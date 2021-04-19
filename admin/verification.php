@@ -7,6 +7,10 @@ if ($connection === false) {
     exit();
 }
 
+if(empty($_POST)) {
+    exit();
+}
+
 $query = "select password from accounts where login = '" . $_POST['login']. "'";
 $result = mysqli_query($connection, $query);
 $cat = mysqli_fetch_assoc($result);

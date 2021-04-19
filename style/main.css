@@ -3,18 +3,17 @@
     margin: 0 auto;
     padding: 2px;
     width: 65%;
-	border: 1px solid #f0ebeb;
+	border: 3px solid #f0ebeb;
 	border-radius: 17px;
 }
 
 .menuItem {
-	width: 90%;
+	width: 150px;
 	padding: 1px;
 	margin: 0 0 7px 7px;
-	display: block;
 	line-height: 30px;
 	text-indent: 0.6em;
-	border: 1px solid #f0ebeb;
+	border: 3px solid #f0ebeb;
 	border-radius: 17px;
 	font-family: Bradley Hand, cursive;
 }
@@ -28,11 +27,10 @@ a {
 	position: fixed;
 	right: 0;
 	text-decoration: none;
-	width: 17.5%;
+	width: 150px;
 	height: auto;
 	padding: 0;
 	margin-bottom: 5px;
-	display: block;
 	line-height: 30px;
 	text-indent: 0.6em;
 }
