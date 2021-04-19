@@ -8,6 +8,7 @@ if ($connection === false) {
 }
 
 if(empty($_POST)) {
+    header( "Location: re-sign.html" );
     exit();
 }
 
@@ -31,5 +32,6 @@ else {
     $_SESSION["login"] = $_POST["login"];
     $_SESSION["verification"] = true;
     header( "Location: adminpanel.php" );
+    exit();
 }
 ?>
