@@ -3,7 +3,7 @@
 session_start();
 
 if(empty($_SERVER['HTTP_REFERER']) || ($_SESSION["verification"] != true)) {
-  header('Location: /coursework.loc/404.html');
+  header('Location: ../404.html');
   exit;
 }
 ?>
