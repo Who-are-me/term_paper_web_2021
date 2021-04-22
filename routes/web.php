@@ -21,10 +21,22 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware(['role:admin'])->prefix('admin_panel')->group(function() {
-    // Route::get('/test', function() {
-    //     return view('test');
-    // });
+// test access for user
+Route::get('/testuser', function(){
+    return view('test_user');
+});
 
+// test access for admin
+Route::middleware(['role:admin'])->prefix('testadmin')->group(function() {
+    Route::get('/', function() {
+        return view('test_admin');
+    });
+});
+
+// Route::get('/test', function() {
+//     return view('test');
+// });
+
+Route::middleware(['role:admin'])->prefix('backend')->group(function() {
     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index']); //       /admin
 });
