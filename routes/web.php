@@ -13,8 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// default start page
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// vasya make start page
 Route::get('/', function () {
-    return view('welcome');
+    return view('my_welcome');
 });
 
 Auth::routes();
