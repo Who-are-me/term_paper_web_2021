@@ -1,3 +1,20 @@
+.container-fluid
+{
+    margin: 0px;
+    padding: 0px;
+}
+div
+{
+    font-family: 'Montserrat', sans-serif;
+}
+span
+{
+    font-family: 'Montserrat', sans-serif;
+}
+a
+{
+    font-family: 'Montserrat', sans-serif;
+}
 #nav a::after, a::before
 {
     position: absolute;
@@ -19,12 +36,36 @@
     transform: translateY(-10px);
 }
 
-
-.nav
-{
-    
-}
 .content
 {
     background-color: darkblue;
 }
+.top-nav-main
+{
+    background: linear-gradient(0deg, #263249, #263249);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#top-nav
+{
+    background: linear-gradient(0deg, #263249, #263249);
+    
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+   
+}
+#top-nav div
+{   
+    color: #FFFFFF;
+    flex-direction: column;
+    width: 100%;
+
+}
+.top-nav    
+{
+    width: 100%;
+
+}
+
