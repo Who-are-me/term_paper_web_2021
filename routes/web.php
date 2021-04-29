@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 // vasya make start page
 Route::get('/', function () {
-    return view('my_welcome');
+    return view('test_welcome');
 });
 
 Auth::routes();
@@ -43,6 +43,7 @@ Route::middleware(['role:admin'])->prefix('testadmin')->group(function() {
 //     return view('test');
 // });
 
+// backend only for admin user
 Route::middleware(['role:admin'])->prefix('backend')->group(function() {
     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index']); //       /admin
 });

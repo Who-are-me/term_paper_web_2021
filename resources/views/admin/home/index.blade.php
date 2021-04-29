@@ -1,6 +1,18 @@
 @extends('layouts.admin_layout')
 
 @section('title', 'Головна')
+@section('home', 'Домашня')
+@section('contact', 'Контакти')
+@section('notification', 'повідомлень')
+@section('new massages', 'нові повідомлення')
+@section('friend requests', 'прохання друзів')
+@section('new reports', 'нові репорти')
+@section('mins', 'хвелин')
+@section('hours', 'годин')
+@section('days', 'днів')
+@section('see all notification', 'подивитися  всі повідомленя')
+@section('title-menu', 'Ц.К.Р.Дисциплін')
+
 
 @section('content')
 <!-- Content Header (Page header) -->
