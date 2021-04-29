@@ -42,7 +42,6 @@
 #top-nav
 {
     background: linear-gradient(0deg, #263249, #263249);
-    width: 100%;
     margin: 0px;
     padding: 0px;
    font-size: 15px;
@@ -78,4 +77,14 @@ font-size: 14px;
 {
     margin-left: 6px;
     color: white;
+}
+#top-nav-test
+{
+    background: linear-gradient(0deg, #263249, #263249);
+    margin: 0px;
+    padding: 0px;
+   font-size: 15px;
+   font-family: Cabin;
+   font-style: normal;
+   color: white;
 }
