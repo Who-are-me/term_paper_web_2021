@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 // vasya make start page
 Route::get('/', function () {
-    return view('my_welcome');
+    return view('test_welcome');
 });
 
 Auth::routes();
