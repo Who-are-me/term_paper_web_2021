@@ -1,5 +1,6 @@
 .container-fluid {
     width: 100%;
+    
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
@@ -8,6 +9,10 @@
     /* width: 1170px;
     margin: 0 auto; */
 }
+/* .container {
+   width: 1169.39px;
+   margin: 0;
+} */
 #top-nav{
     border-bottom: 2px solid #E93F34;
 }
@@ -61,6 +66,10 @@
 #first-footer
 {
     background-color: #0E1D39;
+}
+.lightstyle-background{
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
 }
 footer
 {   color: white;
