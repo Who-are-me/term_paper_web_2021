@@ -17,3 +17,7 @@
     background: linear-gradient(0deg, #263249, #263249);
     color: white;
 }
+#top-nav div
+{ 
+ padding: 0px;
+}
