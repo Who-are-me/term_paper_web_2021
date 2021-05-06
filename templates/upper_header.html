@@ -15,28 +15,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="additional_styles.css">
+    <link rel="stylesheet" href="../templates/upper_header.css">
     <title>ЦК Електронних апаратів</title>
 </head>
 
 <body>
 
     <header>
-        <div class="d-flex d-sm-flex flex-row justify-content-sm-between align-items-center" id="top-nav">
-            <div class="col-lg-4 col-sm-9 d-none d-sm-flex text-center text-sm-left d-none ml-0 ml-md-5 p-0">
-
-                <div class="col-sm-6">
-                    <img src="../image/telephone.svg"> <span>28-18-11, 28-19-36</span>
-                </div>
-                <div class="col-sm-6"><img src="../image/mail.svg"><span>tktdtu@gmail.com</span>
-                </div>
+        <div class="row d-flex align-content-center p-0 m-0" id="top-nav">
+            <div class="d-none d-sm-flex ml-0 ml-md-5 col-sm-5 col-md-4"><img src="../image/telephone.svg">
+                <span>28-18-11, 28-19-36</span>
             </div>
-            <div class="col-5 d-flex d-sm-none text-center fs-6"><img src="../image/telephone.svg">
-                <span>28-18-11,</span> <span>28-19-36</span></div>
-            <div class="col-5 d-flex d-sm-none text-center fs-6"><img src="../image/mail.svg"><span>tktdtu@gmail.com</span>
-            </div>
-            <div class="col-2 col-sm-3 col-lg-2 d-flex d-sm-flex text-center">
-                <img src="../image/Ukraine_icon.svg"><span>UA</span>
+            <div class="col-4 d-flex d-sm-none"><img src="../image/telephone.svg"><span>28-18-11</span></div>
+            <div class="col-6 col-sm-5 col-md-4"><img src="../image/mail.svg">tktdtu@gmail.com</div>
+            <div class="d-none d-lg-flex col-md-2"></div>
+            <div class="col-2 col-sm-2 col-md-1">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="../image/Ukraine_icon.svg"><span> UA</span>
+                    </button>
+                    <div class="dropdown-menu col-xs-12" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">UA</a>
+                      <a class="dropdown-item" href="#">EU</a>
+                      
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
     </header>
@@ -59,15 +63,9 @@
   </header> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

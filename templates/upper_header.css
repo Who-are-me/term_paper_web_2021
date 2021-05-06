@@ -1,0 +1,19 @@
+#top-nav    
+{
+    background: linear-gradient(0deg, #263249, #263249);
+    font-family: Cabin;
+   font-style: normal;
+   font-size: 23px;
+   color: white;
+   min-height: 57px;
+}
+#top-nav img
+{
+    width: 28px;
+    height: 30px;
+}
+#top-nav button
+{
+    background: linear-gradient(0deg, #263249, #263249);
+    color: white;
+}
