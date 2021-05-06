@@ -5,13 +5,13 @@
 @section('contact', 'Контакти')
 @section('notification', 'повідомлень')
 @section('new massages', 'нові повідомлення')
-@section('friend requests', 'прохання друзів')
-@section('new reports', 'нові репорти')
+@section('friend requests', 'запрошення друзів')
+@section('new reports', 'нові репости')
 @section('mins', 'хвелин')
 @section('hours', 'годин')
 @section('days', 'днів')
-@section('see all notification', 'подивитися  всі повідомленя')
-@section('title-menu', 'Ц.К.Р.Дисциплін')
+@section('see all notification', 'Подивитися всі повідомленя')
+@section('title-menu', 'Адмін-панель')
 
 
 @section('content')
@@ -20,13 +20,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="home">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
-            </ol>
+            <h1 class="m-0">Головна</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -50,7 +44,7 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer">Більше інформації <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
