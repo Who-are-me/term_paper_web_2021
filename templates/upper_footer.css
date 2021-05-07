@@ -1,0 +1,25 @@
+#upper-footer
+{
+    background-color: #0E1D39;
+    color: white;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.green-span 
+{
+    color: #47915E;
+    font-size: 120%;
+}
+#upper-footer input
+{
+ max-width: 100%;   
+ background: rgba(89, 83, 83, 0.37);
+ color: white;
+ min-height: 60px;
+}
+#upper-footer button
+{
+    min-height: 60px;
+    
+}
