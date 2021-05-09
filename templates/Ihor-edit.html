@@ -15,7 +15,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="additional_styles.css">
+  <link href="upper_footer.css" rel="stylesheet">
+  <link href="ihor.css" rel="stylesheet">
   <title>ЦК Електронних апаратів</title>
 </head>
 
@@ -168,54 +169,88 @@
           <div class="block-2"></div>
       </div>
       <div class="photos-block">
-          <img src="../image/jpg/Gallery-img-1.jpg" alt="gal-img-1">
-          <img src="../image/jpg/Gallery-img-2.jpg" alt="gal-img-2">
-          <img src="../image/jpg/Gallery-img-3.jpg" alt="gal-img-3">
-          <img src="../image/jpg/Gallery-img-4.jpg" alt="gal-img-4">
-          <img src="../image/jpg/Gallery-img-5.jpg" alt="gal-img-5">
-          <img src="../image/jpg/Gallery-img-6.jpg" alt="gal-img-6">
-          <img src="../image/jpg/Gallery-img-7.jpg" alt="gal-img-7">
-          <img src="../image/jpg/Gallery-img-8.jpg" alt="gal-img-8">
+          <img src="../image/jpg/orig/Gallery-img-1.jpg" alt="gal-img-1" id="gal-img-1"><img src="../image/jpg/orig/Gallery-img-2.jpg" alt="gal-img-2" id="gal-img-2"><img src="../image/jpg/orig/Gallery-img-3.jpg" alt="gal-img-3" id="gal-img-3"><br>
+          <img src="../image/jpg/orig/Gallery-img-4.jpg" alt="gal-img-4" id="gal-img-4"><br>
+          <img src="../image/jpg/orig/Gallery-img-5.jpg" alt="gal-img-5" id="gal-img-5"><img src="../image/jpg/orig/Gallery-img-6.jpg" alt="gal-img-6" id="gal-img-6"><img src="../image/jpg/orig/Gallery-img-7.jpg" alt="gal-img-7" id="gal-img-7"><img src="../image/jpg/orig/Gallery-img-8.jpg" alt="gal-img-8" id="gal-img-8"> 
       </div>
     </div>
   </div>
   <footer> 
-  <div class="col-12 m-0 p-0" id="first-footer">
-    <div class="row m-0 p-0">
-      <div class="col-4 mt-4 ml-5">
-      <img src="../image/Logo.svg"> 
-      <br>
-      <br>
-      <span>Будь завжди з нами на зв’язку!</span> 
-      </div>
-      <div class="col-4 mt-4">
-        <span class="span-green">Зв’яжися з нами</span>
-        <br> 
-        <br>
-        <span>28-18-11, 28-19-36</span> 
-        <br>
-        <span> tktdtu@gmail.com </span>
-        <br>
-        <span> м. Тернопіль - 16, вул. Л. Курбаса, 13</span>  
-      </div>
-      <div class="col-4 mt-4"></div>
-    </div>
-    <div class="col-12 m-0 p-0" id="second-footer">
+    <!-- <div class="col-12 m-0 p-0" id="first-footer">
       <div class="row m-0 p-0">
         <div class="col-4 mt-4 ml-5">
-          <a href="#">Контакти</a>
-          <a href="#">Умови користування</a>
-          <a href="#">Конфіденційність</a>
+        <img src="../image/Logo.svg"> 
+        <br>
+        <br>
+        <span>Будь завжди з нами на зв’язку!</span> 
         </div>
-        <div class="col-4 mt-4 text-center">
-          <img src="../image/arrow-up.png">
+        <div class="col-4 mt-4">
+          <span class="span-green">Зв’яжися з нами</span>
+          <br> 
+          <br>
+          <span>28-18-11, 28-19-36</span> 
+          <br>
+          <span> tktdtu@gmail.com </span>
+          <br>
+          <span> м. Тернопіль - 16, вул. Л. Курбаса, 13</span>  
         </div>
-        <div class="col-3 mt-4">
-          <span>2021© Всі права захищені | 	tk.te.ua</span>
-        </div>
+        <div class="col-4 mt-4"></div>
+      </div>-->
+      
+    </div>   
+    <div class="row m-0 p-0" id="upper-footer">
+
+      <div class="col-12 pb-5 m-0 d-none d-md-flex">
+          <div class="col-4 pl-xl-5 pt-5">
+              <div class="col-12"><img src="../image/Logo.svg"></div>
+              <div class="col-12 pt-4">Будь завжди з нами на зв’язку!</div>
+
+          </div>
+          <div class="col-4 pt-5">
+              <div class="col-12"><span class="green-span">Зв’яжися з нами</span></div>
+              <div class="col-12 pt-5">
+                  <p>28-18-11, 28-19-36</p>
+                  <p>tktdtu@gmail.com</p>
+                  <p>м. Тернопіль - 16, вул. Л. Курбаса, 13</p>
+                  <p>Україна</p>
+              </div>
+          </div>
+          <div class="col-4 pt-5 pr-xl-5">
+              <div class="col-12"><span class="green-span">Останні події</span> </div>
+              <div class="col-12 pt-5">
+                  <p>Отримуй найновішу інформацію у будь-який час!</p>
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Recipient's username"
+                      aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Інформація на пошту</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 d-block d-md-none py-4">
+          <div class="col-12 text-center"><img src="../image/Logo.svg"></div>
+          <div class="col-12 pt-4 text-center ">
+              <span class="green-span pb-5">Зв’яжися з нами</span>
+              <p class="pt-3"><img src="../image/telephone.svg">Телефони: 28-18-11, 28-19-36, <img src="../image/mail.svg">Електронна пошта: tktdtu@gmail.com</p>
+              <p>Адреса: м. Тернопіль - 16, вул. Л. Курбаса, 13</p>
+          </div>
+      </div>
+  </div>
+  <div class="col-12 m-0 p-0" id="second-footer">
+    <div class="row m-0 p-0">
+      <div class="col-4 mt-4 ml-5">
+        <a href="#">Контакти</a>
+        <a href="#">Умови користування</a>
+        <a href="#">Конфіденційність</a>
+      </div>
+      <div class="col-4 mt-4 text-center">
+        <img src="../image/arrow-up.png">
+      </div>
+      <div class="col-3 mt-4">
+        <span>2021© Всі права захищені | 	tk.te.ua</span>
       </div>
     </div>
-  </div>  
+  </div>
   </footer>
   
   <!-- Optional JavaScript -->
