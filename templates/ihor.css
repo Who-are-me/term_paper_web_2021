@@ -235,3 +235,52 @@ footer
 {
     border-bottom: rgba(233, 63, 52, 0.75) 1px solid;
 }
+
+#separator img
+{
+    max-height: 45px;
+    max-width: 90px;
+     text-align: center;
+
+}
+
+#container-heading img
+{
+    max-width: 50px;
+    max-height: 80px;
+}
+
+#green-span-heading
+{
+    font-family: 'Cabin', sans-serif;
+   font-style: normal;
+   font-size: 14px;
+   color: #47915E;
+   letter-spacing: 5.5%;
+}
+
+#black-span-heading
+{
+    font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-size: 18px;
+   color: #000000;
+   font-weight: bold;
+}
+
+#content-span-link
+{
+    font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+#content-span-link:hover
+{
+    color: black;
+    font-size: 99%;
+    transition-duration: 180ms;
+    
+}
