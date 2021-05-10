@@ -42,10 +42,25 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="home" class="nav-link">@yield('home')</a>
+        <a href="http://localhost:8000/home" class="nav-link">@yield('home')</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">@yield('contact')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('about')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('base')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('abiturientu')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('students')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('news')</a>
       </li>
     </ul>
 
@@ -203,22 +218,22 @@
             <a href="#" class="nav-link ">
             <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Випадаюче меню 1
+                Категорії сайту
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link"> <!-- add class active, and item activation on panel -->
+                <a href="{{ route('category.index') }}" class="nav-link"> <!-- add class active, and item activation on panel -->
                   <!--i class="far fa-circle nav-icon"></i-->
-                  <p>Варіант 1 випадаючого меню 1</p>
+                  <p>(ТЕСТ) Всі категорії</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{ route('category.create') }}" class="nav-link">
                   <!--i class="far fa-circle nav-icon"></i-->
-                  <p>Варіант 2 випадаючого меню 1</p>
+                  <p>(ТЕСТ) Добавити категорію</p>
                 </a>
               </li>
             </ul>

@@ -46,4 +46,6 @@ Route::middleware(['role:admin'])->prefix('testadmin')->group(function() {
 // backend only for admin user
 Route::middleware(['role:admin'])->prefix('backend')->group(function() {
     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin'); //       /admin
+
+    Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
 });
