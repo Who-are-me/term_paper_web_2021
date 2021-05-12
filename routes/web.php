@@ -39,9 +39,9 @@ Route::middleware(['role:admin'])->prefix('testadmin')->group(function() {
     });
 });
 
-// Route::get('/test', function() {
-//     return view('test');
-// });
+Route::get('/test', function() {
+    return view('layouts.layout_main');
+});
 
 // backend only for admin user
 Route::middleware(['role:admin'])->prefix('backend')->group(function() {
