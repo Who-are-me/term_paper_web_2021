@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 class HomeController extends Controller
 {
@@ -21,8 +22,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
+    public function index() {
+        return view('layouts.admin_layout');
+    }
+
+    public function get_home() {
         return view('home');
+    }
+
+    public function get_login() {
+        return view('auth.login');
+
     }
 }

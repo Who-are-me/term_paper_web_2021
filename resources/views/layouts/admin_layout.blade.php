@@ -26,7 +26,99 @@
   <!-- summernote -->
   <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
 </head>
+
 <body class="hold-transition sidebar-mini layout-fixed">
+
+
+
+@guest
+@if (Route::has('login'))
+<div class="container" style="margin-top: 30px;">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Login') }}</div>
+
+                <div class="card-body">
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                    <label class="form-check-label" for="remember">
+                                        {{ __('Remember Me') }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
+@else
+
+<!-- @if (Route::has('login'))
+<?php
+
+
+
+//header('Location: /backend'); 
+//exit;
+
+?>
+@endif -->
+
+
+
+
+
+
+
+
+
+
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -42,10 +134,25 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="home" class="nav-link">@yield('home')</a>
+        <a href="/home" class="nav-link">@yield('home')</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">@yield('contact')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('about')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('base')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('abiturientu')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('students')</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">@yield('news')</a>
       </li>
     </ul>
 
@@ -183,6 +290,8 @@
       </div>
 
       <!-- Sidebar Menu -->
+
+
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
@@ -203,22 +312,22 @@
             <a href="#" class="nav-link ">
             <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Випадаюче меню 1
+                Категорії сайту
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link"> <!-- add class active, and item activation on panel -->
+                <a href="{{ route('category.index') }}" class="nav-link"> <!-- add class active, and item activation on panel -->
                   <!--i class="far fa-circle nav-icon"></i-->
-                  <p>Варіант 1 випадаючого меню 1</p>
+                  <p>(ТЕСТ) Всі категорії</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{ route('category.create') }}" class="nav-link">
                   <!--i class="far fa-circle nav-icon"></i-->
-                  <p>Варіант 2 випадаючого меню 1</p>
+                  <p>(ТЕСТ) Добавити категорію</p>
                 </a>
               </li>
             </ul>
@@ -251,6 +360,8 @@
 
         </ul>
       </nav>
+
+
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
@@ -316,3 +427,4 @@
 <script src="/admin/admin.js"></script>
 </body>
 </html>
+@endguest

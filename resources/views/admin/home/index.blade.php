@@ -3,6 +3,12 @@
 @section('title', 'Головна')
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
+@section('about', 'Про нас')
+@section('base', 'Мат. база')
+@section('abiturientu', 'Абітурієнту')
+@section('students', 'Студенту')
+@section('news', 'Новини')
+
 @section('notification', 'повідомлень')
 @section('new massages', 'нові повідомлення')
 @section('friend requests', 'запрошення друзів')
