@@ -13,39 +13,57 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// // test access for user
+// Route::get('/testuser', function(){
+//     return view('test_user');
+// });
+
 // default start page
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-// vasya make start page
+// Route::get('/back', function(){
+//     return view('auth.login');
+// });
+
+// // test access for admin
+Route::middleware(['role:admin'])->prefix('ta')->group(function() {
+    Route::get('/', function() {
+        return view('test_admin');
+    });
+});
+
 Route::get('/', function () {
     return view('test_welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// test access for user
-Route::get('/testuser', function(){
-    return view('test_user');
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
 
-// test access for admin
-Route::middleware(['role:admin'])->prefix('testadmin')->group(function() {
-    Route::get('/', function() {
-        return view('test_admin');
-    });
-});
+//Route::get('/login', [App\Http\Controllers\HomeController::class, 'get_login'])->name('login');
 
-// Route::get('/test', function() {
-//     return view('test');
+Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
+
+
+// Route::get('/backend', function () {
+//     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');        //admin
+
+//     Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
+
+//     //return view('layouts.admin_layout');
 // });
 
-// backend only for admin user
-Route::middleware(['role:admin'])->prefix('backend')->group(function() {
-    Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin'); //       /admin
 
-    Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
-});
+// Route::get('/backend', function () {
+//     return view('layouts.admin_layout');
+// });
+
+
+// Route::middleware(['role:admin'])->prefix('backend')->group(function() {
+//     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
+
+//     Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
+// });
