@@ -325,7 +325,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="{{ route('admin.category.create') }}" class="nav-link">
+                <a href="{{ route('category.create') }}" class="nav-link">
                   <!--i class="far fa-circle nav-icon"></i-->
                   <p>(ТЕСТ) Добавити категорію</p>
                 </a>

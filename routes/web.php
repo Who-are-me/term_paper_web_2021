@@ -46,7 +46,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->n
 //Route::get('/login', [App\Http\Controllers\HomeController::class, 'get_login'])->name('login');
 
 Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
-
+Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
 
 // Route::get('/backend', function () {
 //     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');        //admin
