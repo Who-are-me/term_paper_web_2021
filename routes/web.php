@@ -27,27 +27,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('auth.login');
 // });
 
-// // test access for admin
-Route::middleware(['role:admin'])->prefix('ta')->group(function() {
-    Route::get('/', function() {
-        return view('test_admin');
-    });
-});
-
-Route::get('/', function () {
-    return view('test_welcome');
-});
-
-Auth::routes();
-
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
-
-//Route::get('/login', [App\Http\Controllers\HomeController::class, 'get_login'])->name('login');
-
-Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
-Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
-
 // Route::get('/backend', function () {
 //     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');        //admin
 
@@ -67,3 +46,24 @@ Route::resource('category', App\Http\Controllers\Admin\CategoryController::class
 
 //     Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
 // });
+
+// // test access for admin
+Route::middleware(['role:admin'])->prefix('ta')->group(function() {
+    Route::get('/', function() {
+        return view('test_admin');
+    });
+});
+
+Route::get('/', function () {
+    return view('test_welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
+
+Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
+
+Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
+
+Route::resource('news', App\Http\Controllers\Admin\NewsController::class);

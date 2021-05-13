@@ -33,7 +33,7 @@
 
 @guest
 @if (Route::has('login'))
-<div class="container" style="margin-top: 90px;">
+<div class="container" style="margin-top: 30px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -97,16 +97,14 @@
     </div>
 </div>
 
-
 @endif
 @else
-
 
 <div class="wrapper">
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="/admin/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__shake" src="/admin/dist/img/antena.svg" alt="AdminLTELogo" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -139,9 +137,11 @@
       </li>
     </ul>
 
+
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-      <!-- Messages Dropdown Menu 
+
+    <!-- Messages Dropdown Menu --
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-comments"></i>
@@ -149,6 +149,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <a href="#" class="dropdown-item">
+
             !-- Message Start --
             <div class="media">
               <img src="/image/Ukraine_icon.svg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
@@ -199,6 +200,8 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
       </li>
+
+
       !-- Notifications Dropdown Menu --
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
@@ -226,7 +229,8 @@
           <a href="#" class="dropdown-item dropdown-footer">@yield('see all notification')</a>
         </div>
       </li>
--->      
+-->
+
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
@@ -235,6 +239,7 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="fas fa-th-large"></i>
+          
         </a>
       </li>
 
@@ -294,7 +299,7 @@
         </div>
       </div>
 
-      <!-- SidebarSearch Form --
+      <!-- SidebarSearch Form 
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
           <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
@@ -305,43 +310,46 @@
           </div>
         </div>
       </div>
-
-      !-- Sidebar Menu -->
+      -->
+      <!-- Sidebar Menu -->
 
 
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
 
 
           <li class="nav-item">
             <a href="{{ route('homeAdmin') }}" class="nav-link">  
-              <i class="nav-icon far fa-newspaper"></i>
+              <i class="nav-icon fas fa-home"></i>
               <p>
                 Головна
+                <!--<span class="right badge badge-danger">New</span>-->
               </p>
             </a>
           </li>
 
 
 
-          <li class="nav-item">
+
+          <li class="nav-item"> <!-- menu-open, open menu on default -->
             <a href="#" class="nav-link ">
             <i class="nav-icon fas fa-user-graduate"></i>
               <p>
-              Абітурієнту
+                Абітурієнту
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Редактувати сторінку</p>
                 </a>
               </li>
             </ul>
-          </li> 
+          </li>
 
 
 
@@ -349,19 +357,18 @@
             <a href="#" class="nav-link ">
             <i class="nav-icon far fa-user"></i>
               <p>
-              Студенту
+                Студенту
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <a href="" class="nav-link">
                   <p>Редактувати сторінку</p>
                 </a>
               </li>
             </ul>
-          </li> 
+          </li>
 
 
 
@@ -375,43 +382,40 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <a href="{{ route('news.create') }}" class="nav-link">
                   <p>Добавити новину</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <a href="{{ route('news.edit, $news->id) }}" class="nav-link">
                   <p>Редактувати новини</p>
                 </a>
               </li>
             </ul>
           </li> 
 
+          
 
 
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link ">
             <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Категорії сайту
+                (ТЕСТ) Категорії сайту
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('category.index') }}" class="nav-link"> <!-- add class active, and item activation on panel -->
-                  <!--i class="far fa-circle nav-icon"></i-->
+                <a href="" class="nav-link">
                   <p>(ТЕСТ) Всі категорії</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="{{ route('category.create') }}" class="nav-link">
-                  <!--i class="far fa-circle nav-icon"></i-->
+                <a href="" class="nav-link">
                   <p>(ТЕСТ) Добавити категорію</p>
                 </a>
               </li>
