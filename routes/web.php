@@ -13,40 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// // test access for user
-// Route::get('/testuser', function(){
-//     return view('test_user');
-// });
-
-// default start page
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/back', function(){
-//     return view('auth.login');
-// });
-
-// Route::get('/backend', function () {
-//     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');        //admin
-
-//     Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
-
-//     //return view('layouts.admin_layout');
-// });
-
-
-// Route::get('/backend', function () {
-//     return view('layouts.admin_layout');
-// });
-
-
-// Route::middleware(['role:admin'])->prefix('backend')->group(function() {
-//     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
-
-//     Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
-// });
-
 // // test access for admin
 Route::middleware(['role:admin'])->prefix('ta')->group(function() {
     Route::get('/', function() {
