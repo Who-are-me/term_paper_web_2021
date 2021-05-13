@@ -15,4 +15,8 @@ class HomeController extends Controller
             'posts_count' => $posts_count
         ]);
     }
+
+    // public function abit() {
+    //     return view('admin.abit');
+    // }
 }
