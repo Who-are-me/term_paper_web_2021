@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Огляд категорій ')
+@section('title', 'Перегляд новин')
 
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
@@ -9,14 +9,6 @@
 @section('abiturientu', 'Абітурієнту')
 @section('students', 'Студенту')
 @section('news', 'Новини')
-@section('notification', 'повідомлень')
-@section('new massages', 'нові повідомлення')
-@section('friend requests', 'запрошення друзів')
-@section('new reports', 'нові репости')
-@section('mins', 'хвелин')
-@section('hours', 'годин')
-@section('days', 'днів')
-@section('see all notification', 'Подивитися всі повідомленя')
 @section('title-menu', 'Адмін-панель')
 
 @section('content')
@@ -43,11 +35,7 @@
 <section class="content">
     <div class="container-fluid">
 
-
-
-
-
-        <div class="card">
+    <div class="card">
         <div class="card-header">
           <h3 class="card-title">Всі категорії</h3>
 
@@ -64,7 +52,7 @@
           <table class="table table-striped projects">
               <thead>
                   <tr>
-                      <th style="width: 3%">
+                      <th style="width: 1%">
                           ID
                       </th>
                       <th>
@@ -76,83 +64,35 @@
               </thead>
               <tbody>
 
-              @foreach ($cat as $qwerty)
                 <tr>
                       <td>
-                        {{ $qwerty->id }}
+
                       </td>
 
                       <td>
-                        {{ $qwerty->title }}
+
                       </td>
                       
                       <td class="project-actions text-right">
-                          <a class="btn btn-info btn-sm" href="{{ route('category.edit', $qwerty->id) }}">
+                          <a class="btn btn-info btn-sm" href="#">
                               <i class="fas fa-pencil-alt">
                               </i>
                               Радактувати
                           </a>
 
-                          <form action="{{ route('category.destroy', $qwerty->id) }}" method="POST" style="display: inline-block;">
-                            @csrf
-                            @method('DELETE')
-
-                            <button type="submit" class="btn btn-danger btn-sm delete-btn">
+                          <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
                               Видалити
-                            </button>
-                          </form>
-                      </td>
-                  </tr>
-                @endforeach
-
-
-
-
-                <!-- @foreach ($categories as $category)
-                <tr>
-                      <td>
-                        {{ $category['id'] }}
-                      </td>
-
-                      <td>
-                        {{ $category['title'] }}
-                      </td>
-                      
-                      <td class="project-actions text-right">
-                          <a class="btn btn-info btn-sm" href="{{ route('category.edit', $category['id']) }}">
-                              <i class="fas fa-pencil-alt">
-                              </i>
-                              Радактувати
                           </a>
-
-                          <form action="{{ route('category.destroy', $category['id']) }}" method="POST" style="display: inline-block;">
-                            @csrf
-                            @method('DELETE')
-
-                            <button type="submit" class="btn btn-danger btn-sm delete-btn">
-                              <i class="fas fa-trash">
-                              </i>
-                              Видалити
-                            </button>
-                          </form>
                       </td>
                   </tr>
-                @endforeach -->
-                
+
               </tbody>
-              
           </table>
-            
         </div>
-        <!-- /.card-body -->
-
-
-
-
-        <?php echo $cat->render(); ?>
-     
-    </div><!-- /.container-fluid -->   
+        
+    <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
 </section>
 @endsection

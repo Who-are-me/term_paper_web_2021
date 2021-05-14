@@ -24,6 +24,10 @@ Route::get('/', function () {
     return view('test_welcome');
 });
 
+Route::get('/news', function () {
+    return view('news');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
@@ -32,4 +36,4 @@ Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index
 
 Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
 
-Route::resource('news', App\Http\Controllers\Admin\NewsController::class);
+Route::resource('newsAdmin', App\Http\Controllers\Admin\NewsController::class);

@@ -39,8 +39,7 @@
         <div class="card-header">
             <h3 class="card-title">Добавте категорію</h3>
         </div>
-              <!-- /.card-header -->
-              <!-- form start -->
+
         <form action="" method="POST">
             @csrf
             <div class="card-body">
@@ -49,7 +48,7 @@
                     <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="TEST" required>
                 </div>
             </div>
-            <!-- /.card-body -->
+
 
             <div class="card-footer">
                 <button type="submit" class="btn btn-primary">Добавити</button>

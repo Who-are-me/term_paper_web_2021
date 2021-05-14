@@ -374,17 +374,19 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
+
+
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('newsAdmin.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Добавити новину</p>
+                  <p>Переглянути всі новини</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('newsAdmin.create') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Редактувати новини</p>
+                  <p>Добавити новину</p>
                 </a>
               </li>
             </ul>
@@ -397,7 +399,7 @@
             <a href="#" class="nav-link ">
             <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Категорії сайту
+                (TEST) Категорії сайту
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>

@@ -60,7 +60,7 @@
           <a class="nav-link" href="#">Студенту</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Новини</a>
+          <a class="nav-link" href="/news">Новини</a>
         </li>
       </ul>
     </div>

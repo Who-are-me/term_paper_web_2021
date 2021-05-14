@@ -14,7 +14,7 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        return view('admin.news.exampl');
+        return view('admin.news.show_news');
     }
 
     /**

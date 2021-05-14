@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Illuminate\Support\Facades\DB;
+
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -13,13 +15,16 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index() {
+
         $categories = Category::orderBy('created_at', 'desc')->get();
+
+        $cat = DB::table('categories')->paginate(3);
 
 
         return view('admin.category.index', [
-            'categories' => $categories
+            'categories' => $categories,
+            'cat' => $cat
         ]);
     }
 
@@ -28,8 +33,8 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    public function create() {
+
         return view('admin.category.create');
     }
 
@@ -39,8 +44,8 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
+
         $new_category = new Category();
         $new_category->title = $request->title;
         $new_category->save();
@@ -54,8 +59,7 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
-    {
+    public function show(Category $category) {
         //
     }
 
@@ -65,9 +69,11 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
-    {
-        //
+    public function edit(Category $category) {
+
+        return view('admin.category.edit', [
+            'category' => $category
+        ]);
     }
 
     /**
@@ -77,9 +83,13 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
-    {
-        //
+    
+    public function update(Request $request, Category $category) {
+
+        $category->title = $request->title;
+        $category->save();
+
+        return redirect()->back()->withSuccess('Категорія була успішно обновлена!');
     }
 
     /**
@@ -88,8 +98,11 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
-    {
-        //
+    public function destroy(Category $category) {
+        
+        $tmp_title = $category->title;
+        $category->delete();
+
+        return redirect()->back()->withSuccess("Категорія [$tmp_title] була успішно видалена!");
     }
 }

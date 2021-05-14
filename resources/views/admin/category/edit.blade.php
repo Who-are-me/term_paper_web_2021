@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Редагувати новини')
+@section('title', 'Редактувати категорію')
 
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
@@ -18,7 +18,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0"></h1>
+            <h1 class="m-0">test</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
         @if (session('success'))
@@ -37,22 +37,23 @@
 
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Добавте категорію</h3>
+            <h3 class="card-title">Редагування категорії: {{ $category['title'] }}</h3>
         </div>
               <!-- /.card-header -->
               <!-- form start -->
-        <form action="" method="POST">
+        <form action="{{ route('category.update', $category['id']) }}" method="POST">
             @csrf
+            @method('PUT')
             <div class="card-body">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Назва</label>
-                    <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="TEST" required>
+                    <input type="text" value="{{ $category['title'] }}" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть назву категорії" required>
                 </div>
             </div>
             <!-- /.card-body -->
 
             <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Добавити</button>
+                <button type="submit" class="btn btn-primary">Обновити</button>
             </div>
         </form>
     </div>
