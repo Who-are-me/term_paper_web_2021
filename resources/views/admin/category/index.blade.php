@@ -50,15 +50,6 @@
         <div class="card">
         <div class="card-header">
           <h3 class="card-title">Всі категорії</h3>
-
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
         </div>
         <div class="card-body p-0">
           <table class="table table-striped projects">
@@ -77,6 +68,7 @@
               <tbody>
 
               @foreach ($cat as $qwerty)
+
                 <tr>
                       <td>
                         {{ $qwerty->id }}
@@ -105,54 +97,22 @@
                           </form>
                       </td>
                   </tr>
-                @endforeach
 
+                @endforeach   
 
-
-
-                <!-- @foreach ($categories as $category)
-                <tr>
-                      <td>
-                        {{ $category['id'] }}
-                      </td>
-
-                      <td>
-                        {{ $category['title'] }}
-                      </td>
-                      
-                      <td class="project-actions text-right">
-                          <a class="btn btn-info btn-sm" href="{{ route('category.edit', $category['id']) }}">
-                              <i class="fas fa-pencil-alt">
-                              </i>
-                              Радактувати
-                          </a>
-
-                          <form action="{{ route('category.destroy', $category['id']) }}" method="POST" style="display: inline-block;">
-                            @csrf
-                            @method('DELETE')
-
-                            <button type="submit" class="btn btn-danger btn-sm delete-btn">
-                              <i class="fas fa-trash">
-                              </i>
-                              Видалити
-                            </button>
-                          </form>
-                      </td>
-                  </tr>
-                @endforeach -->
-                
-              </tbody>
-              
-          </table>
-            
+              </tbody>   
+          </table>         
         </div>
         <!-- /.card-body -->
+    </div>
 
+    <div class="container-fluid" >
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">{{$cat->render()}}</h3>  
+        </div>
+      </div>
+    </div>
 
-
-
-        <?php echo $cat->render(); ?>
-     
-    </div><!-- /.container-fluid -->   
 </section>
 @endsection

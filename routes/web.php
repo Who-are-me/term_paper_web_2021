@@ -37,3 +37,14 @@ Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index
 Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
 
 Route::resource('newsAdmin', App\Http\Controllers\Admin\NewsController::class);
+
+Route::resource('post', App\Http\Controllers\Admin\PostController::class);
+
+// Route::get('glide/{path}', function($path){
+//     $server = \League\Glide\ServerFactory::create([
+//         'source' => app('filesystem')->disk('public')->getDriver(),
+//     'cache' => storage_path('glide'),
+//     ]);
+//     return $server->getImageResponse($path, Input::query());
+// })->where('path', '.+');
+/////

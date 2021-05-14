@@ -19,13 +19,17 @@ class CategoryController extends Controller
 
         $categories = Category::orderBy('created_at', 'desc')->get();
 
-        $cat = DB::table('categories')->paginate(3);
+        //$cat = DB::table('categories')->paginate(20);
+        $cat = Category::simplePaginate(10);
 
+        // return view('admin.category.index', [
+        //     'categories' => $categories,
+        //     'cat' => $cat
+        // ]);
 
         return view('admin.category.index', [
             'categories' => $categories,
-            'cat' => $cat
-        ]);
+        ], compact('cat'));
     }
 
     /**

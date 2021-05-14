@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
+  <!-- colorbox -->
+  <link rel="stylesheet" href="/admin/dist/css/colorbox.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -419,6 +421,35 @@
               </li>
             </ul>
           </li>
+
+
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                (TEST) Блог
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+                <a href="{{ route('post.index') }}" class="nav-link">
+                  <p>(ТЕСТ) Всі статьі</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route('post.create') }}" class="nav-link">                 
+                  <p>(ТЕСТ) Добавити статью</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+
+
         </ul>
       </nav>
 
@@ -486,6 +517,11 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/admin/dist/js/pages/dashboard.js"></script>
 <script src="/admin/admin.js"></script>
+<!-- colorbox -->
+<script type="text/javascript" src="/admin/dist/js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.js"></script>
+
+
 </body>
 </html>
 @endguest
