@@ -14,7 +14,13 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        return view('admin.news.show_news');
+        $news = News::orderBy('created_at', 'desc')->get();
+
+        $pag = News::simplePaginate(10);
+
+        return view('admin.news.index', [
+            'news' => $news,
+        ], compact('pag'));
     }
 
     /**
@@ -23,7 +29,7 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create() {
-        return view('admin.news.add_news');
+        return view('admin.news.create');
     }
 
     /**
@@ -34,7 +40,15 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $news = New News();
+        $news->title = $request->title;
+        $news->img = $request->img;
+        $news->text = $request->text;
+        $news->title = $request->title;
+
+        $news->save();
+
+        return redirect()->back()->withSuccess("Новина [$news->title] була успішно додана!");
     }
 
     /**
@@ -55,7 +69,10 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(News $news) {
-        //return view('admin.news.edit_news');
+
+        return view('admin.news.edit', [
+            'news' => $news
+        ]);
     }
 
     /**
@@ -67,7 +84,12 @@ class NewsController extends Controller
      */
     public function update(Request $request, News $news)
     {
-        //
+        $news->title = $request->title;
+        $news->text = $request->text;
+        $news->img = $request->img;
+        $news->save();
+
+        return redirect()->back()->withSuccess("[$news->title] було успішно обновлена!");
     }
 
     /**
@@ -78,6 +100,9 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
-        //
+        $tmp_title = $news->title;
+        $news->delete();
+
+        return redirect()->back()->withSuccess("Новина [$tmp_title] була успішно видалена!");
     }
 }

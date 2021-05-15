@@ -3,20 +3,16 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Post;
+use App\Models\News;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index() {
-        $posts_count = Post::all()->count();
+        $news_count = News::all()->count();
 
         return view('admin.home.index', [
-            'posts_count' => $posts_count
+            'news_count' => $news_count
         ]);
     }
-
-    // public function abit() {
-    //     return view('admin.abit');
-    // }
 }

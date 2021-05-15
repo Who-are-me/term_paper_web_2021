@@ -1,24 +1,14 @@
-<!doctype html>
-<html>
+@extends('layouts.main_layout')
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@section('title', 'Новини')
 
-    <!-- Bootstrap CSS -->
+@section('content')
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="/css/news.css" rel="stylesheet">
+<div>
     <title>Новини</title>
-</head>
-    
+</div>
+
+<div>
     <div class="news">
         <div class="title">
             <div class="container">
@@ -31,6 +21,7 @@
         <div class="content">
             <div class="content-background">
                 <div class="container">
+
 
                     <div class="news-block">
                         <form action="" class="">
@@ -45,18 +36,11 @@
                         </form>
                     </div>
 
+                    
                     <div class="page-select">
-                        <a href="#" class="prev">< Попередня</a>
-                        <ul class="pg-num">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">...</a></li>
-                        </ul>
-                        <a href="#" class="next">Наступна ></a>
+                        <p>pagination</p>
                     </div>
+
                 </div> 
             </div>
         </div>
@@ -74,5 +58,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-</body>
-</html>
+</div>
+
+@endsection

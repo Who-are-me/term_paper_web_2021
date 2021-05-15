@@ -9,14 +9,6 @@
 @section('students', 'Студенту')
 @section('news', 'Новини')
 
-@section('notification', 'повідомлень')
-@section('new massages', 'нові повідомлення')
-@section('friend requests', 'запрошення друзів')
-@section('new reports', 'нові репости')
-@section('mins', 'хвелин')
-@section('hours', 'годин')
-@section('days', 'днів')
-@section('see all notification', 'Подивитися всі повідомленя')
 @section('title-menu', 'Адмін-панель')
 
 
@@ -44,7 +36,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>{{ $posts_count }}</h3>
+                <h3>0</h3>
                 <p>Абітурієнту</p>
               </div>
               <div class="icon">
@@ -76,7 +68,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>0</h3>
+                <h3>{{ $news_count }}</h3>
 
 
                 <p>Новини</p>
@@ -84,7 +76,7 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="#" class="small-box-footer">Більше інформації<i class="fas fa-arrow-circle-right"></i></a>
+              <a href="newsAdmin" class="small-box-footer">Більше інформації<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>
