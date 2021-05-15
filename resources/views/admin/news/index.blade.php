@@ -115,7 +115,7 @@
     <div class="container-fluid" >
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">{{$pag->render()}}</h3>  
+          <h3 class="card-title">{{ $pag->render() }}</h3>  
         </div>
       </div>
     </div>

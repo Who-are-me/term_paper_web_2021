@@ -34,11 +34,13 @@ Route::get('/', function () {
     return view('test_welcome');
 });
 
-Route::get('/tidings', function () {
-    return view('pages.news');
-});
+// Route::get('/tidings', function () {
+//     return view('pages.news');
+// });
 
 Auth::routes();
+
+Route::get('/tidings', [App\Http\Controllers\HomeController::class, 'get_news'])->name('news');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\News;
 use Illuminate\Support\Facades\Route;
 
 class HomeController extends Controller
@@ -31,7 +32,16 @@ class HomeController extends Controller
     }
 
     public function get_login() {
-        return view('auth.login');
+        return view('auth.login');   
+    }
 
+    public function get_news() {
+        $news = News::orderBy('created_at', 'desc')->get();
+
+        $pag = News::simplePaginate(2);
+
+        return view('pages.news',[
+            'news' => $news,
+        ], compact('pag'));   
     }
 }

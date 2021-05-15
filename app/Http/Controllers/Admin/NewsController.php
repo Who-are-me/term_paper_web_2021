@@ -58,7 +58,9 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        //
+        return view('admin.news.edit', [
+            'news' => $news
+        ]);
     }
 
     /**
@@ -68,13 +70,10 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(News $news) {
-        //$pag = News::simplePaginate(10);
 
         return view('admin.news.edit', [
             'news' => $news
-        ]
-        //, compact('pag')
-        );
+        ]);
     }
 
     /**

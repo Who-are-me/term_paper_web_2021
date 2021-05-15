@@ -8,6 +8,14 @@
     <title>Новини</title>
 </div>
 
+<?php
+
+$doc = new DOMDocument();
+$doc->loadHTML("<html><body>Test<br></body></html>");
+
+echo $doc->saveHTML();
+?>
+
 <div>
     <div class="news">
         <div class="title">
@@ -23,7 +31,43 @@
                 <div class="container">
 
 
+
+
+                @foreach ($news as $item)
+                <!-- <div>{{ $item->text }}</div> -->
+                <?php
+
+$doc = new DOMDocument();
+$doc->loadHTML("$item->text");
+
+echo $doc->saveHTML();
+?>
+                
                     <div class="news-block">
+                        <form action="" class="">
+                            <span class="news-title ">{{ $item->title }}</span>
+                            <div class="news-background row">
+                                <img src="{{ $item->img }}" alt="">
+                                <div class="col">
+                                    <span>
+                                        <div id="txt" name="txt">
+                                        
+
+
+                                        </div>           
+                                    </span>
+                                    <a href="#" class="btn">Читати далі >></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                @endforeach  
+
+
+
+
+                    <!-- <div class="news-block">
                         <form action="" class="">
                             <span class="news-title ">Деякий текст ...</span>
                             <div class="news-background row">
@@ -34,11 +78,12 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
 
                     
+
                     <div class="page-select">
-                        <p>pagination</p>
+                        <p>{{ $pag->render() }}</p>
                     </div>
 
                 </div> 
