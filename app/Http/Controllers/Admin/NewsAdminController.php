@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\News;
+use App\Models\NewsAdmin;
 use Illuminate\Http\Request;
 
-class NewsController extends Controller
+class NewsAdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,12 +14,12 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $news = News::orderBy('created_at', 'desc')->get();
+        $News = NewsAdmin::orderBy('created_at', 'desc')->get();
 
-        $pag = News::simplePaginate(10);
+        $pag = NewsAdmin::simplePaginate(10);
 
         return view('admin.news.index', [
-            'news' => $news,
+            'NewsAdmin' => $News,
         ], compact('pag'));
     }
 
@@ -40,23 +40,23 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        $news = New News();
-        $news->title = $request->title;   
-        $news->text = $request->text;
-        $news->img = $request->img;
+        $NewsAdmin = New NewsAdmin();
+        $NewsAdmin->title = $request->title;
+        $NewsAdmin->img = $request->img;
+        $NewsAdmin->text = $request->text;
 
-        $news->save();
+        $NewsAdmin->save();
 
-        return redirect()->back()->withSuccess("Новина [$news->title] була успішно додана!");
+        return redirect()->back()->withSuccess("Новина [$NewsAdmin->title] була успішно додана!");
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\News  $news
+     * @param  \App\Models\NewsAdmin  $NewsAdmin
      * @return \Illuminate\Http\Response
      */
-    public function show(News $news)
+    public function show(NewsAdmin $NewsAdmin)
     {
         //
     }
@@ -64,47 +64,44 @@ class NewsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\News  $news
+     * @param  \App\Models\NewsAdmin  $NewsAdmin
      * @return \Illuminate\Http\Response
      */
-    public function edit(News $news) {
-        //$pag = News::simplePaginate(10);
+    public function edit(NewsAdmin $NewsAdmin) {
 
         return view('admin.news.edit', [
-            'news' => $news
-        ]
-        //, compact('pag')
-        );
+            'NewsAdmin' => $NewsAdmin
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\News  $news
+     * @param  \App\Models\NewsAdmin  $NewsAdmin
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, News $news)
+    public function update(Request $request, NewsAdmin $NewsAdmin)
     {
-        $news->title = $request->title;
-        $news->img = $request->img;
-        $news->text = $request->text;
+        $NewsAdmin->title = $request->title;
+        $NewsAdmin->img = $request->img;
+        $NewsAdmin->text = $request->text;
 
-        $news->save();
+        $NewsAdmin->save();
 
-        return redirect()->back()->withSuccess("Новина [$news->title] була успішно оновлена!");
+        return redirect()->back()->withSuccess("Новина [$NewsAdmin->title] була успішно оновлена!");
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\News  $news
+     * @param  \App\Models\NewsAdmin  $NewsAdmin
      * @return \Illuminate\Http\Response
      */
-    public function destroy(News $news)
+    public function destroy(NewsAdmin $NewsAdmin)
     {
-        $tmp_title = $news->text;
-        $news->delete();
+        $tmp_title = $NewsAdmin->title;
+        $NewsAdmin->delete();
 
         return redirect()->back()->withSuccess("Новина [$tmp_title] була успішно видалена!");
     }

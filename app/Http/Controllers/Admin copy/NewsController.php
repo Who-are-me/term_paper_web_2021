@@ -14,12 +14,12 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $news = News::orderBy('created_at', 'desc')->get();
+        $post = News::orderBy('created_at', 'desc')->get();
 
         $pag = News::simplePaginate(10);
 
         return view('admin.news.index', [
-            'news' => $news,
+            'post' => $post,
         ], compact('pag'));
     }
 
@@ -41,9 +41,9 @@ class NewsController extends Controller
     public function store(Request $request)
     {
         $news = New News();
-        $news->title = $request->title;   
+        $news->title = $request->title;
+        $news->img = "/";
         $news->text = $request->text;
-        $news->img = $request->img;
 
         $news->save();
 
@@ -68,13 +68,10 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(News $news) {
-        //$pag = News::simplePaginate(10);
 
         return view('admin.news.edit', [
-            'news' => $news
-        ]
-        //, compact('pag')
-        );
+            'post' => $news
+        ]);
     }
 
     /**
@@ -103,7 +100,7 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
-        $tmp_title = $news->text;
+        $tmp_title = $news->title;
         $news->delete();
 
         return redirect()->back()->withSuccess("Новина [$tmp_title] була успішно видалена!");

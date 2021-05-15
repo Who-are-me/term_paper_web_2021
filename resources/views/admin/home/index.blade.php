@@ -76,7 +76,7 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="newsAdmin" class="small-box-footer">Більше інформації<i class="fas fa-arrow-circle-right"></i></a>
+              <a href="newsAdmins" class="small-box-footer">Більше інформації<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>

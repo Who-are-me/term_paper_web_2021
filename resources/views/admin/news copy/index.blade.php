@@ -34,6 +34,11 @@
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
+
+
+
+
+
         <div class="card">
         <div class="card-header">
           <h3 class="card-title">Всі новини</h3>
@@ -57,7 +62,7 @@
               </thead>
               <tbody>
 
-              @foreach ($news as $item)
+              @foreach ($NewsAdmin as $item)
 
                 <tr>
                       <td>
@@ -73,13 +78,13 @@
                       </td>
                       
                       <td class="project-actions text-right">
-                          <a class="btn btn-info btn-sm" href="{{ route('news.edit', $item['id']) }}">
+                          <a class="btn btn-info btn-sm" href="{{ route('newsAdmin.edit', $item) }}">
                               <i class="fas fa-pencil-alt">
                               </i>
                               Редагувати
                           </a>
 
-                          <form action="{{ route('news.destroy', $item) }}" method="POST" style="display: inline-block;">
+                          <form action="{{ route('newsAdmin.destroy', $item) }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
 

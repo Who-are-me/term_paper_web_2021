@@ -137,7 +137,7 @@
         <a href="/students" class="nav-link">@yield('students')</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/news" class="nav-link">@yield('news')</a>
+        <a href="/tidings" class="nav-link">@yield('news')</a>
       </li>
     </ul>
 
@@ -269,14 +269,14 @@
             <ul class="nav nav-treeview">
 
               <li class="nav-item">
-                <a href="{{ route('newsAdmin.index') }}" class="nav-link">
+                <a href="{{ route('news.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Переглянути всі новини</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="{{ route('newsAdmin.create') }}" class="nav-link">
+                <a href="{{ route('news.create') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Добавити новину</p>
                 </a>

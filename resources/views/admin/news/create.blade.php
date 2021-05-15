@@ -43,7 +43,7 @@
             <h3 class="card-title">Створіть новину</h3>
         </div>
               <!-- form start -->
-        <form action="{{ route('newsAdmin.store') }}" method="POST">
+        <form action="{{ route('news.store') }}" method="POST">
             @csrf
             <div class="card-body">
 

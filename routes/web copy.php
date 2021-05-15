@@ -34,7 +34,7 @@ Route::get('/', function () {
     return view('test_welcome');
 });
 
-Route::get('/tidings', function () {
+Route::get('/news', function () {
     return view('pages.news');
 });
 
@@ -44,7 +44,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->n
 
 Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
 
-Route::resource('news', App\Http\Controllers\Admin\NewsController::class);
+Route::resource('newsAdmin', App\Http\Controllers\Admin\NewsAdminController::class);
 
 //Route::resource('newsAdmin', App\Http\Controllers\Admin\NewsController::class);
 
