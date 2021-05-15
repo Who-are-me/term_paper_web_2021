@@ -78,17 +78,17 @@
                       </td>
                       
                       <td class="project-actions text-right">
-                          <a class="btn btn-info btn-sm" href="{{ route('newsAdmin.edit', $item->id) }}">
+                          <a class="btn btn-info btn-sm" href="{{ route('newsAdmin.edit', $item['id']) }}">
                               <i class="fas fa-pencil-alt">
                               </i>
                               Редагувати
                           </a>
 
-                          <form action="{{ route('newsAdmin.destroy', $item->id) }}" method="POST" style="display: inline-block;">
+                          <form action="{{ route('newsAdmin.destroy', $item['id']) }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
 
-                            <button onClick='return confirmSubmit()' type="submit" class="delete-btn btn btn-danger btn-sm">
+                            <button  type="submit" class="delete-btn btn btn-danger btn-sm">
                               <i class="fas fa-trash">
                               </i>
                               Видалити
@@ -96,7 +96,7 @@
 
                             <script>
                               function confirmSubmit() {
-
+                                onClick='return confirmSubmit()'
                               var agree=confirm("Ви бажаєте продовжити?");
 
                               if (agree)

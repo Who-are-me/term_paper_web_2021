@@ -44,7 +44,6 @@ class NewsController extends Controller
         $news->title = $request->title;
         $news->img = $request->img;
         $news->text = $request->text;
-        $news->title = $request->title;
 
         $news->save();
 
@@ -85,11 +84,12 @@ class NewsController extends Controller
     public function update(Request $request, News $news)
     {
         $news->title = $request->title;
-        $news->text = $request->text;
         $news->img = $request->img;
+        $news->text = $request->text;
+
         $news->save();
 
-        return redirect()->back()->withSuccess("[$news->title] було успішно обновлена!");
+        return redirect()->back()->withSuccess("Новина [$news->title] була успішно оновлена!");
     }
 
     /**

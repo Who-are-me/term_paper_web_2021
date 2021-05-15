@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Радактор новин')
+@section('title', 'Редактор новин')
 
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
@@ -32,6 +32,7 @@
         @endif
       </div>
     </div>
+    <!-- /.content-header -->
 
 <!-- Main content -->
 <section class="content">
@@ -39,17 +40,17 @@
 
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Радактор новини: {{ $news->title }}</h3>
+            <h3 class="card-title">Редактор новини: {{ $news->title }}</h3>
         </div>
               <!-- form start -->
-        <form action="{{ route('newsAdmin.update', $news->id) }}" method="POST">
+        <form action="{{ route('newsAdmin.update', $news['id'] ) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="card-body">
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Заголовок</label>
-                    <input type="text" value="{{ $news->title }}" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть назву категорії" required>
+                    <input value="{{ $news->title }}" type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть заголовок новини" required>
                 </div>
 
                 <div class="form-group">
@@ -60,13 +61,13 @@
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото на прев'ю до посту</button>
                     <input type="text" name="img" class="form-control mt-2" id="feature_image" name="feature_image" value="{{ $news->img }}" readonly>
-                    <img src="/{{ $news->img }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <img src="{{ $news->img }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
                 </div>
 
             </div>
 
             <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Зберегти</button>
+                <button type="submit" class="btn btn-primary">Зберегтии зміни</button>
             </div>
         </form>
             <!-- form end -->
@@ -83,7 +84,6 @@
        });
     </script>
         
-    <!-- /.row (main row) -->
-    </div><!-- /.container-fluid -->
+    </div>
 </section>
 @endsection

@@ -49,7 +49,7 @@
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Заголовок</label>
-                    <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть назву категорії" required>
+                    <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть заголовок новини" required>
                 </div>
 
                 <div class="form-group">
