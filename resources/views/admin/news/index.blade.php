@@ -39,6 +39,7 @@
           <h3 class="card-title">Всі новини</h3>
         </div>
         <div class="card-body p-0">
+
           <table class="table table-striped projects">
               <thead>
                   <tr>
@@ -57,7 +58,7 @@
               </thead>
               <tbody>
 
-              @foreach ($news as $item)
+              @foreach ($pag as $item)
 
                 <tr>
                       <td>
@@ -106,18 +107,17 @@
 
                 @endforeach   
 
-              </tbody>   
-          </table>         
+              </tbody>               
+          </table>
+
+          <div class="card-header">
+            <h3 class="card-title">
+              {{ $pag->render() }}
+            </h3>  
+          </div> 
+
         </div>
         <!-- /.card-body -->
-    </div>
-
-    <div class="container-fluid" >
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">{{ $pag->render() }}</h3>  
-        </div>
-      </div>
     </div>
 
 </section>

@@ -15,4 +15,12 @@ class HomeController extends Controller
             'news_count' => $news_count
         ]);
     }
+
+    public function login() {
+        return view('admin.home.login');   
+    }
+
+    public function register() {
+        return view('admin.home.register');   
+    }
 }

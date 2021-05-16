@@ -31,11 +31,8 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function get_login() {
-        return view('auth.login');   
-    }
-
     public function get_news() {
+        // work 50/50
         $news = News::orderBy('created_at', 'desc')->get();
 
         $pag = News::simplePaginate(2);

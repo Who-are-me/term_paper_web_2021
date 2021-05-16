@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
@@ -14,13 +15,9 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $news = News::orderBy('created_at', 'desc')->get();
-
         $pag = News::simplePaginate(10);
 
-        return view('admin.news.index', [
-            'news' => $news,
-        ], compact('pag'));
+        return view('admin.news.index', compact('pag'));
     }
 
     /**
@@ -58,9 +55,13 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        return view('admin.news.edit', [
-            'news' => $news
-        ]);
+        $news = News::orderBy('created_at', 'desc')->get();
+
+        $pag = News::simplePaginate(2);
+
+        return view('pages.news',[
+            'news' => $news,
+        ], compact('pag'));
     }
 
     /**

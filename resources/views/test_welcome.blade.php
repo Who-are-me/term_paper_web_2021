@@ -1,6 +1,11 @@
 <!doctype html>
 <html>
 
+<?php
+    // header('Location: /register'); 
+    // exit;
+?>
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -39,7 +44,7 @@
   </div>
   <div class="nav"> </div>
   <nav class="navbar navbar-expand-lg " id="nav" role="navigation">
-    <a class="navbar-brand" href="#"><img src="/image/Logo.svg"></a>
+    <a class="navbar-brand" href="backend"><img src="/image/Logo.svg"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNavCollapseTarget"
       aria-controls="MainNavCollapseTarget" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -48,19 +53,19 @@
     <div class="collapse navbar-collapse" id="MainNavCollapseTarget">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Про нас</a>
+          <a class="nav-link" href="/test">test</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Матеріальна база</a>
+          <a class="nav-link" href="/home">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Абітурієнту</a>
+          <a class="nav-link" href="/login">login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Студенту</a>
+          <a class="nav-link" href="/register">register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/news">Новини</a>
+          <a class="nav-link" href="/tidings">Новини</a>
         </li>
       </ul>
     </div>

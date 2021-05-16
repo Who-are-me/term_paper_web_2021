@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.app_')
 
 @section('content')
 
 <?php
-    header('Location: /backend'); 
-    exit;
+    // header('Location: /register'); 
+    // exit;
 ?>
 
 <div class="container">
@@ -20,6 +20,8 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+
                 </div>
             </div>
         </div>

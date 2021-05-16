@@ -8,14 +8,6 @@
     <title>Новини</title>
 </div>
 
-<?php
-
-$doc = new DOMDocument();
-$doc->loadHTML("<html><body>Test<br></body></html>");
-
-echo $doc->saveHTML();
-?>
-
 <div>
     <div class="news">
         <div class="title">
@@ -30,18 +22,17 @@ echo $doc->saveHTML();
             <div class="content-background">
                 <div class="container">
 
+<?php
+    $doc = new DOMDocument();
+    $doc->loadHTML('<?xml encoding="utf-8" ?>' . "<html><body>Тест Української мови - йцукенгшщзхїфівапролджєячсмитьбю . , ʼ єЄЇҐґ<br></body></html>");
 
+    echo $doc->saveHTML();
+?>
 
 
                 @foreach ($news as $item)
                 <!-- <div>{{ $item->text }}</div> -->
-                <?php
 
-$doc = new DOMDocument();
-$doc->loadHTML("$item->text");
-
-echo $doc->saveHTML();
-?>
                 
                     <div class="news-block">
                         <form action="" class="">
@@ -50,9 +41,14 @@ echo $doc->saveHTML();
                                 <img src="{{ $item->img }}" alt="">
                                 <div class="col">
                                     <span>
-                                        <div id="txt" name="txt">
+                                        <div>
                                         
+                                        <?php
+                                            $doc = new DOMDocument();
+                                            $doc->loadHTML('<?xml encoding="utf-8" ?>' . "$item->text");
 
+                                            echo $doc->saveHTML();
+                                        ?>
 
                                         </div>           
                                     </span>

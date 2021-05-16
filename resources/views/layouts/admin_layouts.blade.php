@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Адмін панель - @yield('title')</title>
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- CSRF Token
+    <meta name="csrf-token" content="{{ csrf_token() }}"> -->
 
 
   <!-- Google Font: Source Sans Pro -->
@@ -34,77 +34,6 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
-
-
-<!-- verification login start -->
-@guest
-@if (Route::has('login'))
-<div class="container" style="margin-top: 90px;">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endif
-<!-- verification login end -->
-@else
 
 
 <div class="wrapper">
@@ -174,23 +103,13 @@
               {{ __('Logout') }}
             </a>
 
-            <a class="dropdown-item" href="{{ route('register') }}"
-              onclick="event.preventDefault();
-              document.getElementById('register-form').submit();">
-              {{ __('TEST Register user') }}
-            </a>
-
             <a class="dropdown-item" href="{{ route('login') }}"
               onclick="event.preventDefault();
               document.getElementById('login-form').submit();">
-              {{ __('TEST Log in') }}
+              {{ __('Log in') }}
             </a>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-              @csrf
-            </form>
-
-            <form id="register-form" action="{{ url('/test') }}" method="POST" class="d-none">
               @csrf
             </form>
 
@@ -368,4 +287,3 @@
 
 </body>
 </html>
-@endguest
