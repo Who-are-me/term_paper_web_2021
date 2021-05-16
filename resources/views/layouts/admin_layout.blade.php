@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Адмін панель - @yield('title')</title>
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -137,7 +141,7 @@
         <a href="/students" class="nav-link">@yield('students')</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/news" class="nav-link">@yield('news')</a>
+        <a href="/tidings" class="nav-link">@yield('news')</a>
       </li>
     </ul>
 
@@ -153,19 +157,9 @@
           <i class="fas fa-th-large"></i>
         </a>
       </li>
+
 <!-- login menu start -->
-      @guest
-      @if (Route::has('login'))
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-        </li>
-      @endif
-                            
-      @if (Route::has('register'))
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-        </li>
-      @endif
+      @guest 
       @else
         <li class="nav-item dropdown">
           <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -173,15 +167,37 @@
           </a>
 
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
             <a class="dropdown-item" href="{{ route('logout') }}"
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">
               {{ __('Logout') }}
             </a>
 
+            <a class="dropdown-item" href="{{ route('register') }}"
+              onclick="event.preventDefault();
+              document.getElementById('register-form').submit();">
+              {{ __('TEST Register user') }}
+            </a>
+
+            <a class="dropdown-item" href="{{ route('login') }}"
+              onclick="event.preventDefault();
+              document.getElementById('login-form').submit();">
+              {{ __('TEST Log in') }}
+            </a>
+
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
               @csrf
             </form>
+
+            <form id="register-form" action="{{ url('/test') }}" method="POST" class="d-none">
+              @csrf
+            </form>
+
+            <form id="login-form" action="{{ route('login') }}" method="POST" class="d-none">
+              @csrf
+            </form>
+
           </div>
         </li>
       @endguest
@@ -268,20 +284,20 @@
             </a>
             <ul class="nav nav-treeview">
 
-
               <li class="nav-item">
-                <a href="{{ route('newsAdmin.index') }}" class="nav-link">
+                <a href="{{ route('news.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Переглянути всі новини</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="{{ route('newsAdmin.create') }}" class="nav-link">
+                <a href="{{ route('news.create') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Добавити новину</p>
                 </a>
               </li>
+              
             </ul>
           </li> 
 

@@ -31,7 +31,6 @@ tinymce.init({
     toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
     toolbar_mode: 'floating',
     tinycomments_mode: 'embedded',
-    relative_urls : false,
     file_picker_callback : elFinderBrowser
 
  });

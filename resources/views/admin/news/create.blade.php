@@ -43,13 +43,13 @@
             <h3 class="card-title">Створіть новину</h3>
         </div>
               <!-- form start -->
-        <form action="{{ route('newsAdmin.store') }}" method="POST">
+        <form action="{{ route('news.store') }}" method="POST">
             @csrf
             <div class="card-body">
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Заголовок</label>
-                    <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть назву категорії" required>
+                    <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть заголовок новини" required>
                 </div>
 
                 <div class="form-group">

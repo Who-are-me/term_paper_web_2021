@@ -22,8 +22,48 @@
             <div class="content-background">
                 <div class="container">
 
+<?php
+    $doc = new DOMDocument();
+    $doc->loadHTML('<?xml encoding="utf-8" ?>' . "<html><body>Тест Української мови - йцукенгшщзхїфівапролджєячсмитьбю . , ʼ єЄЇҐґ<br></body></html>");
 
+    echo $doc->saveHTML();
+?>
+
+
+                @foreach ($news as $item)
+                <!-- <div>{{ $item->text }}</div> -->
+
+                
                     <div class="news-block">
+                        <form action="" class="">
+                            <span class="news-title ">{{ $item->title }}</span>
+                            <div class="news-background row">
+                                <img src="{{ $item->img }}" alt="">
+                                <div class="col">
+                                    <span>
+                                        <div>
+                                        
+                                        <?php
+                                            $doc = new DOMDocument();
+                                            $doc->loadHTML('<?xml encoding="utf-8" ?>' . "$item->text");
+
+                                            echo $doc->saveHTML();
+                                        ?>
+
+                                        </div>           
+                                    </span>
+                                    <a href="#" class="btn">Читати далі >></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                @endforeach  
+
+
+
+
+                    <!-- <div class="news-block">
                         <form action="" class="">
                             <span class="news-title ">Деякий текст ...</span>
                             <div class="news-background row">
@@ -34,11 +74,12 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
 
                     
+
                     <div class="page-select">
-                        <p>pagination</p>
+                        <p>{{ $pag->render() }}</p>
                     </div>
 
                 </div> 

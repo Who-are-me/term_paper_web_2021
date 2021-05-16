@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
@@ -14,13 +15,9 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $news = News::orderBy('created_at', 'desc')->get();
-
         $pag = News::simplePaginate(10);
 
-        return view('admin.news.index', [
-            'news' => $news,
-        ], compact('pag'));
+        return view('admin.news.index', compact('pag'));
     }
 
     /**
@@ -41,10 +38,9 @@ class NewsController extends Controller
     public function store(Request $request)
     {
         $news = New News();
-        $news->title = $request->title;
-        $news->img = $request->img;
+        $news->title = $request->title;   
         $news->text = $request->text;
-        $news->title = $request->title;
+        $news->img = $request->img;
 
         $news->save();
 
@@ -59,7 +55,13 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        //
+        $news = News::orderBy('created_at', 'desc')->get();
+
+        $pag = News::simplePaginate(2);
+
+        return view('pages.news',[
+            'news' => $news,
+        ], compact('pag'));
     }
 
     /**
@@ -85,11 +87,12 @@ class NewsController extends Controller
     public function update(Request $request, News $news)
     {
         $news->title = $request->title;
-        $news->text = $request->text;
         $news->img = $request->img;
+        $news->text = $request->text;
+
         $news->save();
 
-        return redirect()->back()->withSuccess("[$news->title] було успішно обновлена!");
+        return redirect()->back()->withSuccess("Новина [$news->title] була успішно оновлена!");
     }
 
     /**
@@ -100,7 +103,7 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
-        $tmp_title = $news->title;
+        $tmp_title = $news->text;
         $news->delete();
 
         return redirect()->back()->withSuccess("Новина [$tmp_title] була успішно видалена!");

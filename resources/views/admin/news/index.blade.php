@@ -34,16 +34,12 @@
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
-
-
-
-
-
         <div class="card">
         <div class="card-header">
           <h3 class="card-title">Всі новини</h3>
         </div>
         <div class="card-body p-0">
+
           <table class="table table-striped projects">
               <thead>
                   <tr>
@@ -62,7 +58,7 @@
               </thead>
               <tbody>
 
-              @foreach ($news as $item)
+              @foreach ($pag as $item)
 
                 <tr>
                       <td>
@@ -78,17 +74,17 @@
                       </td>
                       
                       <td class="project-actions text-right">
-                          <a class="btn btn-info btn-sm" href="{{ route('newsAdmin.edit', $item->id) }}">
+                          <a class="btn btn-info btn-sm" href="{{ route('news.edit', $item['id']) }}">
                               <i class="fas fa-pencil-alt">
                               </i>
                               Редагувати
                           </a>
 
-                          <form action="{{ route('newsAdmin.destroy', $item->id) }}" method="POST" style="display: inline-block;">
+                          <form action="{{ route('news.destroy', $item) }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
 
-                            <button onClick='return confirmSubmit()' type="submit" class="delete-btn btn btn-danger btn-sm">
+                            <button  type="submit" class="delete-btn btn btn-danger btn-sm">
                               <i class="fas fa-trash">
                               </i>
                               Видалити
@@ -96,7 +92,7 @@
 
                             <script>
                               function confirmSubmit() {
-
+                                onClick='return confirmSubmit()'
                               var agree=confirm("Ви бажаєте продовжити?");
 
                               if (agree)
@@ -111,18 +107,17 @@
 
                 @endforeach   
 
-              </tbody>   
-          </table>         
+              </tbody>               
+          </table>
+
+          <div class="card-header">
+            <h3 class="card-title">
+              {{ $pag->render() }}
+            </h3>  
+          </div> 
+
         </div>
         <!-- /.card-body -->
-    </div>
-
-    <div class="container-fluid" >
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">{{$pag->render()}}</h3>  
-        </div>
-      </div>
     </div>
 
 </section>
