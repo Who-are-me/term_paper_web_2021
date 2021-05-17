@@ -36,7 +36,7 @@
                         <form action="" class="">
                             <span class="news-title ">{{ $item->title }}</span>
                             <div class="news-background row">
-                                <img src="{{ $item->img }}" alt="">
+                                <img class="img_previe" src="{{ $item->img }}" alt="">
                                 <div class="col">
                                     <span>
                                         <div>                                   
