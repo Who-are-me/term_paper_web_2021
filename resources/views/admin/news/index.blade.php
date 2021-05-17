@@ -84,7 +84,7 @@
                             @csrf
                             @method('DELETE')
 
-                            <button  type="submit" class="delete-btn btn btn-danger btn-sm">
+                            <button onClick='return confirmSubmit()' type="submit" class="delete-btn btn btn-danger btn-sm">
                               <i class="fas fa-trash">
                               </i>
                               Видалити
@@ -92,7 +92,7 @@
 
                             <script>
                               function confirmSubmit() {
-                                onClick='return confirmSubmit()'
+                                
                               var agree=confirm("Ви бажаєте продовжити?");
 
                               if (agree)
