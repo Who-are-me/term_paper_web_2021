@@ -84,7 +84,7 @@
 
                     
 
-                    <div class="page-select">
+                    <div >
                         <p>{{ $news->render() }}</p>
                     </div>
 

@@ -54,9 +54,9 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        // $news = News::orderBy('created_at', 'desc')->get();
+        // $news = News::orderBy('created_at', 'desc')->get();  simpleP
 
-        $news = News::simplePaginate(4);
+        $news = News::paginate(4);
 
         return view('pages.news', compact('news') );
     }
