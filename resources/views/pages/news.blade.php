@@ -23,10 +23,10 @@
                 <div class="container">
 
 <?php
-    $doc = new DOMDocument();
-    $doc->loadHTML('<?xml encoding="utf-8" ?>' . "<html><body>Тест Української мови - йцукенгшщзхїфівапролджєячсмитьбю . , ʼ єЄЇҐґ<br></body></html>");
+    // $doc = new DOMDocument();
+    // $doc->loadHTML('<?xml encoding="utf-8" >' . "<html><body>Тест Української мови - йцукенгшщзхїфівапролджєячсмитьбю . , ʼ єЄЇҐґ<br></body></html>");
 
-    echo $doc->saveHTML();
+    // echo $doc->saveHTML();
 ?>
 
 
