@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\News;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
@@ -55,13 +54,11 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        $news = News::orderBy('created_at', 'desc')->get();
+        // $news = News::orderBy('created_at', 'desc')->get();
 
-        $pag = News::simplePaginate(2);
+        $news = News::simplePaginate(4);
 
-        return view('pages.news',[
-            'news' => $news,
-        ], compact('pag'));
+        return view('pages.news', compact('news') );
     }
 
     /**
@@ -103,7 +100,7 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
-        $tmp_title = $news->text;
+        $tmp_title = $news->title;
         $news->delete();
 
         return redirect()->back()->withSuccess("Новина [$tmp_title] була успішно видалена!");

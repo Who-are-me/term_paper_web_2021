@@ -121,7 +121,7 @@
             </div>
             <div class="col-2 text-center py-1 d-none d-sm-flex"><a href="#"><span class="align-middle"> <img src="/image/arrow-up.svg"></span></a>
             </div>
-            <div class="col-12 col-sm-5 py-2 text-center">2021© Всі права захищені | <a href="tk.te.ua">tk.te.ua</a> </div>
+            <div class="col-12 col-sm-5 py-2 text-center">2021<a href="/backend">©</a> Всі права захищені | <a href="tk.te.ua">tk.te.ua</a> </div>
         </div>
     </footer>
     <!-- Optional JavaScript -->

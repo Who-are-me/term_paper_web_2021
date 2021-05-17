@@ -41,15 +41,23 @@
                                 <img src="{{ $item->img }}" alt="">
                                 <div class="col">
                                     <span>
-                                        <div>
-                                        
-                                        <?php
-                                            $doc = new DOMDocument();
-                                            $doc->loadHTML('<?xml encoding="utf-8" ?>' . "$item->text");
+                                        <div>                                   
+                                            <?php
+                                                $short_text = substr($item->text, 0, 700);
+                                                $short_text = str_replace("[", "<", $short_text);
+                                                $short_text = str_replace("]", ">", $short_text);
+                                                $short_text = strip_tags($short_text);
+                                                $short_text = rtrim($short_text, "!,.-");
+                                                $short_text = substr($short_text, 0, strrpos($short_text, ' '))."...";
+                                                $short_text = nl2br($short_text);
 
-                                            echo $doc->saveHTML();
-                                        ?>
+                                                echo $short_text;
 
+                                                // $doc = new DOMDocument();
+                                                // $doc->loadHTML('<?xml encoding="utf-8" >' . SmartCutting($item->text, 10) );
+
+                                                // echo $doc->saveHTML();
+                                            ?>
                                         </div>           
                                     </span>
                                     <a href="#" class="btn">Читати далі >></a>
@@ -79,7 +87,7 @@
                     
 
                     <div class="page-select">
-                        <p>{{ $pag->render() }}</p>
+                        <p>{{ $news->render() }}</p>
                     </div>
 
                 </div> 
