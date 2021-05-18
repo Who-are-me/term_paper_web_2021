@@ -16,11 +16,11 @@ class HomeController extends Controller
         ]);
     }
 
-    public function login() {
-        return view('admin.home.login');   
-    }
+    // public function login() {
+    //     return view('admin.home.login');   
+    // }
 
-    public function register() {
-        return view('admin.home.register');   
-    }
+    // public function register() {
+    //     return view('admin.home.register');   
+    // }
 }

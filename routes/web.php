@@ -17,18 +17,24 @@ Route::get('/', function () {
     return view('test_welcome');
 });
 
-Auth::routes();
+Auth::routes([
+	'reset' => false 
+]);
 
-Route::get('/tidings', [App\Http\Controllers\Admin\NewsController::class, 'show'])->name('news');
+Route::get('/tidings', [App\Http\Controllers\Admin\NewsController::class, 'show']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
 
 Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin')->middleware(['auth']);
 
-Route::get('/backendLogin', [App\Http\Controllers\Admin\HomeController::class, 'login']);
-
-//Route::post('/admin/register', 'App\Http\Controllers\Admin\HomeController@register');
-
 Route::resource('news', App\Http\Controllers\Admin\NewsController::class);
 
-Route::post('/test', [App\Http\Controllers\Admin\HomeController::class, 'register']);
+Route::middleware(['role:sudo'])->prefix('backend/register')->group(function() {
+    Route::get('/', [App\Http\Controllers\Admin\RegisterAdminController::class, 'create']);
+	Route::post('/', [App\Http\Controllers\Admin\RegisterAdminController::class, 'store']);
+});
+
+Route::middleware(['role:sudo'])->prefix('backend/user')->group(function() {
+	Route::get('/', [App\Http\Controllers\Admin\RegisterAdminController::class, 'index']);
+	Route::resource('action', App\Http\Controllers\Admin\RegisterAdminController::class);
+});
