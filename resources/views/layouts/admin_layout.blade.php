@@ -174,29 +174,29 @@
               {{ __('Logout') }}
             </a>
 
-            <a class="dropdown-item" href="{{ route('register') }}"
+            <a class="dropdown-item" href="{{ url('backend/register') }}"
               onclick="event.preventDefault();
               document.getElementById('register-form').submit();">
-              {{ __('TEST Register user') }}
+              {{ __('Register user') }}
             </a>
 
-            <a class="dropdown-item" href="{{ route('login') }}"
+            <!-- <a class="dropdown-item" href="{{ route('login') }}"
               onclick="event.preventDefault();
               document.getElementById('login-form').submit();">
               {{ __('TEST Log in') }}
-            </a>
+            </a> -->
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
               @csrf
             </form>
 
-            <form id="register-form" action="{{ url('/test') }}" method="POST" class="d-none">
+            <form id="register-form" action="{{ url('backend/register') }}" method="GET" class="d-none">
               @csrf
             </form>
 
-            <form id="login-form" action="{{ route('login') }}" method="POST" class="d-none">
+            <!-- <form id="login-form" action="{{ route('login') }}" method="POST" class="d-none">
               @csrf
-            </form>
+            </form> -->
 
           </div>
         </li>

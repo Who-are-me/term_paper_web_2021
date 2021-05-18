@@ -1,4 +1,4 @@
-@extends('layouts.admin_layouts')
+@extends('layouts.admin_layout')
 
 @section('title', 'Регістрація користувача')
 @section('home', 'Домашня')
@@ -13,13 +13,20 @@
 
 @section('content')
 <div class="container">
+
+    @if (session('success'))
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+            <h4><i class="icon fa fa-check"> </i>{{ session('success') }}</h4>
+        </div>
+    @endif
+
     <div class="row justify-content-center">
         <div class="col-md-8" style="margin-top: 50px;">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
+                <div class="card-header">{{ __('Регістрація') }}</div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ url('backend/register') }}">
                         @csrf
 
                         <div class="form-group row">

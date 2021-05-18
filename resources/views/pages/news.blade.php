@@ -41,7 +41,7 @@
                                     <span>
                                         <div>                                   
                                             <?php
-                                                $short_text = substr($item->text, 0, 700);
+                                                $short_text = substr($item->text, 0, 600);
                                                 $short_text = str_replace("[", "<", $short_text);
                                                 $short_text = str_replace("]", ">", $short_text);
                                                 $short_text = strip_tags($short_text);
@@ -49,16 +49,16 @@
                                                 $short_text = substr($short_text, 0, strrpos($short_text, ' '))."...";
                                                 $short_text = nl2br($short_text);
 
-                                                echo $short_text;
+                                                //echo $short_text;
 
-                                                // $doc = new DOMDocument();
-                                                // $doc->loadHTML('<?xml encoding="utf-8" >' . SmartCutting($item->text, 10) );
+                                                $doc = new DOMDocument();
+                                                $doc->loadHTML('<?xml encoding="utf-8" ?>' . $short_text . "<a href='#' class=''>  Читати далі >></a>" );
 
-                                                // echo $doc->saveHTML();
+                                                echo $doc->saveHTML();
+
                                             ?>
-                                        </div>           
-                                    </span>
-                                    <a href="#" class="btn">Читати далі >></a>
+                                        </div>       
+                                    </span>                                  
                                 </div>
                             </div>
                         </form>
@@ -84,15 +84,14 @@
 
                     
 
-                    <div >
+                    <div>
                         <p>{{ $news->render() }}</p>
                     </div>
-
                 </div> 
             </div>
         </div>
-       
     </div>
 </div>
+
 
 @endsection
