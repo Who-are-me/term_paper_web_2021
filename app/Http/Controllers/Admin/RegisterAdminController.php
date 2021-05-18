@@ -18,7 +18,9 @@ class RegisterAdminController extends Controller
      */
     public function index()
     {
-        return view('admin.home.register'); 
+        $pag = User::simplePaginate(10);
+
+        return view('admin.home.user_delete', compact('pag')); 
     }
 
     /**
@@ -28,7 +30,7 @@ class RegisterAdminController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.home.register'); 
     }
 
     protected function validator(array $data)
@@ -68,7 +70,7 @@ class RegisterAdminController extends Controller
      */
     public function show(RegisterAdmin $registerAdmin)
     {
-        //
+        
     }
 
     /**
@@ -79,7 +81,7 @@ class RegisterAdminController extends Controller
      */
     public function edit(RegisterAdmin $registerAdmin)
     {
-        //
+        
     }
 
     /**
@@ -100,11 +102,14 @@ class RegisterAdminController extends Controller
      * @param  \App\Models\RegisterAdmin  $registerAdmin
      * @return \Illuminate\Http\Response
      */
-    public function destroy(RegisterAdmin $registerAdmin)
+    public function destroy($id)
     {
-        $tmp_title = $registerAdmin->name;
-        $registerAdmin->delete();
-
-        return redirect()->back()->withSuccess("Користувач [$tmp_title] був успішно видалений!");
+        if($id == 1) {
+            return redirect()->back()->withSuccess("Ви не можете видалити sudo користувача!");
+        }
+        else {
+            User::destroy($id);
+            return redirect()->back()->withSuccess("Користувач був успішно видалений!");
+        }
     }
 }

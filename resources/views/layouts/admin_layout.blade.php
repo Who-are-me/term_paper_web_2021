@@ -180,11 +180,11 @@
               {{ __('Register user') }}
             </a>
 
-            <!-- <a class="dropdown-item" href="{{ route('login') }}"
+            <a class="dropdown-item" href="{{ url('backend/user/delete') }}"
               onclick="event.preventDefault();
               document.getElementById('login-form').submit();">
-              {{ __('TEST Log in') }}
-            </a> -->
+              {{ __('Delete user') }}
+            </a>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
               @csrf
@@ -194,9 +194,9 @@
               @csrf
             </form>
 
-            <!-- <form id="login-form" action="{{ route('login') }}" method="POST" class="d-none">
+            <form id="login-form" action="{{ url('backend/user') }}" method="GET" class="d-none">
               @csrf
-            </form> -->
+            </form>
 
           </div>
         </li>
@@ -209,7 +209,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="backend" class="brand-link">
+    <a href="/backend" class="brand-link">
       <img src="/admin/dist/img/antena.svg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">@yield('title-menu')</span>
     </a>
