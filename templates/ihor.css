@@ -318,3 +318,16 @@ footer
     transition-duration: 180ms;
     
 }
+#background-image-about-us
+{
+    background-image: url(../image/about-title-background.svg);
+}
+
+@media only screen and (min-width: 600px) {
+    #background-image-about-us
+{
+    background-image: url(../image/about-title-background.svg);
+    background-size: auto;min-height: 100px;
+}
+    
+}

@@ -1,0 +1,55 @@
+
+.title-news {
+    
+    background: url('../image/jpg/news-title-background.jpg') no-repeat center / cover;
+}
+
+.title-material {
+    
+    background: url('../image/jpg/material-base-background.png') no-repeat center / cover;
+}
+.title-about {
+    
+    background: url('../image/jpg/about-title-background.png') no-repeat center / cover;
+}
+.title-student {
+    
+    background: url('../image/jpg/student-title-background.png') no-repeat center / cover;
+}
+.title-abiturient {
+    
+    background: url('../image/jpg/abiturietnu-title-background.png') no-repeat center / cover;
+}
+
+
+.news-title-inside-cont
+{
+    background-color: #CFE2D5;
+    box-shadow: 0px 12px 50px #CBE0D2;
+    font-family: 'Montserrat', semibold;
+    font-style: normal;
+    font-size: 38px;
+    color: black;
+    
+    font-weight: 400;
+}
+.about-title-inside-cont
+{
+    background: #829295;
+box-shadow: 0px 12px 40px #829295;
+font-family: 'Montserrat', semibold;
+    font-style: normal;
+    font-size: 38px;
+    color: black;
+    
+    font-weight: 400;
+}
+.content-background
+{
+    background: #F0F0F0;
+box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
+}
+.news-content-container
+{
+    background: white;
+}
