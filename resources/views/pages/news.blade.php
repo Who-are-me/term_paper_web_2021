@@ -1,6 +1,6 @@
 @extends('layouts.main_layout')
 
-@section('title', 'Новини')
+@section('title', 'ЦК Електронних апаратів  - Новини')
 
 @section('content')
 <div>
