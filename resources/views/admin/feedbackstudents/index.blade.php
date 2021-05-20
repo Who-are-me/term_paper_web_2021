@@ -36,22 +36,19 @@
     <div class="container-fluid">
         <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Всі користувачі</h3>
+          <h3 class="card-title">У весь feedback абітурієнтів</h3>
         </div>
         <div class="card-body p-0">
 
           <table class="table table-striped projects">
               <thead>
                   <tr>
-                      <th style="width: 3%">
-                          Id
-                      </th>
-                      <th>
-                          Name
-                      </th>
-                      <th>
-                          Gmail
-                      </th>
+                      <th style="width: 3%">Id</th>
+                      <th>PIP</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>School</th>
+                      <th>Option</th>
                       <th style="width: 20%">
                       </th>
                   </tr>
@@ -62,10 +59,13 @@
 
                 <tr>
                       <td>{{ $item->id }}</td>
-                      <td>{{ $item->name }}</td>
+                      <td>{{ $item->pip }}</td>
                       <td>{{ $item->email }}</td>
+                      <td>{{ $item->phone }}</td>
+                      <td>{{ $item->school }}</td>
+                      <td>{{ $item->option }}</td>
                       
-                      <td class="project-actions text-right">
+                      <!-- <td class="project-actions text-right">
 
                           <form action="{{ route('action.destroy', $item->id ) }}" method="POST" style="display: inline-block;">
                             @csrf
@@ -89,7 +89,7 @@
                               }
                             </script>
                           </form>
-                      </td>
+                      </td> -->
                   </tr>
 
                 @endforeach   

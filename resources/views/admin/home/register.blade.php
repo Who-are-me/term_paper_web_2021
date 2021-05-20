@@ -26,6 +26,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Регістрація') }}</div>
                 <div class="card-body">
+                    
                     <form method="POST" action="{{ url('backend/register') }}">
                         @csrf
 

@@ -34,6 +34,21 @@
 
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <div class="small-box bg-primary">
+              <div class="inner">
+                <h3>{{ $feedback_count }}</h3>
+                <p>Feedback абітурієнтів</p>
+              </div>
+              <div class="icon">
+                <i class="far fa-question-circle"></i>
+              </div>
+              <a href="{{ route('feedback.index') }}" class="small-box-footer">Більше інформації<i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>0</h3>

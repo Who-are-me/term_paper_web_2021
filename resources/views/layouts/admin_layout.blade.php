@@ -138,7 +138,7 @@
         <a href="/abiturientu" class="nav-link">@yield('abiturientu')</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/students" class="nav-link">@yield('students')</a>
+        <a href="/student" class="nav-link">@yield('students')</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="/tidings" class="nav-link">@yield('news')</a>
@@ -231,6 +231,26 @@
               </p>
             </a>
           </li>
+
+
+<!-- feedback -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="far fa-comment-dots"></i>
+              <p>
+              feedback абітурієнтів
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('feedback.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Переглянути feedback</p>
+                </a>
+              </li>
+            </ul>
+          </li> 
 
 
 <!-- abiturientu -->
