@@ -236,7 +236,7 @@
 <!-- feedback -->
           <li class="nav-item">
             <a href="#" class="nav-link ">
-            <i class="far fa-comment-dots"></i>
+            <i class="nav-icon far fa-comment-dots"></i>
               <p>
               feedback абітурієнтів
                 <i class="right fas fa-angle-left"></i>

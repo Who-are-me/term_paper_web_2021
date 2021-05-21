@@ -49,8 +49,7 @@
                       <th>Phone</th>
                       <th>School</th>
                       <th>Option</th>
-                      <th style="width: 20%">
-                      </th>
+                      <th>Data</th>
                   </tr>
               </thead>
               <tbody>
@@ -58,39 +57,14 @@
               @foreach ($pag as $item)
 
                 <tr>
-                      <td>{{ $item->id }}</td>
-                      <td>{{ $item->pip }}</td>
-                      <td>{{ $item->email }}</td>
-                      <td>{{ $item->phone }}</td>
-                      <td>{{ $item->school }}</td>
-                      <td>{{ $item->option }}</td>
-                      
-                      <!-- <td class="project-actions text-right">
-
-                          <form action="{{ route('action.destroy', $item->id ) }}" method="POST" style="display: inline-block;">
-                            @csrf
-                            {{ method_field('DELETE') }}
-
-                            <button onClick='return confirmSubmit()' type="submit" class="delete-btn btn btn-danger btn-sm">
-                              <i class="fas fa-trash">
-                              </i>
-                              Видалити
-                            </button>
-
-                            <script>
-                              function confirmSubmit() {
-                                
-                              var agree=confirm("Ви бажаєте видалити користувача?");
-
-                              if (agree)
-                                return true ;
-                              else
-                                return false ;
-                              }
-                            </script>
-                          </form>
-                      </td> -->
-                  </tr>
+                    <td>{{ $item->id }}</td>
+                    <td>{{ $item->pip }}</td>
+                    <td>{{ $item->email }}</td>
+                    <td>{{ $item->phone }}</td>
+                    <td>{{ $item->school }}</td>
+                    <td>{{ $item->option }}</td>
+                    <td>{{ $item->created_at }}</td>
+                </tr>
 
                 @endforeach   
 
