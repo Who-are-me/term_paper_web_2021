@@ -56,10 +56,10 @@
     </div>
     <nav class="navbar navbar-expand-md sticky-top d-flex d-md-none p-0">
 
-        <a class="navbar-brand p-0 pl-5" href="#"><img src="../image/Logo.svg" class=""></a>
+        <a class="navbar-brand p-0 pl-5" href="#"><img src="/image/Logo.svg" class=""></a>
         <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><img src="../image/Hamburger_icon.png"></span>
+            <span class="navbar-toggler-icon"><img src="/image/Hamburger_icon.png"></span>
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav">

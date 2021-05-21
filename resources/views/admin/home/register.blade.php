@@ -1,6 +1,7 @@
 @extends('layouts.admin_layout')
 
 @section('title', 'Регістрація користувача')
+
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
 @section('about', 'Про нас')
@@ -8,7 +9,6 @@
 @section('abiturientu', 'Абітурієнту')
 @section('students', 'Студенту')
 @section('news', 'Новини')
-
 @section('title-menu', 'Адмін-панель')
 
 @section('content')
@@ -26,7 +26,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Регістрація') }}</div>
                 <div class="card-body">
-                    
+
                     <form method="POST" action="{{ url('backend/register') }}">
                         @csrf
 

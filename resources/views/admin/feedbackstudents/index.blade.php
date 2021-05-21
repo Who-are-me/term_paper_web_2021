@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Огляд користувачів')
+@section('title', 'Feedback абітурієнтів')
 
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
