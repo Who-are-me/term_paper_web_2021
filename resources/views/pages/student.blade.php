@@ -26,7 +26,7 @@
 			</div>	
 
 			<div class="">
-				<input id="email" type="text" name="email" class="" placeholder="E-mail"> 
+				<input id="email" type="text" name="email" class="" placeholder="E-mail" required=""> 
 			</div>						
 
 			<div class="">Освіта</div>
@@ -63,7 +63,7 @@
 			<div class="">Давайте знайомитись</div>	
 
 			<div class="">
-				<input id="pip" required="" type="text" name="pip" class="" placeholder="ПІП"> <br>
+				<input id="pip" type="text" name="pip" class="" placeholder="ПІП" required=""> <br>
 			</div>	
 			
 			<div class="">

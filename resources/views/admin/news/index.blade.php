@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Огляд новин ')
+@section('title', 'Огляд новин')
 
 @section('home', 'Домашня')
 @section('contact', 'Контакти')

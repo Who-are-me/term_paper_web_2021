@@ -1,6 +1,7 @@
 @extends('layouts.admin_layout')
 
 @section('title', 'Головна')
+
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
 @section('about', 'Про нас')
@@ -8,7 +9,6 @@
 @section('abiturientu', 'Абітурієнту')
 @section('students', 'Студенту')
 @section('news', 'Новини')
-
 @section('title-menu', 'Адмін-панель')
 
 
