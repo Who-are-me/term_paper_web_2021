@@ -80,7 +80,7 @@
                             <script>
                               function confirmSubmit() {
                                 
-                              var agree=confirm("Ви бажаєте видалити користувака [{{ $item->name }}]?");
+                              var agree=confirm("Ви бажаєте видалити користувача?");
 
                               if (agree)
                                 return true ;

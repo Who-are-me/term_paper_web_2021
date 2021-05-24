@@ -1,0 +1,158 @@
+body {
+    font-family: 'Montserrat',sans-serif;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.title-text {
+    font-size: 38px;
+    color: black;
+    
+    font-weight: 400;
+    margin-top: 20px;
+
+    
+}
+
+.title{
+    display: flex;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.title {
+    
+    background: url('../image/jpg/news-title-background.jpg') no-repeat center / cover;
+    padding-top: 72.5px;
+    color: #fff;
+    padding-bottom: 72.5px;
+}
+
+.text-background {
+    width: 1170px;
+    height: 159px;
+
+    background-color: #CFE2D5;
+    box-shadow: 0px 12px 50px #CBE0D2;
+
+    padding-left: 58px;
+    padding-top: 24px;
+}
+
+.content a{
+    color: black;
+}
+
+.content-background {
+    background-color: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
+
+    height: 2000px;
+}
+
+.news-title{
+    color: black;
+    
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    
+    
+}
+
+.news-block {
+    padding-top: 113px;
+    align-items: center;
+}
+
+form {
+    width: 1070px;
+}
+
+.news-background {
+    width: 1170px;
+    height: 292.15px;
+    background-color: white;
+
+    padding-top: 22.5px;
+    padding-left: 24px;
+    
+
+}
+
+img {
+    width: 440px;
+    height: 245px;
+
+    margin-right: 65px;
+	border-radius: 20px;
+}
+
+h3 {
+    width: 600px;
+    height: 165px;
+
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    
+}
+
+.btn {
+    
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.page-select {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.pg-num {
+    display: flex;
+}
+
+.prev {
+    margin-right: 55px;
+}
+
+.next {
+    margin-left: auto;
+}
+
+.pg-num li {
+    margin-right: 22px;
+}
+
+.pg-num li a {
+    text-transform: uppercase;
+}
+
+.pg-num a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #E93F34;
+}

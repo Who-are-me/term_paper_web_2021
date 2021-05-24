@@ -21,7 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/additional_styles.css">
-  <title>ЦК Електронних апаратів</title>
+  <title>заглушка</title>
 </head>
 
 <body>
