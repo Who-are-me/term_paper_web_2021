@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\FeedbackStudent;
+use App\Models\Feedback;
 use Illuminate\Http\Request;
 
-class FeedbackStudentsController extends Controller
+class FeedbackController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class FeedbackStudentsController extends Controller
      */
     public function index()
     {
-        $pag = FeedbackStudent::simplePaginate(10);
+        $pag = Feedback::simplePaginate(10);
 
-        return view('admin.feedbackstudents.index', compact('pag')); 
+        return view('admin.feedback.index', compact('pag')); 
     }
 
     /**
@@ -38,16 +38,33 @@ class FeedbackStudentsController extends Controller
      */
     public function store(Request $request)
     {
-        $feedback = New FeedbackStudent();
-        $feedback->pip = $request->pip;   
-        $feedback->phone = $request->phone;
-        $feedback->email = $request->email;
-        $feedback->school = $request->school;
-        $feedback->option = $request->option;
+        // secret key
+        $secret = '6LdqluEaAAAAANpYxhvTRrgvadAK0kYHxfhfpuHd';
 
-        $feedback->save();
+        require_once (dirname(__FILE__).'/autoload.php');
 
-        return redirect()->back()->withSuccess("Запитання було успішно додано!");
+        if (isset($_POST['g-recaptcha-response'])) {
+
+            $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+
+            $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+
+            if ($resp->isSuccess()) {
+                $feedback = New Feedback();
+                $feedback->pip = $request->pip;   
+                $feedback->phone = $request->phone;
+                $feedback->email = $request->email;
+                $feedback->school = $request->school;
+                $feedback->option = $request->option;
+
+                $feedback->save();
+
+                return redirect()->back()->withSuccess("Запитання було успішно додано!");
+            } 
+            else { 
+                return redirect()->back()->withSuccess("Запитання НЕ було успішно додано!"); 
+            }
+      }
     }
 
     /**
@@ -56,7 +73,7 @@ class FeedbackStudentsController extends Controller
      * @param  \App\Models\FeedbackStudent  $feedbackStudent
      * @return \Illuminate\Http\Response
      */
-    public function show(FeedbackStudent $feedbackStudent)
+    public function show(Feedback $feedbackStudent)
     {
         //
     }
@@ -67,7 +84,7 @@ class FeedbackStudentsController extends Controller
      * @param  \App\Models\FeedbackStudent  $feedbackStudent
      * @return \Illuminate\Http\Response
      */
-    public function edit(FeedbackStudent $feedbackStudent)
+    public function edit(Feedback $feedbackStudent)
     {
         //
     }
@@ -79,7 +96,7 @@ class FeedbackStudentsController extends Controller
      * @param  \App\Models\FeedbackStudent  $feedbackStudent
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, FeedbackStudent $feedbackStudent)
+    public function update(Request $request, Feedback $feedbackStudent)
     {
         //
     }
@@ -90,7 +107,7 @@ class FeedbackStudentsController extends Controller
      * @param  \App\Models\FeedbackStudent  $feedbackStudent
      * @return \Illuminate\Http\Response
      */
-    public function destroy(FeedbackStudent $feedbackStudent)
+    public function destroy(Feedback $feedbackStudent)
     {
         //
     }

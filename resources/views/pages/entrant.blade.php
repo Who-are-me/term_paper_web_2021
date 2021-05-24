@@ -14,6 +14,24 @@
 <div class="">
 	<form name="" action="{{ url('/feedbackstore') }}" method="post">
 		@csrf
+		
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<!-- элемент для вывода ошибок -->
+		<div class="text-danger" id="recaptchaError"></div>
+
+		<?php
+			if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
+			  $secret = '6LdqluEaAAAAANpYxhvTRrgvadAK0kYHxfhfpuHd';
+			  $ip = $_SERVER['REMOTE_ADDR'];
+			  $response = $_POST['g-recaptcha-response'];
+			  $rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
+			  $arr = json_decode($rsp, TRUE);
+			  if ($arr['success']) {
+			    
+			  }
+			}
+		?>
+
 		<div class="" >Анкета вступника</div>
 		<div class="" >Заповніть анкету та отримайте персональну консультацію від завідуючого кафедрою</div>
 
@@ -22,7 +40,7 @@
 			<div class="">Ми  зв`яжемось з Вами зручним для Вас способом:</div>
 			
 			<div class="">
-				<input id="phone" type="text" name="phone" class=" " placeholder="Телефон" required=""> 
+				<input id="phone" type="text" name="phone" class=" " placeholder="Телефон" required="" maxlength="10"> 
 			</div>	
 
 			<div class="">
@@ -74,6 +92,8 @@
 				<input type="submit" class="" name="" style="" value="Отримати консультацію">
 			</div>	
 		</div>
+
+		<div class="g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue"></div>
 	</form>
 </div>
 @endsection
