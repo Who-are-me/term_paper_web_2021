@@ -135,7 +135,7 @@
         <a href="/base" class="nav-link">@yield('base')</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/abiturientu" class="nav-link">@yield('abiturientu')</a>
+        <a href="/entrant" class="nav-link">@yield('abiturientu')</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="/student" class="nav-link">@yield('students')</a>

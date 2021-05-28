@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRegisterAdminsTable extends Migration
+class CreateFeedbackTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateRegisterAdminsTable extends Migration
      */
     public function up()
     {
-        Schema::create('register_admins', function (Blueprint $table) {
+        Schema::create('feedback', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('pip');
+            $table->string('phone');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('school');
+            $table->string('option')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateRegisterAdminsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('register_admins');
+        Schema::dropIfExists('feedback');
     }
 }
