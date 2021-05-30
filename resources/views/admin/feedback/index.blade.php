@@ -44,12 +44,12 @@
               <thead>
                   <tr>
                       <th style="width: 3%">Id</th>
-                      <th>PIP</th>
-                      <th>Email</th>
-                      <th>Phone</th>
-                      <th>School</th>
-                      <th>Option</th>
-                      <th>Data</th>
+                      <th style="width: 17%">PIP</th>
+                      <th style="width: 10%">Phone</th>
+                      <th style="width: 10%">Email</th>
+                      <th style="width: 20%">School</th>
+                      <th style="width: 20%">Option</th>
+                      <th style="width: 20%">Data</th>
                   </tr>
               </thead>
               <tbody>
@@ -59,8 +59,8 @@
                 <tr>
                     <td>{{ $item->id }}</td>
                     <td>{{ $item->pip }}</td>
-                    <td>{{ $item->email }}</td>
                     <td>{{ $item->phone }}</td>
+                    <td>{{ $item->email }}</td>
                     <td>{{ $item->school }}</td>
                     <td>{{ $item->option }}</td>
                     <td>{{ $item->created_at }}</td>

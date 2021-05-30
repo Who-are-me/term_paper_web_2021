@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Огляд новин')
+@section('title', 'Огляд всіх викладачів')
 
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
@@ -36,7 +36,7 @@
     <div class="container-fluid">
         <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Всі новини</h3>
+          <h3 class="card-title">Всі викладачі</h3>
         </div>
         <div class="card-body p-0">
 
@@ -47,10 +47,10 @@
                           Id
                       </th>
                       <th style="width: 27%">
-                          Заголовок
+                          Прізвище Імʼя По батькові
                       </th>
                       <th style="width: 50%">
-                          Дата створення
+                          Коротка інформація про викладача
                       </th>
                       <th style="width: 20%">
                       </th>
@@ -65,22 +65,25 @@
                         {{ $item->id }}
                       </td>
 
-                      <td>
-                        {{ $item->title }}
+                      <td>       
+                        {{ $item->pip }}
                       </td>
 
                       <td>
-                        {{ $item->created_at }}
+                        {{ $item->about }}
                       </td>
                       
                       <td class="project-actions text-right">
-                          <a class="btn btn-info btn-sm" href="{{ route('news.edit', $item['id']) }}">
+
+                          <a class="btn btn-info btn-sm" href="{{ route('teachers.edit', $item->id) }}">
+                            @csrf
+                            @method('PATCH')
                               <i class="fas fa-pencil-alt">
                               </i>
                               Редагувати
                           </a>
 
-                          <form action="{{ route('news.destroy', $item) }}" method="POST" style="display: inline-block;">
+                          <form action="{{ route('teachers.destroy', $item) }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
 
@@ -112,7 +115,7 @@
 
           <div class="card-header">
             <h3 class="card-title">
-              {{ $pag->render() }}
+
             </h3>  
           </div> 
 

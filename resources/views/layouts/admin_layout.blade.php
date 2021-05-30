@@ -8,7 +8,6 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -250,6 +249,37 @@
                 </a>
               </li>
             </ul>
+          </li>
+
+
+<!-- teacher -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon fas fa-chalkboard-teacher"></i>
+              <p>
+              Викладачі
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('teachers.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Список викладачів</p>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('teachers.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Добавити викладача</p>
+                </a>
+              </li>
+            </ul>
+
           </li> 
 
 
@@ -264,7 +294,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/entrant" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Редактувати сторінку</p>
                 </a>
@@ -284,7 +314,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/students" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Редактувати сторінку</p>
                 </a>

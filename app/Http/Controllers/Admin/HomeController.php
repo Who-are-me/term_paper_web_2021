@@ -19,11 +19,11 @@ class HomeController extends Controller
         ]);
     }
 
-    // public function login() {
-    //     return view('admin.home.login');   
-    // }
+    public function index_entrant() {
+        return view('admin.entrant.edit');   
+    }
 
-    // public function register() {
-    //     return view('admin.home.register');   
-    // }
+    public function index_students() {
+        return view('admin.students.edit');   
+    }
 }
