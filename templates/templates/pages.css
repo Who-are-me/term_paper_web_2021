@@ -239,6 +239,15 @@ color: #51595A;
     font-weight: 900;
     letter-spacing: 0.1em;
 }
+.salad-span-heading
+{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 100px;
+    color: #ADB450;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
 
 @media only screen and (min-width: 1150px)
 {
@@ -250,6 +259,10 @@ color: #51595A;
 
 @media only screen and (min-width: 1500px)
 {
+    .salad-span-heading
+    {
+        font-size: 18px;
+    }
     .galery-height
     {
         height: 780px;
@@ -298,7 +311,10 @@ color: #51595A;
 
 @media only screen and (min-width: 2200px)
 {
+    .salad-span-heading
+    {font-size: 22px;
 
+    }
     .galery-height
     {
         height: 870px;
