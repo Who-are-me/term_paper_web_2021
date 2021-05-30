@@ -35,7 +35,6 @@ box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
     align-items: center;
     justify-content: center;
 }
-
 #nav-a-md
 {
     display: flex;
@@ -89,12 +88,10 @@ nav a
 
 .nav-link:hover
 {
-    position:static;
-    transition-duration: 250ms;
+    transition-duration: 400ms;
     padding-bottom: 5px;
     /* transition-duration: 300ms; */
     /* padding: 0px; */
-    font-weight: bold;
     border-bottom: rgba(233, 63, 52, 0.75) 1px solid;
     color: white;
 }
