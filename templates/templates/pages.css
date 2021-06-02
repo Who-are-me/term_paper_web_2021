@@ -20,6 +20,10 @@
     
     background: url('../../image/jpg/abiturietnu-title-background.png') no-repeat center / cover;
 }
+.feedback-background
+{
+    background: linear-gradient(178.7deg, #47915E 6.73%, #263249 139.97%);
+}
 #background-white-wall
 {
     background: url('../../image/white-wall-background.png') no-repeat center / cover;
@@ -318,6 +322,104 @@ color: rgba(255, 255, 255, 0.75);
 .image-ridius-border
 {
     border-radius: 10px;
+}
+
+.input-transparent-div
+{}
+
+.input-transparent-div .input-box
+{
+    position: relative;
+}
+
+.input-transparent-div .input-box input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.input-transparent-div .input-box label
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-transparent-div input:focus ~ label,
+.input-transparent-div input:valid ~ label
+{
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 15px;
+}
+.feedback-header-text
+{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', semibold;
+font-style: normal;
+font-weight: 800;
+font-size: 34px;
+line-height: 125%;
+color: white;
+}
+
+.input-transparent-div .input-box select
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.input-transparent-div .input-box .select-option
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.select-feedback select
+{
+   width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.select-feedback::after
+{
+    color: yellow;
+    font-size: 50px;
 }
 
 
