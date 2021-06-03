@@ -72,7 +72,7 @@
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image0">Вибрати фото</button>
                     <input type="text" name="img_0" class="form-control mt-2" id="feature_image0" value="{{ $content[4]->text }}" readonly>
-                    <img src="{{ $content[4]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <img id='img0' src="{{ $content[4]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
                 </div>
                 <div class="form-group">
                     <label for="">Міні текст</label>
@@ -82,7 +82,7 @@
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image1">Вибрати фото</button>
                     <input type="text" name="img_1" class="form-control mt-2" id="feature_image1" value="{{ $content[6]->text }}" readonly>
-                    <img src="{{ $content[6]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <img id='img1' src="{{ $content[6]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
                 </div>
                 <div class="form-group">
                     <label for="">Міні текст</label>
@@ -93,7 +93,7 @@
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image2">Вибрати фото</button>
                     <input type="text" name="img_2" class="form-control mt-2" id="feature_image2" value="{{ $content[8]->text }}" readonly>
-                    <img src="{{ $content[8]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <img id='img2' src="{{ $content[8]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
                 </div>
                 <div class="form-group">
                     <label for="">Міні текст</label>
@@ -104,7 +104,7 @@
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image3">Вибрати фото</button>
                     <input type="text" name="img_3" class="form-control mt-2" id="feature_image3" value="{{ $content[10]->text }}" readonly>
-                    <img src="{{ $content[10]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <img id='img3' src="{{ $content[10]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
                 </div>
                 <div class="form-group">
                     <label for="">Міні текст</label>
@@ -115,7 +115,7 @@
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image4">Вибрати фото</button>
                     <input type="text" name="img_4" class="form-control mt-2" id="feature_image4" value="{{ $content[12]->text }}" readonly>
-                    <img src="{{ $content[12]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <img id='img4' src="{{ $content[12]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image5">Вибрати фото</button>
