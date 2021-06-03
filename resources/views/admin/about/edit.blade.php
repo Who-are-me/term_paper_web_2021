@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Редактор новин')
+@section('title', 'Редактор сторінки: Про циклову')
 
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
@@ -40,31 +40,45 @@
 
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Редактор новини: </h3>
-        </div>
-        
+            <h3 class="card-title">Редактор сторінки: Про циклову</h3>
+        </div>      
               <!-- form start -->
-        <form action="" method="POST">
-            @csrf
+        <form action="{{ route('about.update', $content[0]->id) }}" method="POST">
+            @csrf 
             @method('PUT')
+
             <div class="card-body">
-
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Заголовок</label>
-                    <input value="" type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть заголовок новини" required>
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image0">Вибрати лого циклової комісії</button>
+                    <input type="text" name="img_0" class="form-control mt-2" id="feature_image0" value="{{ $content[0]->text  }}" readonly>
+                    <img id='img0' src="{{ $content[0]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Контент</label>
-                    <textarea name="text" class="editor"></textarea>
+                    <label for="">Текст справа від фото циклової комісії</label>
+                    <textarea name="text_0" class="editor" style="height: 600px;">{{ $content[1]->text }}</textarea>
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото на прев'ю до посту</button>
-                    <input type="text" name="img" class="form-control mt-2" id="feature_image" name="feature_image" value="" readonly>
-                    <img src="" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <label for="">Текст під фото циклової комісії</label>
+                    <textarea name="text_1" class="editor" style="height: 600px;">{{ $content[2]->text }}</textarea>
                 </div>
 
+                <div class="form-group">
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image1">Вибрати фото складу циклової комісії</button>
+                    <input type="text" name="img_1" class="form-control mt-2" id="feature_image1" value="{{ $content[3]->text  }}" readonly>
+                    <img id='img1' src="{{ $content[3]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Заголовок тексту</label>
+                    <input value="{{ $content[4]->text }}" type="text" name="text_2" class="form-control" id="" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Текст</label>
+                    <textarea name="text_3" class="editor" style="height: 600px;">{{ $content[5]->text }}</textarea>
+                </div>
             </div>
 
             <div class="card-footer">
@@ -82,8 +96,11 @@
           toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
           toolbar_mode: 'floating',
           tinycomments_mode: 'embedded',
-          tinycomments_author: 'Author name',
-       });
+          tinycomments_author: '{{ Auth::user()->name }}',
+        });
+
+        // check if you use more one elfinder input
+        check_multi_elfider_input = 1;
     </script>
         
     </div>

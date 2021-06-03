@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateStringContentsTable extends Migration
+class CreateEntrantContentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateStringContentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('string_contents', function (Blueprint $table) {
+        Schema::create('entrant_contents', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('text');
+            $table->string('text');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateStringContentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('string_contents');
+        Schema::dropIfExists('entrant_contents');
     }
 }

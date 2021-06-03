@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
 
     $('.confirms').click(function () {
-        var res = confirm('Подтвердите действия');
+        var res = confirm('Confirms events');
         if(!res){
             return false;
         }

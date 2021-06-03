@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    var check_multi_elfider_input;
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Адмін панель - @yield('title')</title>
@@ -144,6 +147,7 @@
       </li>
     </ul>
 
+
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">    
       <li class="nav-item">
@@ -223,13 +227,142 @@
 
 <!-- homeAdmin -->
           <li class="nav-item">
-            <a href="{{ route('homeAdmin') }}" class="nav-link">  
+            <a href="/backend" class="nav-link">  
               <i class="nav-icon far fa-newspaper"></i>
               <p>
                 Головна
               </p>
             </a>
           </li>
+
+
+<!-- welcome page -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon fas fa-bookmark"></i>
+              <p>
+              Домашня сторінка
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('welcome.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Редактувати сторінку</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+<!-- about page -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon fas fa-address-card"></i>
+              <p>
+              Про циклову
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('about.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Редактувати сторінку</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+<!-- base page -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon fas fa-server"></i>
+              <p>
+              Матеріальна база
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('base.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Редактувати сторінку</p>
+                </a>
+              </li>
+            </ul>
+          </li> 
+
+
+<!-- abiturientu -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon fas fa-user-graduate"></i>
+              <p>
+              Абітурієнту
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('entrant.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Редактувати сторінку</p>
+                </a>
+              </li>
+            </ul>
+          </li> 
+
+
+<!-- student -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon far fa-user"></i>
+              <p>
+              Студенту
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('students.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Редактувати сторінку</p>
+                </a>
+              </li>
+            </ul>
+          </li> 
+
+
+<!-- news -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon far fa-newspaper"></i>
+              <p>
+                Новини
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+                <a href="{{ route('news.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Переглянути всі новини</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route('news.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Добавити новину</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li> 
 
 
 <!-- feedback -->
@@ -280,75 +413,6 @@
               </li>
             </ul>
 
-          </li> 
-
-
-<!-- abiturientu -->
-          <li class="nav-item">
-            <a href="#" class="nav-link ">
-            <i class="nav-icon fas fa-user-graduate"></i>
-              <p>
-              Абітурієнту
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/entrant" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Редактувати сторінку</p>
-                </a>
-              </li>
-            </ul>
-          </li> 
-
-
-<!-- student -->
-          <li class="nav-item">
-            <a href="#" class="nav-link ">
-            <i class="nav-icon far fa-user"></i>
-              <p>
-              Студенту
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/students" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Редактувати сторінку</p>
-                </a>
-              </li>
-            </ul>
-          </li> 
-
-
-<!-- news -->
-          <li class="nav-item">
-            <a href="#" class="nav-link ">
-            <i class="nav-icon far fa-newspaper"></i>
-              <p>
-                Новини
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-
-              <li class="nav-item">
-                <a href="{{ route('news.index') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Переглянути всі новини</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="{{ route('news.create') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Добавити новину</p>
-                </a>
-              </li>
-              
-            </ul>
           </li> 
 
 
@@ -413,6 +477,7 @@
 <script src="/admin/admin.js"></script>
 <!-- colorbox -->
 <script type="text/javascript" src="/admin/dist/js/jquery.colorbox-min.js"></script>
+<!-- elfinder -->
 <script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.js"></script>
 
 

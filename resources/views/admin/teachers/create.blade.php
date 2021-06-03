@@ -54,7 +54,7 @@
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Детальніша інформація</label>
-                    <textarea name="about" class="editor"></textarea>
+                    <textarea name="about" class="editor" style="height: 600px;"></textarea>
                 </div>
 
                 <div class="form-group">
