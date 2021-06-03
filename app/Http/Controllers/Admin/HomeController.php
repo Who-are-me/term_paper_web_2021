@@ -22,20 +22,4 @@ class HomeController extends Controller
             'feedback_count' => $feedback_count
         ]);
     }
-
-    public function index_about() {
-        return view('admin.about.edit');   
-    }
-
-    public function index_base() {
-        return view('admin.base.edit');   
-    }
-
-    public function index_entrant() {
-        return view('admin.entrant.edit');   
-    }
-
-    public function index_students() {
-        return view('admin.students.edit');   
-    }
 }
