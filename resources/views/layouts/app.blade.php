@@ -22,7 +22,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            
+
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     ЦКРД
@@ -43,6 +43,7 @@
                         @guest
 
                         @if (Route::has('login'))
+                        
       <!-- <div class="top-right links">
                <a href="{{ url('/loginss') }}">Login</a>
                <a href="{{ url('/registerss') }}">Register</a>
