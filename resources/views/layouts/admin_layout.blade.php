@@ -124,25 +124,45 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item dropdown d-inline d-xl-none">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Головні сторінки сайту
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown p-0">
+          <a class="dropdown-item" href="#">@yield('contact')</a>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item" href="#">@yield('home')</a>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item" href="#">@yield('about')</a>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item" href="#">@yield('base')</a>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item" href="#">@yield('abiturientu')</a>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item" href="#">@yield('students')</a>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item" href="#">@yield('news')</a>
+        </div>
+      </li>
+      <li class="nav-item d-none d-xl-inline-block ">
         <a href="/" class="nav-link">@yield('home')</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item d-none d-xl-inline-block">
         <a href="/contact" class="nav-link">@yield('contact')</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item d-none d-xl-inline-block">
         <a href="/about" class="nav-link">@yield('about')</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item d-none d-xl-inline-block">
         <a href="/base" class="nav-link">@yield('base')</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item d-none d-xl-inline-block">
         <a href="/entrant" class="nav-link">@yield('abiturientu')</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item d-none d-xl-inline-block">
         <a href="/student" class="nav-link">@yield('students')</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item d-none d-xl-inline-block">
         <a href="/tidings" class="nav-link">@yield('news')</a>
       </li>
     </ul>
