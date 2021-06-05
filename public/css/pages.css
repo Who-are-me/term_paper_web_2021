@@ -1,0 +1,596 @@
+
+.title-news {
+    
+    background: url('../../image/jpg/news-title-background.jpg') no-repeat center / cover;
+}
+
+.title-material {
+    
+    background: url('../../image/jpg/material-base-background.png') no-repeat center / cover;
+}
+.title-about {
+    
+    background: url('../../image/jpg/about-title-background.png') no-repeat center / cover;
+}
+.title-student {
+    
+    background: url('../../image/jpg/student-title-background.png') no-repeat center / cover;
+}
+.title-abiturient {
+    
+    background: url('../../image/jpg/abiturietnu-title-background.png') no-repeat center / cover;
+}
+.feedback-background
+{
+    background: linear-gradient(178.7deg, #47915E 6.73%, #263249 139.97%);
+}
+#background-white-wall
+{
+    background: url('../../image/white-wall-background.png') no-repeat center / cover;
+}
+#background-yellow-pen
+{
+    background: url('../../image/yellow-background.png') no-repeat center / cover;
+}
+
+#background-dark-wood
+{
+    background: url('../../image/dark-wood-background.png') no-repeat center / cover;
+}
+
+.news-title-inside-cont
+{
+    background-color: #CFE2D5;
+    box-shadow: 0px 12px 50px #CBE0D2;
+    font-family: 'Montserrat', semibold;
+    font-style: normal;
+    font-size: 38px;
+    color: black;
+    
+    font-weight: 400;
+}
+.about-title-inside-cont
+{
+    background: #829295;
+box-shadow: 0px 12px 40px #829295;
+font-family: 'Montserrat', semibold;
+    font-style: normal;
+    font-size: 38px;
+    color: black;
+    
+    font-weight: 400;
+}
+.material-base-title-inside-cont
+{
+    background: #566581;
+box-shadow: 0px 12px 40px #566581;
+    font-family: 'Montserrat', semibold;
+    font-style: normal;
+    font-size: 38px;
+    color: #FFFFFF;
+text-shadow: 0px 8px 50px #000000;
+}
+
+.abitirientu-title-inside-cont
+{
+    background: #92974C;
+box-shadow: 0px 12px 40px #6B782C;
+font-family: 'Montserrat', semibold;
+    font-style: normal;
+    font-size: 38px;
+    color: #FFFFFF;
+    border-radius: 60px;
+text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.56);
+}
+
+.for-student-title-inside-cont
+{
+    background: #223E2E;
+    box-shadow: 0px 12px 40px #2C4020;
+    font-family: 'Montserrat', semibold;
+    font-style: normal;
+    font-size: 38px;
+    color: #FFFFFF;
+    border-radius: 60px;
+text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.53);
+}
+
+.content-background
+{
+    background: #F0F0F0;
+box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
+}
+.news-content-container
+{
+    background: white;
+}
+#container-heading img
+{
+    width: 80px;
+    height: 40px;
+}
+
+#green-span-heading
+{
+    font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   letter-spacing: 0.055em; 
+   font-weight: 900;
+   font-size: 15px;
+   color: #47915E;
+   text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+}
+#grey-span-heading
+{
+    font-family: 'Montserrat', sans-serif;
+   letter-spacing: 0.055em; 
+   font-weight: bold;
+   font-size: 22px;
+   color: #809195;
+   text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+}
+#black-span-heading
+{
+    font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-size: 22px;
+   color: #000000;
+   font-weight: bold;
+}
+
+#content-span-link
+{
+    font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+#content-span-link:hover
+{
+    color: black;
+    font-size: 99%;
+    transition-duration: 180ms;
+    transition-delay: 50ms;
+}
+.hover-triger-green:hover
+{
+background-color: #285953;
+;
+border-radius: 10px;
+cursor: pointer;
+transition-duration: 400ms;
+color: white;
+transition-delay: 50ms;
+} 
+.galery-triple-block
+{
+    height: 33%;
+}
+.galery-height img
+{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.galery-height img:hover
+{
+    position: absolute;
+    transition-duration: 600ms;
+    transition-delay: 200ms;
+    transform: scale(1.1);
+    cursor: url(../../image/Lupa.svg), auto;
+}
+
+.small-gallery img
+{
+    max-height: 180px;
+    width: 100%;
+}
+.galery-left-upper
+{
+    height: 40%;
+}
+.galery-left-bottom
+{
+    height: 59%;
+}
+.galery-height
+{
+    height: 510px;
+}
+
+.d-block-sm-galery img
+{
+    width: 100%;
+    max-height: 300px;
+    padding: 5px 0px 5px 0px;
+}
+.basic-text
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight:normal;
+}
+.basic-text-bold
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+.image-svg-hover-triger
+{
+    width: 79px;
+    height: 80px;
+}
+.grey-bold-text-heading
+{
+    font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 135%;
+text-align: center;
+letter-spacing: -0.05em;
+color: #51595A;
+}
+.black-list-header
+{
+    font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-size: 20px;
+   color: #000000;
+   font-weight: bold;
+}
+.blue-header
+{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    color: #535F77;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+.salad-span-heading
+{
+        font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.055em; 
+   font-weight: bold;
+   font-size: 22px;
+   color: #ADB450;
+   text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+}
+.text-italic
+{
+    font-style: italic;
+}
+.picture-caption-italic
+{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+font-weight: 700;
+font-size: 16px;
+line-height: 149.4%;
+}
+
+.salad-second-span-heading
+{
+    font-family: 'Montserrat', semibold;
+    
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+color: #858B2A;
+line-height: 135%;
+text-align: center;
+letter-spacing: -0.05em;
+word-spacing: 5px;
+}
+.letter-spacing
+{
+    letter-spacing: 2px;
+}
+.student-span-heading
+{
+    color: #487B5E;
+}
+
+.red-button
+{
+    font-family: 'Montserrat', semibold;
+font-style: normal;
+font-size: 26px;
+line-height: 38px;
+    height: 80px;
+    margin: 100px;
+    width: 400px;
+    background: linear-gradient(93.5deg, #E93F34 6.65%, #C0261C 94.56%);
+box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.46);
+border-radius: 20px;
+color: rgba(255, 255, 255, 0.75);
+}
+.student-second-span-heading
+{
+    color: #57836A;
+}
+.text-white
+{
+    color: white;
+}
+.image-ridius-border
+{
+    border-radius: 10px;
+}
+
+.input-transparent-div
+{}
+
+.input-transparent-div .input-box
+{
+    position: relative;
+}
+
+.input-transparent-div .input-box input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.input-transparent-div .input-box label
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-transparent-div input:focus ~ label,
+.input-transparent-div input:valid ~ label
+{
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 15px;
+}
+.feedback-header-text
+{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', semibold;
+font-style: normal;
+font-weight: 800;
+font-size: 34px;
+line-height: 125%;
+color: white;
+}
+
+.input-transparent-div .input-box select
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.input-transparent-div .input-box .select-option
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.select-feedback select
+{
+   width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.select-feedback::after
+{
+    color: yellow;
+    font-size: 50px;
+}
+
+
+@media only screen and (max-width: 700px)
+{
+    .picture-caption-italic
+    {
+        font-size: 12px;
+    }
+    .red-button
+    {
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+        margin: 50px;
+    }
+}
+
+@media only screen and (min-width: 1150px)
+{
+    .galery-height
+    {
+        height: 600px;
+    }
+}
+
+@media only screen and (min-width: 1500px)
+{
+    .red-button
+    {
+        font-size: 29px;
+    height: 95px;
+    margin: 200px;
+    width: 550px;
+    }
+    .basic-text-bold
+    {
+        font-size: 26px;
+    }
+    .image-ridius-border
+    {
+        border-radius: 20px;
+    }
+    .picture-caption-italic
+    {
+        font-size: 24px;
+    }
+    .salad-second-span-heading
+    {
+        font-size: 34px;
+    }
+    .salad-span-heading
+    {
+        font-size: 26px;
+    }
+    .galery-height
+    {
+        height: 780px;
+    }
+    #green-span-heading
+    {
+        font-size: 18px;
+    }
+    #container-heading img
+    {
+        width: 100px;
+        height: 35px;
+    }
+    #black-span-heading
+    {
+        font-size: 28px;
+    }
+    .basic-text
+    {
+        font-size: 23px;
+    }    
+    .image-svg-hover-triger
+    {
+        width: 95px;
+        height: 98px;
+        padding-bottom: 10px;
+    }
+    #grey-span-heading
+    {
+        font-size: 26px;
+    }
+    .grey-bold-text-heading
+    {
+        font-size: 34px;
+    }
+    .black-list-header
+    {
+       font-size: 25px;
+    }
+    .blue-header
+    {
+        font-size: 28px;
+    }
+    
+}
+
+@media only screen and (min-width: 2200px)
+{
+    .red-button
+    {
+        height: 120px;
+        width: 700px;
+        font-size: 32px;
+        margin: 300px;
+    }
+    .basic-text-bold
+    {
+        font-size: 35px;
+    }
+    .image-ridius-border
+    {
+        border-radius: 40px;
+    }
+    .picture-caption-italic
+    {
+        font-size: 32px;
+    }
+    .salad-second-span-heading
+    {
+        font-size: 42px;
+    }
+    .salad-span-heading
+    {
+        font-size: 36px;
+    }
+    .galery-height
+    {
+        height: 870px;
+    }
+    #green-span-heading
+    {
+        font-size: 22px;
+    }
+    #container-heading img
+    {
+        width: 110px;
+        height: 45px;
+    }
+    #black-span-heading
+    {
+        font-size: 32px;
+    }
+    .basic-text
+    {
+        font-size: 32px;
+    }    
+    .image-svg-hover-triger
+    {
+        width: 110px;
+        height: 111px;
+        padding-bottom: 20px;
+    }
+    #grey-span-heading
+    {
+        font-size: 32px;
+    }
+    .grey-bold-text-heading
+    {
+        font-size: 38px;
+    }
+    .black-list-header
+    {
+       font-size: 29px;
+    }
+    .blue-header
+    {
+        font-size: 36px;
+    }
+}
