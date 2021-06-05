@@ -33,14 +33,15 @@ Route::post('/feedbackstore', [App\Http\Controllers\Admin\FeedbackController::cl
 
 Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin')->middleware(['auth']);
 
-Route::resource('news', App\Http\Controllers\Admin\NewsController::class);
+Route::resource('welcome', App\Http\Controllers\Admin\WelcomeController::class)->middleware(['auth']);
+Route::resource('about', App\Http\Controllers\Admin\AboutController::class)->middleware(['auth']);
+Route::resource('base', App\Http\Controllers\Admin\BaseController::class)->middleware(['auth']);
+Route::resource('entrant', App\Http\Controllers\Admin\EntrantController::class)->middleware(['auth']);
+Route::resource('students', App\Http\Controllers\Admin\StudentsController::class)->middleware(['auth']);
+Route::resource('news', App\Http\Controllers\Admin\NewsController::class)->middleware(['auth']);
+Route::resource('feedback', App\Http\Controllers\Admin\FeedbackController::class)->middleware(['auth']);
+Route::resource('teachers', App\Http\Controllers\Admin\TeachersController::class)->middleware(['auth']);
 
-Route::resource('feedback', App\Http\Controllers\Admin\FeedbackController::class);
-
-Route::resource('teachers', App\Http\Controllers\Admin\TeachersController::class);
-
-Route::get('/entrant', [App\Http\Controllers\Admin\HomeController::class, 'index_entrant']);
-Route::get('/students', [App\Http\Controllers\Admin\HomeController::class, 'index_students']);
 
 Route::middleware(['role:sudo'])->prefix('backend/register')->group(function() {
     Route::get('/', [App\Http\Controllers\Admin\RegisterAdminController::class, 'create']);

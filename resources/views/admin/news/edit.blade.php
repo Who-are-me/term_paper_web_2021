@@ -56,7 +56,7 @@
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Контент</label>
-                    <textarea name="text" class="editor">{{ $news->text }}</textarea>
+                    <textarea name="text" class="editor" style="height: 600px;">{{ $news->text }}</textarea>
                 </div>
 
                 <div class="form-group">

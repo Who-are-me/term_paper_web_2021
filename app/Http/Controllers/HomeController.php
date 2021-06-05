@@ -27,18 +27,18 @@ class HomeController extends Controller
         return view('layouts.admin_layout');
     }
 
-    public function get_home() {
-        return view('home');
-    }
+    // public function get_home() {
+    //     return view('home');
+    // }
 
-    public function get_news() {
-        // work 50/50
-        $news = News::orderBy('created_at', 'desc')->get();
+    // public function get_news() {
+    //     // work 50/50
+    //     $news = News::orderBy('created_at', 'desc')->get();
 
-        $pag = News::simplePaginate(2);
+    //     $pag = News::simplePaginate(2);
 
-        return view('pages.news',[
-            'news' => $news,
-        ], compact('pag'));   
-    }
+    //     return view('pages.news',[
+    //         'news' => $news,
+    //     ], compact('pag'));   
+    // }
 }

@@ -12,10 +12,17 @@ $(document).on('click','.popup_selector',function (event) {
         width: '70%',
         height: '50%'
     });
-
 });
+
 // function to update the file selected by elfinder
 function processSelectedFile(filePath, requestingField) {
     $('#' + requestingField).val('/' + filePath).trigger('change');
-    $('.img-uploaded').attr('src', '/' + filePath).trigger('change');
+    var tmpstr = requestingField.split('ge')[1];
+
+    if(check_multi_elfider_input !== undefined) {
+       document.getElementById("img" + tmpstr).src = document.getElementById(requestingField).value;
+    }
+    else {
+        $('.img-uploaded').attr('src', '/' + filePath).trigger('change');
+    }
 }

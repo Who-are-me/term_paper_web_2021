@@ -54,7 +54,7 @@
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Контент</label>
-                    <textarea name="text" class="editor"></textarea>
+                    <textarea name="text" class="editor" style="height: 600px;"></textarea>
                 </div>
 
                 <div class="form-group">

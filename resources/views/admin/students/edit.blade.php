@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Редактор новин')
+@section('title', 'Редактор сторінки: Студенту')
 
 @section('home', 'Домашня')
 @section('contact', 'Контакти')
@@ -40,31 +40,88 @@
 
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Редактор новини: {{ $news->title }}</h3>
+            <h3 class="card-title">Редактор сторінки: Студенту</h3>
         </div>
         
               <!-- form start -->
-        <form action="{{ route('news.update', $news['id'] ) }}" method="POST">
+        <form action="{{ route('students.update', $content[0]->id) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="card-body">
 
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Заголовок</label>
-                    <input value="{{ $news->title }}" type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введіть заголовок новини" required>
+                    <label for="">Заголовок дисципліни</label>
+                    <textarea name="text_0" class="editor" style="height: 600px;">{{ $content[0]->text }}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Текст</label>
+                    <textarea name="text_1" class="editor" style="height: 600px;">{{ $content[1]->text }}</textarea>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="">Заголовок дисципліни</label>
+                    <textarea name="text_2" class="editor" style="height: 600px;">{{ $content[2]->text }}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Текст</label>
+                    <textarea name="text_3" class="editor" style="height: 600px;">{{ $content[3]->text }}</textarea>
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image0">Вибрати фото</button>
+                    <input type="text" name="img_0" class="form-control mt-2" id="feature_image0" value="{{ $content[4]->text }}" readonly>
+                    <img id='img0' src="{{ $content[4]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                </div>
+                <div class="form-group">
+                    <label for="">Міні текст</label>
+                    <input value="{{ $content[5]->text }}" type="text" name="text_4" class="form-control" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Контент</label>
-                    <textarea name="text" class="editor">{{ $news->text }}</textarea>
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image1">Вибрати фото</button>
+                    <input type="text" name="img_1" class="form-control mt-2" id="feature_image1" value="{{ $content[6]->text }}" readonly>
+                    <img id='img1' src="{{ $content[6]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
                 </div>
+                <div class="form-group">
+                    <label for="">Міні текст</label>
+                    <input value="{{ $content[7]->text }}" type="text" name="text_5" class="form-control" required>
+                </div>
+
 
                 <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото на прев'ю до посту</button>
-                    <input type="text" name="img" class="form-control mt-2" id="feature_image" name="feature_image" value="{{ $news->img }}" readonly>
-                    <img src="{{ $news->img }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image2">Вибрати фото</button>
+                    <input type="text" name="img_2" class="form-control mt-2" id="feature_image2" value="{{ $content[8]->text }}" readonly>
+                    <img id='img2' src="{{ $content[8]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                </div>
+                <div class="form-group">
+                    <label for="">Міні текст</label>
+                    <input value="{{ $content[9]->text }}" type="text" name="text_6" class="form-control" required>
                 </div>
 
+
+                <div class="form-group">
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image3">Вибрати фото</button>
+                    <input type="text" name="img_3" class="form-control mt-2" id="feature_image3" value="{{ $content[10]->text }}" readonly>
+                    <img id='img3' src="{{ $content[10]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                </div>
+                <div class="form-group">
+                    <label for="">Міні текст</label>
+                    <input value="{{ $content[11]->text }}" type="text" name="text_7" class="form-control" required>
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image4">Вибрати фото</button>
+                    <input type="text" name="img_4" class="form-control mt-2" id="feature_image4" value="{{ $content[12]->text }}" readonly>
+                    <img id='img4' src="{{ $content[12]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image5">Вибрати фото</button>
+                    <input type="text" name="img_5" class="form-control mt-2" id="feature_image5" value="{{ $content[13]->text }}" readonly>
+                    <img src="{{ $content[13]->text }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                </div>
             </div>
 
             <div class="card-footer">
@@ -83,7 +140,10 @@
           toolbar_mode: 'floating',
           tinycomments_mode: 'embedded',
           tinycomments_author: 'Author name',
-       });
+        });
+
+        // check if you use more one elfinder input
+        check_multi_elfider_input = 1;
     </script>
         
     </div>

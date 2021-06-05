@@ -56,7 +56,7 @@
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Про викладача</label>
-                    <textarea name="about" class="editor">{{ $teachers->about }}</textarea>
+                    <textarea name="about" class="editor" style="height: 600px;">{{ $teachers->about }}</textarea>
                 </div>
 
                 <div class="form-group">

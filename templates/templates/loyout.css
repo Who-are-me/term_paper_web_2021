@@ -59,6 +59,7 @@ box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
 {
     color: rgba(255, 255, 255, 0.75);
     font-size: 10px;
+    font-weight: 600;
 }
 nav
 {
@@ -83,6 +84,7 @@ nav a
     padding: 0px;
     color: rgba(255, 255, 255, 0.75);
     font-size: 10px;
+
 }
 
 
@@ -90,12 +92,12 @@ nav a
 .nav-link:hover
 {
     position:static;
-    transition-duration: 250ms;
+    transition-duration: 200ms;
     padding-bottom: 5px;
     /* transition-duration: 300ms; */
     /* padding: 0px; */
     font-weight: bold;
-    border-bottom: rgba(233, 63, 52, 0.75) 1px solid;
+    border-bottom: rgba(233, 63, 52, 0.75) 2px solid;
     color: white;
 }
 .navbar-toggler-icon img
@@ -212,15 +214,23 @@ footer
     }
 }
 
-@media only screen and (min-width: 1500px)
+@media only screen and (min-width: 1650px)
 {
     #top-nav
     {
-        font-size: 18px;
+        font-size: 13px;
+
+    }
+    #top-nav img
+    {
+        width: 14px;
+        height: 12px;
+
+        margin-right: 6px;
     }
     .nav a
     {
-        font-size: 18px;
+        font-size: 16px;
     }
     .nav img
     {
