@@ -178,6 +178,34 @@ footer
     width: 20px;
 }
 
+.slider img
+{
+    padding: 20px;
+    width: 100%;
+    border-radius: 10%;
+}
+/* .slick-list
+{
+    overflow: hidden;
+}
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots button
+{
+    font-size: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #47915E;
+    margin: 30px;
+}
+.slick-dots li{
+    list-style: none;
+}
+.slick-dots li.slick-active{} */
 @media only screen and (min-width: 1150px)
 {
     #top-nav
