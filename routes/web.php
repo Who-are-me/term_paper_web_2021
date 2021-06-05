@@ -13,12 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('test_welcome');
+// });
+
 Route::get('/', function () {
-    return view('test_welcome');
+    return view('pages.welcome');
+});
+
+Route::get('/about_us', function () {
+    return view('pages.about');
+});
+
+Route::get('/matbase', function () {
+    return view('pages.base');
 });
 
 Route::get('/entrant', function () {
     return view('pages.entrant');
+});
+
+Route::get('/student', function () {
+    return view('pages.student');
 });
 
 Auth::routes([
@@ -34,12 +50,19 @@ Route::post('/feedbackstore', [App\Http\Controllers\Admin\FeedbackController::cl
 Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin')->middleware(['auth']);
 
 Route::resource('welcome', App\Http\Controllers\Admin\WelcomeController::class)->middleware(['auth']);
+
 Route::resource('about', App\Http\Controllers\Admin\AboutController::class)->middleware(['auth']);
+
 Route::resource('base', App\Http\Controllers\Admin\BaseController::class)->middleware(['auth']);
+
 Route::resource('entrant', App\Http\Controllers\Admin\EntrantController::class)->middleware(['auth']);
+
 Route::resource('students', App\Http\Controllers\Admin\StudentsController::class)->middleware(['auth']);
+
 Route::resource('news', App\Http\Controllers\Admin\NewsController::class)->middleware(['auth']);
+
 Route::resource('feedback', App\Http\Controllers\Admin\FeedbackController::class)->middleware(['auth']);
+
 Route::resource('teachers', App\Http\Controllers\Admin\TeachersController::class)->middleware(['auth']);
 
 

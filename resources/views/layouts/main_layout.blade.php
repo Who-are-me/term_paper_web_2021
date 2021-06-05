@@ -15,7 +15,7 @@
 
   <link href="css/main_loyout.css" rel="stylesheet">
   <link rel="shortcut icon" href="/image/site.png" type="image/x-icon">
-  <link href="css/news.css" rel="stylesheet">
+  <!-- <link href="css/news.css" rel="stylesheet"> -->
   <title>@yield('title')</title>
 
 </head>
@@ -26,7 +26,7 @@
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0 h-100"></div>
             <div class="col-12 col-md-10 col-lg-8 my-2 text-center text-sm-left"><span class="ml-0 ml-sm-5 ml-md-0"><img
                         src="/image/telephone.svg">28-18-11,28-19-36</span>
-                <span class="ml-3 ml-md-5"><img src="../image/mail.svg">tktdtu@gmail.com</span>
+                <span class="ml-3 ml-md-5"><img src="/image/mail.svg">tktdtu@gmail.com</span>
             </div>
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         </div>
@@ -170,14 +170,8 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
