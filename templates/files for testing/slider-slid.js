@@ -2,9 +2,8 @@ $(document).ready(function(){
     $('.slider').slick({
   speed: 300,
   slidesToShow: 3,
-  slidesToScroll: 1,
-  dots: true
-  
+  slidesToScroll: 1
+
     });
         var width = $('img', '.slider').width();
           $('img', '.slider').height(width);
