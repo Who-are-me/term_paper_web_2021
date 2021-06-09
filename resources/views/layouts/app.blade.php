@@ -47,7 +47,7 @@
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                        @endguest
+                        @endguesl
                     </ul>
                 </div>
             </div>
@@ -56,7 +56,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-        
+
     </div>
 </body>
 </html>

@@ -29,12 +29,12 @@ Route::get('/matbase', function () {
     return view('pages.base');
 });
 
-Route::get('/entrant', function () {
+Route::get('/to_entrant', function () {
     return view('pages.entrant');
 });
 
 Route::get('/student', function () {
-    return view('pages.student');
+    return view('pages.students');
 });
 
 Auth::routes([
@@ -43,7 +43,7 @@ Auth::routes([
 
 Route::get('/tidings', [App\Http\Controllers\Admin\NewsController::class, 'show']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
 
 Route::post('/feedbackstore', [App\Http\Controllers\Admin\FeedbackController::class, 'store']);
 

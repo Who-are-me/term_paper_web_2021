@@ -4,7 +4,6 @@
 
 @section('content')
 
-<link href="css/loyout.css" rel="stylesheet">
 <link href="css/pages.css" rel="stylesheet">
 
 
@@ -16,13 +15,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="../../image/jpg/Background-img-1.jpg" alt="First slide">
+            <img class="d-block w-100" src="image/jpg/Background-img-1.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../../image/jpg/Background-img-2.jpg" alt="Second slide">
+            <img class="d-block w-100" src="image/jpg/Background-img-2.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../../image/jpg/Background-img-3.jpg" alt="Third slide">
+            <img class="d-block w-100" src="image/jpg/Background-img-3.jpg" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -46,11 +45,11 @@
             <div class="col-12 my-3 d-block d-md-flex px-0">
               <div class="row col-12 col-md-7 p-0 pr-md-3 m-0">
                 <div class="d-flex col-12 justify-content-between px-0 align-middle" id="container-heading">
-                  <img src="../../image/left-heading-separate.svg">
+                  <img src="image/left-heading-separate.svg">
                   <p><span id="green-span-heading">ПРО НАС</span></p>
                   
     
-                  <img src="../../image/right-heading-separate.svg">
+                  <img src="image/right-heading-separate.svg">
                 </div>
                 <div class="col-12 text-center my-1 my-sm-4"><span id="black-span-heading">Одна із перших ЦК в нашому
                     коледжі</span>
@@ -65,74 +64,74 @@
                   </a> </div>
               </div>
               <div class="col-12 col-md-5 p-0 m-0 d-block text-center">
-                <img class="w-100" src="../../image/jpg/about-1.jpg">
-                <img class="w-100  pt-2" src="../../image/jpg/about-2.jpg">
+                <img class="w-100" src="image/jpg/about-1.jpg">
+                <img class="w-100  pt-2" src="image/jpg/about-2.jpg">
               </div>
             </div>
           </div>
           <div class="col-12 my-5 p-0">
             <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading">
-              <img src="../../image/left-heading-separate.svg">
+              <img src="image/left-heading-separate.svg">
               <span id="green-span-heading">НАША МІСІЯ</span>
     
-              <img src="../../image/right-heading-separate.svg">
+              <img src="image/right-heading-separate.svg">
             </div>
             <div class="col-12 text-center my-4"><span id="black-span-heading">Основні напрямки роботи комісії</span>
             </div>
             <div class="row col-12 pt-3 m-0 justify-content-between text-center p-0">
               <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
-                <img src="../../image/knowledge.svg" class="image-svg-hover-triger">
+                <img src="image/knowledge.svg" class="image-svg-hover-triger">
                 <p class="pt-3 basic-text">Вивчення і підвищення рівня знань, умінь та навичок студентів</p>
               </div>
               <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
-                <img src="../../image/teaching.svg" class="image-svg-hover-triger">
+                <img src="image/teaching.svg" class="image-svg-hover-triger">
                 <p class="pt-3 basic-text">Розробка та впровадження заходів з вдосконалення методики викладання</p>
               </div>
               <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
-                <img src="../../image/learning.svg" class="image-svg-hover-triger">
+                <img src="image/learning.svg" class="image-svg-hover-triger">
                 <p class="pt-3 basic-text">Підвищення професійного рівня викладачів циклової комісії</p>
               </div>
               <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
-                <img src="../../image/direction.svg" class="image-svg-hover-triger">
+                <img src="image/direction.svg" class="image-svg-hover-triger">
                 <p class="pt-3 basic-text">Профорієнтаційна робота</p>
               </div>
             </div>
           </div>
-          <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading"><img src="../../image/left-heading-separate.svg">
+          <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading"><img src="image/left-heading-separate.svg">
             <span id="green-span-heading">ЧАСТИНКА НАШОГО ЖИТТЯ</span>
     
-            <img src="../../image/right-heading-separate.svg"></div>
+            <img src="image/right-heading-separate.svg"></div>
           <div class="col-12 d-none d-sm-flex p-0 my-3 galery-height">
             <div class="col-8 p-0 galery-height d-block">
               <div class="col-12 p-0 m-0 galery-left-upper d-flex">
                 <div class="col-6 p-0 m-0">
-                  <img src="../../image/jpg/orig/Gallery-img-1.jpg"></div>
-                <div class="col-6 p-0 m-0"><img src="../../image/jpg/orig/Gallery-img-2.jpg"></div>
+                  <img src="image/jpg/orig/Gallery-img-1.jpg"></div>
+                <div class="col-6 p-0 m-0"><img src="image/jpg/orig/Gallery-img-2.jpg"></div>
               </div>
               <div class="col-12 p-0 m-0 galery-left-bottom d-flex">
                 <div class="col-7 p-0 m-0 d-block">
-                  <div class="col-12 p-0 m-0 h-50"><img src="../../image/jpg/orig/Gallery-img-4.jpg"></div>
-                  <div class="col-12 p-0 m-0 h-50"><img src="../../image/jpg/orig/Gallery-img-5.jpg"></div>
+                  <div class="col-12 p-0 m-0 h-50"><img src="image/jpg/orig/Gallery-img-4.jpg"></div>
+                  <div class="col-12 p-0 m-0 h-50"><img src="image/jpg/orig/Gallery-img-5.jpg"></div>
                 </div>
-                <div class="col-5 p-0 m-0"><img src="../../image/jpg/orig/Gallery-img-6.jpg"></div>
+                <div class="col-5 p-0 m-0"><img src="image/jpg/orig/Gallery-img-6.jpg"></div>
               </div>
               
             </div>
             <div class="col-4 p-0 d-block galery-height">
-              <div class="col-12 p-0 galery-triple-block"> <img src="../../image/jpg/orig/Gallery-img-3.jpg"></div>
-              <div class="col-12 p-0 galery-triple-block"> <img src="../../image/jpg/orig/Gallery-img-7.jpg"></div>
-              <div class="col-12 p-0 galery-triple-block"> <img src="../../image/jpg/orig/Gallery-img-8.jpg"></div>
+              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-3.jpg"></div>
+              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-7.jpg"></div>
+              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-8.jpg"></div>
             </div> 
          </div>
          <div class="col-12 p-0 py-2 d-block d-sm-none d-block-sm-galery">
-            <img src="../../image/jpg/orig/Gallery-img-1.jpg">
-            <img src="../../image/jpg/orig/Gallery-img-2.jpg">
-            <img src="../../image/jpg/orig/Gallery-img-3.jpg">
-            <img src="../../image/jpg/orig/Gallery-img-4.jpg">
-            <img src="../../image/jpg/orig/Gallery-img-5.jpg">
-            <img src="../../image/jpg/orig/Gallery-img-6.jpg">
-            <img src="../../image/jpg/orig/Gallery-img-7.jpg">
-            <img src="../../image/jpg/orig/Gallery-img-8.jpg">
+            <img src="image/jpg/orig/Gallery-img-1.jpg">
+            <img src="image/jpg/orig/Gallery-img-2.jpg">
+            <img src="image/jpg/orig/Gallery-img-3.jpg">
+            <img src="image/jpg/orig/Gallery-img-4.jpg">
+            <img src="image/jpg/orig/Gallery-img-5.jpg">
+            <img src="image/jpg/orig/Gallery-img-6.jpg">
+            <img src="image/jpg/orig/Gallery-img-7.jpg">
+            <img src="image/jpg/orig/Gallery-img-8.jpg">
          </div>
          </div>
     

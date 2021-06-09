@@ -3,8 +3,9 @@
 @section('title', 'ЦК Електронних апаратів  - Головна')
 
 @section('content')
+<link href="css/pages.css" rel="stylesheet">
 
-<div class="row d-flex m-0 p-0 title-material">
+    <div class="row d-flex m-0 p-0 title-material">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8 text-center py-3 py-md-5 px-5 px-md-0">
             <div class="col-12 py-1 py-md-3 px-md-4  material-base-title-inside-cont text-center">
