@@ -334,8 +334,6 @@ transition-delay: 50ms;
     border-radius: 10px;
 }
 
-.input-transparent-div
-{}
 
 .input-transparent-div .input-box
 {
@@ -432,9 +430,43 @@ color: white;
     font-size: 50px;
 }
 
+.anketa-container
+{
+    background-color: white;
+
+}
+.anketa-content
+{
+    background-color: #ECECEC;
+}
+.anketa-green-header-font
+{
+    font-family: 'Montserrat', semibold;
+    font-style: normal;
+    color: #858B2A;
+    font-weight: 600;
+    line-height: 135%;
+    font-size: 22px;
+}
+.anketa-basic-font
+{
+    font-family: 'Montserrat', semibold;
+    font-style: sans-serif;
+    font-weight: 300;
+font-size: 14px;
+line-height: 135%;
+letter-spacing: -0.05em;
+}
+
+.slider img
+{
+    padding: 20px;
+    width: 100%;
+    border-radius: 10%;
+}
 
 @media only screen and (max-width: 700px)
-{
+{    
     .picture-caption-italic
     {
         font-size: 12px;
