@@ -8,14 +8,16 @@
 
 
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!--Bootstrap css-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="pages.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="../../slick-1.8.1/slick/slick-theme.css"/>
+ 
     <link href="loyout.css" rel="stylesheet">
+    <link href="pages.css" rel="stylesheet">
     <link rel="shortcut icon" href="../../image/site.png" type="image/x-icon">
     <title>ЦК Електронних апаратів</title>
 
@@ -107,7 +109,7 @@
     <div class="row d-flex m-0 p-0 content-background px-5 px-md-0">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8 p-0 m-0">
-            <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading"><img
+            <div class="d-flex col-12 justify-content-between p-0 m-0 pt-5" id="container-heading"><img
                     src="../../image/left-salad-heading-separate.svg">
 
                 <span class="salad-span-heading">ВСТУП</span>
@@ -115,8 +117,16 @@
                 <img src="../../image/right-salad-heading-separate.svg">
             </div>
 
-            <div class="col-12 p-0 py-5 d-none">
-                Слайдер
+            <div class="col-12 p-3">
+                <div class="slider">
+                    <div><img src="../../image/dark-wood-background.png" ></div>
+                    <div><img src="../../image/dark-wood-background.png" ></div>
+                    <div><img src="../../image/dark-wood-background.png" ></div>
+                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                    
+                </div>
             </div>
             <div class="col-12 p-0 m-0 d-flex text-center">
                 <div class="col-1"></div>
@@ -385,37 +395,77 @@
                     <span class="lite-text">по обслуговуванню та ремонту медичної техніки;</span>
                 </p>
             </div>
-            <div class="col-12 p-0 text-center py-5 d-none">
-                Слайдер
+            <div class="col-12 p-3">
+                <div class="slider">
+                    <div><img src="../../image/dark-wood-background.png" ></div>
+                    <div><img src="../../image/dark-wood-background.png" ></div>
+                    <div><img src="../../image/dark-wood-background.png" ></div>
+                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                    
+                </div>
             </div>
-            <div class="col-12 p-0 py-5 text-center anketa-container">
+            <div class="col-12 p-0 py-2 text-center anketa-container mb-5">
                 <div class="anketa-header p-0">
                     <img src="../../image/abiturientu-anketa-header.png" class="w-100">
                 </div>
+
                 <div class="col-12 px-3 py-3">
-                    <div class="col-12 anketa-content p-0">
+                    <div class="col-12 anketa-content p-1">
                         <div class="col-12 p-0 m-0 text-center">
                             <p class="anketa-green-header-font m-0 p-2">
                                 Анкета вступника
                             </p>
                             <p class="anketa-basic-font">Заповніть анкету та отримайте персональну консультацію від завідуючого кафедрою</p>
                         </div>
-                        <div class="col-12 p-0 d-flex text-left">
-                            <div class="col-6 p-0">
-                                <p class="anketa-green-header-font m-0 p-2">
-                                    Контактна інформація
+                        <form><div class="col-12 d-block d-lg-flex text-left p-0">
+                        <div class="col-12 col-lg-6 p-0 px-3">
+                            <p class="anketa-green-header-font m-0 py-2">
+                                Контактна інформація
+                            </p>
+                            
+                            <p class="anketa-basic-font pb-1 m-0">Ми зв`яжемось з Вами зручним для Вас способом:</p>
+                        </div>
+                        <div class="col-12 col-lg-6 p-0 px-3">
+                            <p class="anketa-green-header-font m-0 py-2">
+                                Розкажіть про себе
+                            </p>
+                            <p class="anketa-basic-font pb-1 m-0">Давайте знайомитись</p>
+                        </div>
+                    </div><div class="col-12 d-block d-lg-flex text-left p-0 pt-2">
+                        <div class="col-12 col-lg-6 p-0 px-3">
+                            <input id="phone" type="text" name="phone" required="" class="anketa-input" placeholder="*Телефон" maxlength="10" >
+                                <input id="email" type="text" name="email" required="" class="anketa-input mt-3" placeholder="*E-mail" maxlength="20">
+
+                                <p class="anketa-green-header-font m-0 py-3">
+                                    Освіта
                                 </p>
-                                <p class="anketa-basic-font pl-2">Ми зв`яжемось з Вами зручним для Вас способом:</p>
-                            </div>
-                            <div class="col-6 p-0">
-                                <p class="anketa-green-header-font m-0 p-2">
-                                    Розкажіть про себе
-                                </p>
-                                <p class="anketa-basic-font pl-2">Давайте знайомитись</p>
+                                <p class="anketa-basic-font pb-1">Вкажіть де Ви навчались\навчаєтесь</p>
+                                <input id="school" type="text" name="school" required="" class="anketa-input mb-2" placeholder="*Назва навчального закладу" maxlength="20">
                                 
-                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 p-0 px-3">
+                            <input id="pip" type="text" name="pip" class="anketa-input mb-2" placeholder="ПІП" required="" maxlength="20">
+                                
+                                <input type="text"  required="" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="20">
+                                
                         </div>
                     </div>
+                <div class="col-12 p-0 py-2 d-flex">
+                    <div class="col-xl-3 col-md-2 d-none d-md-flex"></div>
+                    <div class="col-xl-6 col-md-8 col-12 p-0 ">
+                        <div class="g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue"></div>
+                        <input type="submit" class="" name="" value="Отримати консультацію">
+                    </div>
+                    <div class="col-xl-3 col-md-2 d-none d-md-flex"></div>
+                </div>
+                </form>
+                        
+                    
+                    
+                    </div>
+                    
                 </div>
 
             </div>
@@ -500,6 +550,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../../slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="slider-slid.js"></script>
 </body>
 
 </html>

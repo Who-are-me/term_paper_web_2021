@@ -358,27 +358,7 @@
 				<input id="school" type="text" name="school" class="" placeholder="Назва навчального закладу"> 
 			</div>	
 
-			<div class="">
-				<select name="">
-					<option value="0" selected="selected">(test) Рік закінчення навчання</option>
-					<option value="2017">2016</option>
-					<option value="2017">2017</option>
-					<option value="2018">2018</option>
-					<option value="2019">2019</option>
-					<option value="2020">2020</option>
-					<option value="2021">2021</option>
-					<option value="2022">2022</option>
-					<option value="2023">2023</option>
-					<option value="2024">2024</option>
-					<option value="2025">2025</option>
-					<option value="2025">2026</option>
-					<option value="2025">2027</option>
-					<option value="2025">2028</option>
-					<option value="2025">2029</option>
-					<option value="2025">2030</option>
-				</select> 
-			</div>
-		</div>
+			
 
 		<div class="">
 			<div class="">Розкажіть про себе</div>

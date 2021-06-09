@@ -458,6 +458,46 @@ line-height: 135%;
 letter-spacing: -0.05em;
 }
 
+.anketa-content input[type=text]
+{
+    width: 100%;
+    border: none;
+   padding: 10px;
+   outline: none;
+   color: gray;
+}
+
+.anketa-content input[type=text]:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+
+  .anketa-content input[type=email]
+{
+    width: 100%;
+    border: none;
+   padding: 10px;
+   outline: none;
+   color: gray;
+}
+
+.anketa-content input[type=email]:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  .anketa-content input[type=submit]
+  {
+    width: 100%;
+    border: none;
+    outline: none;  
+    background: #BCC34A;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
 .slider img
 {
     padding: 20px;
@@ -467,6 +507,13 @@ letter-spacing: -0.05em;
 
 @media only screen and (max-width: 700px)
 {    
+    .anketa-content input[type=submit]
+    {
+        padding: 8px;
+       margin-top: 8px;
+       margin-bottom: 8px;
+    
+    }
     .picture-caption-italic
     {
         font-size: 12px;
@@ -490,6 +537,13 @@ letter-spacing: -0.05em;
 
 @media only screen and (min-width: 1150px)
 {
+    .anketa-content input[type=submit]
+    {
+        padding: 10px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+    
+    }
     .galery-height
     {
         height: 600px;
@@ -507,6 +561,26 @@ letter-spacing: -0.05em;
 
 @media only screen and (min-width: 1650px)
 {
+    .anketa-content input[type=submit]
+{
+   margin-top: 15px;
+   margin-bottom: 15px;
+
+}
+    .anketa-content input
+{
+   padding: 18px;
+   font-size: 20px;
+
+}
+    .anketa-green-header-font
+{
+    font-size: 28px;
+}
+.anketa-basic-font
+{
+font-size: 20px;
+}
     .red-button
     {
         font-size: 29px;
@@ -596,6 +670,35 @@ letter-spacing: -0.05em;
 
 @media only screen and (min-width: 2200px)
 {
+    .anketa-content input[type=email]
+{
+   padding: 22px;
+
+}
+.anketa-content input[type=text]
+{
+   padding: 22px;
+
+}
+.anketa-content input[type=submit]
+{
+   padding: 32px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+}
+    .anketa-content input
+    {
+        font-size: 25px;
+    }
+    .anketa-green-header-font
+{
+    font-size: 34px;
+}
+.anketa-basic-font
+{
+font-size: 25px;
+}
     .red-button
     {
         height: 120px;
