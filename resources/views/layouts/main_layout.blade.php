@@ -33,7 +33,7 @@
         <div class="row col-12 d-none d-md-flex p-0 m-0">
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
             <div class="col-12 col-md-10 col-lg-8 px-0 m-0 d-flex">
-                <a class="navbar-brand p-0" href="#"><img src="image/Logo.svg" class=""></a>
+                <a class="navbar-brand p-0" href="/"><img src="image/Logo.svg" class=""></a>
                 <div class="col d-flex p-0" id="nav-a-md">
                     <a class="nav-link px-md-0" href="/">Головна</a>
 
@@ -158,7 +158,7 @@
                 <a href="#" class="p-0 pl-2">Конфіденційність</a>
                 <a href="#" class="p-0 pl-2">Умови користування</a>
               </div>
-              <div class="col-12 col-md-5 p-0 m-0 text-center text-md-right  pr-sm-5 pr-md-0 py-2 py-sm-0 pl-0 pl-sm-5  pl-md-0">2021<a href="#">©</a>Всі права захищені | <a href="http://tk.te.ua">tk.te.ua</a>
+              <div class="col-12 col-md-5 p-0 m-0 text-center text-md-right  pr-sm-5 pr-md-0 py-2 py-sm-0 pl-0 pl-sm-5  pl-md-0">2021<a href="/backend">©</a>Всі права захищені | <a href="http://tk.te.ua">tk.te.ua</a>
               </div>
             </div>
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>

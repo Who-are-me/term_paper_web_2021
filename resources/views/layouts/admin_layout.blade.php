@@ -131,17 +131,17 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown p-0">
           <a class="dropdown-item" href="#">@yield('contact')</a>
           <div class="dropdown-divider m-0"></div>
-          <a class="dropdown-item" href="#">@yield('home')</a>
+          <a class="dropdown-item" href="/">@yield('home')</a>
           <div class="dropdown-divider m-0"></div>
-          <a class="dropdown-item" href="#">@yield('about')</a>
+          <a class="dropdown-item" href="/about_us">@yield('about')</a>
           <div class="dropdown-divider m-0"></div>
-          <a class="dropdown-item" href="#">@yield('base')</a>
+          <a class="dropdown-item" href="/matbase">@yield('base')</a>
           <div class="dropdown-divider m-0"></div>
-          <a class="dropdown-item" href="#">@yield('abiturientu')</a>
+          <a class="dropdown-item" href="/to_entrant">@yield('abiturientu')</a>
           <div class="dropdown-divider m-0"></div>
-          <a class="dropdown-item" href="#">@yield('students')</a>
+          <a class="dropdown-item" href="/student">@yield('students')</a>
           <div class="dropdown-divider m-0"></div>
-          <a class="dropdown-item" href="#">@yield('news')</a>
+          <a class="dropdown-item" href="/tidings">@yield('news')</a>
         </div>
       </li>
       <li class="nav-item d-none d-xl-inline-block ">
@@ -151,13 +151,13 @@
         <a href="/contact" class="nav-link">@yield('contact')</a>
       </li>
       <li class="nav-item d-none d-xl-inline-block">
-        <a href="/about" class="nav-link">@yield('about')</a>
+        <a href="/about_us" class="nav-link">@yield('about')</a>
       </li>
       <li class="nav-item d-none d-xl-inline-block">
-        <a href="/base" class="nav-link">@yield('base')</a>
+        <a href="/matbase" class="nav-link">@yield('base')</a>
       </li>
       <li class="nav-item d-none d-xl-inline-block">
-        <a href="/entrant" class="nav-link">@yield('abiturientu')</a>
+        <a href="/to_entrant" class="nav-link">@yield('abiturientu')</a>
       </li>
       <li class="nav-item d-none d-xl-inline-block">
         <a href="/student" class="nav-link">@yield('students')</a>
