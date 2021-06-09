@@ -3,6 +3,7 @@
 @section('title', 'ЦК Електронних апаратів  - Студенту')
 
 @section('content')
+<link href="css/pages.css" rel="stylesheet">
 
 @if (session('success'))
     <div class="alert alert-success" role="alert">

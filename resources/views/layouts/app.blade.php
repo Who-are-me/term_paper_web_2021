@@ -32,44 +32,21 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-
                         @if (Route::has('login'))
-                        
-      <!-- <div class="top-right links">
-               <a href="{{ url('/loginss') }}">Login</a>
-               <a href="{{ url('/registerss') }}">Register</a>
-       </div> -->
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/login') }}">{{ __('Login') }}</a>
                                 </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/register') }}">{{ __('Register') }}</a>
-                                </li> -->
                         @endif
-
                         @else
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
-                            <!-- @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif -->
-
                         @endguest
                     </ul>
                 </div>
@@ -79,6 +56,7 @@
         <main class="py-4">
             @yield('content')
         </main>
+        
     </div>
 </body>
 </html>

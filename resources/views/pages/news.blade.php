@@ -3,6 +3,8 @@
 @section('title', 'ЦК Електронних апаратів  - Новини')
 
 @section('content')
+<link href="css/news.css" rel="stylesheet">
+
 <div>
     <title>Новини</title>
 </div>

@@ -1,46 +1,51 @@
 #top-nav    
 {
-    background: linear-gradient(0deg, #263249, #263249);
-    font-family: Cabin;
-   font-style: normal;
-   font-size: 10px;
-   color: white;
-   border-bottom: rgba(233, 63, 52, 0.75) 1px solid;
+    background-color: #263249;
+    font-family: 'Cabin';
+    font-size: 10px;
+
+    color: white;
+
+    border-bottom: rgba(233, 63, 52, 0.75) 1px solid;
+}
+#top-nav a 
+{
+    text-decoration: none;
+    color: white;
 }
 #top-nav img
 {
     width: 9px;
     height: 10px;
 }
-
 #top-nav div
 { 
- padding: 0px;
+    padding: 0px;
 }
-
+#mail
+{
+    font-size: 10px;
+}
 .content-background
 {
     background: #F0F0F0;
-box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
+    box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
 }
-
 .nav 
 {
     font-family: 'Montserrat', semibold;
     background: #285953;
-    font-style: normal;
     font-size: 10px;
     padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 #nav-a-md
 {
     display: flex;
-          align-items: center;
-          justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 }
 .navbar-brand
 {
@@ -49,7 +54,6 @@ box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
     justify-content: left;
 
 }
-
 .nav img
 {
     max-width: 80%;
@@ -57,15 +61,16 @@ box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
 }
 .nav a
 {
-    color: rgba(255, 255, 255, 0.75);
     font-size: 10px;
     font-weight: 600;
+    
+    color: rgba(255, 255, 255, 0.75);
 }
 nav
 {
     font-family: 'Montserrat', semibold;
     background: #285953;
-    font-style: normal;
+
     font-size: 10px;
     padding: 0px;
 }
@@ -86,9 +91,6 @@ nav a
     font-size: 10px;
 
 }
-
-
-
 .nav-link:hover
 {
     position:static;
@@ -109,27 +111,22 @@ nav a
 {
     background: #285953;
 }
-#first-footer
-{
-    background-color: #0E1D39;
-}
 footer
 { 
-    color: white;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 10px;
+
+    color: rgba(255, 255, 255, 0.75);
 }
 #second-footer
 {
     background-color: #263249;
     font-size: 10px;
 }
-
 #second-footer a
 {
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
 }
 #second-footer img
 {
@@ -142,36 +139,37 @@ footer
     width: 15px;
     transition-duration: 1600ms;
 }
-
 #upper-footer
 {
     background-color: #0E1D39;
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
     font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
-
 .green-span 
 {
-    color: #47915E;
-    font-size: 110%;
-}
+    font-family: 'Montserrat';
 
-#upper-footer-sm
-{
-    font-size: 90%;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.055em;
+
+    color: #47915E;
 }
 #upper-footer a
 {
-    color: white;
     font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
+    
+    color: rgba(255, 255, 255, 0.75);
 }
 
 #upper-footer-sm img
 {
     max-height: 60px;
     max-width: 80px;
+
+    margin-right: 1em;
 }
 #upper-footer-sm-logo
 {
@@ -183,21 +181,37 @@ footer
     width: 20px;
 }
 
-@media only screen and (min-width: 1150px)
+@media only screen and (min-width: 1300px)
 {
     #top-nav
     {
+        font-size: 11px;
+
+    }
+    #mail
+    {
+        font-size: 13px;
+    }
+    .navbar-brand
+    {
+        margin-right: 6rem;
+    }
+    .nav a
+    {
         font-size: 12px;
     }
-    
-    #upper-footer-md-logo
+    .upper-footer-md-logo
     {
-        size: 130%;
-        border: none;
+        max-width: 80%;
+        max-height: 80%;
     }
     #upper-footer
     {
         font-size: 13px;    
+    }
+    .green-span
+    {
+        font-size: 14px;
     }
     #upper-footer a
     {
@@ -214,12 +228,16 @@ footer
     }
 }
 
-@media only screen and (min-width: 1650px)
+@media only screen and (min-width: 1700px)
 {
     #top-nav
     {
         font-size: 13px;
 
+    }
+    #mail
+    {
+        font-size: 15px;
     }
     #top-nav img
     {
@@ -228,74 +246,52 @@ footer
 
         margin-right: 6px;
     }
+    #top-nav div
+    {
+        padding: 9px 0 9px 0;
+    }
     .nav a
     {
         font-size: 16px;
     }
     .nav img
     {
-        max-width: 135%;
-        max-height: 135%;
+        max-width: 120%;
+        max-height: 120%;
+
+        padding: 12px 0 12px 0;
+    }
+    .navbar-brand
+    {
+        margin-right: 5rem;
+    }
+    .green-span
+    {
+        font-size: 18px;
     }
     #upper-footer
     {
-        font-size: 16px;    
+        font-size: 14px;   
     }
     #upper-footer a
     {
-        font-size: 16px;    
+        font-size: 15px;
     }
     #upper-footer-sm img 
     {
         width: 35px;
         height: 35px;
+
+        margin-right: 2em;
     }
     #second-footer
+    {
+        padding: 9px 0 9px 0 !important;
+        
+        font-size: 15px;
+    } 
+    #second-footer a
     {
         font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 2200px)
-{
-    #top-nav
-    {
-        
-        font-size: 23px;
-    }
-    #top-nav img
-    {
-        width: 24px;
-        height: 24px;
-    }
-    .nav
-    {
-        height: 90px;
-    }
-    .nav a
-    {
-        font-size: 23px;
-    }
-    .nav img
-    {
-        width: 180px;
-        height: 90px;
-    }
-    #upper-footer
-    {
-        font-size: 22px;    
-    }
-    #upper-footer a
-    {
-        font-size: 22px;    
-    }
-    #upper-footer-md-logo
-    {
-        width: 200px;
-        height: 100px;
-    }
-    #second-footer
-    {
-        font-size: 20px;
     }
 }
