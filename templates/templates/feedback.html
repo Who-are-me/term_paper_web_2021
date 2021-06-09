@@ -92,41 +92,55 @@
 
     </nav>
 
-    <div class="row d-flex m-0 p-0 feedback-background">
+    <div class="row d-flex m-0 p-0 feedback-background px-5 px-md-0">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8 d-block">
-            <div class="col-12 p-0"><h2 class="feedback-header-text">У Вас виникли запитання?</h2></div>
-            <div class="col-12 d-flex p-0">
-                <div class="col-5 input-transparent-div p-0">
+            <div class="col-12 p-0 py-3 py-md-5 pt-5 mt-5"><h2 class="feedback-header-text">У Вас виникли запитання?</h2></div>
+            <div class="col-12 d-block d-md-flex p-0 mt-2 mt-md-5">
+                <div class="col-12 col-md-5 input-transparent-div p-0">
                     <div class="input-box label">
                         <input type="text" name="" required="" class="w-100">
                         <label>Введіть ім’я</label>
                     </div>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-5 input-transparent-div p-0">
+                <div class="col-2 d-none d-md-flex"></div>
+                <div class="col-12 col-md-5 input-transparent-div p-0">
                     <div class="input-box label">
                         <input type="text" name="" required="" class="w-100">
                         <label>Введіть E-mail</label>
                     </div>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0">
-                <div class="col-5 input-transparent-div p-0">
+            <div class="col-12 d-block d-md-flex p-0 mt-0 mt-md-2">
+                <div class="col-12 col-md-5 input-transparent-div p-0">
                     <div class="input-box label">
                         <input type="text" name="" required="" class="w-100">
                         <label>Введіть номер телефону</label>
                     </div>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-5 input-transparent-div p-0">
-                    <div class="select-feedback">
-                        <select class="w-100">
-                            <option value="1">Порада, пропозиція</option>
-                            <option value="2">Питання для дирекції</option>
-                            <option value="3">Питання по навчальному процесу</option>
-                            <option value="3">Зауваження, враження про сайт</option>
-                            </select>
+                <div class="col-2 d-none d-md-flex"></div>
+                <div class="col-12 col-md-5 input-transparent-div p-0">
+                    <div class="input-box label">
+                        <input type="text" name="" required="" class="w-100">
+                        <label>Тема запитання</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-2 my-md-5 p-0">
+                <div class="col-12 p-0">
+                    <p class="feedback-basic-font">
+                        Введіть повідомлення:
+                    </p>
+                </div>
+                <div class="col-12 p-0 d-flex">
+                    <div class="col-11 p-0"> 
+                            <textarea class="feedback-textarea"  rows="10"></textarea>
+                    </div>
+                    
+                    <div class="col-1 p-0 align-bottom">
+                        <div class="p-0 col-12 align-bottom">
+                            <input type="submit" class="w-100 feedback-send-button" name="">
+                        </div>
                     </div>
                 </div>
             </div>
