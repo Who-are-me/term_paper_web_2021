@@ -300,84 +300,94 @@
         <div class="col-12 p-0 text-center py-5 d-none">
             Слайдер
         </div>
-        <div class="col-12 p-0 py-5 text-center">
-            Анкета
+
+		@if (session('success'))
+		    <div class="alert alert-success" role="alert">
+		        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+		        <h4><i class="icon fa fa-check"> </i>{{ session('success') }}</h4>
+		    </div>
+		@endif
+
+        <div class="col-12 p-0 py-2 text-center anketa-container mb-5">
+
+	        <div class="anketa-header p-0">
+	            <img src="image/abiturientu-anketa-header.png" class="w-100">
+	        </div>
+
+            <div class="col-12 px-3 py-3">
+                <div class="col-12 anketa-content p-1">
+
+                    <div class="col-12 p-0 m-0 text-center">
+                        <p class="anketa-green-header-font m-0 p-2">Анкета вступника</p>
+                        <p class="anketa-basic-font">Заповніть анкету та отримайте персональну консультацію від завідуючого кафедрою</p>
+                    </div>
+
+                    <form name="" action="{{ url('/feedbackstore') }}" method="post">
+                    	@csrf
+		
+						<script src='https://www.google.com/recaptcha/api.js'></script>
+
+						<div class="text-danger" id="recaptchaError"></div>
+                    	<div class="col-12 d-block d-lg-flex text-left p-0">
+
+							<?php
+								if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
+								  $secret = '6LdqluEaAAAAANpYxhvTRrgvadAK0kYHxfhfpuHd';
+								  $ip = $_SERVER['REMOTE_ADDR'];
+								  $response = $_POST['g-recaptcha-response'];
+								  $rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
+								  $arr = json_decode($rsp, TRUE);
+								  if ($arr['success']) {
+								    
+								  }
+								}
+							?>
+
+		                    <div class="col-12 col-lg-6 p-0 px-3">
+		                        <p class="anketa-green-header-font m-0 py-2">Контактна інформація</p>
+		                        <p class="anketa-basic-font pb-1 m-0">Ми зв`яжемось з Вами зручним для Вас способом:</p>
+		                    </div>
+
+		                    <div class="col-12 col-lg-6 p-0 px-3">
+		                        <p class="anketa-green-header-font m-0 py-2">Розкажіть про себе</p>
+		                        <p class="anketa-basic-font pb-1 m-0">Давайте знайомитись</p>
+		                    </div>
+
+                		</div>
+		                <div class="col-12 d-block d-lg-flex text-left p-0 pt-2">
+
+		                    <div class="col-12 col-lg-6 p-0 px-3">
+		                        <input id="phone" type="text" name="phone" required="" class="anketa-input" placeholder="*Телефон" maxlength="10" >
+	                            <input id="email" type="text" name="email" required="" class="anketa-input mt-3" placeholder="*E-mail" maxlength="20">
+	                            <p class="anketa-green-header-font m-0 py-3">Освіта</p>
+	                            <p class="anketa-basic-font pb-1">Вкажіть де Ви навчались\навчаєтесь</p>
+	                            <input id="school" type="text" name="school" required="" class="anketa-input mb-2" placeholder="*Назва навчального закладу" maxlength="20">    
+		                    </div>
+
+		                    <div class="col-12 col-lg-6 p-0 px-3">
+		                        <input id="pip" type="text" name="pip" class="anketa-input mb-2" placeholder="ПІП" required="" maxlength="20">    
+		                        <input type="text"  required="" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="20">
+		                        <div class="pt-5 g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue" ></div>
+		                    </div>
+
+		                </div>
+			            <div class="col-12 p-0 py-2 d-flex">
+			                <div class="col-xl-3 col-md-2 d-none d-md-flex"></div>
+
+			                <div class="col-xl-6 col-md-8 col-12 p-0 ">
+			                    <input type="submit" class="" name="" value="Отримати консультацію">
+			                </div>
+			                
+			                <div class="col-xl-3 col-md-2 d-none d-md-flex"></div>
+			            </div>
+		            </form>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
+
 </div>
 
-@if (session('success'))
-    <div class="alert alert-success" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
-        <h4><i class="icon fa fa-check"> </i>{{ session('success') }}</h4>
-    </div>
-@endif
-
-<div class="">
-	<form name="" action="{{ url('/feedbackstore') }}" method="post">
-		@csrf
-		
-		<script src='https://www.google.com/recaptcha/api.js'></script>
-		<!-- элемент для вывода ошибок -->
-		<div class="text-danger" id="recaptchaError"></div>
-
-		<?php
-			if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
-			  $secret = '6LdqluEaAAAAANpYxhvTRrgvadAK0kYHxfhfpuHd';
-			  $ip = $_SERVER['REMOTE_ADDR'];
-			  $response = $_POST['g-recaptcha-response'];
-			  $rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
-			  $arr = json_decode($rsp, TRUE);
-			  if ($arr['success']) {
-			    
-			  }
-			}
-		?>
-
-		<div class="" >Анкета вступника</div>
-		<div class="" >Заповніть анкету та отримайте персональну консультацію від завідуючого кафедрою</div>
-
-		<div class="">
-			<div class="">Контактна інформація</div>
-			<div class="">Ми  зв`яжемось з Вами зручним для Вас способом:</div>
-			
-			<div class="">
-				<input id="phone" type="text" name="phone" class=" " placeholder="Телефон" required="" maxlength="10"> 
-			</div>	
-
-			<div class="">
-				<input id="email" type="text" name="email" class="" placeholder="E-mail" required=""> 
-			</div>						
-
-			<div class="">Освіта</div>
-			<div class="">Вкажіть де Ви навчались\навчаєтесь</div>
-
-			<div class="">
-				<input id="school" type="text" name="school" class="" placeholder="Назва навчального закладу"> 
-			</div>	
-
-			
-
-		<div class="">
-			<div class="">Розкажіть про себе</div>
-			<div class="">Давайте знайомитись</div>	
-
-			<div class="">
-				<input id="pip" type="text" name="pip" class="" placeholder="ПІП" required=""> <br>
-			</div>	
-			
-			<div class="">
-				<input id="option" type="text" name="option" class="" placeholder="Звідки Ви дізнались про університет (необов`язково)"> 
-			</div>
-
-			<div class="">	
-				<input type="submit" class="" name="" style="" value="Отримати консультацію">
-			</div>	
-		</div>
-
-		<div class="g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue"></div>
-	</form>
-</div>
 @endsection

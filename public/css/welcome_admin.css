@@ -24,24 +24,26 @@
     width: 100%;
     height: auto;
 }
-/*
+
 .cssSlider .slides > li:first-child:not(:target) {
     z-index: 1;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
 }
-*/
+
 .cssSlider .thumbnails {
     display: block;
-    position: relative;
+/*    position: relative;*/
+    position: unset;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 .cssSlider .thumbnails > li {
     float: left;
-    width: 20%;
+    width: 33.3333%;
 }
+
 .cssSlider .thumbnails > li > a {
     display: block;
 }

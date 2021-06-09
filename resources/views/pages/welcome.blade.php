@@ -101,7 +101,7 @@
           <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading"><img src="image/left-heading-separate.svg">
             <span id="green-span-heading">ЧАСТИНКА НАШОГО ЖИТТЯ</span>
     
-<!--             <img src="image/right-heading-separate.svg"></div>
+            <img src="image/right-heading-separate.svg"></div><!-- 
           <div class="col-12 d-none d-sm-flex p-0 my-3 galery-height">
             <div class="col-8 p-0 galery-height d-block">
               <div class="col-12 p-0 m-0 galery-left-upper d-flex">
