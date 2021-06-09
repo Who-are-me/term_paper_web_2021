@@ -5,6 +5,309 @@
 @section('content')
 <link href="css/pages.css" rel="stylesheet">
 
+<div class="row d-flex m-0 p-0 title-abiturient">
+    <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
+    <div class="col-12 col-md-10 col-lg-8 text-center py-3 py-md-5 px-5 px-md-0">
+        <div class="col-12 py-1 py-md-4 px-md-4 abitirientu-title-inside-cont text-center">
+            <span>Абітурієнту</span>
+        </div>
+
+    </div>
+    <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
+</div>
+
+<div class="row d-flex m-0 p-0 content-background px-5 px-md-0">
+    <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
+    <div class="col-12 col-md-10 col-lg-8 p-0 m-0">
+        <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading"><img
+                src="image/left-salad-heading-separate.svg"> 
+
+            <span class="salad-span-heading">ВСТУП</span>
+
+            <img src="image/right-salad-heading-separate.svg">
+        </div>
+
+        <div class="col-12 p-0 py-5 d-none">
+            Слайдер
+        </div>
+        <div class="col-12 p-0 m-0 d-flex text-center">
+            <div class="col-1"></div>
+            <div class="col-10 p-0">
+                <p class="basic-text">
+                    На відміну від «вузьких» фахівців спеціальностей <span class="basic-text-bold">«Інженерія
+                        програмного забезпечення», «Комп’ютерні науки», «Комп’ютерна інженерія»,
+                        «Кібербезпека»</span> та інш их, випускники спеціалізації <span
+                        class="basic-text-bold">«Телекомунікаційні системи та мережі»</span> володіють комплексними
+                    теоретичними знаннями та практичними навичками щодо:
+                </p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="col-12 p-0 pt-5 d-block">
+            <div class="col-12 p-0 d-block">
+                <div class="col-12 p-0 d-flex">
+                    <div class="col-6 p-0">
+                        <img class="w-100" src="image/jpg/abiturientu-1.png">
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="col-12 p-0 d-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="picture-caption-italic">
+                        Програмування телекомунікаційних пристроїв;
+                    </p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <div class="col-12 p-0 d-block">
+            <div class="col-12 p-0 d-block">
+                <div class="col-12 p-0 d-flex">
+                    <div class="col-4"></div>
+                    <div class="col-6"><img class="w-100" src="image/jpg/abiturientu-2.png"></div>
+                    <div class="col-2"></div>
+
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="col-12 p-0 d-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="picture-caption-italic">
+                        Проектування, практичного розгортання та експлуатації не окремого обладнання, а сучасних
+                        комп’ютерних конвергентних мереж у цілому;
+                    </p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <div class="col-12 p-0 d-block">
+            <div class="col-12 p-0 d-block">
+                <div class="col-12 p-0 d-flex">
+                    <div class="col-2"></div>
+                    <div class="col-6"><img class="w-100" src="image/jpg/abiturientu-3.png"></div>
+                    <div class="col-4"></div>
+
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="col-12 p-0 d-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="picture-caption-italic">
+                        Налаштування протоколів динамічної маршрутизації і процесів передачі з’єднання абонентів між
+                        різними видами мереж;
+                    </p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <div class="col-12 p-0 d-block pb-5">
+            <div class="col-12 p-0 d-block">
+                <div class="col-12 p-0 d-flex">
+                    <div class="col-5"></div>
+                    <div class="col-6"><img class="w-100" src="image/jpg/abiturientu-4.png"></div>
+                    <div class="col-1"> </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="col-12 p-0 d-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="picture-caption-italic">
+                        Захисту інформації та обладнання від несанкціонованого доступу, а також організації і
+                        управління сумісним функціонуванням різноманітного телекомунікаційного обладнання відомих
+                        світових вендорів в єдиній мережі.
+                    </p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+        <div class="col-12 p-0 pt-5">
+            <p class="basic-text-bold">
+                Тому якісна підготовка випускників кафедри у відповідності до вимог провідних виробників
+                телекомунікаційного обладнання та програмного забезпечення дозволяє їм по завершенні навчання
+                працювати на посадах:
+            </p>
+        </div>
+        <div class="col-12 d-flex p-0">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <p class="basic-text text-italic pt-2">
+                    -інженера інформаційно-телекомунікаційних систем,
+                </p>
+                <p class="basic-text text-italic py-2">
+                    -фахівця з проектування та підтримки інформаційних систем та технологій,
+                </p>
+                <p class="basic-text text-italic pb-2">
+                    -системного адміністратора,
+                </p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="col-12 p-0 pb-5">
+            <p class="basic-text-bold">
+                та багатьох інших посадах в установах і організаціях галузі телекомунікацій та сфери інформаційних
+                технологій, які і в умовах світової кризи продовжують залишатися найбільш прибутковими.
+            </p>
+        </div>
+        <div class="col-12 p-0 pt-5 d-block">
+            <div class="col-12 p-0 text-center d-flex">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <P class="basic-text-bold">
+                        Основним завданням для популяризації спеціальності «Телекомунікації та радіотехніка» були
+                        розроблені сторінки у найпопулярніших соціальних мережах ,
+                    </P>
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+            <div class="col-12 p-0"><img class="w-100" src="image/jpg/abiturientu-5.png"> </div>
+            <div class="col-12 d-flex">
+                <div class="col-1"></div>
+                <div class="col-10 text-center">
+                    <p class="basic-text-bold">а учні шкіл запрошуються в наш навчальний заклад для участі у
+                        майстер-класах та ознайомлення із майбутнім фахом.</p>
+                </div>
+            </div>
+            <div class="col-12 d-block p-0">
+                <div class="col-12 d-flex p-0">
+                    <div class="col-6 p-0">
+                        <img class="w-100" src="image/jpg/abiturientu-6(1).png">
+                    </div>
+                </div>
+                <div class="col-12 d-flex p-0">
+                    <div class="col-3"></div>
+                    <div class="col-6 p-0">
+                        <img class="w-100" src="image/jpg/abiturientu-6(2).png">
+                    </div>
+                </div>
+                <div class="col-12 d-flex p-0">
+                    <div class="col-6"></div>
+                    <div class="col-6 p-0">
+                        <img class="w-100" src="image/jpg/abiturientu-6(3).png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex col-12 p-0 m-0">
+            <span class="salad-second-span-heading">Студент повинен вміти:</span>
+        </div>
+        <div class="col-12 p-0 d-block">
+            <div class="col-12 text-center d-none">Тут відео з ютубу</div>
+            <div class="col-12 p-0 px-5 text-left py-4">
+                <p class="picture-caption-italic px-2">• Вміння конструювати, експлуатувати, досліджувати,
+                    ремонтувати найрізноманітнішу радіоелектронну апаратуру широкого функціонального призначення;
+                </p>
+                <p class="picture-caption-italic px-2">• Знання сучасних технологій виробництва радіоелектронної
+                    апаратури і приладів;</p>
+                <p class="picture-caption-italic px-2">• Володіння комп’ютерними технологіями і САПР, використання
+                    сучасної комп’ютерної техніки в інженерній діяльності;</p>
+                <p class="picture-caption-italic px-2">• Обізнаність із сучасними технологіями в галузі сучасного
+                    радіозв’язку та телекомунікації;</p>
+                <p class="picture-caption-italic px-2">• Знання сучасних економічних процесів в народному
+                    господарстві, вміння орієнтуватись в ринковому просторі і підвищувати ефективність інженерної
+                    діяльності;</p>
+                <p class="picture-caption-italic px-2">• Володіння навиками раціоналізаторства та винахідництва;</p>
+                <p class="picture-caption-italic px-2">• Здатність працювати у різних галузях народного
+                    господарства.</p>
+            </div>
+        </div>
+        <div class="d-flex col-12 justify-content-between py-5 m-0" id="container-heading">
+            <img src="image/left-salad-heading-separate.svg">
+            <span class="salad-span-heading">МІСЦЕ РОБОТИ</span>
+
+            <img src="image/right-salad-heading-separate.svg">
+        </div>
+        <div class="col-12 p-0 d-flex py-5">
+            <div class="col-2 d-none d-sm-flex"></div>
+            <div class="col-12 col-sm-8 text-center">
+                <p class="salad-second-span-heading">Можливі місця роботи після закінчення коледжу:</p>
+            </div>
+        </div>
+        <div class="col-12 p-0">
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ В органах служби безпеки
+                </span>
+                <br>
+                <span class="lite-text">(охоронна сигналізація та системи відеоспостереження); </span>
+            </p>
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ В банківських установах
+                </span>
+                <br>
+                <span class="lite-text">(охоронна сигналізація, системи відеоспостереження, радіо та телефонного
+                    зв'язку);</span>
+            </p>
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ Сервісні центри
+                </span>
+                <br>
+                <span class="lite-text">по обслуговуванню та ремонту радіотелевізійної апаратури;</span>
+            </p>
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ На телерадіоцентрах
+                </span>
+                <br>
+                <span class="lite-text">(технік з обслуговування радіо та відео апаратури, відеооператор і
+                    т.д.);</span>
+            </p>
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ Сервісні центри
+                </span>
+                <br>
+                <span class="lite-text">по обслуговуванню та ремонту радіотелевізійної апаратури;</span>
+            </p>
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ Сервісні центри
+                </span>
+                <br>
+                <span class="lite-text">по ремонту мобільних телефонів, ноутбуків та і т. ін. </span>
+            </p>
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ Консультанти
+                </span>
+                <br>
+                <span class="lite-text">з продажу радіоелектронної техніки
+                    (супермаркети та магазини з продажу електронної апаратури);</span>
+            </p>
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ Рекламні агенства
+                </span>
+                <br>
+                <span class="lite-text">по виготовленню світлової, аудіо та відеореклами;</span>
+            </p>
+            <p>
+                <span class="basic-text-bold letter-spacing">
+                    ➢ Сервісні центри
+                </span>
+                <br>
+                <span class="lite-text">по обслуговуванню та ремонту медичної техніки;</span>
+            </p>
+        </div>
+        <div class="col-12 p-0 text-center py-5 d-none">
+            Слайдер
+        </div>
+        <div class="col-12 p-0 py-5 text-center">
+            Анкета
+        </div>
+    </div>
+
+    <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
+</div>
+
 @if (session('success'))
     <div class="alert alert-success" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>

@@ -3,6 +3,7 @@
 @section('title', 'ЦК Електронних апаратів  - Головна')
 
 @section('content')
+<link href="css/welcome_admin.css" rel="stylesheet">
 
 <link href="css/pages.css" rel="stylesheet">
 
@@ -100,7 +101,7 @@
           <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading"><img src="image/left-heading-separate.svg">
             <span id="green-span-heading">ЧАСТИНКА НАШОГО ЖИТТЯ</span>
     
-            <img src="image/right-heading-separate.svg"></div>
+<!--             <img src="image/right-heading-separate.svg"></div>
           <div class="col-12 d-none d-sm-flex p-0 my-3 galery-height">
             <div class="col-8 p-0 galery-height d-block">
               <div class="col-12 p-0 m-0 galery-left-upper d-flex">
@@ -132,11 +133,30 @@
             <img src="image/jpg/orig/Gallery-img-6.jpg">
             <img src="image/jpg/orig/Gallery-img-7.jpg">
             <img src="image/jpg/orig/Gallery-img-8.jpg">
-         </div>
+         </div> -->
+
+
          </div>
     
           </div>
           <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         </div>
+
+<div class="cssSlider">
+    <ul class="slides">
+        <li id="slide1"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+        <li id="slide2"><img src="https://images.unsplash.com/photo-1433256392503-913cee5877e3?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+        <li id="slide3"><img src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+        <li id="slide4"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+        <li id="slide5"><img src="https://images.unsplash.com/photo-1453284441168-8780c9f52097?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+    </ul>
+    <ul class="thumbnails">
+        <li><a href="#slide1"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=840&q=60" /></a></li>
+        <li><a href="#slide2"><img src="https://images.unsplash.com/photo-1433256392503-913cee5877e3?auto=format&fit=crop&w=840&q=60" /></a></li>
+        <li><a href="#slide3"><img src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?auto=format&fit=crop&w=840&q=60" /></a></li>
+        <li><a href="#slide4"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=840&q=60" /></a></li>
+        <li><a href="#slide5"><img src="https://images.unsplash.com/photo-1453284441168-8780c9f52097?auto=format&fit=crop&w=840&q=60" /></a></li>
+    </ul>
+</div>
 
 @endsection

@@ -12,6 +12,8 @@
 @section('title-menu', 'Адмін-панель')
 
 @section('content')
+<link href="css/welcome_admin.css" rel="stylesheet">
+
 <!-- include editor tiny -->
 <script src="https://cdn.tiny.cloud/1/i4jartckvb9dpzqmqukjtexck4q7guma9z6ip130qk1h1efo/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -105,13 +107,77 @@
                 </div>
 
 
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image6">Вибрати фото 1 на галерею</button>
-                    <input type="text" name="img_6" class="form-control mt-2" id="feature_image6" name="feature_image" value="{{ $text[10]->text }}" readonly>
-                    <img id='img6' src="{{ $text[10]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div>
 
-                <div class="form-group">
+
+        <!-- <div class="col-12 d-none d-sm-flex p-0 my-3 galery-height">
+            <div class="col-8 p-0 galery-height d-block">
+              <div class="col-12 p-0 m-0 galery-left-upper d-flex">
+                <div class="col-6 p-0 m-0">
+                  <img src="image/jpg/orig/Gallery-img-1.jpg"></div>
+                <div class="col-6 p-0 m-0"><img src="image/jpg/orig/Gallery-img-2.jpg"></div>
+              </div>
+              <div class="col-12 p-0 m-0 galery-left-bottom d-flex">
+                <div class="col-7 p-0 m-0 d-block">
+                  <div class="col-12 p-0 m-0 h-50"><img src="image/jpg/orig/Gallery-img-4.jpg"></div>
+                  <div class="col-12 p-0 m-0 h-50"><img src="image/jpg/orig/Gallery-img-5.jpg"></div>
+                </div>
+                <div class="col-5 p-0 m-0"><img src="image/jpg/orig/Gallery-img-6.jpg"></div>
+              </div>
+              
+            </div>
+            <div class="col-4 p-0 d-block galery-height">
+              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-3.jpg"></div>
+              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-7.jpg"></div>
+              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-8.jpg"></div>
+            </div> 
+        </div> -->
+
+
+<div class="cssSlider">
+    <ul class="slides">
+        <li id="slide1"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+        <li id="slide2"><img src="https://images.unsplash.com/photo-1433256392503-913cee5877e3?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+        <li id="slide3"><img src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+        <li id="slide4"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+        <li id="slide5"><img src="https://images.unsplash.com/photo-1453284441168-8780c9f52097?auto=format&fit=crop&w=840&q=60" alt="" /></li>
+    </ul>
+    <ul class="thumbnails">
+        <li><a href="#slide1"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=840&q=60" /></a></li>
+        <li><a href="#slide2"><img src="https://images.unsplash.com/photo-1433256392503-913cee5877e3?auto=format&fit=crop&w=840&q=60" /></a></li>
+        <li><a href="#slide3"><img src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?auto=format&fit=crop&w=840&q=60" /></a></li>
+        <li><a href="#slide4"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=840&q=60" /></a></li>
+        <li><a href="#slide5"><img src="https://images.unsplash.com/photo-1453284441168-8780c9f52097?auto=format&fit=crop&w=840&q=60" /></a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+                <!-- <div class="form-group">
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image6">Вибрати фото 1 на галерею</button>
+                    <input type="hidden" name="img_6" class="form-control mt-2" id="feature_image6" name="feature_image" value="{{ $text[10]->text }}" readonly>
+                    <a href="" class="popup_selector" data-inputid="feature_image6"><img id='img6' src="{{ $text[10]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;"></a>
+                </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image7">Вибрати фото 2 на галерею</button>
                     <input type="text" name="img_7" class="form-control mt-2" id="feature_image7" name="feature_image" value="{{ $text[11]->text }}" readonly>
                     <img id='img7' src="{{ $text[11]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
@@ -151,7 +217,14 @@
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image13">Вибрати фото 8 на галерею</button>
                     <input type="text" name="img_13" class="form-control mt-2" id="feature_image13" name="feature_image" value="{{ $text[17]->text }}" readonly>
                     <img id='img13' src="{{ $text[17]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div>
+                </div> -->
+
+
+
+
+
+
+
             </div>
 
             <div class="card-footer">
