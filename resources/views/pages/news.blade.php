@@ -29,7 +29,7 @@
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
 </div>
 
-<div class="row d-flex m-0 py-3 content-background">
+<div class="row d-flex m-0 py-3 content-background-news">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 py-3 py-md-2 px-5 px-md-0">
 

@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     </div>
-    <div class="row d-flex m-0 p-0 content-background" id="background-white-wall">
+    <div class="row d-flex m-0 p-0" id="background-white-wall">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8 p-0 pl-5 pl-sm-5">
             <div class="col-12 p-0 m-0 d-block pb-5">
@@ -43,7 +43,7 @@
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     </div>
 
-    <div class="row d-flex m-0 py-5 content-background px-5 px-md-0">
+    <div class="row d-flex m-0 py-5 content-background-about px-5 px-md-0">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8 p-0">
             <div class="col-12 p-0 m-0 d-block">
