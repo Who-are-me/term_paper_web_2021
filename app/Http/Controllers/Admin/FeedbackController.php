@@ -64,7 +64,7 @@ class FeedbackController extends Controller
             else { 
                 return redirect()->back()->withSuccess("Запитання НЕ було успішно додано!"); 
             }
-      }
+        }
     }
 
     /**

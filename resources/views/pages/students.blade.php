@@ -66,12 +66,11 @@
             <div class="col-12 d-block p-0 m-0">
                 <div class="d-flex col-12 justify-content-between p-0 py-5 m-0" id="container-heading">
                     <img src="../../image/left-student-heading-separate.svg">
-                    <span class="salad-span-heading student-span-heading letter-spacing text-center">ГРАФІК НАВЧАЛЬНОГО
-                        ПРОЦЕСУ</span>
+                    <span class="salad-span-heading student-span-heading letter-spacing text-center">ГРАФІК НАВЧАЛЬНОГО ПРОЦЕСУ</span>
                     <img src="../../image/right-student-heading-separate.svg">
                 </div>
                 <div class="col-12 p-0 m-0 text-center">
-                    <button class="red-button">Завантажити графік</button>
+                    <button type="" class="red-button">Завантажити графік</button>
                 </div>
             </div>
         </div>
@@ -204,14 +203,35 @@
                     <div class="col-1 d-none d-md-flex"> </div>
                 </div>
             </div>
+
+
+
+
             <div class="col-12 d-block p-0 py-3">
+
+                <div class="col-12 p-3 text-center">
+                    <div class="slider-student-one-photo ">
+                        <div><img src="/files/456.jpg" ></div>
+                        <div><img src="/files/7.jpeg" ></div>
+                        <div><img src="../../image/dark-wood-background.png" ></div>
+                    </div>
+                </div>
+
                 <div class="col-12 d-flex py-2">
                     <div class="col-3"> </div>
-                    <div class="col-6 p-0 text-center">
+
+
+                    <!-- <div class="col-6 p-0 text-center">
                         Слайдер
                         <img src="../../image/dark-wood-background.png" class="w-100 image-ridius-border">
+                    </div> -->
 
-                    </div>
+
+                    
+
+
+
+
                     <div class="col-3"> </div>
                 </div>
                 <div class="col-12 d-flex p-0">

@@ -151,11 +151,11 @@
 
 
                 </div>
-                <div class="col-12 p-2 align-items-center">
+                <div class="col-12 p-2 align-items-center py-5">
                     <div class="g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue" ></div>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 text-center pb-5 ">
                     <input type="submit" class="feedback-send-button" name="" value="Отримати консультацію">
                 </div>  
             </div>

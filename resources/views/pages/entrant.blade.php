@@ -29,18 +29,12 @@
 
         <div class="col-12 p-3">
             <div class="slider">
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                <div><img src="{{ $content[0]->text }}" ></div>
+                <div><img src="{{ $content[1]->text }}" ></div>
+                <div><img src="{{ $content[2]->text }}" ></div>
+                <div><img src="{{ $content[3]->text }}" ></div>
+                <div><img src="{{ $content[4]->text }}" ></div>
+                <div><img src="{{ $content[5]->text }}" ></div>
             </div>
         </div>
 
@@ -180,7 +174,7 @@
                 <div class="col-2"></div>
 
             </div>
-            <div class="col-12 p-0"><img class="w-100" src="image/jpg/abiturientu-5.png"> </div>
+            <div class="col-12 p-0"><img class="w-100" src="{{ $content[6]->text }}"> </div>
             <div class="col-12 d-flex">
                 <div class="col-1"></div>
                 <div class="col-10 text-center">
@@ -204,6 +198,14 @@
                     <div class="col-6"></div>
                     <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-6(3).png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block p-0">
+                <div class="col-12 d-flex p-0">
+                    <div class="col-3">ВІДЕО</div>
+                    <div class="col-6 p-0">
+                        <?php echo $content[7]->text; ?>
                     </div>
                 </div>
             </div>
@@ -311,6 +313,101 @@
                 <span class="lite-text">по обслуговуванню та ремонту медичної техніки;</span>
             </p>
         </div>
+
+
+
+        <div class="col-12 p-0 py-5"> 
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>1аголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>2Заголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>3Заголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>4Заголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Заголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Заголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Заголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Заголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Заголовок</h5>
+                        <p>Опис</p>
+                      </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+
+
+
+
         <div class="col-12 p-0 text-center py-5 d-none">
             Слайдер
         </div>
@@ -371,16 +468,16 @@
 		                <div class="col-12 d-block d-lg-flex text-left p-0 pt-2">
 
 		                    <div class="col-12 col-lg-6 p-0 px-3">
-		                        <input id="phone" type="text" name="phone" required="" class="anketa-input" placeholder="*Телефон" maxlength="10" >
-	                            <input id="email" type="text" name="email" required="" class="anketa-input mt-3" placeholder="*E-mail" maxlength="20">
+		                        <input id="phone" type="text" name="phone" required="" class="anketa-input" placeholder="*Телефон" maxlength="10" minlength="10" >
+	                            <input id="email" type="text" name="email" required="" class="anketa-input mt-3" placeholder="*E-mail" maxlength="255">
 	                            <p class="anketa-green-header-font m-0 py-3">Освіта</p>
 	                            <p class="anketa-basic-font pb-1">Вкажіть де Ви навчались\навчаєтесь</p>
-	                            <input id="school" type="text" name="school" required="" class="anketa-input mb-2" placeholder="*Назва навчального закладу" maxlength="20">    
+	                            <input id="school" type="text" name="school" required="" class="anketa-input mb-2" placeholder="Назва навчального закладу" maxlength="255">    
 		                    </div>
 
 		                    <div class="col-12 col-lg-6 p-0 px-3">
-		                        <input id="pip" type="text" name="pip" class="anketa-input mb-2" placeholder="ПІП" required="" maxlength="20">    
-		                        <input type="text"  required="" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="20">
+		                        <input id="pip" type="text" name="pip" class="anketa-input mb-2" placeholder="*ПІП" required="" maxlength="255">    
+		                        <input type="text" name="option" required="" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="255">
 		                        <div class="pt-5 g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue" ></div>
 		                    </div>
 

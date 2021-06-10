@@ -93,7 +93,7 @@
                     <a href="{{ route('teachers.index') }}" target="_blank">Перейти до форми викладачів</a> 
                 </div>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="">Заголовок тексту під викладачами</label>
                     <input value="{{ $content[4]->text }}" type="text" name="text_2" class="form-control" id="" required>
                 </div>
@@ -101,7 +101,7 @@
                 <div class="form-group">
                     <label for="">Текст</label>
                     <textarea name="text_3" class="editor" style="height: 600px;">{{ $content[5]->text }}</textarea>
-                </div>
+                </div> -->
             </div>
 
             <div class="card-footer">
