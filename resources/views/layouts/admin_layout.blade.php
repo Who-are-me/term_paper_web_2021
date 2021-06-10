@@ -129,7 +129,7 @@
           Головні сторінки сайту
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown p-0">
-          <a class="dropdown-item" href="#">@yield('contact')</a>
+          <a class="dropdown-item" href="/contacts">@yield('contact')</a>
           <div class="dropdown-divider m-0"></div>
           <a class="dropdown-item" href="/">@yield('home')</a>
           <div class="dropdown-divider m-0"></div>

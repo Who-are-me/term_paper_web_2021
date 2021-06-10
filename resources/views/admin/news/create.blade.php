@@ -59,8 +59,8 @@
 
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото на прев'ю до посту</button>
-                    <input type="text" name="img" class="form-control mt-2" id="feature_image" name="feature_image" value="" readonly>
-                    <img src="" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <input type="hidden" name="img" class="form-control mt-2" id="feature_image" name="feature_image" value="" readonly>
+                    <img src="" alt="" class="img-uploaded" width="70%" style="display: block;">
                 </div>
 
             </div>
@@ -80,7 +80,7 @@
           toolbar_mode: 'floating',
           tinycomments_mode: 'embedded',
           tinycomments_author: 'Author name',
-       });
+        });
     </script>
         
     </div>
