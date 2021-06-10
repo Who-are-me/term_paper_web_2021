@@ -129,8 +129,7 @@
           Головні сторінки сайту
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown p-0">
-          <a class="dropdown-item" href="/contacts">@yield('contact')</a>
-          <div class="dropdown-divider m-0"></div>
+
           <a class="dropdown-item" href="/">@yield('home')</a>
           <div class="dropdown-divider m-0"></div>
           <a class="dropdown-item" href="/about_us">@yield('about')</a>
@@ -142,13 +141,12 @@
           <a class="dropdown-item" href="/student">@yield('students')</a>
           <div class="dropdown-divider m-0"></div>
           <a class="dropdown-item" href="/tidings">@yield('news')</a>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item" href="/contacts">@yield('contact')</a>
         </div>
       </li>
       <li class="nav-item d-none d-xl-inline-block ">
         <a href="/" class="nav-link">@yield('home')</a>
-      </li>
-      <li class="nav-item d-none d-xl-inline-block">
-        <a href="/contacts" class="nav-link">@yield('contact')</a>
       </li>
       <li class="nav-item d-none d-xl-inline-block">
         <a href="/about_us" class="nav-link">@yield('about')</a>
@@ -164,6 +162,9 @@
       </li>
       <li class="nav-item d-none d-xl-inline-block">
         <a href="/tidings" class="nav-link">@yield('news')</a>
+      </li>
+      <li class="nav-item d-none d-xl-inline-block">
+        <a href="/contacts" class="nav-link">@yield('contact')</a>
       </li>
     </ul>
 
