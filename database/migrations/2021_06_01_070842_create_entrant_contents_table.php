@@ -15,7 +15,7 @@ class CreateEntrantContentsTable extends Migration
     {
         Schema::create('entrant_contents', function (Blueprint $table) {
             $table->id();
-            $table->string('text');
+            $table->text('text');
             $table->timestamps();
         });
     }

@@ -54,15 +54,15 @@
                 <div class="cssSlider col-12">
                     <label class="card-title">Виберіть картинки слайдера</label><br><br>
                     <div class="col-12 d-block d-md-flex form-group">
-                        <div class="col-12 col-md-4 rty">
+                        <div class="col-12 col-md-4">
                             <input type="hidden" name="img_0" id="feature_image0" name="feature_image" value="{{ $text[0]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image0"><img id="img0" class="img" src="{{ $text[0]->text }}" ></a>
                         </div>
-                        <div class="col-12 col-md-4 rty">
+                        <div class="col-12 col-md-4">
                             <input type="hidden" name="img_1" id="feature_image1" name="feature_image" value="{{ $text[1]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image1"><img id="img1" class="img" src="{{ $text[1]->text }}" ></a>
                         </div>
-                        <div class="col-12 col-md-4 rty">
+                        <div class="col-12 col-md-4">
                             <input type="hidden" name="img_2" id="feature_image2" name="feature_image" value="{{ $text[2]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image2"><img id="img2" class="img" src="{{ $text[2]->text }}" ></a>
                         </div>
@@ -90,11 +90,11 @@
                 <div class="cssSlider col-12">
                     <label class="card-title">Виберіть картинки справа від блоку "Про нас"</label><br><br>
                     <div class="col-12 d-block d-md-flex form-group">
-                        <div class="col-12 col-md-6 rty">
+                        <div class="col-12 col-md-6">
                             <input type="hidden" name="img_3" id="feature_image3" name="feature_image" value="{{ $text[5]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image3"><img id="img3" class="img" src="{{ $text[5]->text }}" class="w-100"></a>
                         </div>
-                        <div class="col-12 col-md-6 rty">
+                        <div class="col-12 col-md-6">
                             <input type="hidden" name="img_4" id="feature_image4" name="feature_image" value="{{ $text[6]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image4"><img id="img4" class="img" src="{{ $text[6]->text }}" class="w-100"></a>
                         </div>

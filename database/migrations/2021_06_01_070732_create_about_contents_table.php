@@ -15,7 +15,7 @@ class CreateAboutContentsTable extends Migration
     {
         Schema::create('about_contents', function (Blueprint $table) {
             $table->id();
-            $table->string('text');
+            $table->text('text');
             $table->timestamps();
         });
     }
