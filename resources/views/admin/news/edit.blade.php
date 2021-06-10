@@ -59,11 +59,25 @@
                     <textarea name="text" class="editor" style="height: 600px;">{{ $news->text }}</textarea>
                 </div>
 
-                <div class="form-group">
+                <div class="cssSlider col-12">
+                    <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
+                    <div class="col-12 d-md-flex form-group">
+                        <div class="col-12 col-md-8">
+                            <input type="hidden" name="img" id="feature_image0" name="feature_image" value="{{ $news->img }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image0"><img id="img0" class="img w-100" src="{{ $news->img }}" ></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-block d-md-flex">
+                        <div class="col-12 col-md-8"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото на прев'ю до посту</button>
                     <input type="text" name="img" class="form-control mt-2" id="feature_image" name="feature_image" value="{{ $news->img }}" readonly>
                     <img src="{{ $news->img }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
-                </div>
+                </div> -->
 
             </div>
 
@@ -83,7 +97,10 @@
           toolbar_mode: 'floating',
           tinycomments_mode: 'embedded',
           tinycomments_author: 'Author name',
-       });
+        });
+
+        // check if you use more one elfinder input
+        check_multi_elfider_input = 1;
     </script>
         
     </div>
