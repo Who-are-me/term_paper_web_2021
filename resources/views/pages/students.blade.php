@@ -1,6 +1,6 @@
 @extends('layouts.main_layout')
 
-@section('title', 'ЦК Електронних апаратів  - Новини')
+@section('title', 'ЦК Електронних апаратів  - Студенту')
 
 @section('content')
 <link href="css/pages.css" rel="stylesheet">

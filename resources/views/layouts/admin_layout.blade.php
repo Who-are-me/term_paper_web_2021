@@ -148,7 +148,7 @@
         <a href="/" class="nav-link">@yield('home')</a>
       </li>
       <li class="nav-item d-none d-xl-inline-block">
-        <a href="/contact" class="nav-link">@yield('contact')</a>
+        <a href="/contacts" class="nav-link">@yield('contact')</a>
       </li>
       <li class="nav-item d-none d-xl-inline-block">
         <a href="/about_us" class="nav-link">@yield('about')</a>
@@ -434,6 +434,31 @@
             </ul>
 
           </li> 
+
+
+
+<!-- feedback -->
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+            <i class="nav-icon far fa-comment-dots"></i>
+              <p>
+              feedback
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('contact.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Переглянути feedback</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+
+
 
 
         </ul>

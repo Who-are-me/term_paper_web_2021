@@ -1,6 +1,6 @@
 @extends('layouts.main_layout')
 
-@section('title', 'ЦК Електронних апаратів  - Студенту')
+@section('title', 'ЦК Електронних апаратів  - Абітурієнту')
 
 @section('content')
 <link href="css/pages.css" rel="stylesheet">
@@ -377,7 +377,7 @@
 			                <div class="col-xl-6 col-md-8 col-12 p-0 ">
 			                    <input type="submit" class="" name="" value="Отримати консультацію">
 			                </div>
-			                
+
 			                <div class="col-xl-3 col-md-2 d-none d-md-flex"></div>
 			            </div>
 		            </form>

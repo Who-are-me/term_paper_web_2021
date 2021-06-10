@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('test_welcome');
 // });
 
-Route::get('/', function () {
-    return view('pages.welcome');
-});
+// Route::get('/', function () {
+//     return view('pages.welcome');
+// });
 
 Route::get('/about_us', function () {
     return view('pages.about');
@@ -37,15 +37,23 @@ Route::get('/student', function () {
     return view('pages.students');
 });
 
+Route::get('/contacts', function () {
+    return view('pages.contact');
+});
+
 Auth::routes([
 	'reset' => false 
 ]);
 
 Route::get('/tidings', [App\Http\Controllers\Admin\NewsController::class, 'show']);
 
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home');
+Route::get('/', [App\Http\Controllers\Admin\WelcomeController::class, 'show']);
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home'); 
 
 Route::post('/feedbackstore', [App\Http\Controllers\Admin\FeedbackController::class, 'store']);
+
+Route::post('/contactstore', [App\Http\Controllers\Admin\ContactController::class, 'store']);
 
 Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin')->middleware(['auth']);
 
@@ -64,6 +72,8 @@ Route::resource('news', App\Http\Controllers\Admin\NewsController::class)->middl
 Route::resource('feedback', App\Http\Controllers\Admin\FeedbackController::class)->middleware(['auth']);
 
 Route::resource('teachers', App\Http\Controllers\Admin\TeachersController::class)->middleware(['auth']);
+
+Route::resource('contact', App\Http\Controllers\Admin\ContactController::class)->middleware(['auth']);
 
 
 Route::middleware(['role:sudo'])->prefix('backend/register')->group(function() {
