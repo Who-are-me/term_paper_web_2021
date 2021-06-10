@@ -1,24 +1,25 @@
+.g-recaptcha > div{margin: 0 auto;}
 
 .title-news {
     
-    background: url('../../image/jpg/news-title-background.jpg') no-repeat center / cover;
+    background: url('../image/jpg/news-title-background.jpg') no-repeat center / cover;
 }
 
 .title-material {
     
-    background: url('../../image/jpg/material-base-background.png') no-repeat center / cover;
+    background: url('../image/jpg/material-base-background.png') no-repeat center / cover;
 }
 .title-about {
     
-    background: url('../../image/jpg/about-title-background.png') no-repeat center / cover;
+    background: url('../image/jpg/about-title-background.png') no-repeat center / cover;
 }
 .title-student {
     
-    background: url('../../image/jpg/student-title-background.png') no-repeat center / cover;
+    background: url('../image/jpg/student-title-background.png') no-repeat center / cover;
 }
 .title-abiturient {
     
-    background: url('../../image/jpg/abiturietnu-title-background.png') no-repeat center / cover;
+    background: url('../image/jpg/abiturietnu-title-background.png') no-repeat center / cover;
 }
 .feedback-background
 {
@@ -26,16 +27,16 @@
 }
 #background-white-wall
 {
-    background: url('../../image/white-wall-background.png') no-repeat center / cover;
+    background: url('../image/white-wall-background.png') no-repeat center / cover;
 }
 #background-yellow-pen
 {
-    background: url('../../image/yellow-background.png') no-repeat center / cover;
+    background: url('../image/yellow-background.png') no-repeat center / cover;
 }
 
 #background-dark-wood
 {
-    background: url('../../image/dark-wood-background.png') no-repeat center / cover;
+    background: url('../image/dark-wood-background.png') no-repeat center / cover;
 }
 
 .news-title-inside-cont
@@ -508,15 +509,20 @@ letter-spacing: -0.05em;
 
 .feedback-send-button
 {
-    font-size: 0px;
-    background: url('/image/feedBack-sendButton.svg') no-repeat center / cover;
-    
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    border-radius: 50%;
-    
+    font-family: 'Montserrat', semibold;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px;
+    background: linear-gradient(93.5deg, #E93F34 6.65%, #C0261C 94.56%);
+    box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.46);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.feedback-button
+{
+    padding: 10px;
 }
 
 @media only screen and (max-width: 700px)

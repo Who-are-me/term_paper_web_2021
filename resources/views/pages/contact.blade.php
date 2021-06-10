@@ -137,7 +137,7 @@
                     </p>
                 </div>
                 <div class="col-12 p-0 d-flex">
-                    <div class="col-11 p-0"> 
+                    <div class="col-12 p-0"> 
                             <textarea class="feedback-textarea" name="text" rows="10" maxlength="1000"></textarea>
                     </div>
 
@@ -151,12 +151,12 @@
 
 
                 </div>
-                <div class="col-12 p-2 text-center">
-                    <div class="pt-5 g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue" ></div>
+                <div class="col-12 p-2 align-items-center">
+                    <div class="g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue" ></div>
                 </div>
 
-                <div class="col-12 p-2 text-center">
-                    <input type="submit" class="" name="" value="Отримати консультацію">
+                <div class="col-12">
+                    <input type="submit" class="feedback-send-button" name="" value="Отримати консультацію">
                 </div>  
             </div>
         </div>
