@@ -51,7 +51,7 @@
 
                     <a class="nav-link px-md-0" href="/tidings">Новини</a>
 
-                    <a class="nav-link px-md-0" href="#">Зворотній зв’язок</a>
+                    <a class="nav-link px-md-0" href="/contacts">Зворотній зв’язок</a>
                 </div>
             </div>
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
@@ -67,25 +67,25 @@
         <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Головна</a>
+                    <a class="nav-link" href="/">Головна</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="#">Про нас</a>
+                    <a class="nav-link  " href="/about_us">Про нас</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="#">Матеріальна база</a>
+                    <a class="nav-link " href="/matbase">Матеріальна база</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Абітурієнту</a>
+                    <a class="nav-link " href="/to_entrant">Абітурієнту</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Студенту</a>
+                    <a class="nav-link " href="/student">Студенту</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Новини</a>
+                    <a class="nav-link" href="/tidings">Новини</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Зворотній зв’язок</a>
+                    <a class="nav-link" href="/contacts">Зворотній зв’язок</a>
                 </li>
             </ul>
         </div>  

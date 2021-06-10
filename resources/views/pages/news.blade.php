@@ -8,25 +8,21 @@
 <div class="row d-flex m-0 p-0 title-news">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 text-center py-3 py-md-5 px-5 px-md-0">
-        <div class="col-12 py-1 py-md-3 px-md-4  news-title-inside-cont text-center text-md-left">
-            <span>Новини</span>
-
-            <div class="col-12 p-3">
-                <div class="slider">
-                    <div><img src="../../image/dark-wood-background.png" >sfgj</div>
-                    <div><img src="../../image/dark-wood-background.png" ></div>
-                    <div><img src="../../image/dark-wood-background.png" ></div>
-                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                    <div><img src="../../image/dark-wood-background.png" ></div>
-                    <div><img src="../../image/dark-wood-background.png" ></div>
-                    <div><img src="../../image/dark-wood-background.png" ></div>
-                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                    <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+        <div class="col-12 py-1 py-md-3 px-md-4  news-title-inside-cont text-left d-block d-lg-flex">
+            <div class="col-12 col-lg-3 p-0" style="margin: auto;"><span>Новини</span></div>
+            <div class="col-12 col-lg-9 p-0">
+                <div class="col-12 p-0">
+                <div class="slider-news">
+                    <div><a><img src="../../image/arrow-up.png"></a><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, amet!</p></div>
+                    <div><a><img src="../../image/Background-img-3.jpg"></a><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, amet!</p></div>
+                    <div><a><img src="../../image/arrow-up.png"></a><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, amet!</p></div>
+                    <div><a><img src="../../image/Background-img-3.jpg"></a><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, amet!</p></div>
                 </div>
             </div>
+            
+            </div>
+</div>
+            
 
         </div>
     </div>
