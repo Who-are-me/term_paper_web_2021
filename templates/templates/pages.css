@@ -1,4 +1,3 @@
-
 .title-news {
     
     background: url('../../image/jpg/news-title-background.jpg') no-repeat center / cover;
@@ -42,33 +41,31 @@
 {
     background-color: #CFE2D5;
     box-shadow: 0px 12px 50px #CBE0D2;
-    font-family: 'Montserrat', semibold;
-    font-style: normal;
-    font-size: 38px;
+    font-family: 'Montserrat';
+    font-size: 14px;
     color: black;
-    
     font-weight: 400;
 }
 .about-title-inside-cont
 {
     background: #829295;
-box-shadow: 0px 12px 40px #829295;
-font-family: 'Montserrat', semibold;
-    font-style: normal;
-    font-size: 38px;
+    box-shadow: 0px 12px 40px #829295;
+    font-family: 'Montserrat';
+    font-size: 14px;
     color: black;
-    
-    font-weight: 400;
+    border-radius: 60px;
+    font-weight: 600;
 }
 .material-base-title-inside-cont
 {
     background: #566581;
-box-shadow: 0px 12px 40px #566581;
+    box-shadow: 0px 12px 40px #566581;
     font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 38px;
+    font-weight: 600;
+    font-size: 14px;
     color: #FFFFFF;
-text-shadow: 0px 8px 50px #000000;
+    border-radius: 60px;
+    text-shadow: 0px 8px 50px #000000;
 }
 
 .abitirientu-title-inside-cont
@@ -76,9 +73,8 @@ text-shadow: 0px 8px 50px #000000;
     background: #92974C;
     box-shadow: 0px 12px 40px #6B782C;
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 14px;
     color: #FFFFFF;
     border-radius: 60px;
     text-shadow: 0px 12px 35px rgba(0, 0, 0, 0.56);
@@ -88,18 +84,43 @@ text-shadow: 0px 8px 50px #000000;
 {
     background: #223E2E;
     box-shadow: 0px 12px 40px #2C4020;
-    font-family: 'Montserrat', semibold;
-    font-style: normal;
-    font-size: 38px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
     color: #FFFFFF;
     border-radius: 60px;
-text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.53);
+    text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.53);
 }
 
-.content-background
+.content-background-main
 {
     background: #F0F0F0;
-box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
+    box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
+}
+.content-background-about
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(127, 143, 146, 0.65);
+}
+.content-background-material
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(86, 101, 129, 0.62);
+}
+.content-background-abiturient
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(146, 151, 76, 0.64);
+}
+.content-background-student
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(34, 62, 46, 0.64);
+}
+.content-background-news
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
 }
 .news-content-container
 {
@@ -109,43 +130,49 @@ box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
 {
     width: 80px;
     height: 40px;
-    
 }
 
 #green-span-heading
 {
-    font-family: 'Montserrat', sans-serif;
-   font-style: normal;
-   font-weight: bold;
-   letter-spacing: 0.055em; 
-   font-weight: 900;
-   font-size: 15px;
-   color: #47915E;
-   text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+    font-family: 'Montserrat';
+    letter-spacing: 0.185em; 
+    font-weight: 700;
+    font-size: 14px;
+    color: #47915E;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
 }
 #grey-span-heading
 {
-    font-family: 'Montserrat', sans-serif;
-   letter-spacing: 0.055em; 
-   font-weight: bold;
-   font-size: 22px;
-   color: #809195;
-   text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+    font-family: 'Montserrat';
+    letter-spacing: 0.185em; 
+    font-weight: 700;
+    font-size: 14px;
+    color: #809195;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
 }
 #black-span-heading
 {
-    font-family: 'Montserrat', sans-serif;
-   font-style: normal;
-   font-size: 22px;
-   color: #000000;
-   font-weight: bold;
+    font-family: 'Montserrat';
+    letter-spacing: 0.185em; 
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
 }
-
+.salad-span-heading
+{
+    font-family: 'Montserrat';
+    letter-spacing: 0.185em; 
+    font-weight: 700;
+    font-size: 14px;
+    color: #ADB450;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+}
 #content-span-link
 {
     font-family: 'Montserrat', sans-serif;
-   font-style: normal;
-   font-size: 14px;
+    font-style: normal;
+    font-size: 14px;
     color: black;
     font-weight: bold;
 }
@@ -160,7 +187,6 @@ box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
 .hover-triger-green:hover
 {
 background-color: #285953;
-;
 border-radius: 10px;
 cursor: pointer;
 transition-duration: 400ms;
@@ -214,25 +240,25 @@ transition-delay: 50ms;
 
 .lite-text{
     font-family: 'Montserrat';
-
     font-weight: 300;
-    font-size: 14px;
+    font-size: 9px;
 }
 
 .basic-text
 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 500;
 }
 .basic-text-bold
-{
-    font-size: 16px;
+{   
+    font-family: 'Montserrat';
+    font-size: 10px;
     font-weight: 600;
 }
 .image-svg-hover-triger
 {
-    width: 79px;
+    width: 80px;
     height: 80px;
 }
 .grey-bold-text-heading
@@ -263,15 +289,7 @@ transition-delay: 50ms;
     font-weight: 900;
     letter-spacing: 0.1em;
 }
-.salad-span-heading
-{
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.055em; 
-    font-weight: bold;
-    font-size: 22px;
-    color: #ADB450;
-    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
-}
+
 .text-italic
 {
     font-style: italic;
@@ -281,19 +299,15 @@ transition-delay: 50ms;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 149.4%;
+    font-size: 8px;
 }
 
 .salad-second-span-heading
 {
-    font-family: 'Montserrat', semibold;
-    
-    font-style: normal;
+    font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 28px;
+    font-size: 15px;
     color: #858B2A;
-    line-height: 135%;
     text-align: center;
     letter-spacing: -0.03em;
     word-spacing: 5px;
@@ -519,7 +533,7 @@ letter-spacing: -0.05em;
     
 }
 
-@media only screen and (max-width: 700px)
+@media only screen and (min-width: 700px)
 {    
     .anketa-content input[type=submit]
     {
@@ -541,15 +555,41 @@ letter-spacing: -0.05em;
     }
     .abitirientu-title-inside-cont{
         font-size: 24px;
-
-        margin-top: 55px;
-        margin-bottom: 54px;
-
-        height: 70xp;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #container-heading img
+    {
+        width: 105px;
+        height: 32px;
+    }
+    .salad-span-heading
+    {
+        font-size: 24px;
+    }
+    .salad-second-span-heading
+    {
+        font-size: 26px;
+    }
+    .basic-text
+    {
+        font-size: 14px;
+    }
+    .basic-text-bold
+    {
+        font-size: 14px;   
+    }
+    .picture-caption-italic
+    {
+        font-size: 13px;
+    }
+    .lite-text
+    {
+        font-size: 13px;
     }
 }
 
-@media only screen and (min-width: 1150px)
+@media only screen and (min-width: 1300px)
 {
     .anketa-content input[type=submit]
     {
@@ -563,17 +603,45 @@ letter-spacing: -0.05em;
         height: 600px;
     }
     .abitirientu-title-inside-cont{
-        font-weight: 600;
         font-size: 32px;
 
-        margin-top: 35px;
-        margin-bottom: 34px;
+        margin-top: 15px;
+        margin-bottom: 15px;
 
         height: 105xp;
     }
+    #container-heading img
+    {
+        width: 136px;
+        height: 42px;
+    }
+    .salad-span-heading
+    {
+        font-size: 32px;
+    }
+    .salad-second-span-heading
+    {
+        font-size: 34px;
+    }
+    .basic-text
+    {
+        font-size: 18px;
+    }
+    .basic-text-bold
+    {
+        font-size: 18px;   
+    }
+    .picture-caption-italic
+    {
+        font-size: 16px;
+    }
+    .lite-text
+    {
+        font-size: 16px;
+    }
 }
 
-@media only screen and (min-width: 1650px)
+@media only screen and (min-width: 1700px)
 {
     .anketa-content input[type=submit]
 {
@@ -682,7 +750,7 @@ font-size: 20px;
     }
 }
 
-@media only screen and (min-width: 2200px)
+/* @media only screen and (min-width: 2200px)
 {
     .anketa-content input[type=email]
 {
@@ -783,4 +851,4 @@ font-size: 25px;
     {
         font-size: 36px;
     }
-}
+} */

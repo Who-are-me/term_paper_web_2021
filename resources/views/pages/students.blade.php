@@ -16,7 +16,7 @@
     </div>
 
 
-    <div class="row d-flex m-0 p-0 content-background">
+    <div class="row d-flex m-0 p-0 content-background-student">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8">
             <div class="d-flex col-12 justify-content-between py-5 m-0" id="container-heading">
