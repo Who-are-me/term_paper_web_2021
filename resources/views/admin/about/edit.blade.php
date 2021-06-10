@@ -12,6 +12,8 @@
 @section('title-menu', 'Адмін-панель')
 
 @section('content')
+<link href="css/welcome_admin.css" rel="stylesheet">
+
 <!-- include editor tiny -->
 <script src="https://cdn.tiny.cloud/1/i4jartckvb9dpzqmqukjtexck4q7guma9z6ip130qk1h1efo/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -40,7 +42,7 @@
 
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Редактор сторінки: Про циклову</h3>
+            <h3 class="card-title">Редактор сторінки: Про циклову (для вибору картинки, клацнути на ту, що бажаєте вибрати)</h3>
         </div>      
               <!-- form start -->
         <form action="{{ route('about.update', $content[0]->id) }}" method="POST">
@@ -48,10 +50,19 @@
             @method('PUT')
 
             <div class="card-body">
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image0">Вибрати лого циклової комісії</button>
-                    <input type="text" name="img_0" class="form-control mt-2" id="feature_image0" value="{{ $content[0]->text  }}" readonly>
-                    <img id='img0' src="{{ $content[0]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
+
+                <div class="cssSlider col-12">
+                    <label class="card-title">Виберіть картинку відділення електронних апаратів</label><br><br>
+                    <div class="col-12 d-block d-md-flex form-group">
+                        <div class="col-12 col-md-7">
+                            <input type="hidden" name="img_0" id="feature_image0" name="feature_image" value="{{ $content[0]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image0"><img id="img0" class="img" src="{{ $content[0]->text }}" class="w-100"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-block d-md-flex">
+                        <div class="col-12 col-md-12"></div>
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -64,14 +75,26 @@
                     <textarea name="text_1" class="editor" style="height: 600px;">{{ $content[2]->text }}</textarea>
                 </div>
 
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image1">Вибрати фото складу циклової комісії</button>
-                    <input type="text" name="img_1" class="form-control mt-2" id="feature_image1" value="{{ $content[3]->text  }}" readonly>
-                    <img id='img1' src="{{ $content[3]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
+                <div class="cssSlider col-12">
+                    <label class="card-title">Вибрати фото складу циклової комісії</label><br><br>
+                    <div class="col-12 d-block d-md-flex form-group">
+                        <div class="col-12 col-md-7">
+                            <input type="hidden" name="img_1" id="feature_image1" name="feature_image" value="{{ $content[0]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image1"><img id="img1" class="img" src="{{ $content[3]->text }}" class="w-100"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-block d-md-flex">
+                        <div class="col-12 col-md-12"></div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <a href="{{ route('teachers.index') }}" target="_blank">Перейти до форми викладачів</a> 
                 </div>
 
                 <div class="form-group">
-                    <label for="">Заголовок тексту</label>
+                    <label for="">Заголовок тексту під викладачами</label>
                     <input value="{{ $content[4]->text }}" type="text" name="text_2" class="form-control" id="" required>
                 </div>
 

@@ -15,7 +15,7 @@ class CreateWelcomeContentsTable extends Migration
     {
         Schema::create('welcome_contents', function (Blueprint $table) {
             $table->id();
-            $table->string('text');
+            $table->text('text');
             $table->timestamps();
         });
     }

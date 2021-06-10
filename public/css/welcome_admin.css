@@ -24,16 +24,17 @@
     width: 100%;
     height: auto;
 }
-/*
+
 .cssSlider .slides > li:first-child:not(:target) {
     z-index: 1;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
 }
-*/
+
 .cssSlider .thumbnails {
     display: block;
-    position: relative;
+/*    position: relative;*/
+    position: unset;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -42,6 +43,7 @@
     float: left;
     width: 20%;
 }
+
 .cssSlider .thumbnails > li > a {
     display: block;
 }
@@ -100,4 +102,7 @@
         -webkit-transform: translateX(100%);
                 transform: translateX(100%);
     }
+}
+.img {
+    width: 100%;
 }

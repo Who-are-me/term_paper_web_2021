@@ -42,189 +42,104 @@
 
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Редактор сторінки: Домашня</h3>
+            <h3 class="card-title">Редактор сторінки: Домашня (для вибору картинки, клацнути на ту, що бажаєте вибрати)</h3>
         </div>      
               <!-- form start -->
         <form action="{{ route('welcome.update', $text[0]->id) }}" method="POST">
             @csrf 
             @method('PUT')
 
-            <div class="card-body">              
-                <div class="form-group">
-                    <button id="test"  type="submit"  class="popup_selector btn btn-primary" data-inputid="feature_image0">Вибрати фото 1 на слайдер</button>
-                    <input type="text" name="img_0" class="form-control mt-2" id="feature_image0" name="feature_image" value="{{ $text[4]->text }}" readonly>
-                    <img id="img0" src="{{ $text[4]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
+            <div class="card-body">
+
+                <div class="cssSlider col-12">
+                    <label class="card-title">Виберіть картинки слайдера</label><br><br>
+                    <div class="col-12 d-block d-md-flex form-group">
+                        <div class="col-12 col-md-4">
+                            <input type="hidden" name="img_0" id="feature_image0" name="feature_image" value="{{ $text[0]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image0"><img id="img0" class="img" src="{{ $text[0]->text }}" ></a>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="hidden" name="img_1" id="feature_image1" name="feature_image" value="{{ $text[1]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image1"><img id="img1" class="img" src="{{ $text[1]->text }}" ></a>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="hidden" name="img_2" id="feature_image2" name="feature_image" value="{{ $text[2]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image2"><img id="img2" class="img" src="{{ $text[2]->text }}" ></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-block d-md-flex">
+                        <div class="col-12 col-md-4"></div>
+                        <div class="col-12 col-md-4"></div>
+                        <div class="col-12 col-md-4"></div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <button type="submit" onClick='img1()' class="popup_selector btn btn-primary" data-inputid="feature_image1">Вибрати фото 2 на слайдер</button>
-                    <input type="text" name="img_1" class="form-control mt-2" id="feature_image1" name="feature_image" value="{{ $text[5]->text }}" readonly>
-                    <img id="img1" src="{{ $text[5]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">                
-                </div>
-                
-                <div class="form-group">
-                    <button type="submit" onClick='img2()' class="popup_selector btn btn-primary" data-inputid="feature_image2">Вибрати фото 3 на слайдер</button>
-                    <input type="text" name="img_2" class="form-control mt-2" id="feature_image2" name="feature_image" value="{{ $text[6]->text }}" readonly>
-                    <img id="img2" src="{{ $text[6]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div>
 
                 <div class="form-group">
-                    <label for="">Заголовок тексту на слайдері</label>
-                    <input value="{{ $text[0]->text }}" type="text" name="text_0" class="form-control" id="" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="">Під заголовок на слайдері</label>
-                    <input value="{{ $text[1]->text }}" type="text" name="text_1" class="form-control" id="" required>
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image3">Вибрати фото над слайдером</button>
-                    <input type="text" name="img_3" class="form-control mt-2" id="feature_image3" name="feature_image" value="{{ $text[7]->text }}" readonly>
-                    <img id='img3' src="{{ $text[7]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
+                    <label for="">Заголовок тексту "Про нас"</label>
+                    <input value="{{ $text[3]->text }}" type="text" name="text_0" class="form-control" id="" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="">Заголовок</label>
-                    <input value="{{ $text[2]->text }}" type="text" name="text_2" class="form-control" id="" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="">Під заголовок</label>
-                    <textarea name="text_3" class="editor" style="height: 600px;">{{ $text[3]->text }}</textarea>
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image4">Вибрати верхнє фото справа "про нас"</button>
-                    <input type="text" name="img_4" class="form-control mt-2" id="feature_image4" name="feature_image" value="{{ $text[8]->text }}" readonly>
-                    <img id='img4' src="{{ $text[8]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image5">Вибрати нижнє фото справа "про нас"</button>
-                    <input type="text" name="img_5" class="form-control mt-2" id="feature_image5" name="feature_image" value="{{ $text[9]->text }}" readonly>
-                    <img id='img5' src="{{ $text[9]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
+                    <label for="">Текст блоку "Про нас"</label>
+                    <textarea name="text_1" class="editor" style="height: 600px;">{{ $text[4]->text }}</textarea>
                 </div>
 
 
+                <div class="cssSlider col-12">
+                    <label class="card-title">Виберіть картинки справа від блоку "Про нас"</label><br><br>
+                    <div class="col-12 d-block d-md-flex form-group">
+                        <div class="col-12 col-md-6">
+                            <input type="hidden" name="img_3" id="feature_image3" name="feature_image" value="{{ $text[5]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image3"><img id="img3" class="img" src="{{ $text[5]->text }}" class="w-100"></a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="hidden" name="img_4" id="feature_image4" name="feature_image" value="{{ $text[6]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image4"><img id="img4" class="img" src="{{ $text[6]->text }}" class="w-100"></a>
+                        </div>
+                    </div>
 
-
-        <!-- <div class="col-12 d-none d-sm-flex p-0 my-3 galery-height">
-            <div class="col-8 p-0 galery-height d-block">
-              <div class="col-12 p-0 m-0 galery-left-upper d-flex">
-                <div class="col-6 p-0 m-0">
-                  <img src="image/jpg/orig/Gallery-img-1.jpg"></div>
-                <div class="col-6 p-0 m-0"><img src="image/jpg/orig/Gallery-img-2.jpg"></div>
-              </div>
-              <div class="col-12 p-0 m-0 galery-left-bottom d-flex">
-                <div class="col-7 p-0 m-0 d-block">
-                  <div class="col-12 p-0 m-0 h-50"><img src="image/jpg/orig/Gallery-img-4.jpg"></div>
-                  <div class="col-12 p-0 m-0 h-50"><img src="image/jpg/orig/Gallery-img-5.jpg"></div>
-                </div>
-                <div class="col-5 p-0 m-0"><img src="image/jpg/orig/Gallery-img-6.jpg"></div>
-              </div>
-              
-            </div>
-            <div class="col-4 p-0 d-block galery-height">
-              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-3.jpg"></div>
-              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-7.jpg"></div>
-              <div class="col-12 p-0 galery-triple-block"> <img src="image/jpg/orig/Gallery-img-8.jpg"></div>
-            </div> 
-        </div> -->
-
-
-<div class="cssSlider">
-    <ul class="slides">
-        <li id="slide1"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-        <li id="slide2"><img src="https://images.unsplash.com/photo-1433256392503-913cee5877e3?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-        <li id="slide3"><img src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-        <li id="slide4"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-        <li id="slide5"><img src="https://images.unsplash.com/photo-1453284441168-8780c9f52097?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-    </ul>
-    <ul class="thumbnails">
-        <li><a href="#slide1"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=840&q=60" /></a></li>
-        <li><a href="#slide2"><img src="https://images.unsplash.com/photo-1433256392503-913cee5877e3?auto=format&fit=crop&w=840&q=60" /></a></li>
-        <li><a href="#slide3"><img src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?auto=format&fit=crop&w=840&q=60" /></a></li>
-        <li><a href="#slide4"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=840&q=60" /></a></li>
-        <li><a href="#slide5"><img src="https://images.unsplash.com/photo-1453284441168-8780c9f52097?auto=format&fit=crop&w=840&q=60" /></a></li>
-    </ul>
-</div>
-
-
-
-
-
-
-                <!-- <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image6">Вибрати фото 1 на галерею</button>
-                    <input type="hidden" name="img_6" class="form-control mt-2" id="feature_image6" name="feature_image" value="{{ $text[10]->text }}" readonly>
-                    <a href="" class="popup_selector" data-inputid="feature_image6"><img id='img6' src="{{ $text[10]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;"></a>
-                </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image7">Вибрати фото 2 на галерею</button>
-                    <input type="text" name="img_7" class="form-control mt-2" id="feature_image7" name="feature_image" value="{{ $text[11]->text }}" readonly>
-                    <img id='img7' src="{{ $text[11]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
+                    <div class="col-12 d-block d-md-flex">
+                        <div class="col-12 col-md-6"></div>
+                        <div class="col-12 col-md-6"></div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image8">Вибрати фото 3 на галерею</button>
-                    <input type="text" name="img_8" class="form-control mt-2" id="feature_image8" name="feature_image" value="{{ $text[12]->text }}" readonly>
-                    <img id='img8' src="{{ $text[12]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
+
+                <div class="cssSlider col-12">
+                    <label class="card-title">Виберіть картинки галереї</label><br><br>
+                    <div class="col-12 d-block d-md-flex form-group">
+                        <div class="col-12 col-md-2">
+                            <input type="hidden" name="img_5" id="feature_image5" name="feature_image" value="{{ $text[7]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image5"><img id="img5" class="img" src="{{ $text[7]->text }}" ></a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <input type="hidden" name="img_6" id="feature_image6" name="feature_image" value="{{ $text[8]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image6"><img id="img6" class="img" src="{{ $text[8]->text }}" ></a>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <input type="hidden" name="img_7" id="feature_image7" name="feature_image" value="{{ $text[9]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image7"><img id="img7" class="img" src="{{ $text[9]->text }}" class="w-100"></a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <input type="hidden" name="img_8" id="feature_image8" name="feature_image" value="{{ $text[10]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image8"><img id="img8" class="img" src="{{ $text[10]->text }}" class="w-100"></a>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <input type="hidden" name="img_9" id="feature_image9" name="feature_image" value="{{ $text[11]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image9"><img id="img9" class="img" src="{{ $text[11]->text }}" class="w-100"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-block d-md-flex">
+                        <div class="col-12 col-md-3"></div>
+                        <div class="col-12 col-md-3"></div>
+                        <div class="col-12 col-md-3"></div>
+                        <div class="col-12 col-md-3"></div>
+                        <div class="col-12 col-md-3"></div>
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image9">Вибрати фото 4 на галерею</button>
-                    <input type="text" name="img_9" class="form-control mt-2" id="feature_image9" name="feature_image" value="{{ $text[13]->text }}" readonly>
-                    <img id='img9' src="{{ $text[13]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image10">Вибрати фото 5 на галерею</button>
-                    <input type="text" name="img_10" class="form-control mt-2" id="feature_image10" name="feature_image" value="{{ $text[14]->text }}" readonly>
-                    <img id='img10' src="{{ $text[14]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image11">Вибрати фото 6 на галерею</button>
-                    <input type="text" name="img_11" class="form-control mt-2" id="feature_image11" name="feature_image" value="{{ $text[15]->text }}" readonly>
-                    <img id='img11' src="{{ $text[15]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image12">Вибрати фото 7 на галерею</button>
-                    <input type="text" name="img_12" class="form-control mt-2" id="feature_image12" name="feature_image" value="{{ $text[16]->text }}" readonly>
-                    <img id='img12' src="{{ $text[16]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image13">Вибрати фото 8 на галерею</button>
-                    <input type="text" name="img_13" class="form-control mt-2" id="feature_image13" name="feature_image" value="{{ $text[17]->text }}" readonly>
-                    <img id='img13' src="{{ $text[17]->text }}" alt="" class="img" height="15%" width="100%" style="display: block;">
-                </div> -->
-
-
-
-
-
-
-
             </div>
 
             <div class="card-footer">

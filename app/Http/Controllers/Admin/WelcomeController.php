@@ -50,9 +50,11 @@ class WelcomeController extends Controller
      * @param  \App\Models\StringContent  $stringContent
      * @return \Illuminate\Http\Response
      */
-    public function show(StringContent $stringContent)
+    public function show(WelcomeContent $welcomeContent)
     {
-        //
+        $content = WelcomeContent::all();
+
+        return view('pages.welcome', compact('content') );
     }
 
     /**
@@ -75,25 +77,21 @@ class WelcomeController extends Controller
      */
     public function update(Request $request, WelcomeContent $welcomeContent)
     {
-        DB::table('welcome_contents')->where('id', 1)->update(['text' => $request->text_0]);
-        DB::table('welcome_contents')->where('id', 2)->update(['text' => $request->text_1]);
-        DB::table('welcome_contents')->where('id', 3)->update(['text' => $request->text_2]);
-        DB::table('welcome_contents')->where('id', 4)->update(['text' => $request->text_3]);
+        DB::table('welcome_contents')->where('id', 1)->update(['text' => $request->img_0]);
+        DB::table('welcome_contents')->where('id', 2)->update(['text' => $request->img_1]);
+        DB::table('welcome_contents')->where('id', 3)->update(['text' => $request->img_2]);
 
-        DB::table('welcome_contents')->where('id', 5)->update(['text' => $request->img_0]);
-        DB::table('welcome_contents')->where('id', 6)->update(['text' => $request->img_1]);
-        DB::table('welcome_contents')->where('id', 7)->update(['text' => $request->img_2]);
-        DB::table('welcome_contents')->where('id', 8)->update(['text' => $request->img_3]);
-        DB::table('welcome_contents')->where('id', 9)->update(['text' => $request->img_4]);
-        DB::table('welcome_contents')->where('id', 10)->update(['text' => $request->img_5]);
-        DB::table('welcome_contents')->where('id', 11)->update(['text' => $request->img_6]);
-        DB::table('welcome_contents')->where('id', 12)->update(['text' => $request->img_7]);
-        DB::table('welcome_contents')->where('id', 13)->update(['text' => $request->img_8]);
-        DB::table('welcome_contents')->where('id', 14)->update(['text' => $request->img_9]);
-        DB::table('welcome_contents')->where('id', 15)->update(['text' => $request->img_10]);
-        DB::table('welcome_contents')->where('id', 16)->update(['text' => $request->img_11]);
-        DB::table('welcome_contents')->where('id', 17)->update(['text' => $request->img_12]);
-        DB::table('welcome_contents')->where('id', 18)->update(['text' => $request->img_13]);
+        DB::table('welcome_contents')->where('id', 4)->update(['text' => $request->text_0]);
+        DB::table('welcome_contents')->where('id', 5)->update(['text' => $request->text_1]);
+
+        DB::table('welcome_contents')->where('id', 6)->update(['text' => $request->img_3]);
+        DB::table('welcome_contents')->where('id', 7)->update(['text' => $request->img_4]);
+
+        DB::table('welcome_contents')->where('id', 8)->update(['text' => $request->img_5]);
+        DB::table('welcome_contents')->where('id', 9)->update(['text' => $request->img_6]);
+        DB::table('welcome_contents')->where('id', 10)->update(['text' => $request->img_7]);
+        DB::table('welcome_contents')->where('id', 11)->update(['text' => $request->img_8]);
+        DB::table('welcome_contents')->where('id', 12)->update(['text' => $request->img_9]);
 
         return redirect()->back()->withSuccess("Сторінка [Домашня] була успішно оновлена!"); 
     }

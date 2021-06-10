@@ -342,6 +342,8 @@ transition-delay: 50ms;
 
 .input-transparent-div .input-box input
 {
+    font-family: 'Montserrat', sans-serif;
+font-style: normal;
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -355,6 +357,8 @@ transition-delay: 50ms;
 
 .input-transparent-div .input-box label
 {
+    font-family: 'Montserrat', sans-serif;
+font-style: normal;
     position: absolute;
     top:0;
     left: 0;
@@ -373,43 +377,18 @@ transition-delay: 50ms;
     color: #ffffff;
     font-size: 15px;
 }
+
 .feedback-header-text
 {
-    padding-top: 40px;
-    padding-bottom: 100px;
     font-family: 'Montserrat', semibold;
 font-style: normal;
-font-weight: 800;
+font-weight: bold;
 font-size: 34px;
 line-height: 125%;
 color: white;
 }
 
-.input-transparent-div .input-box select
-{
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
 
-.input-transparent-div .input-box .select-option
-{
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
 
 .select-feedback select
 {
@@ -458,6 +437,46 @@ line-height: 135%;
 letter-spacing: -0.05em;
 }
 
+.anketa-content input[type=text]
+{
+    width: 100%;
+    border: none;
+   padding: 10px;
+   outline: none;
+   color: gray;
+}
+
+.anketa-content input[type=text]:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+
+  .anketa-content input[type=email]
+{
+    width: 100%;
+    border: none;
+   padding: 10px;
+   outline: none;
+   color: gray;
+}
+
+.anketa-content input[type=email]:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  .anketa-content input[type=submit]
+  {
+    width: 100%;
+    border: none;
+    outline: none;  
+    background: #BCC34A;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
 .slider img
 {
     padding: 20px;
@@ -465,8 +484,50 @@ letter-spacing: -0.05em;
     border-radius: 10%;
 }
 
+.feedback-textarea
+{
+    font-family: 'Montserrat', semibold;
+    font-style: sans-serif;
+    color: white;
+    background:none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.feedback-textarea:focus
+{
+        outline: none;
+}
+.feedback-basic-font
+{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+        font-size: 16px;
+        color: white;
+}
+
+.feedback-send-button
+{
+    font-size: 0px;
+    background: url('../../image/feedBack-sendButton.svg') no-repeat center / cover;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    border-radius: 50%;
+    
+}
+
 @media only screen and (max-width: 700px)
 {    
+    .anketa-content input[type=submit]
+    {
+        padding: 8px;
+       margin-top: 8px;
+       margin-bottom: 8px;
+    
+    }
     .picture-caption-italic
     {
         font-size: 12px;
@@ -490,6 +551,13 @@ letter-spacing: -0.05em;
 
 @media only screen and (min-width: 1150px)
 {
+    .anketa-content input[type=submit]
+    {
+        padding: 10px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+    
+    }
     .galery-height
     {
         height: 600px;
@@ -507,6 +575,26 @@ letter-spacing: -0.05em;
 
 @media only screen and (min-width: 1650px)
 {
+    .anketa-content input[type=submit]
+{
+   margin-top: 15px;
+   margin-bottom: 15px;
+
+}
+    .anketa-content input
+{
+   padding: 18px;
+   font-size: 20px;
+
+}
+    .anketa-green-header-font
+{
+    font-size: 28px;
+}
+.anketa-basic-font
+{
+font-size: 20px;
+}
     .red-button
     {
         font-size: 29px;
@@ -596,6 +684,35 @@ letter-spacing: -0.05em;
 
 @media only screen and (min-width: 2200px)
 {
+    .anketa-content input[type=email]
+{
+   padding: 22px;
+
+}
+.anketa-content input[type=text]
+{
+   padding: 22px;
+
+}
+.anketa-content input[type=submit]
+{
+   padding: 32px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+}
+    .anketa-content input
+    {
+        font-size: 25px;
+    }
+    .anketa-green-header-font
+{
+    font-size: 34px;
+}
+.anketa-basic-font
+{
+font-size: 25px;
+}
     .red-button
     {
         height: 120px;
