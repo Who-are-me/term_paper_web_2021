@@ -135,7 +135,7 @@
 #green-span-heading
 {
     font-family: 'Montserrat';
-    letter-spacing: 0.185em; 
+    letter-spacing: 0.05em; 
     font-weight: 700;
     font-size: 14px;
     color: #47915E;
@@ -282,12 +282,12 @@ transition-delay: 50ms;
 }
 .blue-header
 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-size: 22px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
     color: #535F77;
-    font-weight: 900;
     letter-spacing: 0.1em;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
 }
 
 .text-italic
@@ -553,7 +553,26 @@ letter-spacing: -0.05em;
         font-size: 18px;
         margin: 50px;
     }
-    .abitirientu-title-inside-cont{
+    .about-title-inside-cont
+    {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .material-base-title-inside-cont
+    {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .abitirientu-title-inside-cont
+    {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .for-student-title-inside-cont
+    {
         font-size: 24px;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -562,6 +581,18 @@ letter-spacing: -0.05em;
     {
         width: 105px;
         height: 32px;
+    }
+    #green-span-heading
+    {
+        font-size: 18px;
+    }
+    #grey-span-heading
+    {
+        font-size: 24px;
+    }
+    .blue-header
+    {
+        font-size: 24px;
     }
     .salad-span-heading
     {
@@ -602,7 +633,35 @@ letter-spacing: -0.05em;
     {
         height: 600px;
     }
-    .abitirientu-title-inside-cont{
+    .about-title-inside-cont
+    {
+        font-size: 32px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        height: 105xp;
+    }
+    .material-base-title-inside-cont
+    {
+        font-size: 32px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        height: 105xp;
+    }
+    .abitirientu-title-inside-cont
+    {
+        font-size: 32px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        height: 105xp;
+    }
+    .for-student-title-inside-cont
+    {
         font-size: 32px;
 
         margin-top: 15px;
@@ -614,6 +673,18 @@ letter-spacing: -0.05em;
     {
         width: 136px;
         height: 42px;
+    }
+    #green-span-heading
+    {
+        font-size: 26px;  
+    }
+    #grey-span-heading
+    {
+        font-size: 32px;
+    }
+    .blue-header
+    {
+        font-size: 32px;
     }
     .salad-span-heading
     {
@@ -696,18 +767,25 @@ font-size: 20px;
     {
         font-size: 52px;
     }
+    #green-span-heading
+    {
+        font-size: 38px;
+    }
+    #grey-span-heading
+    {
+        font-size: 42px;
+    }
+    .blue-header
+    {
+        font-size: 42px;
+    }
     .salad-span-heading
     {
         font-size: 42px;
-        letter-spacing: 0.185em;
     }
     .galery-height
     {
         height: 780px;
-    }
-    #green-span-heading
-    {
-        font-size: 18px;
     }
     #container-heading img
     {
@@ -724,10 +802,6 @@ font-size: 20px;
         height: 98px;
         padding-bottom: 10px;
     }
-    #grey-span-heading
-    {
-        font-size: 26px;
-    }
     .grey-bold-text-heading
     {
         font-size: 34px;
@@ -736,11 +810,35 @@ font-size: 20px;
     {
        font-size: 25px;
     }
-    .blue-header
+    .about-title-inside-cont
     {
-        font-size: 28px;
+        font-size: 42px;
+
+        margin-top: 55px;
+        margin-bottom: 54px;
+
+        height: 160xp;
     }
-    .abitirientu-title-inside-cont{
+    .material-base-title-inside-cont
+    {
+        font-size: 42px;
+
+        margin-top: 55px;
+        margin-bottom: 54px;
+
+        height: 160xp;
+    }
+    .abitirientu-title-inside-cont
+    {
+        font-size: 42px;
+
+        margin-top: 55px;
+        margin-bottom: 54px;
+
+        height: 160xp;
+    }
+    .for-student-title-inside-cont
+    {
         font-size: 42px;
 
         margin-top: 55px;
@@ -749,106 +847,3 @@ font-size: 20px;
         height: 160xp;
     }
 }
-
-/* @media only screen and (min-width: 2200px)
-{
-    .anketa-content input[type=email]
-{
-   padding: 22px;
-
-}
-.anketa-content input[type=text]
-{
-   padding: 22px;
-
-}
-.anketa-content input[type=submit]
-{
-   padding: 32px;
-   margin-top: 20px;
-   margin-bottom: 20px;
-
-}
-    .anketa-content input
-    {
-        font-size: 25px;
-    }
-    .anketa-green-header-font
-{
-    font-size: 34px;
-}
-.anketa-basic-font
-{
-font-size: 25px;
-}
-    .red-button
-    {
-        height: 120px;
-        width: 700px;
-        font-size: 32px;
-        margin: 300px;
-    }
-    .basic-text-bold
-    {
-        font-size: 35px;
-    }
-    .image-ridius-border
-    {
-        border-radius: 40px;
-    }
-    .picture-caption-italic
-    {
-        font-size: 32px;
-    }
-    .salad-second-span-heading
-    {
-        font-size: 42px;
-    }
-    .salad-span-heading
-    {
-        font-size: 36px;
-    }
-    .galery-height
-    {
-        height: 870px;
-    }
-    #green-span-heading
-    {
-        font-size: 22px;
-    }
-    #container-heading img
-    {
-        width: 110px;
-        height: 45px;
-    }
-    #black-span-heading
-    {
-        font-size: 32px;
-    }
-    .basic-text
-    {
-        font-size: 32px;
-    }    
-    .image-svg-hover-triger
-    {
-        width: 110px;
-        height: 111px;
-        padding-bottom: 20px;
-    }
-    #grey-span-heading
-    {
-        font-size: 32px;
-    }
-    .grey-bold-text-heading
-    {
-        font-size: 38px;
-    }
-    .black-list-header
-    {
-       font-size: 29px;
-    }
-    .blue-header
-    {
-        font-size: 36px;
-    }
-} */
