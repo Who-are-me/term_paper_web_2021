@@ -28,13 +28,13 @@
                 <div class="col-12 p-0 m-0 d-flex">
                     <div class="col-4 p-0"><img class="w-100" src="{{ $content[0]->text }}"></div>
                     <div class="col-8 text-center align-items-center">
-                        <p class="basic-text"><?php echo $content[1]->text; ?></p>
+                        <span class="basic-text"><?php echo $content[1]->text; ?></span>
                     </div>
                 </div>
                 <div class="col-12 p-0 m-0 d-block d-sm-flex pt-5">
                     <div class="col-2 d-none d-md-flex"></div>
                     <div class="col-12 col-md-8 text-center">
-                        <P class="basic-text"><?php echo $content[2]->text; ?></P>
+                        <span class="basic-text"><?php echo $content[2]->text; ?></span>
                     </div>
                     <div class="col-2 d-none d-md-flex"></div>
                 </div>
