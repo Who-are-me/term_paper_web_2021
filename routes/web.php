@@ -21,9 +21,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages.welcome');
 // });
 
-Route::get('/about_us', function () {
-    return view('pages.about');
-});
+// Route::get('/about_us', function () {
+//     return view('pages.about');
+// });
 
 Route::get('/matbase', function () {
     return view('pages.base');
@@ -48,6 +48,8 @@ Auth::routes([
 Route::get('/tidings', [App\Http\Controllers\Admin\NewsController::class, 'show']);
 
 Route::get('/', [App\Http\Controllers\Admin\WelcomeController::class, 'show']);
+
+Route::get('/about_us', [App\Http\Controllers\Admin\AboutController::class, 'show']);
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home'); 
 

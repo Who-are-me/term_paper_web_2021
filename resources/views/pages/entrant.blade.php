@@ -27,9 +27,23 @@
             <img src="image/right-salad-heading-separate.svg">
         </div>
 
-        <div class="col-12 p-0 py-5 d-none">
-            Слайдер
+        <div class="col-12 p-3">
+            <div class="slider">
+                <div><img src="../../image/dark-wood-background.png" ></div>
+                <div><img src="../../image/dark-wood-background.png" ></div>
+                <div><img src="../../image/dark-wood-background.png" ></div>
+                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                <div><img src="../../image/dark-wood-background.png" ></div>
+                <div><img src="../../image/dark-wood-background.png" ></div>
+                <div><img src="../../image/dark-wood-background.png" ></div>
+                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+            </div>
         </div>
+
         <div class="col-12 p-0 m-0 d-flex text-center">
             <div class="col-1"></div>
             <div class="col-10 p-0">

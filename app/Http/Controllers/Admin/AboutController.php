@@ -53,7 +53,13 @@ class AboutController extends Controller
      */
     public function show(AboutContent $aboutContent)
     {
-        //
+        $content = AboutContent::all();
+        $teachers = Teachers::all();
+
+        return view('pages.about',[
+            'content' => $content,
+            'teachers' => $teachers 
+        ]);
     }
 
     /**
