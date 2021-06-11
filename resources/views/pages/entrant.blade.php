@@ -97,7 +97,6 @@
                     <div class="col-2"></div>
                     <div class="col-6"><img class="w-100" src="image/jpg/abiturientu-3.png"></div>
                     <div class="col-4"></div>
-
                 </div>
                 <div class="col-6"></div>
             </div>
@@ -315,7 +314,6 @@
         </div>
 
 
-
         <div class="col-12 p-0 py-5"> 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -404,8 +402,6 @@
                 </a>
               </div>
         </div>
-
-
 
 
         <div class="col-12 p-0 text-center py-5 d-none">
