@@ -21,9 +21,9 @@
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8">
         <div class="d-flex col-12 justify-content-between py-5 m-0" id="container-heading">
-            <img src="../../image/left-student-heading-separate.svg">
+            <img src="image/left-student-heading-separate.svg">
             <span class="salad-span-heading student-span-heading letter-spacing">ДИСЦИПЛІНИ</span>
-            <img src="../../image/right-student-heading-separate.svg">
+            <img src="image/right-student-heading-separate.svg">
         </div>
         <div class="col-12 d-flex p-0">
             <div class="col-sm-1 col-lg-3 d-none d-sm-flex"> </div>
@@ -67,9 +67,9 @@
     <div class="col-12 col-md-10 col-lg-8">
         <div class="col-12 d-block p-0 m-0">
             <div class="d-flex col-12 justify-content-between p-0 py-5 m-0" id="container-heading">
-                <img src="../../image/left-student-heading-separate.svg">
+                <img src="image/left-student-heading-separate.svg">
                 <span class="salad-span-heading student-span-heading letter-spacing text-center">ГРАФІК НАВЧАЛЬНОГО ПРОЦЕСУ</span>
-                <img src="../../image/right-student-heading-separate.svg">
+                <img src="image/right-student-heading-separate.svg">
             </div>
             <div class="col-12 p-0 m-0 text-center">
                 <button type="" class="red-button">Завантажити графік</button>
@@ -83,10 +83,10 @@
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 d-block">
         <div class="d-flex col-12 justify-content-between p-0 py-5 m-0" id="container-heading">
-            <img src="../../image/left-student-heading-separate.svg">
+            <img src="image/left-student-heading-separate.svg">
             <span class="salad-span-heading student-span-heading letter-spacing text-center">ДИПЛОМНЕ
                 ПРОЕКТУВАННЯ</span>
-            <img src="../../image/right-student-heading-separate.svg">
+            <img src="image/right-student-heading-separate.svg">
         </div>
         <div class="col-12 p-o py-5 text-center">
             <p><span class="salad-span-heading student-second-span-heading text-center">Захист студентами дипломних
@@ -193,7 +193,7 @@
             <div class="col-12 d-flex py-2">
                 <div class="col-3"> </div>
                 <div class="col-6 p-0 text-center">
-                    <img src="../../image/dark-wood-background.png" class="w-100  image-ridius-border">
+                    <img src="image/dark-wood-background.png" class="w-100  image-ridius-border">
                 </div>
                 <div class="col-3"> </div>
             </div>
@@ -216,7 +216,7 @@
                 <div class="slider-student-one-photo ">
                     <div><img src="/files/456.jpg" ></div>
                     <div><img src="/files/7.jpeg" ></div>
-                    <div><img src="../../image/dark-wood-background.png" ></div>
+                    <div><img src="image/dark-wood-background.png" ></div>
                 </div>
             </div>
 
@@ -237,7 +237,7 @@
             <div class="col-12 d-flex py-2">
                 <div class="col-3"> </div>
                 <div class="col-6 p-0 text-center">
-                    <img src="../../image/dark-wood-background.png" class="w-100 image-ridius-border">
+                    <img src="image/dark-wood-background.png" class="w-100 image-ridius-border">
                 </div>
                 <div class="col-3"> </div>
             </div>
@@ -254,7 +254,7 @@
             <div class="col-12 d-flex py-2">
                 <div class="col-3"> </div>
                 <div class="col-6 p-0 text-center">
-                    <img src="../../image/dark-wood-background.png" class="w-100 image-ridius-border">
+                    <img src="image/dark-wood-background.png" class="w-100 image-ridius-border">
                 </div>
                 <div class="col-3"> </div>
             </div>
@@ -272,13 +272,13 @@
         <div class="col-12 d-block py-3">
             <div class="col-12 d-flex p-0">
                 <div class="col-6 p-2">
-                    <img src="../../image/dark-wood-background.png" class="w-100 image-ridius-border">
+                    <img src="image/dark-wood-background.png" class="w-100 image-ridius-border">
                 </div>
                 <div class="col-6 p-0"></div>
             </div>
             <div class="col-12 d-flex p-0">
                 <div class="col-6 p-0"></div>
-                <div class="col-6 p-2"><img src="../../image/dark-wood-background.png" class="w-100 image-ridius-border"></div>
+                <div class="col-6 p-2"><img src="image/dark-wood-background.png" class="w-100 image-ridius-border"></div>
             </div>
         </div>
     </div>

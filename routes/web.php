@@ -29,9 +29,9 @@ Route::get('/matbase', function () {
     return view('pages.base');
 });
 
-Route::get('/to_entrant', function () {
-    return view('pages.entrant');
-});
+// Route::get('/to_entrant', function () {
+//     return view('pages.entrant');
+// });
 
 Route::get('/student', function () {
     return view('pages.students');
