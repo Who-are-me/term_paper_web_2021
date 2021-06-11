@@ -40,7 +40,7 @@
 
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Редактор новини: {{ $news->title }}</h3>
+            <h3 class="card-title">Редактор новини: {{ $news->title }} (для вибору картинки, клацнути на ту, що бажаєте вибрати)</h3>
         </div>
         
               <!-- form start -->

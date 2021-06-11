@@ -92,6 +92,7 @@ class WelcomeController extends Controller
         DB::table('welcome_contents')->where('id', 10)->update(['text' => $request->img_7]);
         DB::table('welcome_contents')->where('id', 11)->update(['text' => $request->img_8]);
         DB::table('welcome_contents')->where('id', 12)->update(['text' => $request->img_9]);
+        DB::table('welcome_contents')->where('id', 13)->update(['text' => $request->img_10]);
 
         return redirect()->back()->withSuccess("Сторінка [Домашня] була успішно оновлена!"); 
     }

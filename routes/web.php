@@ -51,6 +51,8 @@ Route::get('/', [App\Http\Controllers\Admin\WelcomeController::class, 'show']);
 
 Route::get('/about_us', [App\Http\Controllers\Admin\AboutController::class, 'show']);
 
+Route::get('/to_entrant', [App\Http\Controllers\Admin\EntrantController::class, 'show']);
+
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home'); 
 
 Route::post('/feedbackstore', [App\Http\Controllers\Admin\FeedbackController::class, 'store']);

@@ -18,7 +18,7 @@ class CreateFeedbackTable extends Migration
             $table->string('pip');
             $table->string('phone');
             $table->string('email')->unique();
-            $table->string('school');
+            $table->string('school')->nullable();
             $table->string('option')->nullable();
             $table->timestamps();
         });

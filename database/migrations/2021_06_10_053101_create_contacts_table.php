@@ -18,8 +18,8 @@ class CreateContactsTable extends Migration
             $table->string('pip');
             $table->string('phone');
             $table->string('email')->unique();
-            $table->string('theme');
-            $table->text('text')->nullable();
+            $table->string('theme')->nullable();
+            $table->text('text');
             $table->timestamps();
         });
     }

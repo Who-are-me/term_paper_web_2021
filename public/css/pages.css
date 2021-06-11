@@ -571,15 +571,20 @@ transition-duration: 300ms;
 
 .feedback-send-button
 {
-    font-size: 0px;
-    background: url('../../image/feedBack-sendButton.svg') no-repeat center / cover;
-    
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    border-radius: 50%;
-    
+    background: linear-gradient(93.5deg, #E93F34 6.65%, #C0261C 94.56%);
+    box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.46);
+    border-radius: 33px;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.slider-student-one-photo img {
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 700px)

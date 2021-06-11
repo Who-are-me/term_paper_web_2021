@@ -29,18 +29,12 @@
 
         <div class="col-12 p-3">
             <div class="slider">
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/dark-wood-background.png" ></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
-                <div><img src="../../image/jpg/Gallery-img-1.jpg"></div>
+                <div><img src="{{ $content[0]->text }}" ></div>
+                <div><img src="{{ $content[1]->text }}" ></div>
+                <div><img src="{{ $content[2]->text }}" ></div>
+                <div><img src="{{ $content[3]->text }}" ></div>
+                <div><img src="{{ $content[4]->text }}" ></div>
+                <div><img src="{{ $content[5]->text }}" ></div>
             </div>
         </div>
 
@@ -103,7 +97,6 @@
                     <div class="col-2"></div>
                     <div class="col-6"><img class="w-100" src="image/jpg/abiturientu-3.png"></div>
                     <div class="col-4"></div>
-
                 </div>
                 <div class="col-6"></div>
             </div>
@@ -180,7 +173,7 @@
                 <div class="col-2"></div>
 
             </div>
-            <div class="col-12 p-0"><img class="w-100" src="image/jpg/abiturientu-5.png"> </div>
+            <div class="col-12 p-0"><img class="w-100" src="{{ $content[6]->text }}"> </div>
             <div class="col-12 d-flex">
                 <div class="col-1"></div>
                 <div class="col-10 text-center">
@@ -204,6 +197,14 @@
                     <div class="col-6"></div>
                     <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-6(3).png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block p-0">
+                <div class="col-12 d-flex">
+                    <div class="col-3"></div>
+                    <div class="col-6 p-0">
+                        <?php echo $content[7]->text; ?>
                     </div>
                 </div>
             </div>
@@ -243,74 +244,98 @@
                 <p class="salad-second-span-heading">Можливі місця роботи після закінчення коледжу:</p>
             </div>
         </div>
-        <div class="col-12 p-0">
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ В органах служби безпеки
-                </span>
-                <br>
-                <span class="lite-text">(охоронна сигналізація та системи відеоспостереження); </span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ В банківських установах
-                </span>
-                <br>
-                <span class="lite-text">(охоронна сигналізація, системи відеоспостереження, радіо та телефонного
-                    зв'язку);</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Сервісні центри
-                </span>
-                <br>
-                <span class="lite-text">по обслуговуванню та ремонту радіотелевізійної апаратури;</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ На телерадіоцентрах
-                </span>
-                <br>
-                <span class="lite-text">(технік з обслуговування радіо та відео апаратури, відеооператор і
-                    т.д.);</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Сервісні центри
-                </span>
-                <br>
-                <span class="lite-text">по обслуговуванню та ремонту радіотелевізійної апаратури;</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Сервісні центри
-                </span>
-                <br>
-                <span class="lite-text">по ремонту мобільних телефонів, ноутбуків та і т. ін. </span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Консультанти
-                </span>
-                <br>
-                <span class="lite-text">з продажу радіоелектронної техніки
-                    (супермаркети та магазини з продажу електронної апаратури);</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Рекламні агенства
-                </span>
-                <br>
-                <span class="lite-text">по виготовленню світлової, аудіо та відеореклами;</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Сервісні центри
-                </span>
-                <br>
-                <span class="lite-text">по обслуговуванню та ремонту медичної техніки;</span>
-            </p>
+
+
+        <div class="col-12 p-0 py-5"> 
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>В органах служби безпеки</h5>
+                        <p>(охоронна сигналізація та системи відеоспостереження)</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>В банківських установах</h5>
+                        <p>(охоронна сигналізація, системи відеоспостереження, радіо та телефонного зв'язку)</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Сервісні центри</h5>
+                        <p>по обслуговуванню та ремонту радіотелевізійної апаратури</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>На телерадіоцентрах</h5>
+                        <p>(технік з обслуговування радіо та відео апаратури, відеооператор і т.д.)</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Сервісні центри</h5>
+                        <p>по обслуговуванню та ремонту радіотелевізійної апаратури</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Сервісні центри</h5>
+                        <p>по ремонту мобільних телефонів, ноутбуків та і т. ін.</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Консультанти</h5>
+                        <p>з продажу радіоелектронної техніки (супермаркети та магазини з продажу електронної апаратури)</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Рекламні агенства</h5>
+                        <p>по виготовленню світлової, аудіо та відеореклами</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Сервісні центри</h5>
+                        <p>по обслуговуванню та ремонту медичної техніки</p>
+                      </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </div>
+
+
         <div class="col-12 p-0 text-center py-5 d-none">
             Слайдер
         </div>
@@ -371,16 +396,16 @@
 		                <div class="col-12 d-block d-lg-flex text-left p-0 pt-2">
 
 		                    <div class="col-12 col-lg-6 p-0 px-3">
-		                        <input id="phone" type="text" name="phone" required="" class="anketa-input" placeholder="*Телефон" maxlength="10" >
-	                            <input id="email" type="text" name="email" required="" class="anketa-input mt-3" placeholder="*E-mail" maxlength="20">
+		                        <input id="phone" type="text" name="phone" required="" class="anketa-input" placeholder="*Телефон" maxlength="10" minlength="10" >
+	                            <input id="email" type="text" name="email" required="" class="anketa-input mt-3" placeholder="*E-mail" maxlength="255">
 	                            <p class="anketa-green-header-font m-0 py-3">Освіта</p>
 	                            <p class="anketa-basic-font pb-1">Вкажіть де Ви навчались\навчаєтесь</p>
-	                            <input id="school" type="text" name="school" required="" class="anketa-input mb-2" placeholder="*Назва навчального закладу" maxlength="20">    
+	                            <input id="school" type="text" name="school" required="" class="anketa-input mb-2" placeholder="Назва навчального закладу" maxlength="255">    
 		                    </div>
 
 		                    <div class="col-12 col-lg-6 p-0 px-3">
-		                        <input id="pip" type="text" name="pip" class="anketa-input mb-2" placeholder="ПІП" required="" maxlength="20">    
-		                        <input type="text"  required="" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="20">
+		                        <input id="pip" type="text" name="pip" class="anketa-input mb-2" placeholder="*ПІП" required="" maxlength="255">    
+		                        <input type="text" name="option" required="" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="255">
 		                        <div class="pt-5 g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue" ></div>
 		                    </div>
 
