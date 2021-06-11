@@ -1,3 +1,8 @@
+.star {
+    color: #DFA6B2;
+
+}
+
 .g-recaptcha > div{margin: 0 auto;}
 
 .title-news {
@@ -43,33 +48,33 @@
 {
     background-color: #CFE2D5;
     box-shadow: 0px 12px 50px #CBE0D2;
-    font-family: 'Montserrat', semibold;
-    font-style: normal;
-    font-size: 38px;
-    color: black;
-    
-    font-weight: 400;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    border-radius: 20px;
+    text-shadow: 0px 12px 35px rgba(0, 0, 0, 0.56);
 }
 .about-title-inside-cont
 {
     background: #829295;
-box-shadow: 0px 12px 40px #829295;
-font-family: 'Montserrat', semibold;
-    font-style: normal;
-    font-size: 38px;
+    box-shadow: 0px 12px 40px #829295;
+    font-family: 'Montserrat';
+    font-size: 14px;
     color: black;
-    
-    font-weight: 400;
+    border-radius: 60px;
+    font-weight: 600;
 }
 .material-base-title-inside-cont
 {
     background: #566581;
-box-shadow: 0px 12px 40px #566581;
+    box-shadow: 0px 12px 40px #566581;
     font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 38px;
+    font-weight: 600;
+    font-size: 14px;
     color: #FFFFFF;
-text-shadow: 0px 8px 50px #000000;
+    border-radius: 60px;
+    text-shadow: 0px 8px 50px #000000;
 }
 
 .abitirientu-title-inside-cont
@@ -77,9 +82,8 @@ text-shadow: 0px 8px 50px #000000;
     background: #92974C;
     box-shadow: 0px 12px 40px #6B782C;
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 14px;
     color: #FFFFFF;
     border-radius: 60px;
     text-shadow: 0px 12px 35px rgba(0, 0, 0, 0.56);
@@ -89,18 +93,43 @@ text-shadow: 0px 8px 50px #000000;
 {
     background: #223E2E;
     box-shadow: 0px 12px 40px #2C4020;
-    font-family: 'Montserrat', semibold;
-    font-style: normal;
-    font-size: 38px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
     color: #FFFFFF;
     border-radius: 60px;
-text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.53);
+    text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.53);
 }
 
-.content-background
+.content-background-main
 {
     background: #F0F0F0;
-box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
+    box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
+}
+.content-background-about
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(127, 143, 146, 0.65);
+}
+.content-background-material
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(86, 101, 129, 0.62);
+}
+.content-background-abiturient
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(146, 151, 76, 0.64);
+}
+.content-background-student
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(34, 62, 46, 0.64);
+}
+.content-background-news
+{
+    background: #F0F0F0;
+    box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
 }
 .news-content-container
 {
@@ -112,27 +141,52 @@ box-shadow: inset 0px 4px 60px rgba(71, 145, 94, 0.62);
     height: 40px;
     
 }
-
 #green-span-heading
 {
-    font-family: 'Montserrat', sans-serif;
-   font-style: normal;
-   font-weight: bold;
-   letter-spacing: 0.055em; 
-   font-weight: 900;
-   font-size: 15px;
-   color: #47915E;
-   text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+    font-family: 'Montserrat';
+    letter-spacing: 0.05em; 
+    font-weight: 700;
+    font-size: 14px;
+    color: #47915E;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
 }
 #grey-span-heading
 {
-    font-family: 'Montserrat', sans-serif;
-   letter-spacing: 0.055em; 
-   font-weight: bold;
-   font-size: 22px;
-   color: #809195;
-   text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+    font-family: 'Montserrat';
+    letter-spacing: 0.185em; 
+    font-weight: 700;
+    font-size: 14px;
+    color: #809195;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
 }
+#black-span-heading
+{
+    font-family: 'Montserrat';
+    letter-spacing: 0.185em; 
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+}
+.salad-span-heading
+{
+    font-family: 'Montserrat';
+    letter-spacing: 0.185em; 
+    font-weight: 700;
+    font-size: 14px;
+    color: #ADB450;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+}
+.blue-header
+{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    color: #535F77;
+    letter-spacing: 0.1em;
+    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+}
+
 #black-span-heading
 {
     font-family: 'Montserrat', sans-serif;
@@ -215,21 +269,28 @@ transition-delay: 50ms;
 
 .lite-text{
     font-family: 'Montserrat';
-
     font-weight: 300;
-    font-size: 14px;
+    font-size: 9px;
 }
 
 .basic-text
 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 500;
 }
 .basic-text-bold
-{
-    font-size: 16px;
+{   
+    font-family: 'Montserrat';
+    font-size: 10px;
     font-weight: 600;
+}
+.picture-caption-italic
+{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 8px;
 }
 .image-svg-hover-triger
 {
@@ -255,36 +316,11 @@ transition-delay: 50ms;
    color: #000000;
    font-weight: bold;
 }
-.blue-header
-{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-size: 22px;
-    color: #535F77;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-}
-.salad-span-heading
-{
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.055em; 
-    font-weight: bold;
-    font-size: 22px;
-    color: #ADB450;
-    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
-}
 .text-italic
 {
     font-style: italic;
 }
-.picture-caption-italic
-{
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 149.4%;
-}
+
 
 .salad-second-span-heading
 {
@@ -587,7 +623,7 @@ transition-duration: 300ms;
     overflow: hidden;
 }
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 768px)
 {    
     .anketa-content input[type=submit]
     {
@@ -596,10 +632,6 @@ transition-duration: 300ms;
        margin-bottom: 8px;
     
     }
-    .picture-caption-italic
-    {
-        font-size: 12px;
-    }
     .red-button
     {
         height: 50px;
@@ -607,17 +639,76 @@ transition-duration: 300ms;
         font-size: 18px;
         margin: 50px;
     }
-    .abitirientu-title-inside-cont{
+    
+}
+@media only screen and (min-width: 768px)
+{
+    .about-title-inside-cont
+    {
         font-size: 24px;
-
-        margin-top: 55px;
-        margin-bottom: 54px;
-
-        height: 70xp;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .material-base-title-inside-cont
+    {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .abitirientu-title-inside-cont
+    {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .for-student-title-inside-cont
+    {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #green-span-heading
+    {
+        font-size: 18px;
+    }
+    #grey-span-heading
+    {
+        font-size: 24px;
+    }
+    .blue-header
+    {
+        font-size: 24px;
+    }
+    .salad-span-heading
+    {
+        font-size: 24px;
+    }
+    #black-span-heading
+    {
+        font-size: 18px;
+    }
+    .salad-second-span-heading
+    {
+        font-size: 26px;
+    }
+    .basic-text
+    {
+        font-size: 14px;
+    }
+    .basic-text-bold
+    {
+        font-size: 14px;   
+    }
+    .picture-caption-italic
+    {
+        font-size: 14px;
+    }
+    .lite-text
+    {
+        font-size: 13px;
     }
 }
-
-@media only screen and (min-width: 1150px)
+@media only screen and (min-width: 1300px)
 {
     .anketa-content input[type=submit]
     {
@@ -630,18 +721,85 @@ transition-duration: 300ms;
     {
         height: 600px;
     }
-    .abitirientu-title-inside-cont{
-        font-weight: 600;
+    .about-title-inside-cont
+    {
         font-size: 32px;
 
-        margin-top: 35px;
-        margin-bottom: 34px;
+        margin-top: 15px;
+        margin-bottom: 15px;
 
         height: 105xp;
     }
+    .material-base-title-inside-cont
+    {
+        font-size: 32px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        height: 105xp;
+    }
+    .abitirientu-title-inside-cont
+    {
+        font-size: 32px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        height: 105xp;
+    }
+    .for-student-title-inside-cont
+    {
+        font-size: 32px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        height: 105xp;
+    }
+    #green-span-heading
+    {
+        font-size: 26px;  
+    }
+    #grey-span-heading
+    {
+        font-size: 32px;
+    }
+    .blue-header
+    {
+        font-size: 32px;
+    }
+    .salad-span-heading
+    {
+        font-size: 32px;
+    }
+    #black-span-heading
+    {
+        font-size: 28px;
+    }
+    .salad-second-span-heading
+    {
+        font-size: 34px;
+    }
+    .basic-text
+    {
+        font-size: 18px;
+    }
+    .basic-text-bold
+    {
+        font-size: 18px;   
+    }
+    .picture-caption-italic
+    {
+        font-size: 16px;
+    }
+    .lite-text
+    {
+        font-size: 16px;
+    }
 }
 
-@media only screen and (min-width: 1650px)
+@media only screen and (min-width: 1700px)
 {
     .anketa-content input[type=submit]
 {
@@ -670,10 +828,8 @@ font-size: 20px;
     margin: 200px;
     width: 550px;
     }
-    .lite-text{
-        font-family: 'Montserrat';
     
-        font-weight: 300;
+    .lite-text{
         font-size: 24px;
     } 
     .basic-text
@@ -684,13 +840,13 @@ font-size: 20px;
     {
         font-size: 26px;
     }
+    .picture-caption-italic
+    {
+        font-size: 24px;
+    }
     .image-ridius-border
     {
         border-radius: 20px;
-    }
-    .picture-caption-italic
-    {
-        font-size: 22px;
     }
     .salad-second-span-heading
     {
@@ -701,32 +857,44 @@ font-size: 20px;
         font-size: 42px;
         letter-spacing: 0.185em;
     }
-    .galery-height
+    .salad-second-span-heading
     {
-        height: 780px;
+        font-size: 52px;
     }
     #green-span-heading
     {
-        font-size: 18px;
+        font-size: 38px;
+    }
+    #grey-span-heading
+    {
+        font-size: 42px;
+    }
+    .blue-header
+    {
+        font-size: 42px;
+    }
+    .salad-span-heading
+    {
+        font-size: 42px;
+    }
+    #black-span-heading
+    {
+        font-size: 32px;
+    }
+    .galery-height
+    {
+        height: 780px;
     }
     #container-heading img
     {
         width: 162px;
         height: 54px;
     }
-    #black-span-heading
-    {
-        font-size: 28px;
-    }
     .image-svg-hover-triger
     {
         width: 95px;
         height: 98px;
         padding-bottom: 10px;
-    }
-    #grey-span-heading
-    {
-        font-size: 26px;
     }
     .grey-bold-text-heading
     {
@@ -736,11 +904,8 @@ font-size: 20px;
     {
        font-size: 25px;
     }
-    .blue-header
+    .about-title-inside-cont
     {
-        font-size: 28px;
-    }
-    .abitirientu-title-inside-cont{
         font-size: 42px;
 
         margin-top: 55px;
@@ -748,107 +913,31 @@ font-size: 20px;
 
         height: 160xp;
     }
-}
-
-@media only screen and (min-width: 2200px)
-{
-    .anketa-content input[type=email]
-{
-   padding: 22px;
-
-}
-.anketa-content input[type=text]
-{
-   padding: 22px;
-
-}
-.anketa-content input[type=submit]
-{
-   padding: 32px;
-   margin-top: 20px;
-   margin-bottom: 20px;
-
-}
-    .anketa-content input
-    {
-        font-size: 25px;
-    }
-    .anketa-green-header-font
-{
-    font-size: 34px;
-}
-.anketa-basic-font
-{
-font-size: 25px;
-}
-    .red-button
-    {
-        height: 120px;
-        width: 700px;
-        font-size: 32px;
-        margin: 300px;
-    }
-    .basic-text-bold
-    {
-        font-size: 35px;
-    }
-    .image-ridius-border
-    {
-        border-radius: 40px;
-    }
-    .picture-caption-italic
-    {
-        font-size: 32px;
-    }
-    .salad-second-span-heading
+    .material-base-title-inside-cont
     {
         font-size: 42px;
+
+        margin-top: 55px;
+        margin-bottom: 54px;
+
+        height: 160xp;
     }
-    .salad-span-heading
+    .abitirientu-title-inside-cont
     {
-        font-size: 36px;
+        font-size: 42px;
+
+        margin-top: 55px;
+        margin-bottom: 54px;
+
+        height: 160xp;
     }
-    .galery-height
+    .for-student-title-inside-cont
     {
-        height: 870px;
-    }
-    #green-span-heading
-    {
-        font-size: 22px;
-    }
-    #container-heading img
-    {
-        width: 110px;
-        height: 45px;
-    }
-    #black-span-heading
-    {
-        font-size: 32px;
-    }
-    .basic-text
-    {
-        font-size: 32px;
-    }    
-    .image-svg-hover-triger
-    {
-        width: 110px;
-        height: 111px;
-        padding-bottom: 20px;
-    }
-    #grey-span-heading
-    {
-        font-size: 32px;
-    }
-    .grey-bold-text-heading
-    {
-        font-size: 38px;
-    }
-    .black-list-header
-    {
-       font-size: 29px;
-    }
-    .blue-header
-    {
-        font-size: 36px;
+        font-size: 42px;
+
+        margin-top: 55px;
+        margin-bottom: 54px;
+
+        height: 160xp;
     }
 }
