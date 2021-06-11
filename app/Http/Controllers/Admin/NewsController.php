@@ -36,14 +36,17 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        $news = New News();
-        $news->title = $request->title;   
-        $news->text = $request->text;
-        $news->img = $request->img;
-
-        $news->save();
-
-        return redirect()->back()->withSuccess("Новина [$news->title] була успішно додана!");
+        if($request->title == '' || $request->text == '' || $request->img == '') {
+            return redirect()->back()->withSuccess("Новина не була додана, заповніть всі поля!");
+        }
+        else {
+            $news = New News();
+            $news->title = $request->title;   
+            $news->text = $request->text;
+            $news->img = $request->img;
+            $news->save();
+            return redirect()->back()->withSuccess("Новина [$news->title] була успішно додана!");
+        }
     }
 
     /**

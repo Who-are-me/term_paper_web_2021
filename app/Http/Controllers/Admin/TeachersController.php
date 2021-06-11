@@ -39,14 +39,17 @@ class TeachersController extends Controller
      */
     public function store(Request $request)
     {
-        $teacher = New Teachers();
-        $teacher->pip = $request->pip;   
-        $teacher->about = $request->about;
-        $teacher->srcimg = $request->srcimg;
-
-        $teacher->save();
-
-        return redirect()->back()->withSuccess("Викладач [$teacher->pip] був успішно доданий!");
+        if($request->pip == '' || $request->about == '' || $request->srcimg == '') {
+            return redirect()->back()->withSuccess("Викладач не був доданий, заповніть всі поля!");
+        }
+        else {
+            $teacher = New Teachers();
+            $teacher->pip = $request->pip;   
+            $teacher->about = $request->about;
+            $teacher->srcimg = $request->srcimg;
+            $teacher->save();
+            return redirect()->back()->withSuccess("Викладач [$teacher->pip] був успішно доданий!");
+        }
     }
 
     /**
