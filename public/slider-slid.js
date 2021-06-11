@@ -5,7 +5,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 830
+    autoplaySpeed: 2500
   });
 
   $('.slider-news').slick({
@@ -14,7 +14,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 830
+    autoplaySpeed: 2500
   });
 
   $('.slider-student-one-photo').slick({

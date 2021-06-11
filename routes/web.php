@@ -29,13 +29,13 @@ Route::get('/matbase', function () {
     return view('pages.base');
 });
 
-Route::get('/to_entrant', function () {
-    return view('pages.entrant');
-});
+// Route::get('/to_entrant', function () {
+//     return view('pages.entrant');
+// });
 
-Route::get('/student', function () {
-    return view('pages.students');
-});
+// Route::get('/student', function () {
+//     return view('pages.students');
+// });
 
 Route::get('/contacts', function () {
     return view('pages.contact');
@@ -52,6 +52,8 @@ Route::get('/', [App\Http\Controllers\Admin\WelcomeController::class, 'show']);
 Route::get('/about_us', [App\Http\Controllers\Admin\AboutController::class, 'show']);
 
 Route::get('/to_entrant', [App\Http\Controllers\Admin\EntrantController::class, 'show']);
+
+Route::get('/student', [App\Http\Controllers\Admin\StudentsController::class, 'show']);
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home'); 
 
