@@ -15,13 +15,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="{{ $content[0]->text }}" alt="First slide" style="object-fit: cover; height: 450px;">
+      <img class="d-block w-100" src="{{ $content[0]->text }}" alt="First slide" style="object-fit: cover; height: 550px;">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ $content[1]->text }}" alt="Second slide" style="object-fit: cover; height: 450px;">
+      <img class="d-block w-100" src="{{ $content[1]->text }}" alt="Second slide" style="object-fit: cover; height: 550px;">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ $content[2]->text }}" alt="Third slide" style="object-fit: cover; height: 450px;">
+      <img class="d-block w-100" src="{{ $content[2]->text }}" alt="Third slide" style="object-fit: cover; height: 550px;">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -35,7 +35,7 @@
 </div>
     
     
-<div class="row d-flex m-0 p-0 content-background-main">
+<div class="row d-flex m-0 p-0 pt-5 content-background-main">
   <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
   <div class="col-12 col-md-10 col-lg-8 my-2 text-center text-sm-left px-5 px-md-0">
 
@@ -58,16 +58,16 @@
             <span class="basic-text">{{ $content[4]->text }}</span>
           </div>
           <div class="col-12 my-1 my-sm-4 text-center">
-            <a href="#" id="content-span-link">Читати більше</a> 
+            <a href="about_us" id="content-span-link">Читати більше</a> 
           </div>
         </div>
         <div class="col-12 col-md-5 p-0 m-0 d-block text-center">
-          <img class="w-100" src="{{ $content[5]->text }}">
-          <img class="w-100  pt-2" src="{{ $content[6]->text }}">
+          <img class="w-100" src="{{ $content[5]->text }}" style="border-radius: 18px;">
+          <img class="w-100  mt-3" src="{{ $content[6]->text }}" style="border-radius: 18px;">
         </div>
       </div>
     </div>
-    <div class="col-12 my-5 p-0">
+    <div class="col-12 my-5 pt-5 p-0">
       <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading">
         <img src="image/left-heading-separate.svg">
         <span id="green-span-heading">НАША МІСІЯ</span>
@@ -95,27 +95,91 @@
         </div>
       </div>
     </div>
-    <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading">
+    <div class="d-flex col-12 justify-content-between p-0 m-0 pt-5" id="container-heading">
       <img src="image/left-heading-separate.svg">
       <span id="green-span-heading">ЧАСТИНКА НАШОГО ЖИТТЯ</span>
       <img src="image/right-heading-separate.svg">
     </div>
-    <div class="cssSlider">
-      <ul class="slides">
-          <li id="slide1"><img src="{{ $content[7]->text }}" alt=""></li>
-          <li id="slide2"><img src="{{ $content[8]->text }}" alt=""></li>
-          <li id="slide3"><img src="{{ $content[9]->text }}" alt=""></li>
-          <li id="slide4"><img src="{{ $content[10]->text }}" alt=""></li>
-          <li id="slide5"><img src="{{ $content[11]->text }}" alt=""></li>
-      </ul>
-      <ul class="thumbnails">
-          <li><a href="#slide1"><img src="{{ $content[7]->text }}"></a></li>
-          <li><a href="#slide2"><img src="{{ $content[8]->text }}"></a></li>
-          <li><a href="#slide3"><img src="{{ $content[9]->text }}"></a></li>
-          <li><a href="#slide4"><img src="{{ $content[10]->text }}"></a></li>
-          <li><a href="#slide5"><img src="{{ $content[11]->text }}"></a></li>
-      </ul>
+
+    <style>
+      * {box-sizing: border-box;}
+      body {
+          margin: 0;
+          font-family: Arial;
+      }
+      .column {
+          float: left;
+          width: 16.6667%;
+          padding: 10px;
+      }
+      .column img {
+          opacity: 0.7; 
+          cursor: pointer; 
+      }
+      .column img:hover {
+          opacity: 1;
+      }
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+      .container {
+          position: relative;
+          /*display: none;*/
+      }
+      #imgtext {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: white;
+          font-size: 20px;
+      }
+      .closebtn {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          color: white;
+          font-size: 35px;
+          cursor: pointer;
+      }
+    </style>
+
+    <div class="row pt-5">
+      <div class="column">
+        <img src="{{ $content[7]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="{{ $content[8]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="{{ $content[9]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="{{ $content[10]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="{{ $content[11]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="{{ $content[12]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+      </div>
     </div>
+
+    <div class="container pt-4 p-3 text-center">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+      <img id="expandedImg" class="" src="{{ $content[7]->text }}" style="border-radius: 22px; width: 80%;">
+      <div id="imgtext"></div>
+    </div>
+
+    <script>
+      function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          expandImg.src = imgs.src;
+          expandImg.parentElement.style.display = "block";
+      }
+    </script>
+
   </div>
 </div>
 

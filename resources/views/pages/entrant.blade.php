@@ -201,8 +201,8 @@
                 </div>
             </div>
             <div class="col-12 d-block p-0">
-                <div class="col-12 d-flex p-0">
-                    <div class="col-3">ВІДЕО</div>
+                <div class="col-12 d-flex">
+                    <div class="col-3"></div>
                     <div class="col-6 p-0">
                         <?php echo $content[7]->text; ?>
                     </div>

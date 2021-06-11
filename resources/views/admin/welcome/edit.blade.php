@@ -114,7 +114,7 @@
                             <input type="hidden" name="img_5" id="feature_image5" name="feature_image" value="{{ $text[7]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image5"><img id="img5" class="img" src="{{ $text[7]->text }}" ></a>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-2">
                             <input type="hidden" name="img_6" id="feature_image6" name="feature_image" value="{{ $text[8]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image6"><img id="img6" class="img" src="{{ $text[8]->text }}" ></a>
                         </div>
@@ -122,7 +122,7 @@
                             <input type="hidden" name="img_7" id="feature_image7" name="feature_image" value="{{ $text[9]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image7"><img id="img7" class="img" src="{{ $text[9]->text }}" class="w-100"></a>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-2">
                             <input type="hidden" name="img_8" id="feature_image8" name="feature_image" value="{{ $text[10]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image8"><img id="img8" class="img" src="{{ $text[10]->text }}" class="w-100"></a>
                         </div>
@@ -130,9 +130,14 @@
                             <input type="hidden" name="img_9" id="feature_image9" name="feature_image" value="{{ $text[11]->text }}">
                             <a href="" class="popup_selector" data-inputid="feature_image9"><img id="img9" class="img" src="{{ $text[11]->text }}" class="w-100"></a>
                         </div>
+                        <div class="col-12 col-md-2">
+                            <input type="hidden" name="img_10" id="feature_image10" name="feature_image" value="{{ $text[12]->text }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image10"><img id="img10" class="img" src="{{ $text[12]->text }}" class="w-100"></a>
+                        </div>
                     </div>
 
                     <div class="col-12 d-block d-md-flex">
+                        <div class="col-12 col-md-3"></div>
                         <div class="col-12 col-md-3"></div>
                         <div class="col-12 col-md-3"></div>
                         <div class="col-12 col-md-3"></div>
