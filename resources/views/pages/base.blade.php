@@ -13,7 +13,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
+    
 </div>
 
 <div class="row d-flex m-0 p-0 content-background-material px-5 px-md-0">

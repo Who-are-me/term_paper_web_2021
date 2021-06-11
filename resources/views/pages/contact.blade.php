@@ -31,7 +31,7 @@
             <div class="col-12 p-0 py-3 py-md-5 pt-5 mt-5">
                 <h2 class="feedback-header-text">У Вас виникли запитання?</h2>
                 <h5 class="feedback-header-text">Задавайте, і ми вам допоможемо.</h5>
-                <h6 class="">(поля із * обов'язкові)</h6>
+                <h6 class="star">(поля із * обов'язкові)</h6>
             </div>
             <div class="col-12 d-block d-md-flex p-0 mt-2 mt-md-5">
                 <div class="col-12 col-md-5 input-transparent-div p-0">

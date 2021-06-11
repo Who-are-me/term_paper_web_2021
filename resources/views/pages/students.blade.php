@@ -13,7 +13,6 @@
             </div>
         </div>
     </div>
-    <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
 </div>
 
 
@@ -62,7 +61,7 @@
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
 </div>
 
-<div class="row d-flex m-0 p-0 content-background px-5 px-md-0" id="background-yellow-pen">
+<div class="row d-flex m-0 p-0 px-5 px-md-0" id="background-yellow-pen">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8">
         <div class="col-12 d-block p-0 m-0">
@@ -79,7 +78,7 @@
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
 </div>
 
-<div class="row d-flex m-0 p-0 content-background px-5 px-md-0 py-5">
+<div class="row d-flex m-0 p-0 content-background-student px-5 px-md-0 py-5">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 d-block">
         <div class="d-flex col-12 justify-content-between p-0 py-5 m-0" id="container-heading">
