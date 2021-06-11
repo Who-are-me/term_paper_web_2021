@@ -46,25 +46,20 @@
         <form action="{{ route('teachers.store') }}" method="POST">
             @csrf
             <div class="card-body">
-
                 <div class="form-group">
                     <label for="exampleInputEmail1">ПІП</label>
                     <input type="text" name="pip" class="form-control" id="exampleInputEmail1" placeholder="Введіть заголовок новини" required>
                 </div>
-
                 <div class="form-group">
                     <label for="exampleInputEmail1">Детальніша інформація</label>
                     <textarea name="about" class="editor" style="height: 600px;" required></textarea>
                 </div>
-
                 <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото викладача</button>
-                    <input type="hidden" name="srcimg" class="form-control mt-2" id="feature_image" name="feature_image" value="" required>
+                    <input type="hidden" name="srcimg" class="form-control mt-2" id="feature_image" name="feature_image" value="">
                     <img src="" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
                 </div>
-
             </div>
-
             <div class="card-footer">
                 <button type="submit" class="btn btn-primary">Дабавити</button>
             </div>
