@@ -244,74 +244,6 @@
                 <p class="salad-second-span-heading">Можливі місця роботи після закінчення коледжу:</p>
             </div>
         </div>
-        <div class="col-12 p-0">
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ В органах служби безпеки
-                </span>
-                <br>
-                <span class="lite-text">(охоронна сигналізація та системи відеоспостереження); </span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ В банківських установах
-                </span>
-                <br>
-                <span class="lite-text">(охоронна сигналізація, системи відеоспостереження, радіо та телефонного
-                    зв'язку);</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Сервісні центри
-                </span>
-                <br>
-                <span class="lite-text">по обслуговуванню та ремонту радіотелевізійної апаратури;</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ На телерадіоцентрах
-                </span>
-                <br>
-                <span class="lite-text">(технік з обслуговування радіо та відео апаратури, відеооператор і
-                    т.д.);</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Сервісні центри
-                </span>
-                <br>
-                <span class="lite-text">по обслуговуванню та ремонту радіотелевізійної апаратури;</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Сервісні центри
-                </span>
-                <br>
-                <span class="lite-text">по ремонту мобільних телефонів, ноутбуків та і т. ін. </span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Консультанти
-                </span>
-                <br>
-                <span class="lite-text">з продажу радіоелектронної техніки
-                    (супермаркети та магазини з продажу електронної апаратури);</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Рекламні агенства
-                </span>
-                <br>
-                <span class="lite-text">по виготовленню світлової, аудіо та відеореклами;</span>
-            </p>
-            <p>
-                <span class="basic-text-bold letter-spacing">
-                    ➢ Сервісні центри
-                </span>
-                <br>
-                <span class="lite-text">по обслуговуванню та ремонту медичної техніки;</span>
-            </p>
-        </div>
 
 
         <div class="col-12 p-0 py-5"> 
@@ -329,66 +261,66 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="First slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>1аголовок</h5>
-                        <p>Опис</p>
+                        <h5>В органах служби безпеки</h5>
+                        <p>(охоронна сигналізація та системи відеоспостереження)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Second slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>2Заголовок</h5>
-                        <p>Опис</p>
+                        <h5>В банківських установах</h5>
+                        <p>(охоронна сигналізація, системи відеоспостереження, радіо та телефонного зв'язку)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>3Заголовок</h5>
-                        <p>Опис</p>
+                        <h5>Сервісні центри</h5>
+                        <p>по обслуговуванню та ремонту радіотелевізійної апаратури</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>4Заголовок</h5>
-                        <p>Опис</p>
+                        <h5>На телерадіоцентрах</h5>
+                        <p>(технік з обслуговування радіо та відео апаратури, відеооператор і т.д.)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Заголовок</h5>
-                        <p>Опис</p>
+                        <h5>Сервісні центри</h5>
+                        <p>по обслуговуванню та ремонту радіотелевізійної апаратури</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Заголовок</h5>
-                        <p>Опис</p>
+                        <h5>Сервісні центри</h5>
+                        <p>по ремонту мобільних телефонів, ноутбуків та і т. ін.</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Заголовок</h5>
-                        <p>Опис</p>
+                        <h5>Консультанти</h5>
+                        <p>з продажу радіоелектронної техніки (супермаркети та магазини з продажу електронної апаратури)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Заголовок</h5>
-                        <p>Опис</p>
+                        <h5>Рекламні агенства</h5>
+                        <p>по виготовленню світлової, аудіо та відеореклами</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../../../image/abiturientu-anketa-header.png" alt="Third slide">
+                    <img class="d-block w-100" src="files/7.jpeg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Заголовок</h5>
-                        <p>Опис</p>
+                        <h5>Сервісні центри</h5>
+                        <p>по обслуговуванню та ремонту медичної техніки</p>
                       </div>
                   </div>
                 </div>
