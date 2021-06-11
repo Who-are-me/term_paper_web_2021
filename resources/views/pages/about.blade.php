@@ -26,7 +26,7 @@
             </div>
             <div class="col-12 p-0 m-0 d-flex">
                 <div class="col-4 p-0">
-                    <img class="w-100" src="{{ $content[0]->text }}">
+                    <img class="w-100" src="{{ $content[0]->text }}" style="border-radius: 15px;">
                 </div>
                 <div class="col-8 text-center align-items-center">
                     <span class="basic-text"><?php echo $content[1]->text; ?></span>
@@ -54,7 +54,7 @@
                 <img src="/image/gray-right-heading-separate.svg">
             </div>
 
-            <img class="w-100 pb-5" src="{{ $content[3]->text }}">
+            <img class="w-100 mb-5" src="{{ $content[3]->text }}" style="border-radius: 15px;">
 
             @foreach ($teachers as $item)
 

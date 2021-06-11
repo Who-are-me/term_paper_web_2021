@@ -110,7 +110,7 @@
       .column {
           float: left;
           width: 16.6667%;
-          padding: 10px;
+          padding: 4px;
       }
       .column img {
           opacity: 0.7; 
@@ -145,32 +145,34 @@
       }
     </style>
 
-    <div class="row pt-5">
+    <div class="container pt-4 p-3 text-center">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+      <img id="expandedImg" class="" src="{{ $content[7]->text }}" style="border-radius: 22px; width: 80%; ">
+      <div id="imgtext"></div>
+    </div>
+
+    <div class="row pt-3">
       <div class="column">
-        <img src="{{ $content[7]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+        <img src="{{ $content[7]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="{{ $content[8]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+        <img src="{{ $content[8]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="{{ $content[9]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+        <img src="{{ $content[9]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="{{ $content[10]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+        <img src="{{ $content[10]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="{{ $content[11]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+        <img src="{{ $content[11]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="{{ $content[12]->text }}" style="width:100%; border-radius: 22px;" onclick="myFunction(this);">
+        <img src="{{ $content[12]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
     </div>
 
-    <div class="container pt-4 p-3 text-center">
-      <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
-      <img id="expandedImg" class="" src="{{ $content[7]->text }}" style="border-radius: 22px; width: 80%;">
-      <div id="imgtext"></div>
-    </div>
+    
 
     <script>
       function myFunction(imgs) {

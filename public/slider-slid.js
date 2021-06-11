@@ -3,31 +3,26 @@ $(document).ready(function(){
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
-    dots: true
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 830
   });
 
   $('.slider-news').slick({
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: false
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 830
   });
 
   $('.slider-student-one-photo').slick({
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        centerMode: true
-  });
-  
-  $('.slider-five-photo').slick({
-        speed: 300,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        infinite: true,
-        // centerMode: true,
-        dots: true
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    centerMode: true
   });
 
   var width = $('img', '.slider').width();
@@ -38,9 +33,6 @@ $(document).ready(function(){
 
   var widthStudents =  parseInt(($('img', '.slider-student-one-photo').width() / 100)*30);
   $('img', '.slider-student-one-photo').height(widthStudents);
-
-  var widthFivePhoto = $('img', '.slider-five-photo').width() / 100 * 10;
-  $('img', '.slider-five-photo').height(widthFivePhoto);
 });
 
 function res(){
