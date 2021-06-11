@@ -50,7 +50,7 @@
     box-shadow: 0px 12px 50px #CBE0D2;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 14px;
+    font-size: 24px;
     color: #000000;
     border-radius: 20px;
     text-shadow: 0px 12px 35px rgba(0, 0, 0, 0.56);
@@ -183,19 +183,25 @@
     font-weight: 600;
     font-size: 14px;
     color: #535F77;
-    letter-spacing: 0.1em;
-    text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
+    
 }
-
-#black-span-heading
+.grey-bold-text-heading
 {
-    font-family: 'Montserrat', sans-serif;
-   font-style: normal;
-   font-size: 22px;
-   color: #000000;
-   font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-shadow: 0px 8px 30px rgba(61, 21, 21, 0.42);
+    color: #51595A;
 }
-
+.black-list-header
+{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #000000;
+    font-weight: 600;
+    padding-top: 1rem;
+}
 #content-span-link
 {
     font-family: 'Montserrat', sans-serif;
@@ -296,25 +302,6 @@ transition-delay: 50ms;
 {
     width: 79px;
     height: 80px;
-}
-.grey-bold-text-heading
-{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 135%;
-    text-align: center;
-    letter-spacing: -0.05em;
-    color: #51595A;
-}
-.black-list-header
-{
-    font-family: 'Montserrat', sans-serif;
-   font-style: normal;
-   font-size: 20px;
-   color: #000000;
-   font-weight: bold;
 }
 .text-italic
 {
@@ -643,6 +630,10 @@ transition-duration: 300ms;
 }
 @media only screen and (min-width: 768px)
 {
+    .news-title-inside-cont
+    {
+        font-size: 34px;
+    }
     .about-title-inside-cont
     {
         font-size: 24px;
@@ -667,6 +658,11 @@ transition-duration: 300ms;
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    #container-heading img
+    {
+        width: 105px;
+        height: 32px;
+    }
     #green-span-heading
     {
         font-size: 18px;
@@ -679,6 +675,10 @@ transition-duration: 300ms;
     {
         font-size: 24px;
     }
+    .grey-bold-text-heading
+    {
+        font-size: 24px;
+    }
     .salad-span-heading
     {
         font-size: 24px;
@@ -686,6 +686,11 @@ transition-duration: 300ms;
     #black-span-heading
     {
         font-size: 18px;
+    }
+    .black-list-header
+    {
+       font-size: 15px;
+       padding-top: 2rem;
     }
     .salad-second-span-heading
     {
@@ -721,6 +726,10 @@ transition-duration: 300ms;
     {
         height: 600px;
     }
+    .news-title-inside-cont
+    {
+        font-size: 38px;
+    }
     .about-title-inside-cont
     {
         font-size: 32px;
@@ -757,6 +766,11 @@ transition-duration: 300ms;
 
         height: 105xp;
     }
+    #container-heading img
+    {
+        width: 136px;
+        height: 42px;
+    }
     #green-span-heading
     {
         font-size: 26px;  
@@ -769,13 +783,22 @@ transition-duration: 300ms;
     {
         font-size: 32px;
     }
+    .grey-bold-text-heading
+    {
+        font-size: 28px;
+    }
     .salad-span-heading
     {
         font-size: 32px;
     }
     #black-span-heading
     {
-        font-size: 28px;
+        font-size: 26px;
+    }
+    .black-list-header
+    {
+       font-size: 20px;
+       padding-top: 2.5rem;
     }
     .salad-second-span-heading
     {
@@ -873,6 +896,10 @@ font-size: 20px;
     {
         font-size: 42px;
     }
+    .grey-bold-text-heading
+    {
+        font-size: 36px;
+    }
     .salad-span-heading
     {
         font-size: 42px;
@@ -880,6 +907,11 @@ font-size: 20px;
     #black-span-heading
     {
         font-size: 32px;
+    }
+    .black-list-header
+    {
+       font-size: 25px;
+       padding-top: 3rem;
     }
     .galery-height
     {
@@ -896,13 +928,9 @@ font-size: 20px;
         height: 98px;
         padding-bottom: 10px;
     }
-    .grey-bold-text-heading
+    .news-title-inside-cont
     {
-        font-size: 34px;
-    }
-    .black-list-header
-    {
-       font-size: 25px;
+        font-size: 42px;
     }
     .about-title-inside-cont
     {

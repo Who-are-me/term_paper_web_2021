@@ -3,6 +3,8 @@
 @section('title', 'ЦК Електронних апаратів  - Про нас')
 
 @section('content')
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
 <link href="css/pages.css" rel="stylesheet">
 
     <div class="row d-flex m-0 p-0 title-about">
@@ -17,7 +19,7 @@
 
 <div class="row d-flex m-0 p-0" id="background-white-wall">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
-    <div class="col-12 col-md-10 col-lg-8 p-0 pl-5 pl-sm-5">
+    <div class="col-12 col-md-10 col-lg-8 p-0 pl-5 pl-sm-0">
         <div class="col-12 p-0 m-0 d-block pb-5">
             <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading">
                 <img src="image/gray-left-heading-separate.svg">
@@ -93,29 +95,29 @@
         </div>
         <div class="col-12 p-0 py-5 m-0">
             <p class="text-center grey-bold-text-heading p-0 py-5">Завданням комісії є підготовка сучасного радіотехніка, фахівця, якому притаманні такі якості:</p>
-            <p id="black-span-heading">Основні напрямки роботи комісії</p>
+            <p id="black-span-heading">Основні напрямки роботи комісії:</p>
             <p class="black-list-header">І. Вивчення і підвищення рівня знань, умінь та навичок студентів:</p>
-            <p class="basic-text py-2">➣ Використання активних форм усної перевірки знань, усне опитування за темами
+            <p class="lite-text py-2">➣ Використання активних форм усної перевірки знань, усне опитування за темами
             </p>
-            <p class="basic-text py-2">
+            <p class="lite-text py-2">
                 ➣ Аналіз рівня знань, умінь і навичок студентів, труднощів в опануванні програмним матеріалом і на
                 цій
                 основі розроблення шляхів підвищення ефективності навчального процесу</p>
-            <p class="basic-text py-2">➣ Вивчення результативності позакласної роботи, залучення студентів до роботи
+            <p class="lite-text py-2">➣ Вивчення результативності позакласної роботи, залучення студентів до роботи
                 в
                 гуртках</p>
-            <p class="basic-text py-2">
+            <p class="lite-text py-2">
                 ➣ Проведення конкурсів серед студентів старших курсів на кращого по професії</p>
             <p class="black-list-header">ІІ. Розробка та впровадження заходів з вдосконалення методики викладання:
             </p>
-            <p class="basic-text py-2">➣ Розробка та впровадження методичних рекомендацій по вдосконаленню і
+            <p class="lite-text py-2">➣ Розробка та впровадження методичних рекомендацій по вдосконаленню і
                 підвищенню
                 рівня знань</p>
-            <p class="basic-text py-2">➣ Обговорення результатів курсового та дипломного проектування</p>
-            <p class="basic-text py-2">➣ Розробка та впровадження методичних розробок та рекомендацій по предметах
+            <p class="lite-text py-2">➣ Обговорення результатів курсового та дипломного проектування</p>
+            <p class="lite-text py-2">➣ Розробка та впровадження методичних розробок та рекомендацій по предметах
                 циклу та по темах і
                 розділах цих предметів</p>
-            <p class="basic-text py-2">➣ Вивчення і рецензування навчально-методичної літератури, наукових
+            <p class="lite-text py-2">➣ Вивчення і рецензування навчально-методичної літератури, наукових
                 публікацій та їх використання в
                 навчально-виховному процесі</p>
 
