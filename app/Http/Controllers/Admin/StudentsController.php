@@ -52,7 +52,9 @@ class StudentsController extends Controller
      */
     public function show(StudentsContent $studentsContent)
     {
-        //
+        $content = StudentsContent::all();
+
+        return view('pages.students', compact('content') );
     }
 
     /**
@@ -75,25 +77,14 @@ class StudentsController extends Controller
      */
     public function update(Request $request, StudentsContent $studentsContent)
     {
-        DB::table('students_contents')->where('id', 1)->update(['text' => $request->text_0]);
-        DB::table('students_contents')->where('id', 2)->update(['text' => $request->text_1]);
-        DB::table('students_contents')->where('id', 3)->update(['text' => $request->text_2]);
-        DB::table('students_contents')->where('id', 4)->update(['text' => $request->text_3]);
-
-        DB::table('students_contents')->where('id', 5)->update(['text' => $request->img_0]);
-        DB::table('students_contents')->where('id', 6)->update(['text' => $request->text_4]);
-
-        DB::table('students_contents')->where('id', 7)->update(['text' => $request->img_1]);
-        DB::table('students_contents')->where('id', 8)->update(['text' => $request->text_5]);
-
-        DB::table('students_contents')->where('id', 9)->update(['text' => $request->img_2]);
-        DB::table('students_contents')->where('id', 10)->update(['text' => $request->text_6]);
-
-        DB::table('students_contents')->where('id', 11)->update(['text' => $request->img_3]);
-        DB::table('students_contents')->where('id', 12)->update(['text' => $request->text_7]);
-
-        DB::table('students_contents')->where('id', 13)->update(['text' => $request->img_4]);
-        DB::table('students_contents')->where('id', 14)->update(['text' => $request->img_5]);
+        DB::table('students_contents')->where('id', 1)->update(['text' => $request->img_0]);
+        DB::table('students_contents')->where('id', 2)->update(['text' => $request->img_1]);
+        DB::table('students_contents')->where('id', 3)->update(['text' => $request->img_2]);
+        DB::table('students_contents')->where('id', 4)->update(['text' => $request->img_3]);
+        DB::table('students_contents')->where('id', 5)->update(['text' => $request->img_4]);
+        DB::table('students_contents')->where('id', 6)->update(['text' => $request->img_5]);
+        DB::table('students_contents')->where('id', 7)->update(['text' => $request->img_6]);
+        DB::table('students_contents')->where('id', 8)->update(['text' => $request->img_7]);
 
         return redirect()->back()->withSuccess("Сторінка [Студенту] була успішно оновлена!"); 
     }
@@ -109,3 +100,4 @@ class StudentsController extends Controller
         //
     }
 }
+ 
