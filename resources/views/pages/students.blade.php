@@ -71,7 +71,7 @@
                 <img src="image/right-student-heading-separate.svg">
             </div>
             <div class="col-12 p-0 m-0 text-center">
-                <button type="" class="red-button">Завантажити графік</button>
+                <button type="" class="red-button" href="http://tk.te.ua/tk/new/docs/2020/grafik_navchalnogo_procesu.xls">Завантажити графік</button>
             </div>
         </div>
     </div>

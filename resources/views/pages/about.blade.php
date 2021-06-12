@@ -46,11 +46,11 @@
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
 </div>
 
-<div class="row d-flex m-0 py-5 content-background-about px-5 px-md-0">
+<div class="row d-flex m-0 py-0 content-background-about px-5 px-md-0">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 p-0">
         <div class="col-12 p-0 m-0 d-block">
-            <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading">
+            <div class="d-flex col-12 justify-content-between p-0 m-0 py-5 text-center" id="container-heading">
                 <img src="/image/gray-left-heading-separate.svg">
                 <span id="grey-span-heading">Склад циклової комісії</span>
                 <img src="/image/gray-right-heading-separate.svg">

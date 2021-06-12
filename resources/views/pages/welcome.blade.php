@@ -46,9 +46,7 @@
         <div class="row col-12 col-md-7 p-0 pr-md-3 m-0">
           <div class="d-flex col-12 justify-content-between px-0 align-middle" id="container-heading">
             <img src="image/left-heading-separate.svg">
-            <p><span id="green-span-heading">ПРО НАС</span></p>
-            
-
+            <p><span id="green-span-heading">Про нас</span></p>
             <img src="image/right-heading-separate.svg">
           </div>
           <div class="col-12 text-center my-1 my-sm-4">
@@ -62,8 +60,8 @@
           </div>
         </div>
         <div class="col-12 col-md-5 p-0 m-0 d-block text-center">
-          <img class="w-100" src="{{ $content[5]->text }}" style="border-radius: 18px;">
-          <img class="w-100  mt-3" src="{{ $content[6]->text }}" style="border-radius: 18px;">
+          <img class="w-100" src="{{ $content[5]->text }}" style="border-radius: 20px;">
+          <img class="w-100  mt-3" src="{{ $content[6]->text }}" style="border-radius: 20px;">
         </div>
       </div>
     </div>
@@ -183,8 +181,9 @@
     </script>
 
   </div>
+  <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
 </div>
 
-<div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
+
 
 @endsection

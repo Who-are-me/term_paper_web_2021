@@ -1,29 +1,21 @@
-.star {
+.star
+{
     color: #DFA6B2;
-
 }
-
 .g-recaptcha > div{margin: 0 auto;}
-
-.title-news {
-    
+.title-news { 
     background: url('../image/jpg/news-title-background.jpg') no-repeat center / cover;
 }
-
-.title-material {
-    
+.title-material {  
     background: url('../image/jpg/material-base-background.png') no-repeat center / cover;
 }
-.title-about {
-    
+.title-about { 
     background: url('../image/jpg/about-title-background.png') no-repeat center / cover;
 }
-.title-student {
-    
+.title-student {  
     background: url('../image/jpg/student-title-background.png') no-repeat center / cover;
 }
-.title-abiturient {
-    
+.title-abiturient { 
     background: url('../image/jpg/abiturietnu-title-background.png') no-repeat center / cover;
 }
 .feedback-background
@@ -38,12 +30,17 @@
 {
     background: url('../image/yellow-background.png') no-repeat center / cover;
 }
-
 #background-dark-wood
 {
     background: url('../image/dark-wood-background.png') no-repeat center / cover;
 }
-
+/* #exposition
+{
+    background: url('../image/background-effects.png') no-repeat center / cover;
+    background-position: right 35% bottom 45%;
+    width: 720px;
+    height: 582px;
+} */
 .news-title-inside-cont
 {
     background-color: #CFE2D5;
@@ -76,7 +73,6 @@
     border-radius: 60px;
     text-shadow: 0px 8px 50px #000000;
 }
-
 .abitirientu-title-inside-cont
 {
     background: #92974C;
@@ -88,7 +84,6 @@
     border-radius: 60px;
     text-shadow: 0px 12px 35px rgba(0, 0, 0, 0.56);
 }
-
 .for-student-title-inside-cont
 {
     background: #223E2E;
@@ -100,7 +95,6 @@
     border-radius: 60px;
     text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.53);
 }
-
 .content-background-main
 {
     background: #F0F0F0;
@@ -204,29 +198,31 @@
 }
 #content-span-link
 {
-    font-family: 'Montserrat', sans-serif;
-   font-style: normal;
-   font-size: 14px;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-family: 'Montserrat';
+    font-size: 11px;
     color: black;
     font-weight: bold;
+    background: linear-gradient(181.18deg, rgba(255, 255, 255, 0.37) 1.01%, rgba(196, 196, 196, 0) 311.29%);
+    border-radius: 22px;
 }
-
 #content-span-link:hover
 {
     color: black;
-    font-size: 99%;
-    transition-duration: 180ms;
+    transition-duration: 100ms;
     transition-delay: 50ms;
+    border-bottom: 2px solid #47915E;
+    text-decoration: none;
+    background: linear-gradient(181.18deg, #FFFFFF 1.01%, #C4C4C4 311.29%);
 }
 .hover-triger-green:hover
 {
-background-color: #285953;
-;
-border-radius: 10px;
-cursor: pointer;
-transition-duration: 400ms;
-color: white;
-transition-delay: 50ms;
+    background-color: #285953;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 400ms;
+    color: white;
+    transition-delay: 50ms;
 } 
 .galery-triple-block
 {
@@ -238,7 +234,6 @@ transition-delay: 50ms;
     height: 100%;
     width: 100%;
 }
-
 .galery-height img:hover
 {
     position: absolute;
@@ -247,7 +242,6 @@ transition-delay: 50ms;
     transform: scale(1.1);
     cursor: url(../../image/Lupa.svg), auto;
 }
-
 .small-gallery img
 {
     max-height: 180px;
@@ -265,7 +259,6 @@ transition-delay: 50ms;
 {
     height: 510px;
 }
-
 .d-block-sm-galery img
 {
     width: 100%;
@@ -278,7 +271,6 @@ transition-delay: 50ms;
     font-weight: 300;
     font-size: 9px;
 }
-
 .basic-text
 {
     font-family: 'Montserrat', sans-serif;
@@ -300,20 +292,16 @@ transition-delay: 50ms;
 }
 .image-svg-hover-triger
 {
-    width: 79px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 .text-italic
 {
     font-style: italic;
 }
-
-
 .salad-second-span-heading
 {
-    font-family: 'Montserrat', semibold;
-    
-    font-style: normal;
+    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 28px;
     color: #858B2A;
@@ -330,11 +318,9 @@ transition-delay: 50ms;
 {
     color: #487B5E;
 }
-
 .red-button
 {
-    font-family: 'Montserrat', semibold;
-    font-style: normal;
+    font-family: 'Montserrat';
     font-size: 26px;
     line-height: 38px;
     height: 80px;
@@ -357,17 +343,13 @@ transition-delay: 50ms;
 {
     border-radius: 10px;
 }
-
-
 .input-transparent-div .input-box
 {
     position: relative;
 }
-
 .input-transparent-div .input-box input
 {
-    font-family: 'Montserrat', sans-serif;
-font-style: normal;
+    font-family: 'Montserrat';
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -378,11 +360,9 @@ font-style: normal;
     outline: none;
     background: transparent;
 }
-
 .input-transparent-div .input-box label
 {
-    font-family: 'Montserrat', sans-serif;
-font-style: normal;
+    font-family: 'Montserrat';
     position: absolute;
     top:0;
     left: 0;
@@ -392,7 +372,6 @@ font-style: normal;
     pointer-events: none;
     transition: .5s;
 }
-
 .input-transparent-div input:focus ~ label,
 .input-transparent-div input:valid ~ label
 {
@@ -401,22 +380,17 @@ font-style: normal;
     color: #ffffff;
     font-size: 15px;
 }
-
 .feedback-header-text
 {
-    font-family: 'Montserrat', semibold;
-font-style: normal;
-font-weight: bold;
-font-size: 34px;
-line-height: 125%;
-color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 125%;
+    color: white;
 }
-
-
-
 .select-feedback select
 {
-   width: 100%;
+    width: 100%;
     padding: 10px 0;
     font-size: 16px;
     color: #fff;
@@ -426,17 +400,14 @@ color: white;
     outline: none;
     background: transparent;
 }
-
 .select-feedback::after
 {
     color: yellow;
     font-size: 50px;
 }
-
 .anketa-container
 {
     background-color: white;
-
 }
 .anketa-content
 {
@@ -444,8 +415,7 @@ color: white;
 }
 .anketa-green-header-font
 {
-    font-family: 'Montserrat', semibold;
-    font-style: normal;
+    font-family: 'Montserrat';
     color: #858B2A;
     font-weight: 600;
     line-height: 135%;
@@ -453,45 +423,42 @@ color: white;
 }
 .anketa-basic-font
 {
-    font-family: 'Montserrat', semibold;
-    font-style: sans-serif;
+    font-family: 'Montserrat';
     font-weight: 300;
-font-size: 14px;
-line-height: 135%;
-letter-spacing: -0.05em;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: -0.05em;
 }
-
 .anketa-content input[type=text]
 {
     width: 100%;
     border: none;
-   padding: 10px;
-   outline: none;
-   color: gray;
-}
-
-.anketa-content input[type=text]:focus {
-    width: 100%;
-    border: none;
+    padding: 10px;
     outline: none;
-  }
-
-  .anketa-content input[type=email]
+    color: gray;
+}
+.anketa-content input[type=text]:focus
 {
     width: 100%;
     border: none;
-   padding: 10px;
-   outline: none;
-   color: gray;
+    outline: none;
 }
-
-.anketa-content input[type=email]:focus {
+.anketa-content input[type=email]
+{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    color: gray;
+}
+.anketa-content input[type=email]:focus
+{
     width: 100%;
     border: none;
     outline: none;
-  }
-  .anketa-content input[type=submit]
-  {
+}
+.anketa-content input[type=submit]
+{
     width: 100%;
     border: none;
     outline: none;  
@@ -499,23 +466,19 @@ letter-spacing: -0.05em;
     color: white;
     padding: 15px;
     border-radius: 5px;
-  }
-
+}
 .slider img
 {
     padding: 20px;
     width: 100%;
     border-radius: 10%;
     object-fit: cover;
-    
 }
 .slider
 {
     font-size: 10px;
     text-align: center;
 }
-
-
 .slider-news img
 {
     position:relative;
@@ -523,15 +486,13 @@ letter-spacing: -0.05em;
     border-radius: 5%;
     object-fit: cover;
 }
-
 .slider-news a 
 { 
     display: block; 
-position: relative; 
-margin: 5px; 
-transition-duration: 300ms;
+    position: relative; 
+    margin: 5px; 
+    transition-duration: 300ms;
 }
-
 .slider-news a:after 
 { 
     border-radius: 5%;
@@ -542,8 +503,8 @@ transition-duration: 300ms;
     right: 0;
     bottom: 0; 
     background: rgba(0,0,0,.5);  
-    opacity: 0; }
-
+    opacity: 0; 
+}
 .slider-news a:before 
 { 
     border-radius: 5%;
@@ -554,26 +515,22 @@ transition-duration: 300ms;
     right: 0; 
     bottom: 0; 
     background: url(icon-path); 
-    opacity: 0; }
-
+    opacity: 0; 
+}
 .slider-news a:hover:before,
 .slider-news a:hover:after 
 { 
     opacity: 1; 
     transition-duration: 300ms;
 }
-
 .slider-news
 {
     font-size: 10px;
     text-align: center;
 }
-
-
 .feedback-textarea
 {
-    font-family: 'Montserrat', semibold;
-    font-style: sans-serif;
+    font-family: 'Montserrat';
     color: white;
     background:none;
     width: 100%;
@@ -582,16 +539,14 @@ transition-duration: 300ms;
 }
 .feedback-textarea:focus
 {
-        outline: none;
+    outline: none;
 }
 .feedback-basic-font
 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-        font-size: 16px;
-        color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: white;
 }
-
 .feedback-send-button
 {
     background: linear-gradient(93.5deg, #E93F34 6.65%, #C0261C 94.56%);
@@ -599,17 +554,20 @@ transition-duration: 300ms;
     border-radius: 33px;
     color: rgba(255, 255, 255, 0.75);
     padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+    font-family: 'Montserrat';
     font-size: 19px;
     font-weight: bold;
 }
-
 .slider-student-one-photo img {
     margin: 0 auto;
     overflow: hidden;
 }
-
+.carousel-caption
+{
+    background: rgba(64, 64, 64, 0.5);
+    border-radius: 18px;
+    text-shadow: 0px 8px 20px #000000;
+}
 @media only screen and (max-width: 768px)
 {    
     .anketa-content input[type=submit]
@@ -626,7 +584,6 @@ transition-duration: 300ms;
         font-size: 18px;
         margin: 50px;
     }
-    
 }
 @media only screen and (min-width: 768px)
 {
@@ -696,6 +653,10 @@ transition-duration: 300ms;
     {
         font-size: 26px;
     }
+    #content-span-link
+    {
+        font-size: 14px;
+    }
     .basic-text
     {
         font-size: 14px;
@@ -711,6 +672,11 @@ transition-duration: 300ms;
     .lite-text
     {
         font-size: 13px;
+    }
+    .image-svg-hover-triger
+    {
+    width: 60px;
+    height: 60px;
     }
 }
 @media only screen and (min-width: 1300px)
@@ -733,37 +699,29 @@ transition-duration: 300ms;
     .about-title-inside-cont
     {
         font-size: 32px;
-
         margin-top: 15px;
         margin-bottom: 15px;
-
         height: 105xp;
     }
     .material-base-title-inside-cont
     {
         font-size: 32px;
-
         margin-top: 15px;
         margin-bottom: 15px;
-
         height: 105xp;
     }
     .abitirientu-title-inside-cont
     {
         font-size: 32px;
-
         margin-top: 15px;
         margin-bottom: 15px;
-
         height: 105xp;
     }
     .for-student-title-inside-cont
     {
         font-size: 32px;
-
         margin-top: 15px;
         margin-bottom: 15px;
-
         height: 105xp;
     }
     #container-heading img
@@ -804,6 +762,10 @@ transition-duration: 300ms;
     {
         font-size: 34px;
     }
+    #content-span-link
+    {
+        font-size: 18px;
+    }
     .basic-text
     {
         font-size: 18px;
@@ -820,38 +782,39 @@ transition-duration: 300ms;
     {
         font-size: 16px;
     }
+    .image-svg-hover-triger
+    {
+    width: 70px;
+    height: 70px;
+    }
 }
-
 @media only screen and (min-width: 1700px)
 {
     .anketa-content input[type=submit]
-{
-   margin-top: 15px;
-   margin-bottom: 15px;
-
-}
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
     .anketa-content input
-{
-   padding: 18px;
-   font-size: 20px;
-
-}
+    {
+        padding: 18px;
+        font-size: 20px;
+    }
     .anketa-green-header-font
-{
-    font-size: 28px;
-}
-.anketa-basic-font
-{
-font-size: 20px;
-}
+    {
+        font-size: 28px;
+    }
+    .anketa-basic-font
+    {
+        font-size: 20px;
+    }
     .red-button
     {
         font-size: 29px;
-    height: 95px;
-    margin: 200px;
-    width: 550px;
+        height: 95px;
+        margin: 200px;
+        width: 550px;
     }
-    
     .lite-text{
         font-size: 24px;
     } 
@@ -913,6 +876,10 @@ font-size: 20px;
        font-size: 25px;
        padding-top: 3rem;
     }
+    #content-span-link
+    {
+        font-size: 24px;
+    }
     .galery-height
     {
         height: 780px;
@@ -924,8 +891,8 @@ font-size: 20px;
     }
     .image-svg-hover-triger
     {
-        width: 95px;
-        height: 98px;
+        width: 90px;
+        height: 90px;
         padding-bottom: 10px;
     }
     .news-title-inside-cont
@@ -935,37 +902,29 @@ font-size: 20px;
     .about-title-inside-cont
     {
         font-size: 42px;
-
         margin-top: 55px;
         margin-bottom: 54px;
-
         height: 160xp;
     }
     .material-base-title-inside-cont
     {
         font-size: 42px;
-
         margin-top: 55px;
         margin-bottom: 54px;
-
         height: 160xp;
     }
     .abitirientu-title-inside-cont
     {
         font-size: 42px;
-
         margin-top: 55px;
         margin-bottom: 54px;
-
         height: 160xp;
     }
     .for-student-title-inside-cont
     {
         font-size: 42px;
-
         margin-top: 55px;
         margin-bottom: 54px;
-
         height: 160xp;
     }
 }
