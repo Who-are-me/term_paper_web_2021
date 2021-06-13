@@ -90,13 +90,13 @@
           <img src="image/learning.svg" class="image-svg-hover-triger">
           <p class="pt-3 basic-text">Підвищення професійного рівня викладачів циклової комісії</p>
         </div>
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos="fade-right" data-aos-duration="10000" data-aos-delay="1400">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1400">
           <img src="image/direction.svg" class="image-svg-hover-triger">
           <p class="pt-3 basic-text">Профорієнтаційна робота</p>
         </div>
       </div>
     </div>
-    <div class="d-flex col-12 justify-content-between p-0 m-0 pt-5" id="container-heading" data-aos="zoom-out" data-aos-duration="10000">
+    <div class="d-flex col-12 justify-content-between p-0 m-0 pt-5" id="container-heading" data-aos="zoom-out" data-aos-duration="2000">
       <img src="image/left-heading-separate.svg">
       <span id="green-span-heading">ЧАСТИНКА НАШОГО ЖИТТЯ</span>
       <img src="image/right-heading-separate.svg">
@@ -153,22 +153,22 @@
     </div>
 
     <div class="row pt-3">
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
         <img src="{{ $content[7]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600">
         <img src="{{ $content[8]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="900">
         <img src="{{ $content[9]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1200">
         <img src="{{ $content[10]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1500">
         <img src="{{ $content[11]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1800">
         <img src="{{ $content[12]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
     </div>
