@@ -15,6 +15,7 @@ return array(
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Admin\\AboutController' => $baseDir . '/app/Http/Controllers/Admin/AboutController.php',
     'App\\Http\\Controllers\\Admin\\BaseController' => $baseDir . '/app/Http/Controllers/Admin/BaseController.php',
+    'App\\Http\\Controllers\\Admin\\ContactController' => $baseDir . '/app/Http/Controllers/Admin/ContactController.php',
     'App\\Http\\Controllers\\Admin\\EntrantController' => $baseDir . '/app/Http/Controllers/Admin/EntrantController.php',
     'App\\Http\\Controllers\\Admin\\FeedbackController' => $baseDir . '/app/Http/Controllers/Admin/FeedbackController.php',
     'App\\Http\\Controllers\\Admin\\HomeController' => $baseDir . '/app/Http/Controllers/Admin/HomeController.php',

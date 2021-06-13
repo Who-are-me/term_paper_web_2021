@@ -71,7 +71,9 @@
                 <img src="image/right-student-heading-separate.svg">
             </div>
             <div class="col-12 p-0 m-0 text-center">
-                <button type="" class="red-button">Завантажити графік</button>
+            <!-- ТУТ МІНЯТИ ССИЛКУ НА ФАЙЛ -->
+                <a href="{{ $content[8]->text }}"><button type="" class="red-button">Завантажити графік</button></a>
+            <!-- ОТАМ ДЕ ПИШЕ  HREF -->
             </div>
         </div>
     </div>

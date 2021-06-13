@@ -49,6 +49,11 @@
             @method('PUT')
             <div class="card-body">
 
+                <div class="form-group">
+                    <label for="">Силка на розклад занять</label>
+                    <input value="{{ $content[8]->text }}" type="text" name="text_0" class="form-control" required>
+                </div>
+
                 <div class="cssSlider col-12">
                     <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
                     <div class="col-12 d-md-flex form-group">

@@ -130,7 +130,7 @@
                     <div class="col-12 pt-5">
                         <p id="upper-footer-sm" class="pt-1"> <a href="https://www.facebook.com/tktntu/"><img src="image/facebook.svg">Facebook</a></p>
                         <p id="upper-footer-sm"> <a href="#"><img src="image/instagram.svg">Instagram</a></p>
-                        <p id="upper-footer-sm"> <a href="#"><img src="image/youtube.svg">Youtube</a> </p>
+                        <p id="upper-footer-sm"> <a href="https://www.youtube.com/channel/UCS2_BPq_KaX5AHFniry-hMw"><img src="image/youtube.svg">Youtube</a> </p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                     <p class="upper-footer-social-img">
                         <a href="https://www.facebook.com/tktntu/"><img src="image/facebook.svg">Facebook</a>
                         <a href="#"><img src="image/instagram.svg">Instagram</a>
-                        <a href="#"><img src="image/youtube.svg">Youtube</a></a>
+                        <a href="https://www.youtube.com/channel/UCS2_BPq_KaX5AHFniry-hMw"><img src="image/youtube.svg">Youtube</a></a>
                         
                     </p>
                 </div>
