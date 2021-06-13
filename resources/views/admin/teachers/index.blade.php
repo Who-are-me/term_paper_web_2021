@@ -78,18 +78,16 @@
                           <a class="btn btn-info btn-sm" href="{{ route('teachers.edit', $item->id) }}">
                             @csrf
                             @method('PATCH')
-                              <i class="fas fa-pencil-alt">
-                              </i>
+                              <i class="fas fa-pencil-alt"></i>
                               Редагувати
                           </a>
 
-                          <form action="{{ route('teachers.destroy', $item) }}" method="POST" style="display: inline-block;">
+                          <form action="{{ route('teachers.destroy', $item->id) }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
 
                             <button onClick='return confirmSubmit()' type="submit" class="delete-btn btn btn-danger btn-sm">
-                              <i class="fas fa-trash">
-                              </i>
+                              <i class="fas fa-trash"></i>
                               Видалити
                             </button>
 

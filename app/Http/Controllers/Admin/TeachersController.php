@@ -103,11 +103,10 @@ class TeachersController extends Controller
      * @param  \App\Models\Teachers  $teachers
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Teachers $teachers)
+    public function destroy($id)
     {
-        $tmp_title = $teachers->pip;
-        $teachers->delete();
+        DB::table('teachers')->where('id', '=', $id)->delete();
 
-        return redirect()->back()->withSuccess("Викладач [$tmp_title] був успішно вилучений із списку!");
+        return redirect()->back()->withSuccess("Викладач був успішно вилучений із списку!");
     }
 }
