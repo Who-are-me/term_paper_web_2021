@@ -10,7 +10,7 @@
     <div class="row d-flex m-0 p-0 title-about">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8 text-center py-3 py-md-5 px-5 px-md-0">
-            <div class="col-12 py-1 py-md-4 px-md-4  about-title-inside-cont text-center" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="col-12 py-1 py-md-4 px-md-4  about-title-inside-cont text-center" data-aos="zoom-out">
                 <span>Про циклову</span>
             </div>
         </div>
@@ -94,30 +94,30 @@
 
         </div>
         <div class="col-12 p-0 py-5 m-0">
-            <p class="text-center grey-bold-text-heading p-0 py-5">Завданням комісії є підготовка сучасного радіотехніка, фахівця, якому притаманні такі якості:</p>
-            <p id="black-span-heading">Основні напрямки роботи комісії:</p>
-            <p class="black-list-header">І. Вивчення і підвищення рівня знань, умінь та навичок студентів:</p>
+            <p class="text-center grey-bold-text-heading p-0 py-5" data-aos="zoom-out" data-aos-duration="2000">Завданням комісії є підготовка сучасного радіотехніка, фахівця, якому притаманні такі якості:</p>
+            <p id="black-span-heading" data-aos="zoom-out" data-aos-duration="2000">Основні напрямки роботи комісії:</p>
+            <p class="black-list-header" data-aos="zoom-out" data-aos-duration="2000">І. Вивчення і підвищення рівня знань, умінь та навичок студентів:</p>
             <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">➣ Використання активних форм усної перевірки знань, усне опитування за темами
             </p>
-            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">
+            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="600">
                 ➣ Аналіз рівня знань, умінь і навичок студентів, труднощів в опануванні програмним матеріалом і на
                 цій
                 основі розроблення шляхів підвищення ефективності навчального процесу</p>
-            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">➣ Вивчення результативності позакласної роботи, залучення студентів до роботи
+            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="900">➣ Вивчення результативності позакласної роботи, залучення студентів до роботи
                 в
                 гуртках</p>
-            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">
+            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="1200">
                 ➣ Проведення конкурсів серед студентів старших курсів на кращого по професії</p>
             <p class="black-list-header">ІІ. Розробка та впровадження заходів з вдосконалення методики викладання:
             </p>
-            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">➣ Розробка та впровадження методичних рекомендацій по вдосконаленню і
+            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="1500">➣ Розробка та впровадження методичних рекомендацій по вдосконаленню і
                 підвищенню
                 рівня знань</p>
-            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">➣ Обговорення результатів курсового та дипломного проектування</p>
-            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">➣ Розробка та впровадження методичних розробок та рекомендацій по предметах
+            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="1800">➣ Обговорення результатів курсового та дипломного проектування</p>
+            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="2100">➣ Розробка та впровадження методичних розробок та рекомендацій по предметах
                 циклу та по темах і
                 розділах цих предметів</p>
-            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">➣ Вивчення і рецензування навчально-методичної літератури, наукових
+            <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="2400">➣ Вивчення і рецензування навчально-методичної літератури, наукових
                 публікацій та їх використання в
                 навчально-виховному процесі</p>
 
