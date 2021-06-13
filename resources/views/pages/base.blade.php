@@ -44,7 +44,7 @@
                     <img src="#" class="pr-md-5 w-100">Тут має бути картинка
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-left  align-items-center pl-md-3">
-                    <p class="basic-text">Кабінет-лабораторія телекомунікаційних пристроїв приймання та передавання інформації, телевізійної та офісної техніки (ауд.321).</p>
+                    <p class="basic-text-bold">Кабінет-лабораторія телекомунікаційних пристроїв приймання та передавання інформації, телевізійної та офісної техніки (ауд.321).</p>
                 </div>
             </div>
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
@@ -52,7 +52,7 @@
                     <img src="#" class="w-100 pl-md-5">Тут має бути картинка
                 </div>
                 <div class="col-12 col-md-6 align-middle text-center text-md-right order-md-first p-0 pr-md-3">
-                    <p class="basic-text">Кабінет-лабораторія конструювання та технології виробництва РЕА, систем автоматизованого проектування (ауд. 306).</p>
+                    <p class="basic-text-bold">Кабінет-лабораторія конструювання та технології виробництва РЕА, систем автоматизованого проектування (ауд. 306).</p>
                 </div>
             </div>
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
@@ -60,7 +60,7 @@
                     <img src="#" class="pr-md-5 w-100">Тут має бути картинка
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-left  align-items-center pl-md-3">
-                    <p class="basic-text">Кабінет-лабораторія радіопередавальних пристроїв, метрології та вимірювальної техніки (ауд.310) .</p>
+                    <p class="basic-text-bold">Кабінет-лабораторія радіопередавальних пристроїв, метрології та вимірювальної техніки (ауд.310) .</p>
                 </div>
             </div>
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
@@ -68,7 +68,7 @@
                     <img src="#" class="w-100 pl-md-5">Тут має бути картинка
                 </div>
                 <div class="col-12 col-md-6 align-middle text-center text-md-right order-md-first p-0 pr-md-3">
-                    <p class="basic-text">Кабінет-лабораторія радіопередавальних пристроїв, метрології та вимірювальної техніки (ауд.310) .</p>
+                    <p class="basic-text-bold">Кабінет-лабораторія радіопередавальних пристроїв, метрології та вимірювальної техніки (ауд.310) .</p>
                 </div>
             </div>
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
@@ -76,7 +76,7 @@
                     <img src="#" class="pr-md-5 w-100">Тут має бути картинка
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-left  align-items-center pl-md-3">
-                    <p class="basic-text">Кабінет-лабораторія цифрових пристроїв, сигналів та процесів в радіотехніці, електронних пристроїв та мікроелектроніки (ауд.313).</p>
+                    <p class="basic-text-bold">Кабінет-лабораторія цифрових пристроїв, сигналів та процесів в радіотехніці, електронних пристроїв та мікроелектроніки (ауд.313).</p>
                 </div>
             </div>
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
@@ -84,7 +84,7 @@
                     <img src="#" class="w-100 pl-md-5">Тут має бути картинка
                 </div>
                 <div class="col-12 col-md-6 align-middle text-center text-md-right order-md-first p-0 pr-md-3">
-                    <p class="basic-text">Кабінет-лабораторія радіопередавальних пристроїв, метрології та вимірювальної техніки (ауд.310) .</p>
+                    <p class="basic-text-bold">Кабінет-лабораторія радіопередавальних пристроїв, метрології та вимірювальної техніки (ауд.310) .</p>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
                 по вивченню дисциплін і проведенню лабораторних і практичних робіт
                 та для проведення електрорадіовимірювальної практики.</p>
             <p class="basic-text-bold">Compas 3D, Arduino, Multisim,  Electronic Workbench, "Proteus", Altium Designer, SprintLayout, Micro-Cap, AVR Studio</p>
-            <p class="text-center">та ін</p>
+            <p class="text-center basic-text-bold">та ін</p>
             <p class="basic-text-bold text-center py-5">Практичне застосування сучасних методів проектування студенти мають можливість вдосконалювати працюючи на 3D принтері. </p>
             <div class="col-12 d-flex">
                 <div class="col-2"></div>
