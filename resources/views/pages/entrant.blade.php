@@ -8,7 +8,7 @@
 <div class="row d-flex m-0 p-0 title-abiturient">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 text-center py-3 py-md-5 px-5 px-md-0">
-        <div class="col-12 py-1 py-md-4 px-md-4 abitirientu-title-inside-cont text-center">
+        <div class="col-12 py-1 py-md-4 px-md-4 abitirientu-title-inside-cont text-center" data-aos="zoom-out" data-aos-duration="1000">
             <span>Абітурієнту</span>
         </div>
 
@@ -19,15 +19,13 @@
 <div class="row d-flex m-0 p-0 content-background-abiturient px-5 px-md-0">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 p-0 m-0">
-        <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading"><img
-                src="image/left-salad-heading-separate.svg"> 
-
+        <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700"4>
+            <img src="image/left-salad-heading-separate.svg"> 
             <span class="salad-span-heading">ВСТУП</span>
-
             <img src="image/right-salad-heading-separate.svg">
         </div>
 
-        <div class="col-12 p-3">
+        <div class="col-12 p-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1300">
             <div class="slider">
                 <div><img src="{{ $content[0]->text }}" ></div>
                 <div><img src="{{ $content[1]->text }}" ></div>
@@ -38,23 +36,23 @@
             </div>
         </div>
 
-        <div class="col-12 p-0 m-0 d-flex text-center">
+        <div class="col-12 p-0 m-0 d-flex text-center" >
             <div class="col-1"></div>
             <div class="col-10 p-0">
                 <p class="basic-text">
-                    На відміну від «вузьких» фахівців спеціальностей <span class="basic-text-bold">«Інженерія
-                        програмного забезпечення», «Комп’ютерні науки», «Комп’ютерна інженерія»,
-                        «Кібербезпека»</span> та інш их, випускники спеціалізації <span
-                        class="basic-text-bold">«Телекомунікаційні системи та мережі»</span> володіють комплексними
-                    теоретичними знаннями та практичними навичками щодо:
+                    На відміну від «вузьких» фахівців спеціальностей 
+                    <span class="basic-text-bold">«Інженерія програмного забезпечення», «Комп’ютерні науки», «Комп’ютерна інженерія», «Кібербезпека»</span> 
+                    та інш их, випускники спеціалізації 
+                    <span class="basic-text-bold">«Телекомунікаційні системи та мережі»</span> 
+                    володіють комплексними теоретичними знаннями та практичними навичками щодо:
                 </p>
             </div>
             <div class="col-1"></div>
         </div>
-        <div class="col-12 p-0 pt-5 d-block">
+        <div class="col-12 p-0 pt-5 d-block" >
             <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
-                    <div class="col-6 p-0">
+                    <div class="col-6 p-0" data-aos="fade-right">
                         <img class="w-100" src="image/jpg/abiturientu-1.png">
                     </div>
                 </div>
