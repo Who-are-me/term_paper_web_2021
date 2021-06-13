@@ -15,13 +15,14 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 <link rel="stylesheet" type="text/css" href="../../slick-1.8.1/slick/slick-theme.css"/>
+<link href="../../aos-master/aos-master/dist/aos.css" rel="stylesheet">
+
  
     <link href="loyout.css" rel="stylesheet">
     <link href="pages.css" rel="stylesheet">
     <link rel="shortcut icon" href="../../image/site.png" type="image/x-icon">
     <title>ЦК Електронних апаратів</title>
-
-</head>
+</head> 
 
 <body>
     <header>
@@ -107,7 +108,8 @@
     <div class="row d-flex m-0 p-0 content-background-abiturient px-5 px-md-0">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8 p-0 m-0">
-            <div class="d-flex col-12 justify-content-between p-0 m-0 pt-5" id="container-heading"><img
+            <div class="d-flex col-12 justify-content-between p-0 m-0 pt-5" id="container-heading" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"><img
                     src="../../image/left-salad-heading-separate.svg">
 
                 <span class="salad-span-heading">ВСТУП</span>
@@ -128,7 +130,8 @@
             </div>
             <div class="col-12 p-0 m-0 d-flex text-center">
                 <div class="col-1"></div>
-                <div class="col-10 p-0">
+                <div class="col-10 p-0" data-aos="fade-up"
+                data-aos-anchor-placement="center-center">
                     <p class="basic-text">
                         На відміну від «вузьких» фахівців спеціальностей <span class="basic-text-bold">«Інженерія
                             програмного забезпечення», «Комп’ютерні науки», «Комп’ютерна інженерія»,
@@ -552,6 +555,8 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../../slick-1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="slider-slid.js"></script>
+<script src="../../aos-master/aos-master/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 
 </html>

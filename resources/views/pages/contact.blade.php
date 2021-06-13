@@ -43,7 +43,7 @@
                 <div class="col-2 d-none d-md-flex"></div>
                 <div class="col-12 col-md-5 input-transparent-div p-0">
                     <div class="input-box label">
-                        <input type="email" name="email" required="" class="w-100" maxlength="150">
+                        <input type="text" name="email" required="" class="w-100" maxlength="150">
                         <label>*Введіть E-mail</label>
                     </div>
                 </div>

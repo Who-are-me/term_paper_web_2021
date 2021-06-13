@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+    <link rel="stylesheet" type="text/css" href="aos-master/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
  
     <link href="css/loyout.css" rel="stylesheet">
@@ -177,5 +177,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="slider-slid.js"></script>
+    <script type="text/javascript" src="aos-master/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
