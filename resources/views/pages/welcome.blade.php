@@ -7,7 +7,7 @@
 
 <link href="css/pages.css" rel="stylesheet">
 
-<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" data-aos="zoom-in"   data-aos-duration="1000">
+<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" data-aos="zoom-out"   data-aos-duration="1000">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -74,23 +74,23 @@
         <span id="green-span-heading">НАША МІСІЯ</span>
         <img src="image/right-heading-separate.svg">
       </div>
-      <div class="col-12 text-center my-4">
+      <div class="col-12 text-center my-4" >
         <span id="black-span-heading">Основні напрямки роботи комісії</span>
       </div>
       <div class="row col-12 pt-3 m-0 justify-content-between text-center p-0">
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos-duration="2000"  data-aos="fade-right" data-aos-delay="200">
           <img src="image/knowledge.svg" class="image-svg-hover-triger">
           <p class="pt-3 basic-text">Вивчення і підвищення рівня знань, умінь та навичок студентів</p>
         </div>
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos-duration="2000"  data-aos="fade-right" data-aos-delay="600">
           <img src="image/teaching.svg" class="image-svg-hover-triger">
           <p class="pt-3 basic-text">Розробка та впровадження заходів з вдосконалення методики викладання</p>
         </div>
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">
           <img src="image/learning.svg" class="image-svg-hover-triger">
           <p class="pt-3 basic-text">Підвищення професійного рівня викладачів циклової комісії</p>
         </div>
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1400">
           <img src="image/direction.svg" class="image-svg-hover-triger">
           <p class="pt-3 basic-text">Профорієнтаційна робота</p>
         </div>
