@@ -7,7 +7,7 @@
 
 <link href="css/pages.css" rel="stylesheet">
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" data-aos="zoom-in"   data-aos-duration="1000">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -16,6 +16,9 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="{{ $content[0]->text }}" alt="First slide" style="object-fit: cover; height: 550px;">
+      <div class="carousel-caption d-block">
+    <h1 style="padding-bottom: 100px;">Test</h1>
+  </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[1]->text }}" alt="Second slide" style="object-fit: cover; height: 550px;">
@@ -43,7 +46,7 @@
     
     <div class="row col-12 my-4 justify-content-between m-0 p-0">
       <div class="col-12 my-3 d-block d-md-flex px-0">
-        <div class="row col-12 col-md-7 p-0 pr-md-3 m-0">
+        <div class="row col-12 col-md-6 p-0 pr-md-3 m-0" data-aos="fade-down-right" data-aos-duration="1400">
           <div class="d-flex col-12 justify-content-between px-0 align-middle" id="container-heading">
             <img src="image/left-heading-separate.svg">
             <p><span id="green-span-heading">Про нас</span></p>
@@ -59,14 +62,14 @@
             <a href="about_us" id="content-span-link">Читати більше</a> 
           </div>
         </div>
-        <div class="col-12 col-md-5 p-0 m-0 d-block text-center">
+        <div class="col-12 col-md-6 p-0 m-0 d-block text-center" data-aos="fade-down-left" data-aos-duration="1400">
           <img class="w-100" src="{{ $content[5]->text }}" style="border-radius: 20px;">
           <img class="w-100  mt-3" src="{{ $content[6]->text }}" style="border-radius: 20px;">
         </div>
       </div>
     </div>
-    <div class="col-12 my-5 pt-5 p-0">
-      <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading">
+    <div class="col-12 my-5 pt-5 p-0" data-aos="zoom-out" data-aos-duration="1400">
+      <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading" >
         <img src="image/left-heading-separate.svg">
         <span id="green-span-heading">НАША МІСІЯ</span>
         <img src="image/right-heading-separate.svg">
