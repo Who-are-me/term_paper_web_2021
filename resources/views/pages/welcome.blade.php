@@ -153,22 +153,22 @@
     </div>
 
     <div class="row pt-3">
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
         <img src="{{ $content[7]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600">
         <img src="{{ $content[8]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="900">
         <img src="{{ $content[9]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1200">
         <img src="{{ $content[10]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1500">
         <img src="{{ $content[11]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
-      <div class="column">
+      <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1800">
         <img src="{{ $content[12]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
     </div>
