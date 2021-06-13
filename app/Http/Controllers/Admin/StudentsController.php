@@ -85,6 +85,7 @@ class StudentsController extends Controller
         DB::table('students_contents')->where('id', 6)->update(['text' => $request->img_5]);
         DB::table('students_contents')->where('id', 7)->update(['text' => $request->img_6]);
         DB::table('students_contents')->where('id', 8)->update(['text' => $request->img_7]);
+        DB::table('students_contents')->where('id', 9)->update(['text' => $request->text_0]);
 
         return redirect()->back()->withSuccess("Сторінка [Студенту] була успішно оновлена!"); 
     }

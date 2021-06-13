@@ -72,7 +72,7 @@
             </div>
             <div class="col-12 p-0 m-0 text-center">
             <!-- ТУТ МІНЯТИ ССИЛКУ НА ФАЙЛ -->
-                <a href="http://tk.te.ua/tk/new/docs/2020/grafik_navchalnogo_procesu.xls"><button type="" class="red-button">Завантажити графік</button></a>
+                <a href="{{ $content[8]->text }}"><button type="" class="red-button">Завантажити графік</button></a>
             <!-- ОТАМ ДЕ ПИШЕ  HREF -->
             </div>
         </div>
