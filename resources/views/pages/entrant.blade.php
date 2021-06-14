@@ -25,7 +25,7 @@
             <img src="image/right-salad-heading-separate.svg">
         </div>
 
-        <div class="col-12 p-3" >
+        <!-- <div class="col-12 p-3" >
             <div class="slider">
                 <div><img src="{{ $content[0]->text }}" ></div>
                 <div><img src="{{ $content[1]->text }}" ></div>
@@ -34,7 +34,7 @@
                 <div><img src="{{ $content[4]->text }}" ></div>
                 <div><img src="{{ $content[5]->text }}" ></div>
             </div>
-        </div>
+        </div> -->
 
         <div class="col-12 p-0 m-0 d-flex text-center">
             <div class="col-1"></div>
@@ -89,7 +89,7 @@
                 <div class="col-1"></div>
             </div>
         </div>
-        <div class="col-12 p-0 d-block" >
+        <div class="col-12 p-0 d-block">
             <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
                     <div class="col-2"></div>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-6"></div>
             </div>
-            <div class="col-12 p-0 d-flex" >
+            <div class="col-12 p-0 d-flex">
                 <div class="col-1"></div>
                 <div class="col-10">
                     <p class="picture-caption-italic">
@@ -109,7 +109,8 @@
                 <div class="col-1"></div>
             </div>
         </div>
-        <div class="col-12 p-0 d-block pb-5" >
+        <div class="col-12 p-0 d-block pb-5">
+            <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
                     <div class="col-5"></div>
                     <div class="col-6"><img class="w-100" src="image/jpg/abiturientu-4.png"></div>
@@ -117,7 +118,7 @@
                 </div>
                 <div class="col-6"></div>
             </div>
-            <div class="col-12 p-0 d-flex" >
+            <div class="col-12 p-0 d-flex">
                 <div class="col-1"></div>
                 <div class="col-10">
                     <p class="picture-caption-italic">
@@ -131,7 +132,7 @@
         </div>
 
         <div class="col-12 p-0 pt-5">
-            <p class="basic-text-bold" >
+            <p class="basic-text-bold">
                 Тому якісна підготовка випускників кафедри у відповідності до вимог провідних виробників
                 телекомунікаційного обладнання та програмного забезпечення дозволяє їм по завершенні навчання
                 працювати на посадах:
@@ -140,10 +141,10 @@
         <div class="col-12 d-flex p-0">
             <div class="col-1"></div>
             <div class="col-10">
-                <p class="basic-text text-italic pt-2" >
+                <p class="basic-text text-italic pt-2">
                     -інженера інформаційно-телекомунікаційних систем,
                 </p>
-                <p class="basic-text text-italic py-2" >
+                <p class="basic-text text-italic py-2">
                     -фахівця з проектування та підтримки інформаційних систем та технологій,
                 </p>
                 <p class="basic-text text-italic pb-2">
@@ -173,24 +174,24 @@
             <div class="col-12 p-0"><img class="w-100" src="{{ $content[6]->text }}"> </div>
             <div class="col-12 d-flex">
                 <div class="col-1"></div>
-                <div class="col-10 text-center" >
+                <div class="col-10 text-center">
                     <p class="basic-text-bold">а учні шкіл запрошуються в наш навчальний заклад для участі у
                         майстер-класах та ознайомлення із майбутнім фахом.</p>
                 </div>
             </div>
             <div class="col-12 d-block p-0">
-                <div class="col-12 d-flex p-0" >
+                <div class="col-12 d-flex p-0">
                     <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-6(1).png">
                     </div>
                 </div>
-                <div class="col-12 d-flex p-0" >
+                <div class="col-12 d-flex p-0">
                     <div class="col-3"></div>
                     <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-6(2).png">
                     </div>
                 </div>
-                <div class="col-12 d-flex p-0" >
+                <div class="col-12 d-flex p-0">
                     <div class="col-6"></div>
                     <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-6(3).png">
@@ -234,7 +235,7 @@
         </div>
         <div class="col-12 p-0 d-flex py-5">
             <div class="col-2 d-none d-sm-flex"></div>
-            <div class="col-12 col-sm-8 text-center">
+            <div class="col-12 col-sm-8 text-center" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
                 <p class="salad-second-span-heading">Можливі місця роботи після закінчення коледжу:</p>
             </div>
         </div>

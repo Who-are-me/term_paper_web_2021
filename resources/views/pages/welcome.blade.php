@@ -145,13 +145,6 @@
           cursor: pointer;
       }
     </style>
-
-    <div class="container pt-4 p-3 text-center" data-aos="zoom-in" data-aos-duration="3000">
-      <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
-      <img id="expandedImg" class="" src="{{ $content[7]->text }}" style="border-radius: 22px; width: 80%; ">
-      <div id="imgtext"></div>
-    </div>
-
     <div class="row pt-3">
       <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
         <img src="{{ $content[7]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
@@ -172,6 +165,13 @@
         <img src="{{ $content[12]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
     </div>
+    <div class="container pt-4 p-3 text-center" data-aos="zoom-in" data-aos-duration="3000">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+      <img id="expandedImg" class="" src="{{ $content[7]->text }}" style="border-radius: 22px; width: 80%; ">
+      <div id="imgtext"></div>
+    </div>
+
+    
 
     
 
