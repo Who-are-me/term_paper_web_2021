@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="cssSlider col-12">
-                    <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
+                    <label class="card-title">Вибрати фото 1</label><br><br>
                     <div class="col-12 d-md-flex form-group">
                         <div class="col-12 col-md-8">
                             <input type="hidden" name="img_0" id="feature_image0" name="feature_image" value="{{ $content[0]->text }}">
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="cssSlider col-12">
-                    <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
+                    <label class="card-title">Вибрати фото на слайдер</label><br><br>
                     <div class="col-12 d-md-flex form-group">
                         <div class="col-12 col-md-4">
                             <input type="hidden" name="img_1" id="feature_image1" name="feature_image" value="{{ $content[1]->text }}">
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="cssSlider col-12">
-                    <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
+                    <label class="card-title">Вибрати фото 2</label><br><br>
                     <div class="col-12 d-md-flex form-group">
                         <div class="col-12 col-md-8">
                             <input type="hidden" name="img_4" id="feature_image4" name="feature_image" value="{{ $content[4]->text }}">
@@ -111,7 +111,7 @@
                 </div>
 
                 <div class="cssSlider col-12">
-                    <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
+                    <label class="card-title">Вибрати фото 3</label><br><br>
                     <div class="col-12 d-md-flex form-group">
                         <div class="col-12 col-md-8">
                             <input type="hidden" name="img_5" id="feature_image5" name="feature_image" value="{{ $content[5]->text }}">
@@ -125,7 +125,7 @@
                 </div>
 
                 <div class="cssSlider col-12">
-                    <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
+                    <label class="card-title">Вибрати фото 4</label><br><br>
                     <div class="col-12 d-md-flex form-group">
                         <div class="col-12 col-md-8">
                             <input type="hidden" name="img_6" id="feature_image6" name="feature_image" value="{{ $content[6]->text }}">
@@ -139,7 +139,7 @@
                 </div>
 
                 <div class="cssSlider col-12">
-                    <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
+                    <label class="card-title">Вибрати фото 5</label><br><br>
                     <div class="col-12 d-md-flex form-group">
                         <div class="col-12 col-md-8">
                             <input type="hidden" name="img_7" id="feature_image7" name="feature_image" value="{{ $content[7]->text }}">
