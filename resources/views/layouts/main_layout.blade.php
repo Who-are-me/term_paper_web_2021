@@ -39,19 +39,19 @@
             <div class="col-12 col-md-10 col-lg-8 px-0 m-0 d-flex">
                 <a class="navbar-brand p-0" href="/"><img src="image/Logo.svg" class=""></a>
                 <div class="col d-flex p-0" id="nav-a-md">
-                    <a class="nav-link px-md-0" href="/">Головна</a>
+                    <a id="maPage" class="nav-link px-md-0" href="/">Головна</a>
 
-                    <a class="nav-link px-md-0" href="/about_us">Про нас</a>
+                    <a id="abPage" class="nav-link px-md-0" href="/about_us">Про нас</a>
 
-                    <a class="nav-link px-md-0" href="/matbase">Матеріальна база</a>
+                    <a id="mtPage" class="nav-link px-md-0" href="/matbase">Матеріальна база</a>
 
-                    <a class="nav-link px-md-0" href="/to_entrant">Абітурієнту</a>
+                    <a id="enPage" class="nav-link px-md-0" href="/to_entrant">Абітурієнту</a>
 
-                    <a class="nav-link px-md-0" href="/student">Студенту</a>
+                    <a id="stPage" class="nav-link px-md-0" href="/student">Студенту</a>
 
-                    <a class="nav-link px-md-0" href="/tidings">Новини</a>
+                    <a id="tiPage" class="nav-link px-md-0" href="/tidings">Новини</a>
 
-                    <a class="nav-link px-md-0" href="/contacts">Зворотній зв’язок</a>
+                    <a id="coPage" class="nav-link px-md-0" href="/contacts">Зворотній зв’язок</a>
                 </div>
             </div>
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
@@ -178,6 +178,7 @@
     <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="slider-slid.js"></script>
     <script type="text/javascript" src="aos-master/dist/aos.js"></script>
-<script>AOS.init();</script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
