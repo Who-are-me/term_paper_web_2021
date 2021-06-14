@@ -16,15 +16,21 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="{{ $content[0]->text }}" alt="First slide" style="object-fit: cover; height: 550px;">
-      <div class="carousel-caption d-block">
-    <h1 style="padding-bottom: 100px;">Test</h1>
-  </div>
+      <div class="carousel-caption d-block title-slide">
+        <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
+      </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[1]->text }}" alt="Second slide" style="object-fit: cover; height: 550px;">
+      <div class="carousel-caption d-block title-slide">
+      <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
+      </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[2]->text }}" alt="Third slide" style="object-fit: cover; height: 550px;">
+      <div class="carousel-caption d-block title-slide">
+      <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
+      </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
