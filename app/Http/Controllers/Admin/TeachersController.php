@@ -86,15 +86,13 @@ class TeachersController extends Controller
      * @param  \App\Models\Teachers  $teachers
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Teachers $teachers)
+    public function update(Request $request, $id)
     {
-        $teachers->pip = $request->pip;
-        $teachers->about = $request->about;
-        $teachers->srcimg = $request->srcimg;
+        DB::table('teachers')->where('id', $id)->update(['pip' => $request->pip]);
+        DB::table('teachers')->where('id', $id)->update(['about' => $request->about]);
+        DB::table('teachers')->where('id', $id)->update(['srcimg' => $request->srcimg]);
 
-        $teachers->save();
-
-        return redirect()->back()->withSuccess("Викладач [$teachers->pip] був успішно оновлений!");
+        return redirect()->back()->withSuccess("Викладач був успішно оновлений!");
     }
 
     /**

@@ -40,7 +40,7 @@
 
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Редактор новини: {{ $teachers->pip }}</h3>
+            <h3 class="card-title">Редактор викладача: {{ $teachers->pip }}</h3>
         </div>
         
               <!-- form start -->
@@ -59,10 +59,26 @@
                     <textarea name="about" class="editor" style="height: 600px;">{{ $teachers->about }}</textarea>
                 </div>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото викладача</button>
-                    <input type="text" name="srcimg" class="form-control mt-2" id="feature_image" name="feature_image" value="{{ $teachers->srcimg }}" readonly>
-                    <img src="{{ $teachers->srcimg }}" alt="" class="img-uploaded" height="15%" width="100%" style="display: block;">
+                    <input type="hidden" name="srcimg" class="form-control mt-2" id="feature_image" name="feature_image" value="{{ $teachers->srcimg }}" readonly>
+                    <img src="{{ $teachers->srcimg }}" alt="" class="img-uploaded" height="15%" width="70%" style="display: block;">
+                </div> -->
+
+                <div class="cssSlider col-12">
+                    <label class="card-title">Вибрати фото на прев'ю новини</label><br><br>
+                    <div class="col-12 d-md-flex form-group">
+                        <div class="col-12 col-md-6">
+                            <input type="hidden" name="srcimg" id="feature_image" name="feature_image" value="{{ $teachers->srcimg }}">
+                            <a href="" class="popup_selector" data-inputid="feature_image">
+                                <img id="img" class="img w-100 img-uploaded" src="{{ $teachers->srcimg }}" >
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-block d-md-flex">
+                        <div class="col-12 col-md-8"></div>
+                    </div>
                 </div>
 
             </div>

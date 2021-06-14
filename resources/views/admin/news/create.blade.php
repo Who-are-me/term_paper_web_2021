@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото на прев'ю до посту</button>
+                    <button type="submit" class="popup_selector btn btn-primary" data-inputid="feature_image">Вибрати фото на прев'ю новини</button>
                     <input type="hidden" name="img" class="form-control mt-2" id="feature_image" name="feature_image" value="">
                     <img src="" alt="" class="img-uploaded" width="70%" style="display: block;">
                 </div>

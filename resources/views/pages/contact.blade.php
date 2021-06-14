@@ -3,7 +3,6 @@
 @section('title', "ЦК Електронних апаратів  - Зворотній зв'язок")
 
 @section('content')
-
 <link href="css/pages.css" rel="stylesheet">
 
 <form name="" action="{{ url('/contactstore') }}" method="post">
