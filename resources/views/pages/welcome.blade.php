@@ -13,7 +13,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner carousel-inner-main">
     <div class="carousel-item active">
       <img class="d-block w-100" src="{{ $content[0]->text }}" alt="First slide" style="object-fit: cover; height: 550px;">
       <div class="carousel-caption d-block ">
@@ -26,7 +26,7 @@
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[1]->text }}" alt="Second slide" style="object-fit: cover; height: 550px;">
-      <div class="carousel-caption d-block">
+      <div class="carousel-caption d-block carousel-caption-main">
         <div class="title-slide text-left">
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text pt-3">Свіжа та докладна інформація зі сфери раідотехнологій</p>
