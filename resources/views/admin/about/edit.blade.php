@@ -55,8 +55,8 @@
                     <label class="card-title">Виберіть картинку відділення електронних апаратів</label><br><br>
                     <div class="col-12 d-block d-md-flex form-group">
                         <div class="col-12 col-md-7">
-                            <input type="hidden" name="img_0" id="feature_image0" name="feature_image" value="{{ $content[0]->text }}">
-                            <a href="" class="popup_selector" data-inputid="feature_image0"><img id="img0" class="img" src="{{ $content[0]->text }}" class="w-100"></a>
+                            <input type="hidden" name="img_0" id="feature_image0" name="feature_image" value="{{ $content[0]->text }}" class="w-100">
+                            <a href="" class="popup_selector" data-inputid="feature_image0"><img id="img0" class="img" src="{{ $content[0]->text }}" ></a>
                         </div>
                     </div>
 

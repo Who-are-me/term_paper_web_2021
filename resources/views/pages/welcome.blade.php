@@ -53,10 +53,10 @@
             <img src="image/right-heading-separate.svg">
           </div>
           <div class="col-12 text-center my-1 my-sm-4">
-            <span id="black-span-heading">{{ $content[3]->text }}</span>
+            <span id="black-span-heading"><?php echo $content[3]->text; ?></span>
           </div>
           <div class="col-12 text-center">
-            <span class="basic-text">{{ $content[4]->text }}</span>
+            <span class="basic-text"><?php echo $content[4]->text; ?></span>
           </div>
           <div class="col-12 my-1 my-sm-4 text-center">
             <a href="about_us" id="content-span-link">Читати більше</a> 
