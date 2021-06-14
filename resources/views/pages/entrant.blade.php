@@ -19,7 +19,7 @@
 <div class="row d-flex m-0 p-0 content-background-abiturient px-5 px-md-0">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 p-0 m-0">
-        <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700"4>
+        <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
             <img src="image/left-salad-heading-separate.svg"> 
             <span class="salad-span-heading">ВСТУП</span>
             <img src="image/right-salad-heading-separate.svg">
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="col-12 p-0 m-0 d-flex text-center" >
+        <div class="col-12 p-0 m-0 d-flex text-center">
             <div class="col-1"></div>
             <div class="col-10 p-0">
                 <p class="basic-text">
@@ -49,7 +49,7 @@
             </div>
             <div class="col-1"></div>
         </div>
-        <div class="col-12 p-0 pt-5 d-block" >
+        <div class="col-12 p-0 pt-5 d-block">
             <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
                     <div class="col-6 p-0">
@@ -89,7 +89,7 @@
                 <div class="col-1"></div>
             </div>
         </div>
-        <div class="col-12 p-0 d-block">
+        <div class="col-12 p-0 d-block" >
             <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
                     <div class="col-2"></div>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-6"></div>
             </div>
-            <div class="col-12 p-0 d-flex">
+            <div class="col-12 p-0 d-flex" >
                 <div class="col-1"></div>
                 <div class="col-10">
                     <p class="picture-caption-italic">
@@ -109,8 +109,7 @@
                 <div class="col-1"></div>
             </div>
         </div>
-        <div class="col-12 p-0 d-block pb-5">
-            <div class="col-12 p-0 d-block">
+        <div class="col-12 p-0 d-block pb-5" >
                 <div class="col-12 p-0 d-flex">
                     <div class="col-5"></div>
                     <div class="col-6"><img class="w-100" src="image/jpg/abiturientu-4.png"></div>
@@ -118,7 +117,7 @@
                 </div>
                 <div class="col-6"></div>
             </div>
-            <div class="col-12 p-0 d-flex">
+            <div class="col-12 p-0 d-flex" >
                 <div class="col-1"></div>
                 <div class="col-10">
                     <p class="picture-caption-italic">
@@ -132,7 +131,7 @@
         </div>
 
         <div class="col-12 p-0 pt-5">
-            <p class="basic-text-bold">
+            <p class="basic-text-bold" >
                 Тому якісна підготовка випускників кафедри у відповідності до вимог провідних виробників
                 телекомунікаційного обладнання та програмного забезпечення дозволяє їм по завершенні навчання
                 працювати на посадах:
@@ -141,10 +140,10 @@
         <div class="col-12 d-flex p-0">
             <div class="col-1"></div>
             <div class="col-10">
-                <p class="basic-text text-italic pt-2">
+                <p class="basic-text text-italic pt-2" >
                     -інженера інформаційно-телекомунікаційних систем,
                 </p>
-                <p class="basic-text text-italic py-2">
+                <p class="basic-text text-italic py-2" >
                     -фахівця з проектування та підтримки інформаційних систем та технологій,
                 </p>
                 <p class="basic-text text-italic pb-2">
@@ -174,24 +173,24 @@
             <div class="col-12 p-0"><img class="w-100" src="{{ $content[6]->text }}"> </div>
             <div class="col-12 d-flex">
                 <div class="col-1"></div>
-                <div class="col-10 text-center">
+                <div class="col-10 text-center" >
                     <p class="basic-text-bold">а учні шкіл запрошуються в наш навчальний заклад для участі у
                         майстер-класах та ознайомлення із майбутнім фахом.</p>
                 </div>
             </div>
             <div class="col-12 d-block p-0">
-                <div class="col-12 d-flex p-0">
+                <div class="col-12 d-flex p-0" >
                     <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-6(1).png">
                     </div>
                 </div>
-                <div class="col-12 d-flex p-0">
+                <div class="col-12 d-flex p-0" >
                     <div class="col-3"></div>
                     <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-6(2).png">
                     </div>
                 </div>
-                <div class="col-12 d-flex p-0">
+                <div class="col-12 d-flex p-0" >
                     <div class="col-6"></div>
                     <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-6(3).png">

@@ -92,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 p-0 text-center d-flex" data-aos="zoom-out" data-aos-duration="1000" >
+        <div class="col-12 p-0 text-center d-flex">
             <div class="col-1"></div>
             <div class="col-10 p-0">
                 <p class="py-5 text-center blue-header">Кабінети та лабораторії циклової комісії</p>
@@ -100,7 +100,7 @@
             <div class="col-1"></div>
         </div>
         <div class="col-12 p-0 px-4 d-block text-center">
-            <p class="basic-text-bold text-center" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">забезпечені відповідними приладами та лабораторними стендами
+            <p class="basic-text-bold text-center" >забезпечені відповідними приладами та лабораторними стендами
                 по вивченню дисциплін і проведенню лабораторних і практичних робіт
                 та для проведення електрорадіовимірювальної практики.</p>
             <p class="basic-text-bold">Compas 3D, Arduino, Multisim,  Electronic Workbench, "Proteus", Altium Designer, SprintLayout, Micro-Cap, AVR Studio</p>
@@ -109,19 +109,19 @@
             <div class="col-12 d-flex">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <img class="w-100" src="image/jpg/about-1.jpg" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="700">
+                    <img class="w-100" src="image/jpg/about-1.jpg">
                 </div>
                 <div class="col-2"></div>
             </div>
-            <p class="basic-text-bold text-center py-5" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">Студенти також самостійно створюють програми для мікроконтролерів, завдяки яким 3D моделі рухаються. </p>
+            <p class="basic-text-bold text-center py-5" >Студенти також самостійно створюють програми для мікроконтролерів, завдяки яким 3D моделі рухаються. </p>
             <div class="col-12 d-flex py-5">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <img class="w-100" src="image/jpg/about-2.jpg" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="700">
+                    <img class="w-100" src="image/jpg/about-2.jpg">
                 </div>
                 <div class="col-2"></div>
             </div>
-            <p class="basic-text py-5" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">"Всеукраїнське методичне об’єднання викладачів радіотехнічних дисциплін" </p>
+            <p class="basic-text py-5">"Всеукраїнське методичне об’єднання викладачів радіотехнічних дисциплін" </p>
         </div>
     </div>
     
