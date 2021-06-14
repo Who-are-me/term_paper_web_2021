@@ -187,7 +187,7 @@
                 </div>
                 <div class="col-12 d-flex p-0">
                     <div class="col-3"></div>
-                    <div class="col-6 p-0">
+                    <div class="col-6 p-0 py-5">
                         <img class="w-100" src="image/jpg/abiturientu-6(2).png">
                     </div>
                 </div>
@@ -198,8 +198,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 d-block p-0">
-                <div class="col-12 w-100" align="center">
+            <div class="col-12 d-block p-0 ">
+                <div class="col-12 w-100 py-5 video" align="center">
                     <?php echo $content[7]->text; ?>
                 </div>
             </div>
@@ -208,7 +208,7 @@
             <span class="salad-second-span-heading">Студент повинен вміти:</span>
         </div>
         <div class="col-12 p-0 d-block">
-            <div class="col-12 text-center d-none">Тут відео з ютубу</div>
+            <div class="col-12 text-center d-none"></div>
             <div class="col-12 p-0 px-5 text-left py-4">
                 <p class="picture-caption-italic px-2">• Вміння конструювати, експлуатувати, досліджувати,
                     ремонтувати найрізноманітнішу радіоелектронну апаратуру широкого функціонального призначення;
@@ -230,12 +230,11 @@
         <div class="d-flex col-12 justify-content-between py-5 m-0" id="container-heading">
             <img src="image/left-salad-heading-separate.svg">
             <span class="salad-span-heading">МІСЦЕ РОБОТИ</span>
-
             <img src="image/right-salad-heading-separate.svg">
         </div>
         <div class="col-12 p-0 d-flex py-5">
             <div class="col-2 d-none d-sm-flex"></div>
-            <div class="col-12 col-sm-8 text-center" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
+            <div class="col-12 col-sm-8 text-center" >
                 <p class="salad-second-span-heading">Можливі місця роботи після закінчення коледжу:</p>
             </div>
         </div>
@@ -257,63 +256,63 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="files/1.jpg" alt="First slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block  ">
                         <h5>В органах служби безпеки</h5>
                         <p>(охоронна сигналізація та системи відеоспостереження)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/2.jpg" alt="Second slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block d-md-block">
                         <h5>В банківських установах</h5>
                         <p>(охоронна сигналізація, системи відеоспостереження, радіо та телефонного зв'язку)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/3.jpg" alt="Third slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block ">
                         <h5>Сервісні центри</h5>
                         <p>по обслуговуванню та ремонту радіотелевізійної апаратури</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/4.jpg" alt="Third slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block ">
                         <h5>На телерадіоцентрах</h5>
                         <p>(технік з обслуговування радіо та відео апаратури, відеооператор і т.д.)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/5.png" alt="Third slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block ">
                         <h5>Сервісні центри</h5>
                         <p>по обслуговуванню та ремонту радіотелевізійної апаратури</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/6.jpg" alt="Third slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block ">
                         <h5>Сервісні центри</h5>
                         <p>по ремонту мобільних телефонів, ноутбуків та і т. ін.</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/7.jpg" alt="Third slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block ">
                         <h5>Консультанти</h5>
                         <p>з продажу радіоелектронної техніки (супермаркети та магазини з продажу електронної апаратури)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/8.jpg" alt="Third slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block ">
                         <h5>Рекламні агенства</h5>
                         <p>по виготовленню світлової, аудіо та відеореклами</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/9.jpg" alt="Third slide">
-                    <div class="carousel-caption element d-none d-md-block">
+                    <div class="carousel-caption element d-block ">
                         <h5>Сервісні центри</h5>
                         <p>по обслуговуванню та ремонту медичної техніки</p>
                       </div>
