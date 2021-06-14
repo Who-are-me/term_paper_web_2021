@@ -138,8 +138,8 @@
 }
 .carousel-caption
 {
-    right: 35%;
-    bottom: 20%;
+    right: 45%;
+    bottom: 40%;
 }
 .carousel-inner
 {
@@ -164,7 +164,15 @@
 .main-slider-button
 {
     position: absolute;
-    left: 5%;
+    left: 0;
+    bottom: -25%;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 19px;
+    color: #E93F34;
+    background: linear-gradient(92.72deg, #ECDFDF 11.86%, rgba(255, 255, 255, 0.96) 86.63%);
+    border-radius: 27px;
+    padding: 10px 31px 10px 31px;
 }
 #container-heading img
 {
@@ -306,18 +314,18 @@
 .lite-text{
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: 9px;
+    font-size: 11px;
 }
 .basic-text
 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
 }
 .basic-text-bold
 {   
     font-family: 'Montserrat';
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
 }
 .picture-caption-italic
@@ -325,7 +333,7 @@
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 10px;
 }
 .image-svg-hover-triger
 {

@@ -17,33 +17,31 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="{{ $content[0]->text }}" alt="First slide" style="object-fit: cover; height: 550px;">
       <div class="carousel-caption d-block ">
-        <div class="title-slide">
+        <div class="title-slide text-left">
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
-        <input type="submit" class="main-slider-button" name="" value="Отримати консультацію">
+        <input type="submit" class="main-slider-button" name="" value="Переглянути">
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[1]->text }}" alt="Second slide" style="object-fit: cover; height: 550px;">
       <div class="carousel-caption d-block">
-        <div class="title-slide">
+        <div class="title-slide text-left">
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
-          <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
-          
+          <p class="sub-title-slide-text pt-3">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
-        <input type="submit" class="main-slider-button" name="" value="Отримати консультацію">
+        <input type="submit" class="main-slider-button" name="" value="Переглянути">
       </div>
-      
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[2]->text }}" alt="Third slide" style="object-fit: cover; height: 550px;">
       <div class="carousel-caption d-block">
-        <div class="title-slide">
+        <div class="title-slide text-left">
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
-        <input type="submit" class="main-slider-button" name="" value="Отримати консультацію">
+        <input type="submit" class="main-slider-button" name="" value="Переглянути">
       </div>
     </div>
   </div>
