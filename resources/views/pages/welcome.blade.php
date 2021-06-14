@@ -21,6 +21,7 @@
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
+        <input type="submit" class="main-slider-button" name="" value="Отримати консультацію">
       </div>
     </div>
     <div class="carousel-item">
@@ -29,8 +30,11 @@
         <div class="title-slide">
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
+          
         </div>
+        <input type="submit" class="main-slider-button" name="" value="Отримати консультацію">
       </div>
+      
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[2]->text }}" alt="Third slide" style="object-fit: cover; height: 550px;">
@@ -39,6 +43,7 @@
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
+        <input type="submit" class="main-slider-button" name="" value="Отримати консультацію">
       </div>
     </div>
   </div>
