@@ -633,27 +633,33 @@
 }
 @media only screen and (min-width: 768px)
 {
+    .carousel-inner-main 
+    {
+        width:100%; height: 350px !important;
+    }
+    .carousel-inner-main img 
+    {
+        width:100%; height: 350px !important;
+    }
     .carousel-caption-main
     {
-        right: 45%;
-        bottom: 40%;
+        right: 35%;
+        bottom: 30%;
     }
-    .title-slide
-    {}
     .title-slide-text
     {
-        font-size: 64px;
+        font-size: 39px;
     }
     .sub-title-slide-text
     {
-        font-size: 22px;
+        font-size: 16px;
     }
     .main-slider-button
     {
         left: 0;
-        bottom: -25%;
-        font-size: 19px;
-        padding: 10px 31px 10px 31px;
+        bottom: -21%;
+        font-size: 13px;
+        padding: 5px 18px 5px 18px;
     }
     .news-title-inside-cont
     {
@@ -749,27 +755,33 @@
 }
 @media only screen and (min-width: 1300px)
 {
+    .carousel-inner-main 
+    {
+        width:100%; height: 400px !important;
+    }
+    .carousel-inner-main img 
+    {
+        width:100%; height: 400px !important;
+    }
     .carousel-caption-main
     {
-        right: 45%;
-        bottom: 40%;
+        right: 40%;
+        bottom: 35%;
     }
-    .title-slide
-    {}
     .title-slide-text
     {
-        font-size: 64px;
+        font-size: 48px;
     }
     .sub-title-slide-text
     {
-        font-size: 22px;
+        font-size: 18px;
     }
     .main-slider-button
     {
         left: 0;
         bottom: -25%;
-        font-size: 19px;
-        padding: 10px 31px 10px 31px;
+        font-size: 15px;
+        padding: 8px 20px 8px 20px;
     }
     .anketa-content input[type=submit]
     {
@@ -791,28 +803,24 @@
         font-size: 32px;
         margin-top: 15px;
         margin-bottom: 15px;
-        height: 105xp;
     }
     .material-base-title-inside-cont
     {
         font-size: 32px;
         margin-top: 15px;
         margin-bottom: 15px;
-        height: 105xp;
     }
     .abitirientu-title-inside-cont
     {
         font-size: 32px;
         margin-top: 15px;
         margin-bottom: 15px;
-        height: 105xp;
     }
     .for-student-title-inside-cont
     {
         font-size: 32px;
         margin-top: 15px;
         margin-bottom: 15px;
-        height: 105xp;
     }
     #container-heading img
     {
@@ -880,10 +888,18 @@
 }
 @media only screen and (min-width: 1700px)
 {
+    .carousel-inner-main 
+    {
+        width:100%; height: 500px !important;
+    }
+    .carousel-inner-main img 
+    {
+        width:100%; height: 500px !important;
+    }
     .carousel-caption-main
     {
         right: 45%;
-        bottom: 40%;
+        bottom: 30%;
     }
     .title-slide
     {}
@@ -1016,27 +1032,23 @@
         font-size: 42px;
         margin-top: 55px;
         margin-bottom: 54px;
-        height: 160xp;
     }
     .material-base-title-inside-cont
     {
         font-size: 42px;
         margin-top: 55px;
         margin-bottom: 54px;
-        height: 160xp;
     }
     .abitirientu-title-inside-cont
     {
         font-size: 42px;
         margin-top: 55px;
         margin-bottom: 54px;
-        height: 160xp;
     }
     .for-student-title-inside-cont
     {
         font-size: 42px;
         margin-top: 55px;
         margin-bottom: 54px;
-        height: 160xp;
     }
 }

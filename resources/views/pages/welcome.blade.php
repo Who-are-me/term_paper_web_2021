@@ -29,7 +29,7 @@
       <div class="carousel-caption d-block carousel-caption-main">
         <div class="title-slide text-left">
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
-          <p class="sub-title-slide-text pt-3">Свіжа та докладна інформація зі сфери раідотехнологій</p>
+          <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
         <input type="submit" class="main-slider-button" name="" value="Переглянути">
       </div>
