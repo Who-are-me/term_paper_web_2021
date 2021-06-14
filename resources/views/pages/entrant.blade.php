@@ -19,13 +19,13 @@
 <div class="row d-flex m-0 p-0 content-background-abiturient px-5 px-md-0">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 p-0 m-0">
-        <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700"4>
+        <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
             <img src="image/left-salad-heading-separate.svg"> 
             <span class="salad-span-heading">ВСТУП</span>
             <img src="image/right-salad-heading-separate.svg">
         </div>
 
-        <div class="col-12 p-3" >
+        <!-- <div class="col-12 p-3" >
             <div class="slider">
                 <div><img src="{{ $content[0]->text }}" ></div>
                 <div><img src="{{ $content[1]->text }}" ></div>
@@ -34,9 +34,9 @@
                 <div><img src="{{ $content[4]->text }}" ></div>
                 <div><img src="{{ $content[5]->text }}" ></div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="col-12 p-0 m-0 d-flex text-center" >
+        <div class="col-12 p-0 m-0 d-flex text-center">
             <div class="col-1"></div>
             <div class="col-10 p-0">
                 <p class="basic-text">
@@ -49,7 +49,7 @@
             </div>
             <div class="col-1"></div>
         </div>
-        <div class="col-12 p-0 pt-5 d-block" >
+        <div class="col-12 p-0 pt-5 d-block">
             <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
                     <div class="col-6 p-0">
@@ -235,7 +235,7 @@
         </div>
         <div class="col-12 p-0 d-flex py-5">
             <div class="col-2 d-none d-sm-flex"></div>
-            <div class="col-12 col-sm-8 text-center">
+            <div class="col-12 col-sm-8 text-center" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
                 <p class="salad-second-span-heading">Можливі місця роботи після закінчення коледжу:</p>
             </div>
         </div>

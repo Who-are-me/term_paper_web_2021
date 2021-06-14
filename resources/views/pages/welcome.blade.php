@@ -16,15 +16,21 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="{{ $content[0]->text }}" alt="First slide" style="object-fit: cover; height: 550px;">
-      <div class="carousel-caption d-block">
-    <h1 style="padding-bottom: 100px;">Test</h1>
-  </div>
+      <div class="carousel-caption d-block title-slide">
+        <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
+      </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[1]->text }}" alt="Second slide" style="object-fit: cover; height: 550px;">
+      <div class="carousel-caption d-block title-slide">
+      <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
+      </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ $content[2]->text }}" alt="Third slide" style="object-fit: cover; height: 550px;">
+      <div class="carousel-caption d-block title-slide">
+      <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
+      </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -53,10 +59,10 @@
             <img src="image/right-heading-separate.svg">
           </div>
           <div class="col-12 text-center my-1 my-sm-4">
-            <span id="black-span-heading">{{ $content[3]->text }}</span>
+            <span id="black-span-heading"><?php echo $content[3]->text; ?></span>
           </div>
           <div class="col-12 text-center">
-            <span class="basic-text">{{ $content[4]->text }}</span>
+            <span class="basic-text"><?php echo $content[4]->text; ?></span>
           </div>
           <div class="col-12 my-1 my-sm-4 text-center">
             <a href="about_us" id="content-span-link">Читати більше</a> 
@@ -145,13 +151,6 @@
           cursor: pointer;
       }
     </style>
-
-    <div class="container pt-4 p-3 text-center" data-aos="zoom-in" data-aos-duration="3000">
-      <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
-      <img id="expandedImg" class="" src="{{ $content[7]->text }}" style="border-radius: 22px; width: 80%; ">
-      <div id="imgtext"></div>
-    </div>
-
     <div class="row pt-3">
       <div class="column" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
         <img src="{{ $content[7]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
@@ -172,6 +171,13 @@
         <img src="{{ $content[12]->text }}" style="width:100%; border-radius: 10px;" onclick="myFunction(this);">
       </div>
     </div>
+    <div class="container pt-4 p-3 text-center" data-aos="zoom-in" data-aos-duration="3000">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+      <img id="expandedImg" class="" src="{{ $content[7]->text }}" style="border-radius: 22px; width: 80%; ">
+      <div id="imgtext"></div>
+    </div>
+
+    
 
     
 

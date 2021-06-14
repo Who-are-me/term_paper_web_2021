@@ -129,6 +129,22 @@
 {
     background: white;
 }
+.title-slide
+{
+    
+    background: rgba(64, 64, 64, 0.32);
+    border-radius: 18px;
+    
+}
+.title-slide-text
+{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 64px;
+    color: #FFFFFF;
+    text-shadow: 0px 12px 40px #000000;
+    padding: 0 100px 100px 0;
+}
 #container-heading img
 {
     width: 80px;
@@ -156,7 +172,7 @@
 #black-span-heading
 {
     font-family: 'Montserrat';
-    letter-spacing: 0.185em; 
+    letter-spacing: 0.02em; 
     font-size: 14px;
     color: #000000;
     font-weight: 700;

@@ -75,7 +75,7 @@
                             <span>
 
                                 <?php
-                                    $short_text = substr($item->text, 0, 600);
+                                    $short_text = substr($item->text, 0, 1300);
                                     $short_text = str_replace("[", "<", $short_text);
                                     $short_text = str_replace("]", ">", $short_text);
                                     $short_text = strip_tags($short_text);
