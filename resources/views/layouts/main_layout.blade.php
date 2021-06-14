@@ -26,7 +26,7 @@
     <header>
         <div class="row d-flex m-0 p-0" id="top-nav">
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0 h-100"></div>
-            <div class="col-12 col-md-10 col-lg-8 my-2 text-center text-sm-left">
+            <div class="col-12 col-md-10 col-lg-8 my-2 text-center text-md-left">
                 <span class="ml-0 ml-sm-5 ml-md-0"><img src="image/telephone.svg"><a href="tel:28-18-11">28-18-11</a>, <a href="tel:28-19-36">28-19-36</a>, <a href="tel:+380-96-77-97-681">+380-96-77-97-681</a></span>
                 <span id="mail" class="ml-3 ml-md-5"><img src="image/mail.svg"><a href="malito:tktdtu@gmail.com">tktdtu@gmail.com</a></span>
             </div>
