@@ -25,7 +25,7 @@
             <img src="image/right-salad-heading-separate.svg">
         </div>
 
-        <div class="col-12 p-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1300">
+        <div class="col-12 p-3" >
             <div class="slider">
                 <div><img src="{{ $content[0]->text }}" ></div>
                 <div><img src="{{ $content[1]->text }}" ></div>
@@ -52,7 +52,7 @@
         <div class="col-12 p-0 pt-5 d-block" >
             <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
-                    <div class="col-6 p-0" data-aos="fade-right">
+                    <div class="col-6 p-0">
                         <img class="w-100" src="image/jpg/abiturientu-1.png">
                     </div>
                 </div>

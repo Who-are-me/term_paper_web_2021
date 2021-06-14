@@ -94,8 +94,8 @@
 
         </div>
         <div class="col-12 p-0 py-5 m-0">
-            <p class="text-center grey-bold-text-heading p-0 py-5" data-aos="zoom-out" data-aos-duration="2000" data-aos-offset="400">Завданням комісії є підготовка сучасного радіотехніка, фахівця, якому притаманні такі якості:</p>
-            <p id="black-span-heading" data-aos="zoom-out" data-aos-duration="2000">Основні напрямки роботи комісії:</p>
+            <p class="text-center grey-bold-text-heading p-0 py-5" data-aos="zoom-out" data-aos-duration="2000">Завданням комісії є підготовка сучасного радіотехніка, фахівця, якому притаманні такі якості:</p>
+            <p id="black-span-heading" data-aos="zoom-out" data-aos-duration="3000">Основні напрямки роботи комісії:</p>
             <p class="black-list-header" data-aos="zoom-out" data-aos-duration="2000">І. Вивчення і підвищення рівня знань, умінь та навичок студентів:</p>
             <p class="lite-text py-2" data-aos="fade-right"  data-aos-delay="300">➣ Використання активних форм усної перевірки знань, усне опитування за темами
             </p>
