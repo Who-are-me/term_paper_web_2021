@@ -96,24 +96,65 @@
         <span id="black-span-heading">Основні напрямки роботи комісії</span>
       </div>
       <div class="row col-12 pt-3 m-0 justify-content-between text-center p-0">
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos-duration="2000"  data-aos="fade-right" data-aos-delay="200">
-          <img src="image/knowledge.svg" class="image-svg-hover-triger">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green container1" data-aos-duration="2000"  data-aos="fade-right" data-aos-delay="200">
+          <img src="image/knowledge.svg" class="image-svg-hover-triger img1">
           <p class="pt-3 basic-text">Вивчення і підвищення рівня знань, умінь та навичок студентів</p>
         </div>
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos-duration="2000"  data-aos="fade-right" data-aos-delay="600">
-          <img src="image/teaching.svg" class="image-svg-hover-triger">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green container2" data-aos-duration="2000"  data-aos="fade-right" data-aos-delay="600">
+          <img src="image/teaching.svg" class="image-svg-hover-triger img2">
           <p class="pt-3 basic-text">Розробка та впровадження заходів з вдосконалення методики викладання</p>
         </div>
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">
-          <img src="image/learning.svg" class="image-svg-hover-triger">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green container3" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">
+          <img src="image/learning.svg" class="image-svg-hover-triger img3">
           <p class="pt-3 basic-text">Підвищення професійного рівня викладачів циклової комісії</p>
         </div>
-        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1400">
-          <img src="image/direction.svg" class="image-svg-hover-triger">
+        <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green container4" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1400">
+          <img src="image/direction.svg" class="image-svg-hover-triger img4">
           <p class="pt-3 basic-text">Профорієнтаційна робота</p>
         </div>
-      </div>
+      </div> 
     </div>
+
+    <script>
+      let div1 = document.querySelector("div.container1");
+      let div2 = document.querySelector("div.container2");
+      let div3 = document.querySelector("div.container3");
+      let div4 = document.querySelector("div.container4");
+
+      let im1 = document.querySelector("img.img1");
+      let im2 = document.querySelector("img.img2");
+      let im3 = document.querySelector("img.img3");
+      let im4 = document.querySelector("img.img4");
+
+      div1.addEventListener("mouseover", function () {
+          im1.src="image/knowledge_active.svg";
+      });
+      div1.addEventListener("mouseout", function () {
+          im1.src="image/knowledge.svg";
+      });
+
+      div2.addEventListener("mouseover", function () {
+          im2.src="image/teaching_active.svg";
+      });
+      div2.addEventListener("mouseout", function () {
+          im2.src="image/teaching.svg";
+      });
+
+      div3.addEventListener("mouseover", function () {
+          im3.src="image/learning_active.svg";
+      });
+      div3.addEventListener("mouseout", function () {
+          im3.src="image/learning.svg";
+      });
+
+      div4.addEventListener("mouseover", function () {
+          im4.src="image/direction_active.svg";
+      });
+      div4.addEventListener("mouseout", function () {
+          im4.src="image/direction.svg";
+      });
+    </script>
+
     <div class="d-flex col-12 justify-content-between p-0 m-0 pt-5" id="container-heading" data-aos="zoom-out" data-aos-duration="2000">
       <img src="image/left-heading-separate.svg">
       <span id="green-span-heading">ЧАСТИНКА НАШОГО ЖИТТЯ</span>
