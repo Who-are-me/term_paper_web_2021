@@ -25,7 +25,7 @@
             <img src="image/right-salad-heading-separate.svg">
         </div>
 
-        <!-- <div class="col-12 p-3" >
+        <div class="col-12 p-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1200">
             <div class="slider">
                 <div><img src="{{ $content[0]->text }}" ></div>
                 <div><img src="{{ $content[1]->text }}" ></div>
@@ -34,7 +34,7 @@
                 <div><img src="{{ $content[4]->text }}" ></div>
                 <div><img src="{{ $content[5]->text }}" ></div>
             </div>
-        </div> -->
+        </div>
 
         <div class="col-12 p-0 m-0 d-flex text-center">
             <div class="col-1"></div>
