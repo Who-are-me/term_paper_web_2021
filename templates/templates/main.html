@@ -17,6 +17,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
   <title>ЦК Електронних апаратів</title>
+  <script>
+    function createHoverImage() {
+    document.querySelectorAll('[data-hover-src]').forEach((img) => {
+    const src = img.getAttribute('src');
+    const srcH = img.getAttribute('data-hover-src');
+
+    img.addEventListener('mouseover', () => {img.src = srcH;})
+    img.addEventListener('mouseout', () => {img.src = src;})
+});
+}
+  </script>
 </head>
 
 <body>
@@ -160,20 +171,20 @@
         <div class="col-12 text-center my-4"><span id="black-span-heading">Основні напрямки роботи комісії</span>
         </div>
         <div class="row col-12 pt-3 m-0 justify-content-between text-center p-0">
-          <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
-            <img src="../../image/knowledge.svg">
+          <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green"  id="divImg1" mouseover="divGreenHover(hoverImg1, divImg1)">
+            <img src="../../image/knowledge.svg" data-hover-src="../../image/knowledge_active.svg"  id="hoverImg1">
             <p class="pt-3">Вивчення і підвищення рівня знань, умінь та навичок студентів</p>
           </div>
-          <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-blue">
-            <img src="../../image/teaching.svg">
+          <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-blue"  id="divImg2" mouseover="divGreenHover(hoverImg2, divImg2)">
+            <img src="../../image/teaching.svg" data-hover-src="../../image/teaching_active.svg" id="hoverImg2">
             <p class="pt-3">Розробка та впровадження заходів з вдосконалення методики викладання</p>
           </div>
-          <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green">
-            <img src="../../image/learning.svg">
+          <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-green"  id="divImg3" mouseover="divGreenHover(hoverImg3, divImg3)">
+            <img src="../../image/learning.svg" data-hover-src="../../image/learning_active.svg" id="hoverImg3">
             <p class="pt-3">Підвищення професійного рівня викладачів циклової комісії</p>
           </div>
-          <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-blue">
-            <img src="../../image/direction.svg">
+          <div class="col-12 col-sm-6 col-xl-3 px-3 pt-3 m-0 text-center hover-triger-blue" id="divImg4" mouseover="divGreenHover(hoverImg4, divImg4)">
+            <img src="../../image/direction.svg" data-hover-src="../../image/direction_active.svg" id="hoverImg4">
             <p class="pt-3">Профорієнтаційна робота</p>
           </div>
         </div>
@@ -284,6 +295,46 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
+      <script>
+        function createHoverDiv() {
+        document.querySelectorAll('[data-hover-src]').forEach((img) => {
+        const src = img.getAttribute('src');
+        const srcH = img.getAttribute('data-hover-src');
+        
+        img.addEventListener('mouseover', () => {img.src = srcH;})
+        img.addEventListener('mouseout', () => {img.src = src;})
+  });
+        }
+        
+        function divGreenHover(imgId, divId)
+        {
+          var pic = document.getElementById(imgId);
+          var imgFirstSrc = pic.getAttribute('src');
+          var imgSecondSrc;
+          switch(imgId)
+          {
+            case 'hoverImg1':
+            imgSecondSrc = "../../image/knowledge_active.svg";
+            break;
+            case 'hoverImg2':
+            imgSecondSrc = "../../image/teaching_active.svg";
+              break;
+            case 'hoverImg3':
+            imgSecondSrc = "./../image/learning_active.svg";
+              break;
+            case 'hoverImg4':
+            imgSecondSrc = "../../image/direction_active.svg";
+              break;
+            default:
+              alert( "Щось не так, будь ласка, перезагрузіть сторінку! Вибачте за незрунчності.");
+          }
+          var div = document.getElementById(divId);
+          div.addEventListener('mouseover', pic.src = imgSecondSrc);
+          div.addEventListener('mouseout', pic.src = imgFirstSrc);
+        }
+
+      </script>
+      
 </body>
 
 </html>
