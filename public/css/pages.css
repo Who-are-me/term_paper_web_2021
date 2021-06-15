@@ -2,6 +2,11 @@
 {
     color: #DFA6B2;
 }
+a
+{
+    text-decoration: none;
+}
+
 .g-recaptcha > div{margin: 0 auto;}
 .title-news { 
     background: url('../image/jpg/news-title-background.jpg') no-repeat center / cover;
@@ -34,13 +39,6 @@
 {
     background: url('../image/dark-wood-background.png') no-repeat center / cover;
 }
-/* #exposition
-{
-    background: url('../image/background-effects.png') no-repeat center / cover;
-    background-position: right 35% bottom 45%;
-    width: 720px;
-    height: 582px;
-} */
 .news-title-inside-cont
 {
     background-color: #CFE2D5;
@@ -171,10 +169,24 @@
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 12px;
-    color: #E93F34;
-    background: linear-gradient(92.72deg, #ECDFDF 11.86%, rgba(255, 255, 255, 0.96) 86.63%);
+    color: #A81B24;
+    background: linear-gradient(to left, #EF9999, #FFFFFF, #EF9999);
     border-radius: 27px;
-    padding: 3px 12px 3px 12px;
+    padding: 3px 10px;
+	background-size: 200%;
+	transition: .5s;
+    box-shadow: 0px 8px 49px rgba(0, 0, 0, 0.47);
+}
+.main-slider-button:hover
+{
+    background-position: right;    
+    text-decoration: none;
+    color: #A81B24;
+}
+.main-slider-button:active
+{
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.48);
+    filter: drop-shadow(0px 8px 49px rgba(0, 0, 0, 0.70));
 }
 #container-heading img
 {
@@ -261,6 +273,11 @@
     border-bottom: 2px solid #47915E;
     text-decoration: none;
     background: linear-gradient(181.18deg, #FFFFFF 1.01%, #C4C4C4 311.29%);
+}
+#content-span-link:active
+{
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.48);
+    border-bottom: 2px solid #2F5B3D;
 }
 .hover-triger-green:hover
 {
@@ -368,14 +385,25 @@
 .red-button
 {
     font-family: 'Montserrat';
-    font-size: 26px;
-    height: 80px;
-    margin: 100px;
-    width: 400px;
-    background: linear-gradient(93.5deg, #E93F34 6.65%, #C0261C 94.56%);
+    font-size: 14px;
+    height: 50px;
+    width: 200px;
+    margin: 40px 40px 40px 9em;
+    background: linear-gradient(to left, #E93F34, #C0261C, #E93F34);
     box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.46);
     border-radius: 20px;
     color: rgba(255, 255, 255, 0.75);
+    background-size: 200%;
+	transition: .5s;
+}
+.red-button:hover
+{
+    background-position: right;  
+}
+.red-button:active
+{
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.48);
+    filter: drop-shadow(4px 8px 30px rgba(0, 0, 0, 0.70));
 }
 .student-second-span-heading
 {
@@ -595,7 +623,7 @@
 }
 .feedback-send-button
 {
-    background: linear-gradient(93.5deg, #E93F34 6.65%, #C0261C 94.56%);
+    background: linear-gradient(to left, #E93F34, #C0261C, #E93F34);
     box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.46);
     border-radius: 33px;
     color: rgba(255, 255, 255, 0.75);
@@ -603,6 +631,17 @@
     font-family: 'Montserrat';
     font-size: 19px;
     font-weight: bold;
+    background-size: 200%;
+	transition: .5s;
+}
+.feedback-send-button:hover
+{
+    background-position: right;  
+}
+.feedback-send-button:active
+{
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.48);
+    filter: drop-shadow(4px 8px 30px rgba(0, 0, 0, 0.70));
 }
 .slider-student-one-photo img {
     margin: 0 auto;
@@ -622,13 +661,6 @@
        margin-top: 8px;
        margin-bottom: 8px;
     
-    }
-    .red-button
-    {
-        height: 50px;
-        width: 300px;
-        font-size: 18px;
-        margin: 50px;
     }
 }
 @media only screen and (min-width: 768px)
@@ -659,7 +691,7 @@
         left: 0;
         bottom: -21%;
         font-size: 13px;
-        padding: 5px 18px 5px 18px;
+        padding: 5px 18px;
     }
     .news-title-inside-cont
     {
@@ -752,9 +784,23 @@
     width: 60px;
     height: 60px;
     }
+    .red-button
+    {
+        font-size: 18px;
+        height: 65px;
+        margin: 60px 60px 60px 14em;
+        width: 300px;
+    }
 }
 @media only screen and (min-width: 1300px)
 {
+    .red-button
+    {
+        font-size: 22px;
+        height: 80px;
+        margin: 80px 80px 80px 17em;
+        width: 400px;
+    }
     .carousel-inner-main 
     {
         width:100%; height: 400px !important;
@@ -781,7 +827,7 @@
         left: 0;
         bottom: -25%;
         font-size: 15px;
-        padding: 8px 20px 8px 20px;
+        padding: 8px 20px;
     }
     .anketa-content input[type=submit]
     {
@@ -916,7 +962,7 @@
         left: 0;
         bottom: -25%;
         font-size: 19px;
-        padding: 10px 31px 10px 31px;
+        padding: 10px 31px;
     }
     .anketa-content input[type=submit]
     {
@@ -940,8 +986,8 @@
     {
         font-size: 29px;
         height: 95px;
-        margin: 200px;
         width: 550px;
+        margin: 100px 100px 100px 18.5em;
     }
     .lite-text{
         font-size: 24px;

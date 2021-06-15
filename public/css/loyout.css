@@ -1,4 +1,5 @@
-.sticky-top{
+.sticky-top
+{
     top: -2px;
 }
 #top-nav    
@@ -34,7 +35,7 @@
 }
 .nav 
 {
-    font-family: 'Montserrat', semibold;
+    font-family: 'Montserrat';
     background: #285953;
     font-size: 10px;
     padding: 0px;

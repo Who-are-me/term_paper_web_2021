@@ -21,7 +21,7 @@
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
-        <input type="submit" class="main-slider-button" name="" value="Переглянути">
+        <a href="tidings" class="main-slider-button">Переглянути</a>
       </div>
     </div>
     <div class="carousel-item">
@@ -31,7 +31,7 @@
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
-        <input type="submit" class="main-slider-button" name="" value="Переглянути">
+        <a href="tidings" class="main-slider-button">Переглянути</a>
       </div>
     </div>
     <div class="carousel-item">
@@ -41,7 +41,7 @@
           <span class="title-slide-text">ЦК Радіотехнічних Дисциплін</span>
           <p class="sub-title-slide-text">Свіжа та докладна інформація зі сфери раідотехнологій</p>
         </div>
-        <input type="submit" class="main-slider-button" name="" value="Переглянути">
+        <a href="tidings" class="main-slider-button">Переглянути</a>
       </div>
     </div>
   </div>
