@@ -34,7 +34,7 @@
         <div class="col-12 p-0 text-center d-flex" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1300">
             <div class="col-1"></div>
             <div class="col-10 p-0">
-                <p class="py-5 text-center blue-header">Для викладання спеціальних предметів є кабінети і лабораторії: </p>
+                <p class="py-3 py-md-5 text-center blue-header">Для викладання спеціальних предметів є кабінети і лабораторії: </p>
             </div>
             <div class="col-1"></div>
         </div>
@@ -129,7 +129,7 @@
         <div class="col-12 p-0 text-center d-flex">
             <div class="col-1"></div>
             <div class="col-10 p-0">
-                <p class="py-5 text-center blue-header">Кабінети та лабораторії циклової комісії</p>
+                <p class="py-2 py-md-5 text-center blue-header">Кабінети та лабораторії циклової комісії</p>
            </div>
             <div class="col-1"></div>
         </div>
@@ -139,7 +139,7 @@
                 та для проведення електрорадіовимірювальної практики.</p>
             <p class="basic-text-bold">Compas 3D, Arduino, Multisim,  Electronic Workbench, "Proteus", Altium Designer, SprintLayout, Micro-Cap, AVR Studio</p>
             <p class="text-center basic-text-bold">та ін</p>
-            <p class="basic-text-bold text-center py-5">Практичне застосування сучасних методів проектування студенти мають можливість вдосконалювати працюючи на 3D принтері. </p>
+            <p class="basic-text-bold text-center py-2 py-md-5">Практичне застосування сучасних методів проектування студенти мають можливість вдосконалювати працюючи на 3D принтері. </p>
             <div class="col-12 d-flex">
                 <div class="col-2"></div>
                 <div class="col-8">
@@ -147,15 +147,15 @@
                 </div>
                 <div class="col-2"></div>
             </div>
-            <p class="basic-text-bold text-center py-5" >Студенти також самостійно створюють програми для мікроконтролерів, завдяки яким 3D моделі рухаються. </p>
-            <div class="col-12 d-flex py-5">
+            <p class="basic-text-bold text-center py-2 py-md-5" >Студенти також самостійно створюють програми для мікроконтролерів, завдяки яким 3D моделі рухаються. </p>
+            <div class="col-12 d-flex py-3 py-md-5">
                 <div class="col-2"></div>
                 <div class="col-8">
                     <img class="w-100" src="{{ $content[10]->text }}">
                 </div>
                 <div class="col-2"></div>
             </div>
-            <p class="basic-text py-5">"Всеукраїнське методичне об’єднання викладачів радіотехнічних дисциплін" </p>
+            <p class="basic-text py-3 py-md-5">"Всеукраїнське методичне об’єднання викладачів радіотехнічних дисциплін" </p>
         </div>
     </div>
     
