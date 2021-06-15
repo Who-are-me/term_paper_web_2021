@@ -53,7 +53,11 @@ class BaseController extends Controller
      */
     public function show(BaseContent $baseContent)
     {
-        //
+        $content = BaseContent::all();
+
+        return view('pages.base',[
+            'content' => $content
+        ]);
     }
 
     /**
@@ -87,14 +91,7 @@ class BaseController extends Controller
         DB::table('base_contents')->where('id', 9)->update(['text' => $request->img_8]);
         DB::table('base_contents')->where('id', 10)->update(['text' => $request->img_9]);
         DB::table('base_contents')->where('id', 11)->update(['text' => $request->img_10]);
-        DB::table('base_contents')->where('id', 12)->update(['text' => $request->img_11]);
-        DB::table('base_contents')->where('id', 13)->update(['text' => $request->img_12]);
-        DB::table('base_contents')->where('id', 14)->update(['text' => $request->img_13]);
-        DB::table('base_contents')->where('id', 15)->update(['text' => $request->img_14]);
-        DB::table('base_contents')->where('id', 16)->update(['text' => $request->img_15]);
-        DB::table('base_contents')->where('id', 17)->update(['text' => $request->img_16]);
-        DB::table('base_contents')->where('id', 18)->update(['text' => $request->img_17]);
-
+     
         return redirect()->back()->withSuccess("Сторінка [Матеріальна база] була успішно оновлена!"); 
     }
 

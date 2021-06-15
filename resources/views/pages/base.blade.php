@@ -41,7 +41,7 @@
         <div class="col-12 p-0 m-0">
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 p-0 text-center text-md-start" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="pr-md-5 w-100">
+                    <img src="{{ $content[0]->text }}" class="pr-md-5 w-100">
                 </div> 
                 <div class="col-12 col-md-6 text-center text-md-left  align-items-center pl-md-3" data-aos="fade-left" data-aos-duration="1500">
                     <p class="basic-text-bold">Кабінет-лабораторія телекомунікаційних пристроїв приймання та передавання інформації, телевізійної та офісної техніки (ауд.321).</p>
@@ -50,7 +50,7 @@
 
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 order-md-last p-0 text-center text-md-start " data-aos="fade-left" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="w-100 pl-md-5">
+                    <img src="{{ $content[1]->text }}" class="w-100 pl-md-5">
                 </div>
                 <div class="col-12 col-md-6 align-middle text-center text-md-right order-md-first p-0 pr-md-3" data-aos="fade-right" data-aos-duration="1500">
                     <p class="basic-text-bold">Кабінет-лабораторія конструювання та технології виробництва РЕА, систем автоматизованого проектування (ауд. 306).</p>
@@ -60,7 +60,7 @@
 
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 p-0 text-center text-md-start" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="pr-md-5 w-100">
+                    <img src="{{ $content[2]->text }}" class="pr-md-5 w-100">
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-left  align-items-center pl-md-3" data-aos="fade-left" data-aos-duration="1500">
                     <p class="basic-text-bold">Кабінет-лабораторія цифрових пристроїв, сигналів та процесів в радіотехніці, електронних пристроїв та мікроелектроніки (ауд.313).</p>
@@ -69,7 +69,7 @@
 
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 order-md-last p-0 text-center text-md-start " data-aos="fade-left" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="w-100 pl-md-5">
+                    <img src="{{ $content[3]->text }}" class="w-100 pl-md-5">
                 </div>
 
                 <div class="col-12 col-md-6 align-middle text-center text-md-right order-md-first p-0 pr-md-3" data-aos="fade-right" data-aos-duration="1500">
@@ -79,7 +79,7 @@
 
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 p-0 text-center text-md-start" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="pr-md-5 w-100">
+                    <img src="{{ $content[4]->text }}" class="pr-md-5 w-100">
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-left  align-items-center pl-md-3" data-aos="fade-left" data-aos-duration="1500">
                     <p class="basic-text-bold">Кабінет-лабораторія радіопередавальних пристроїв, метрології та вимірювальної техніки (ауд.310).</p>
@@ -89,7 +89,7 @@
 
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 order-md-last p-0 text-center text-md-start " data-aos="fade-left" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="w-100 pl-md-5">
+                    <img src="{{ $content[5]->text }}" class="w-100 pl-md-5">
                 </div>
                 <div class="col-12 col-md-6 align-middle text-center text-md-right order-md-first p-0 pr-md-3" data-aos="fade-right" data-aos-duration="1500">
                     <p class="basic-text-bold">Кабінет-лабораторія схемотехнічного проектування радіотехнічних пристроїв та радіотехнічних систем (ауд. 213).</p>
@@ -98,7 +98,7 @@
 
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 p-0 text-center text-md-start" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="pr-md-5 w-100">
+                    <img src="{{ $content[6]->text }}" class="pr-md-5 w-100">
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-left  align-items-center pl-md-3" data-aos="fade-left" data-aos-duration="1500">
                     <p class="basic-text-bold">Кабінет-лабораторія теорії кіл, електроматеріалознавства та елементної бази РЕА (ауд.217).</p>
@@ -107,7 +107,7 @@
 
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 order-md-last p-0 text-center text-md-start " data-aos="fade-left" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="w-100 pl-md-5">
+                    <img src="{{ $content[7]->text }}" class="w-100 pl-md-5">
                 </div>
 
                 <div class="col-12 col-md-6 align-middle text-center text-md-right order-md-first p-0 pr-md-3" data-aos="fade-right" data-aos-duration="1500">
@@ -117,7 +117,7 @@
 
             <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5">
                 <div class="col-12 col-md-6 p-0 text-center text-md-start" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/files/fea_logo.jpg" class="pr-md-5 w-100">
+                    <img src="{{ $content[8]->text }}" class="pr-md-5 w-100">
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-left  align-items-center pl-md-3" data-aos="fade-left" data-aos-duration="1500">
                     <p class="basic-text-bold">Лабораторія джерел електроживлення та стандартизації РЕА (ауд. 223).</p>
@@ -143,7 +143,7 @@
             <div class="col-12 d-flex">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <img class="w-100" src="image/jpg/about-1.jpg">
+                    <img class="w-100" src="{{ $content[9]->text }}">
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -151,7 +151,7 @@
             <div class="col-12 d-flex py-5">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <img class="w-100" src="image/jpg/about-2.jpg">
+                    <img class="w-100" src="{{ $content[10]->text }}">
                 </div>
                 <div class="col-2"></div>
             </div>

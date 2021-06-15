@@ -25,9 +25,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages.about');
 // });
 
-Route::get('/matbase', function () {
-    return view('pages.base');
-});
+// Route::get('/matbase', function () {
+//     return view('pages.base');
+// });
 
 // Route::get('/to_entrant', function () {
 //     return view('pages.entrant');
@@ -50,6 +50,8 @@ Route::get('/tidings', [App\Http\Controllers\Admin\NewsController::class, 'show'
 Route::get('/', [App\Http\Controllers\Admin\WelcomeController::class, 'show']);
 
 Route::get('/about_us', [App\Http\Controllers\Admin\AboutController::class, 'show']);
+
+Route::get('/matbase', [App\Http\Controllers\Admin\BaseController::class, 'show']);
 
 Route::get('/to_entrant', [App\Http\Controllers\Admin\EntrantController::class, 'show']);
 

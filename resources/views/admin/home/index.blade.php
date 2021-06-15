@@ -31,7 +31,7 @@
         <div class="row">
 
 
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-primary">
               <div class="inner">
                 <h3>Home</h3>
@@ -45,7 +45,7 @@
           </div>
 
 
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-secondary">
               <div class="inner">
                 <h3>About</h3>
@@ -59,7 +59,7 @@
           </div>
 
 
-          <!-- <div class="col-lg-4 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-light">
               <div class="inner">
                 <h3>Mat.base</h3>
@@ -70,10 +70,10 @@
               </div>
               <a href="{{ route('base.index')}}" class="small-box-footer">Більше інформації<i class="fas fa-arrow-circle-right"></i></a>
             </div>
-          </div> -->
+          </div>
 
 
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>Entrant</h3>
@@ -87,7 +87,7 @@
           </div>
 
 
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-success">
               <div class="inner">
                 <h3>Students</h3>
@@ -101,7 +101,7 @@
           </div>
 
 
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-danger">
               <div class="inner">
                 <h3>{{ $news_count }}</h3>
@@ -115,7 +115,7 @@
           </div>
 
 
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-light">
               <div class="inner">
                 <h3>{{ $feedback_count }}</h3>
@@ -129,7 +129,7 @@
           </div>
 
 
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-warning">
               <div class="inner">
                 <h3>Teachers</h3>
@@ -143,7 +143,7 @@
           </div>
 
 
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>Feedback</h3>
