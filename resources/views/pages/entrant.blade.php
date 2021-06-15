@@ -19,13 +19,13 @@
 <div class="row d-flex m-0 p-0 content-background-abiturient px-5 px-md-0">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 p-0 m-0">
-        <div class="d-flex col-12 justify-content-between p-0 m-0 py-5" id="container-heading" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
+        <div class="d-flex col-12 justify-content-between p-0 m-0 pt-4 py-md-5" id="container-heading" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
             <img src="image/left-salad-heading-separate.svg"> 
             <span class="salad-span-heading">ВСТУП</span>
             <img src="image/right-salad-heading-separate.svg">
         </div>
 
-        <div class="col-12 p-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1200">
+        <div class="col-12 p-0 pb-3 p-md-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1200">
             <div class="slider">
                 <div><img src="{{ $content[0]->text }}" ></div>
                 <div><img src="{{ $content[1]->text }}" ></div>
@@ -49,7 +49,7 @@
             </div>
             <div class="col-1"></div>
         </div>
-        <div class="col-12 p-0 pt-5 d-block">
+        <div class="col-12 p-0 pt-2 pt-md-5 d-block">
             <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
                     <div class="col-6 p-0">
@@ -109,7 +109,7 @@
                 <div class="col-1"></div>
             </div>
         </div>
-        <div class="col-12 p-0 d-block pb-5">
+        <div class="col-12 p-0 d-block pb-3 pb-md-5">
             <div class="col-12 p-0 d-block">
                 <div class="col-12 p-0 d-flex">
                     <div class="col-5"></div>
@@ -131,7 +131,7 @@
             </div>
         </div>
 
-        <div class="col-12 p-0 pt-5">
+        <div class="col-12 p-0 pt-3 pt-md-5">
             <p class="basic-text-bold">
                 Тому якісна підготовка випускників кафедри у відповідності до вимог провідних виробників
                 телекомунікаційного обладнання та програмного забезпечення дозволяє їм по завершенні навчання
@@ -153,13 +153,13 @@
             </div>
             <div class="col-1"></div>
         </div>
-        <div class="col-12 p-0 pb-5">
+        <div class="col-12 p-0 pb-3 pb-md-5">
             <p class="basic-text-bold">
                 та багатьох інших посадах в установах і організаціях галузі телекомунікацій та сфери інформаційних
                 технологій, які і в умовах світової кризи продовжують залишатися найбільш прибутковими.
             </p>
         </div>
-        <div class="col-12 p-0 pt-5 d-block">
+        <div class="col-12 p-0 pt-2 pt-md-5 d-block">
             <div class="col-12 p-0 text-center d-flex">
                 <div class="col-2"></div>
                 <div class="col-8">
@@ -187,7 +187,7 @@
                 </div>
                 <div class="col-12 d-flex p-0">
                     <div class="col-3"></div>
-                    <div class="col-6 p-0 py-5">
+                    <div class="col-6 p-0 py-3 py-md-5">
                         <img class="w-100" src="image/jpg/abiturientu-6(2).png">
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                 </div>
             </div>
             <div class="col-12 d-block p-0 ">
-                <div class="col-12 w-100 py-5 video" align="center">
+                <div class="col-12 w-100 pb-3 pt-5 py-md-5 video" align="center">
                     <?php echo $content[7]->text; ?>
                 </div>
             </div>
@@ -227,12 +227,12 @@
                     господарства.</p>
             </div>
         </div>
-        <div class="d-flex col-12 justify-content-between py-5 m-0" id="container-heading">
+        <div class="d-flex col-12 justify-content-between py-2 py-md-5 m-0" id="container-heading">
             <img src="image/left-salad-heading-separate.svg">
             <span class="salad-span-heading">МІСЦЕ РОБОТИ</span>
             <img src="image/right-salad-heading-separate.svg">
         </div>
-        <div class="col-12 p-0 d-flex py-5">
+        <div class="col-12 p-0 d-flex py-3 py-md-5">
             <div class="col-2 d-none d-sm-flex"></div>
             <div class="col-12 col-sm-8 text-center" >
                 <p class="salad-second-span-heading">Можливі місця роботи після закінчення коледжу:</p>
@@ -240,7 +240,7 @@
         </div>
 
 
-        <div class="col-12 p-0 py-5"> 
+        <div class="col-12 p-0 pt-3 pb-5 py-md-5"> 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -398,7 +398,7 @@
 		                    </div>
 
 		                    <div class="col-12 col-lg-6 p-0 px-3">
-		                        <input id="pip" type="text" name="pip" class="anketa-input mb-2" placeholder="*ПІП" required="" maxlength="255">    
+		                        <input id="pip" type="text" name="pip" class="anketa-input" placeholder="*ПІП" required="" maxlength="255">    
 		                        <input type="text" name="option" required="" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="255">
 		                        <div class="pt-5 g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue" ></div>
 		                    </div>

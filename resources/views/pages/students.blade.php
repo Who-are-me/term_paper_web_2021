@@ -19,7 +19,7 @@
 <div class="row d-flex m-0 p-0 content-background-student">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8">
-        <div class="d-flex col-12 justify-content-between py-5 m-0" id="container-heading">
+        <div class="d-flex col-12 justify-content-between py-3 py-md-5 m-0" id="container-heading">
             <img src="image/left-student-heading-separate.svg">
             <span class="salad-span-heading student-span-heading letter-spacing">ДИСЦИПЛІНИ</span>
             <img src="image/right-student-heading-separate.svg">
@@ -38,7 +38,7 @@
             <div class="col-sm-1 col-lg-3 d-none d-sm-flex"></div>
 
         </div>
-        <div class="col-12 d-block py-5 px-3">
+        <div class="col-12 d-block py-3 py-md-5 px-5 px-md-3">
             <p class="picture-caption-italic px-2">- Пристрої приймання та передавання інформації;
             </p>
             <p class="picture-caption-italic px-2">- Конструювання та технології виробництва;;
@@ -83,16 +83,16 @@
 <div class="row d-flex m-0 p-0 content-background-student px-5 px-md-0 py-5">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 d-block">
-        <div class="d-flex col-12 justify-content-between p-0 py-5 m-0" id="container-heading">
+        <div class="d-flex col-12 justify-content-between p-0 py-3 py-md-5 m-0" id="container-heading">
             <img src="image/left-student-heading-separate.svg">
             <span class="salad-span-heading student-span-heading letter-spacing text-center">ДИПЛОМНЕ
                 ПРОЕКТУВАННЯ</span>
             <img src="image/right-student-heading-separate.svg">
         </div>
-        <div class="col-12 p-o py-5 text-center">
+        <div class="col-12 p-o py-3 py-md-5 text-center">
             <p><span class="salad-span-heading student-second-span-heading text-center">Захист студентами дипломних
                     проектів</span></p>
-            <p class="p-0 py-5 basic-text"><b>Студенти випускних груп на високому рівні готують і захищають дипломні
+            <p class="p-0 py-4 py-md-5 basic-text"><b>Студенти випускних груп на високому рівні готують і захищають дипломні
                     проекти. Членами державних кваліфікаційних комісій є керівники та начальники підрозділів
                     провідних підприємств Тернополя та області: </b> </p>
 
@@ -177,7 +177,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 d-block p-0 py-3 pb-5">
+        <div class="col-12 d-block p-0 py-3 pb-3 pb-md-5">
             <div class="col-12 d-flex p-0">
                 <p class="basic-text-bold">Піскун Сергій Олександрович – </p>
             </div>
@@ -221,7 +221,7 @@
                 </div>
             </div> -->
 
-            <div class="col-12 p-0 py-5"> 
+            <div class="col-12 p-0 py-2 py-md-5"> 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -330,7 +330,7 @@
 <div class="row d-flex m-0 p-0 px-5 px-md-0" id="background-dark-wood">
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8">
-        <div class="col-12 p-o py-5 text-center">
+        <div class="col-12 p-0 pb-3 pt-5 py-md-5 text-center">
             <p><span class="salad-span-heading text-white text-center">До уваги студентів!</span></p>
 
         </div>
@@ -338,7 +338,7 @@
             <P class="basic-text text-white">У рамках проекту <b>ВСП "ТФК ТНТУ"</b> , благодійного фонду
                 ,<b>"Частинка добра"</b> та Посольства США в Україні <b>"Будуй кар'єру в Україні"</b> створено
                 сервіс, який сприятиме працевлаштуванню здобувачів освіти.</P>
-            <p class="py-5 text-left basic-text-bold text-white">Переваги цього сайту:</p>
+            <p class="py-3 py-md-5 text-left basic-text-bold text-white">Переваги цього сайту:</p>
         </div>
         <div class="col-12 d-flex p-0">
             <div class="col-1"></div>
@@ -363,8 +363,8 @@
             </div>
             <div class="col-1"></div>
         </div>
-        <div class="col-12 text-center pt-5">
-            <p class="basic-text text-white pt-5"><b>Режим доступу:<a href="http://buildyourcareer.in.ua/uk" class="text-white"> http://buildyourcareer.in.ua/uk</a></b></p>
+        <div class="col-12 text-center pt-3 pt-md-5">
+            <p class="basic-text text-white pt-3 pt-md-5"><b>Режим доступу:<a href="http://buildyourcareer.in.ua/uk" class="text-white"> http://buildyourcareer.in.ua/uk</a></b></p>
         </div>
         <div class="col-12 d-flex p-0 pb-5">
             <div class="col-1 d-none d-md-flex"> </div>

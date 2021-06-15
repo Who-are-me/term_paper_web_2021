@@ -50,14 +50,14 @@
             <div class="col-12 d-block d-md-flex p-0 mt-0 mt-md-2">
                 <div class="col-12 col-md-5 input-transparent-div p-0">
                     <div class="input-box label">
-                        <input type="text" name="phone" required="" class="w-100" maxlength="10" minlength="10">
+                        <input type="text" name="phone" required="" class="w-100">
                         <label>*Введіть номер телефону</label>
                     </div>
                 </div>
                 <div class="col-2 d-none d-md-flex"></div>
                 <div class="col-12 col-md-5 input-transparent-div p-0">
                     <div class="input-box label">
-                        <input type="text" name="theme" class="w-100" maxlength="100">
+                        <input type="text" name="theme"  required="" class="w-100">
                         <label>Тема запитання</label>
                     </div>
                 </div>

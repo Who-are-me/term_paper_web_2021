@@ -56,7 +56,7 @@
 </div>
     
     
-<div class="row d-flex m-0 p-0 pt-5 content-background-main">
+<div class="row d-flex m-0 p-0 pt-0 pt-md-5 content-background-main">
   <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
   <div class="col-12 col-md-10 col-lg-8 my-2 text-center text-sm-left px-5 px-md-0">
 
@@ -86,13 +86,13 @@
         </div>
       </div>
     </div>
-    <div class="col-12 my-5 pt-5 p-0" data-aos="zoom-out" data-aos-duration="1400">
+    <div class="col-12 m-0 p-0 pt-2 my-md-5 pt-md-5 p-0" data-aos="zoom-out" data-aos-duration="1400">
       <div class="d-flex col-12 justify-content-between p-0 m-0" id="container-heading" >
         <img src="image/left-heading-separate.svg">
         <span id="green-span-heading">НАША МІСІЯ</span>
         <img src="image/right-heading-separate.svg">
       </div>
-      <div class="col-12 text-center my-4" >
+      <div class="col-12 text-center m-0 my-1 my-md-4">
         <span id="black-span-heading">Основні напрямки роботи комісії</span>
       </div>
       <div class="row col-12 pt-3 m-0 justify-content-between text-center p-0">
