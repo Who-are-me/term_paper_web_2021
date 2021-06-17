@@ -57,7 +57,7 @@
                 <div class="col-2 d-none d-md-flex"></div>
                 <div class="col-12 col-md-5 input-transparent-div p-0">
                     <div class="input-box label">
-                        <input type="text" name="theme"  required="" class="w-100">
+                        <input type="text" name="theme" class="w-100">
                         <label>Тема запитання</label>
                     </div>
                 </div>
