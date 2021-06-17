@@ -394,12 +394,12 @@
 	                            <input id="email" type="text" name="email" required="" class="anketa-input mt-3" placeholder="*E-mail" maxlength="255">
 	                            <p class="anketa-green-header-font m-0 py-3">Освіта</p>
 	                            <p class="anketa-basic-font pb-1">Вкажіть де Ви навчались\навчаєтесь</p>
-	                            <input id="school" type="text" name="school" required="" class="anketa-input mb-2" placeholder="Назва навчального закладу" maxlength="255">    
+	                            <input id="school" type="text" name="school" class="anketa-input mb-2" placeholder="Назва навчального закладу" maxlength="255">    
 		                    </div>
 
 		                    <div class="col-12 col-lg-6 p-0 px-3">
-		                        <input id="pip" type="text" name="pip" class="anketa-input" placeholder="*ПІП" required="" maxlength="255">    
-		                        <input type="text" name="option" required="" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="255">
+		                        <input id="pip" type="text" name="pip" class="anketa-input" placeholder="*ПІП" maxlength="255">    
+		                        <input type="text" name="option" class="anketa-input mt-xl-3" placeholder="Звідки ви дізнались про університет" maxlength="255">
 		                        <div class="pt-5 g-recaptcha" data-sitekey="6LdqluEaAAAAALggPkMFwEvJeGiBT57rLlSk5fue" ></div>
 		                    </div>
 
