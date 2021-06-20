@@ -204,6 +204,19 @@
                 </div>
             </div>
         </div>
+        <div class="d-flex col-12 justify-content-between py-2 py-md-5 m-0 text-center" id="container-heading">
+            <img src="image/left-salad-heading-separate.svg">
+            <span class="salad-span-heading">ДОСЯГНЕННЯ НАШИХ СТУДЕНТІВ</span>
+            <img src="image/right-salad-heading-separate.svg">
+        </div>
+        <div class="col-12 d-block p-0 ">
+            <div class="col-12 w-100 pb-3 pt-5 py-md-5 video" align="center">
+                <?php echo $content[8]->text; ?>
+            </div>
+            <div class="col-12 w-100 pb-3 pt-5 py-md-5 video" align="center">
+                <?php echo $content[9]->text; ?>
+            </div>
+        </div>
         <div class="d-flex col-12 p-0 m-0">
             <span class="salad-second-span-heading">Студент повинен вміти:</span>
         </div>

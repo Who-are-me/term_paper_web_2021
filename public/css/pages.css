@@ -77,7 +77,7 @@ a
     box-shadow: 0px 12px 40px #6B782C;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     color: #FFFFFF;
     border-radius: 60px;
     text-shadow: 0px 12px 35px rgba(0, 0, 0, 0.56);
@@ -226,7 +226,7 @@ a
     font-family: 'Montserrat';
     letter-spacing: 0.185em; 
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     color: #ADB450;
     text-shadow: 0px 8px 30px rgba(0, 0, 0, 0.42);
 }
@@ -386,7 +386,7 @@ a
 {
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 28px;
+    font-size: 18px;
     color: #858B2A;
     line-height: 135%;
     text-align: center;
@@ -512,7 +512,7 @@ a
     color: #858B2A;
     font-weight: 600;
     line-height: 135%;
-    font-size: 22px;
+    font-size: 18px;
 }
 .anketa-basic-font
 {
@@ -829,6 +829,10 @@ a
     {
         margin-bottom: 3em !important;
     }
+    .anketa-green-header-font
+    {
+        font-size: 20px;
+    }
 }
 @media only screen and (min-width: 1300px)
 {
@@ -988,6 +992,10 @@ a
     {
         margin-bottom: 4em !important;
     }
+    .anketa-green-header-font
+    {
+        font-size: 24px;
+    }
 }
 @media only screen and (min-width: 1700px)
 {
@@ -1064,15 +1072,6 @@ a
     .image-ridius-border
     {
         border-radius: 20px;
-    }
-    .salad-second-span-heading
-    {
-        font-size: 52px;
-    }
-    .salad-span-heading
-    {
-        font-size: 42px;
-        letter-spacing: 0.185em;
     }
     .salad-second-span-heading
     {
