@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="aos-master/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
- 
+    <link href="css/arrow.css" rel="stylesheet">
     <link href="css/loyout.css" rel="stylesheet">
     <link rel="shortcut icon" href="/image/site.png" type="image/x-icon">
 
@@ -23,6 +23,9 @@
 </head>
 
 <body>
+<a href="#" class="arrowUp">
+	<img src="image/arrow-up.svg">
+</a>
     <header>
         <div class="row d-flex m-0 p-0" id="top-nav">
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0 h-100"></div>
