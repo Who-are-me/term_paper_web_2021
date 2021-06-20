@@ -8,7 +8,7 @@ switch (page) {
     $('#maPage').css("font-weight", "bold");
     $('#maPage').css("color", "white");
     break;
-    
+
   case 'about_us':
     $('#abPage').css("border-bottom", "rgba(233, 63, 52, 0.75) 2px solid");
     $('#abPage').css("font-weight", "bold");
@@ -48,3 +48,15 @@ switch (page) {
   default:
     ;
 }
+
+let  mask = document.querySelector('.mask');
+
+window.addEventListener('load', () => {
+    mask.classList.add('hide');
+    setTimeout(() => {
+        mask.remove();
+    }, 600);
+});
+
+
+

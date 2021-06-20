@@ -88,6 +88,7 @@ class EntrantController extends Controller
         DB::table('entrant_contents')->where('id', 7)->update(['text' => $request->img_6]);
 
         DB::table('entrant_contents')->where('id', 8)->update(['text' => $request->text_0]);
+        DB::table('entrant_contents')->where('id', 9)->update(['text' => $request->text_1]);
 
         return redirect()->back()->withSuccess("Сторінка [Абітурієнту] була успішно оновлена!"); 
     }

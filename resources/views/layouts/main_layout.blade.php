@@ -23,9 +23,14 @@
 </head>
 
 <body>
-<a href="#" class="arrowUp">
-	<img src="image/arrow-up.svg">
-</a>
+    <div class="mask">
+        <div class="loader"></div>
+    </div>
+
+    <a href="#" class="arrowUp">
+    	<img src="image/arrow-up.svg">
+    </a>
+
     <header>
         <div class="row d-flex m-0 p-0" id="top-nav">
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0 h-100"></div>
@@ -36,7 +41,7 @@
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         </div>
     </header>
-    <div class="col-12 p-0 m-0 d-none d-md-flex nav sticky-top">
+    <div class="col-12 p-0 m-0 d-none d-md-flex nav sticky-top" style="z-index: 1;">
         <div class="row col-12 d-none d-md-flex p-0 m-0">
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
             <div class="col-12 col-md-10 col-lg-8 px-0 m-0 d-flex">

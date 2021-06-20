@@ -213,9 +213,6 @@
             <div class="col-12 w-100 pb-3 pt-5 py-md-5 video" align="center">
                 <?php echo $content[8]->text; ?>
             </div>
-            <div class="col-12 w-100 pb-3 pt-5 py-md-5 video" align="center">
-                <?php echo $content[9]->text; ?>
-            </div>
         </div>
         <div class="d-flex col-12 p-0 m-0">
             <span class="salad-second-span-heading">Студент повинен вміти:</span>

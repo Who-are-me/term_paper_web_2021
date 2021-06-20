@@ -106,10 +106,16 @@
                     </div>
                 </div>
 
-                <!-- video -->
+                <!-- video 1 -->
                 <div class="form-group">
                     <label for="">Відео та текст</label>
                     <textarea name="text_0" class="editor" style="height: 600px;">{{ $content[7]->text }}</textarea>
+                </div>
+
+                <!-- video 2 -->
+                <div class="form-group">
+                    <label for="">Відео про досягненя студентів</label>
+                    <textarea name="text_1" class="editor" style="height: 600px;">{{ $content[8]->text }}</textarea>
                 </div>
 
             </div>
