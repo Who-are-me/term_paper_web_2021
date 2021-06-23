@@ -20,6 +20,7 @@ html {
     border-radius: 50px;
     transition: .5s;
     z-index: 2;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.46);
   }
   
   .arrowUp:hover {
