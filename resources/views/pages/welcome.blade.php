@@ -80,7 +80,7 @@
             <a href="about_us" id="content-span-link">Читати більше</a> 
           </div>
         </div>
-        <div class="col-12 col-md-6 p-0 m-0 d-block text-center" data-aos="fade-down-left" data-aos-duration="1400">
+        <div class="col-12 col-md-6 p-0 m-0 d-block text-center" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="600">
           <img class="w-100" src="{{ $content[5]->text }}" style="border-radius: 20px;">
           <img class="w-100  mt-3" src="{{ $content[6]->text }}" style="border-radius: 20px;">
         </div>

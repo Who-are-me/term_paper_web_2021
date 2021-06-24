@@ -27,7 +27,7 @@
     <div class="row d-flex m-0 p-0 feedback-background px-5 px-md-0">
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         <div class="col-12 col-md-10 col-lg-8 d-block">
-            <div class="col-12 p-0 py-3 py-md-5 pt-5 mt-5">
+            <div class="col-12 p-0 py-3 py-md-5 pt-5 mt-5 text-center">
                 <h2 class="feedback-header-text">У Вас виникли запитання?</h2>
                 <h5 class="feedback-header-text">Задавайте, і ми вам допоможемо.</h5>
                 <h6 class="star">(поля із * обов'язкові)</h6>

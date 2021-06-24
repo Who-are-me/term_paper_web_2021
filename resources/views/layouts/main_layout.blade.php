@@ -65,7 +65,7 @@
             <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-md sticky-top d-flex d-md-none p-0 nav">
+    <nav class="navbar navbar-expand-md sticky-top d-flex d-md-none p-0 nav" style="z-index: 1;">
 
         <a class="navbar-brand p-0 pl-5" href="#"><img src="image/Logo.svg" class=""></a>
         <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNav"

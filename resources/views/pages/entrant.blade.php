@@ -206,7 +206,7 @@
         </div>
         <div class="d-flex col-12 justify-content-between py-2 py-md-5 m-0 text-center" id="container-heading">
             <img src="image/left-salad-heading-separate.svg">
-            <span class="salad-span-heading">ДОСЯГНЕННЯ НАШИХ СТУДЕНТІВ</span>
+            <span class="salad-span-heading">НАШІ ДОСЯГНЕННЯ</span>
             <img src="image/right-salad-heading-separate.svg">
         </div>
         <div class="col-12 d-block p-0 ">
@@ -237,7 +237,7 @@
                     господарства.</p>
             </div>
         </div>
-        <div class="d-flex col-12 justify-content-between py-2 py-md-5 m-0" id="container-heading">
+        <div class="d-flex col-12 justify-content-between py-2 py-md-5 m-0 text-center" id="container-heading">
             <img src="image/left-salad-heading-separate.svg">
             <span class="salad-span-heading">МІСЦЕ РОБОТИ</span>
             <img src="image/right-salad-heading-separate.svg">
