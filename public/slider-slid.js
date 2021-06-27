@@ -5,7 +5,15 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 2500
+    autoplaySpeed: 2500,
+    responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    }
+    ]
   });
 
   $('.slider-news').slick({
@@ -17,12 +25,13 @@ $(document).ready(function(){
     autoplaySpeed: 2500
   });
 
-  $('.slider-student-one-photo').slick({
+  $('.slider-student').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
-    centerMode: true
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2500
   });
 
   var width = $('img', '.slider').width();
@@ -31,7 +40,7 @@ $(document).ready(function(){
   var widthN =  parseInt(($('img', '.slider-news').width() / 100)*70);
   $('img', '.slider-news').height(widthN);
 
-  var widthStudents =  parseInt(($('img', '.slider-student-one-photo').width() / 100)*30);
+  var widthStudents = $('img', '.slider-student-one-photo').width();
   $('img', '.slider-student-one-photo').height(widthStudents);
 });
 
