@@ -268,14 +268,14 @@
                     <img class="d-block w-100" src="files/1.png" alt="First slide">
                     <div class="carousel-caption element d-block  ">
                         <h5 class="basic-text">В органах служби безпеки</h5>
-                        <p class="lite-text">(охоронна сигналізація та системи відеоспостереження)</p>
+                        <p class="lite-text">охоронна сигналізація та системи відеоспостереження</p>
                       </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="files/2.png" alt="Second slide">
                     <div class="carousel-caption element d-block d-md-block">
                         <h5 class="basic-text" >В банківських установах</h5>
-                        <p class="lite-text">(відеоспостереження, радіо-телефонного зв'язку)</p>
+                        <p class="lite-text">відеоспостереження, радіо-телефонного зв'язку</p>
                       </div>
                   </div>
                   <div class="carousel-item">
