@@ -21,25 +21,22 @@
     <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     <div class="col-12 col-md-10 col-lg-8 p-0 px-5 px-md-0">
         <div class="col-12 p-0 m-0 d-block pb-5">
-            <div class="d-flex col-12 justify-content-between p-0 m-0 py-3 py-md-5" id="container-heading" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300">
+            <div class="d-flex col-12 justify-content-between p-0 m-0 py-1 pt-3 py-md-5" id="container-heading" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300">
                 <img src="image/gray-left-heading-separate.svg">
                 <span id="grey-span-heading">Історія</span>
                 <img src="image/gray-right-heading-separate.svg">
             </div>
-            <div class="col-12 p-0 m-0 d-flex">
-                <div class="col-4 p-0" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="750">
-                    <img class="w-100" src="{{ $content[0]->text }}" style="border-radius: 15px;">
+            <div class="col-12 p-0 m-0 d-block d-md-flex">
+                <div class="col-12 col-md-4 p-0 d-flex" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="750">
+                <div class="col-2 d-flex d-md-none"></div>
+                <div class="col-8 col-md-12  p-2 pt-0 p-md-0"><img class="w-100" src="{{ $content[0]->text }}" style="border-radius: 15px;"></div>
+                <div class="col-12 d-flex d-md-none"></div>
                 </div>
-                <div class="col-8 text-center align-items-center" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1100">
+                <div class="col-12 col-md-8 text-center align-items-center" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1100">
                     <span class="basic-text"><?php echo $content[1]->text; ?></span>
-                </div>
-            </div>
-            <div class="col-12 p-0 m-0 d-block d-sm-flex pt-0">
-                <div class="col-2 d-none d-md-flex"></div>
-                <div class="col-12 col-md-8 text-center" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                    <br>
                     <span class="basic-text"><?php echo $content[2]->text; ?></span>
                 </div>
-                <div class="col-2 d-none d-md-flex"></div>
             </div>
         </div>
     </div>
