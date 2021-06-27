@@ -275,7 +275,7 @@
                     <img class="d-block w-100" src="files/2.png" alt="Second slide">
                     <div class="carousel-caption element d-block d-md-block">
                         <h5 class="basic-text" >В банківських установах</h5>
-                        <p class="lite-text">(охоронна сигналізація, системи відеоспостереження, радіо та телефонного зв'язку)</p>
+                        <p class="lite-text">(відеоспостереження, радіо-телефонного зв'язку)</p>
                       </div>
                   </div>
                   <div class="carousel-item">
@@ -289,7 +289,7 @@
                     <img class="d-block w-100" src="files/4.png" alt="Third slide">
                     <div class="carousel-caption element d-block ">
                         <h5 class="basic-text">На телерадіоцентрах</h5>
-                        <p class="lite-text">(технік з обслуговування радіо та відео апаратури, відеооператор і т.д.)</p>
+                        <p class="lite-text">технік з обслуговування радіо та відео апаратури, відеооператор</p>
                       </div>
                   </div>
                   <div class="carousel-item">
@@ -310,7 +310,7 @@
                     <img class="d-block w-100" src="files/7.png" alt="Third slide">
                     <div class="carousel-caption element d-block ">
                         <h5 class="basic-text">Консультанти</h5>
-                        <p class="lite-text">з продажу радіоелектронної техніки (супермаркети та магазини з продажу електронної апаратури)</p>
+                        <p class="lite-text">з продажу радіоелектронної техніки</p>
                       </div>
                   </div>
                   <div class="carousel-item">

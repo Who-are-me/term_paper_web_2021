@@ -75,7 +75,7 @@
                             <span>
 
                                 <?php
-                                    $short_text = substr($item->text, 0, 400);
+                                    $short_text = substr($item->text, 0, 300);
                                     $short_text = str_replace("[", "<", $short_text);
                                     $short_text = str_replace("]", ">", $short_text);
                                     $short_text = strip_tags($short_text);
@@ -84,7 +84,7 @@
                                     $short_text = nl2br($short_text);
 
                                     $doc = new DOMDocument();
-                                    $doc->loadHTML('<?xml encoding="utf-8" >' . $short_text . "<p><a href='' data-toggle='modal' data-target='#exampleModal" . $item->id . "' style='color:#285953; font-weight: 600; background: linear-gradient(181.18deg, #FFFFFF 1.01%, #C4C4C4 311.29%); border-radius: 20px; padding: 0.5em 1.5em 0.5em 1.5em;'>  Читати далі >></a>" );
+                                    $doc->loadHTML('<?xml encoding="utf-8" >' . $short_text . "<p><a href='' data-toggle='modal' data-target='#exampleModal" . $item->id . "' style='color:#285953; font-weight: 600; background: linear-gradient(181.18deg, #FFFFFF 1.01%, #C4C4C4 311.29%); border-radius: 20px; padding: 0.5em;'>  Читати далі >></a>" );
 
                                     echo $doc->saveHTML();
                                 ?>

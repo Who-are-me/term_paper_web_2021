@@ -61,7 +61,7 @@
             @foreach ($teachers as $item)
 
                 @if (($item->id % 2) != 0)
-                    <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+                    <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
                         <div class="col-12 col-md-4 p-0 text-center text-md-start">
                             <img src="{{ $item->srcimg }}" class="pr-md-5 w-100">
                         </div>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 @else
-                    <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">
+                    <div class="col-12 d-block d-md-flex p-0  m-0 py-3 py-md-5" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="600">
                         <div class="col-12 col-md-4 order-md-last p-0 text-center text-md-start ">
                             <img src="{{ $item->srcimg }}" class="w-100 pl-md-5">
                         </div>
