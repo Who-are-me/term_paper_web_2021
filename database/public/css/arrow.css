@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  .arrowUp {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(130deg, #47915E 50%, #265134 50%);
+    -webkit-background-size: 300%;
+    background-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 50px;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  .arrowUp:hover {
+    background-position: 100% 0;
+  }
