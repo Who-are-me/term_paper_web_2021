@@ -62,14 +62,7 @@ class ContactController extends Controller
                 return redirect()->back()->withSuccess("Запитання було успішно додано!");
             }
             else {
-                $contact = New Contact();
-                $contact->pip = $request->pip;
-                $contact->phone = $request->phone;
-                $contact->email = $request->email;
-                $contact->theme = $request->theme;
-                $contact->text = $request->text;
-                $contact->save();
-                return redirect()->back()->withSuccess("Запитання НЕ було додано!");
+                return redirect()->back()->withSuccess("Запитання НЕ було додано! Пройдіть капчу будь ласка!");
             }
       }
     }

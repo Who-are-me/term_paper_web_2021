@@ -13,30 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('test_welcome');
-// });
-
-// Route::get('/', function () {
-//     return view('pages.welcome');
-// });
-
-// Route::get('/about_us', function () {
-//     return view('pages.about');
-// });
-
-// Route::get('/matbase', function () {
-//     return view('pages.base');
-// });
-
-// Route::get('/to_entrant', function () {
-//     return view('pages.entrant');
-// });
-
-// Route::get('/student', function () {
-//     return view('pages.students');
-// });
-
 Route::get('/contacts', function () {
     return view('pages.contact');
 });

@@ -374,16 +374,16 @@
                     	<div class="col-12 d-block d-lg-flex text-left p-0">
 
 							<?php
-								if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
-								  $secret = '6LdpR2QbAAAAAFxGtur3qapmdk8_t0MA1IxeT22w';
-								  $ip = $_SERVER['REMOTE_ADDR'];
-								  $response = $_POST['g-recaptcha-response'];
-								  $rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
-								  $arr = json_decode($rsp, TRUE);
-								  if ($arr['success']) {
+								// if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
+								//   $secret = '6LdpR2QbAAAAAFxGtur3qapmdk8_t0MA1IxeT22w';
+								//   $ip = $_SERVER['REMOTE_ADDR'];
+								//   $response = $_POST['g-recaptcha-response'];
+								//   $rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
+								//   $arr = json_decode($rsp, TRUE);
+								//   if ($arr['success']) {
 								    
-								  }
-								}
+								//   }
+								// }
 							?>
 
 		                    <div class="col-12 col-lg-6 p-0 px-3">

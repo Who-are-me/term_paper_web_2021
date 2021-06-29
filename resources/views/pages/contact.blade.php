@@ -5,6 +5,13 @@
 @section('content')
 <link href="css/pages.css" rel="stylesheet">
 
+@if (session('success'))
+    <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+        <h4><i class="icon fa fa-check"> </i>{{ session('success') }}</h4>
+    </div>
+@endif
+
 <form name="" action="{{ url('/contactstore') }}" method="post">
     @csrf
 
@@ -12,16 +19,16 @@
     <div class="text-danger" id="recaptchaError"></div>
 
     <?php
-        if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
-          $secret = '6LdpR2QbAAAAAFxGtur3qapmdk8_t0MA1IxeT22w';
-          $ip = $_SERVER['REMOTE_ADDR'];
-          $response = $_POST['g-recaptcha-response'];
-          $rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
-          $arr = json_decode($rsp, TRUE);
-          if ($arr['success']) {
+        // if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
+        //   $secret = '6LdpR2QbAAAAAFxGtur3qapmdk8_t0MA1IxeT22w';
+        //   $ip = $_SERVER['REMOTE_ADDR'];
+        //   $response = $_POST['g-recaptcha-response'];
+        //   $rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
+        //   $arr = json_decode($rsp, TRUE);
+        //   if ($arr['success']) {
             
-          }
-        }
+        //   }
+        // }
     ?>
 
     <div class="row d-flex m-0 p-0 feedback-background px-5 px-md-0">

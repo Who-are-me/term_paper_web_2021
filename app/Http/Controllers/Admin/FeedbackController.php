@@ -62,7 +62,7 @@ class FeedbackController extends Controller
                 return redirect()->back()->withSuccess("Запитання було успішно додано!");
             }
             else {
-                return redirect()->back()->withSuccess("Запитання НЕ було успішно додано!");
+                return redirect()->back()->withSuccess("Запитання НЕ було додано! Пройдіть капчу будь ласка!");
             }
         }
     }
