@@ -6,17 +6,19 @@
 <link href="css/pages.css" rel="stylesheet">
 
 @if (session('success'))
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success p-1" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
-        <h4><i class="icon fa fa-check"> </i>{{ session('success') }}</h4>
+        <h4>
+            <i class="icon fa fa-check"> </i>{{ session('success') }}
+        </h4>
     </div>
 @endif
 
-<form name="" action="{{ url('/contactstore') }}" method="post">
+<form name="" action="{{ url('/contactstorec') }}" method="post">
     @csrf
 
-    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
-    <!-- <div class="text-danger" id="recaptchaError"></div> -->
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script>
+    <div class="text-danger" id="recaptchaError"></div> -->
 
     <?php
         // if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
@@ -81,7 +83,7 @@
                 <!-- <div class="col-12 p-2 align-items-center py-5">
                     <div data-size="compact" class="g-recaptcha" data-sitekey="6LdpR2QbAAAAAGE3Sn7tHolbxgggN1YOjDxZ8FUT"></div>
                 </div> -->
-                <div class="col-12 text-center pb-5 ">
+                <div class="col-12 text-center pb-5 pt-4">
                     <input type="submit" class="feedback-send-button" name="" value="Отримати консультацію">
                 </div>  
             </div>

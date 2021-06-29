@@ -33,11 +33,13 @@ Route::get('/to_entrant', [App\Http\Controllers\Admin\EntrantController::class, 
 
 Route::get('/student', [App\Http\Controllers\Admin\StudentsController::class, 'show']);
 
+//Route::get('/contacts', [App\Http\Controllers\Admin\ContactController::class, 'show']);
+
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'get_home'])->name('home'); 
 
 Route::post('/feedbackstore', [App\Http\Controllers\Admin\FeedbackController::class, 'store']);
 
-Route::post('/contactstore', [App\Http\Controllers\Admin\ContactController::class, 'store']);
+Route::post('/contactstorec', [App\Http\Controllers\Admin\ContactController::class, 'store']);
 
 Route::get('/backend', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin')->middleware(['auth']);
 
