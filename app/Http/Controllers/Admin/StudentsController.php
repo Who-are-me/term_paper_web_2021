@@ -75,7 +75,7 @@ class StudentsController extends Controller
      * @param  \App\Models\StudentsContent  $studentsContent
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, StudentsContent $studentsContent)
+    public function update(Request $request, $studentsContent)
     {
         DB::table('students_contents')->where('id', 1)->update(['text' => $request->img_0]);
         DB::table('students_contents')->where('id', 2)->update(['text' => $request->img_1]);

@@ -67,7 +67,7 @@ class EntrantController extends Controller
      */
     public function edit(EntrantContent $entrantContent)
     {
-        //
+        
     }
 
     /**
