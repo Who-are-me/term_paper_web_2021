@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\StudentsContent;
+// use App\Models\BaseContent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -21,6 +22,12 @@ class StudentsController extends Controller
         return view('admin.students.edit', [
             'content' => $content
         ]);
+
+        // $content = BaseContent::all();
+
+        // return view('admin.base.edit', [
+        //     'content' => $content
+        // ]);
     }
 
     /**
