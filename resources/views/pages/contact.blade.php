@@ -15,8 +15,8 @@
 <form name="" action="{{ url('/contactstore') }}" method="post">
     @csrf
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <div class="text-danger" id="recaptchaError"></div>
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <!-- <div class="text-danger" id="recaptchaError"></div> -->
 
     <?php
         // if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
@@ -78,9 +78,9 @@
                         <textarea class="feedback-textarea" name="text" rows="10" maxlength="1000" required=""></textarea>
                     </div>
                 </div>
-                <div class="col-12 p-2 align-items-center py-5">
-                    <div data-size="compact" class="g-recaptcha" data-sitekey="6LdpR2QbAAAAAGE3Sn7tHolbxgggN1YOjDxZ8FUT" ></div>
-                </div>
+                <!-- <div class="col-12 p-2 align-items-center py-5">
+                    <div data-size="compact" class="g-recaptcha" data-sitekey="6LdpR2QbAAAAAGE3Sn7tHolbxgggN1YOjDxZ8FUT"></div>
+                </div> -->
                 <div class="col-12 text-center pb-5 ">
                     <input type="submit" class="feedback-send-button" name="" value="Отримати консультацію">
                 </div>  
@@ -90,5 +90,8 @@
         <div class="col-md-1 col-lg-2 d-none d-md-flex p-0 m-0"></div>
     </div>  
 </form>
+
+
+
 
 @endsection

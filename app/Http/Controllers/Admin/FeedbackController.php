@@ -38,33 +38,43 @@ class FeedbackController extends Controller
      */
     public function store(Request $request)
     {
+        $feedback = New Feedback();
+        $feedback->pip = $request->pip;
+        $feedback->phone = $request->phone;
+        $feedback->email = $request->email;
+        $feedback->school = $request->school;
+        $feedback->option = $request->option;
+
+        $feedback->save();
+
+        return redirect()->back()->withSuccess("Запитання було успішно додано!");
         // secret key
-        $secret = '6LdpR2QbAAAAAFxGtur3qapmdk8_t0MA1IxeT22w';
+        // $secret = '6LdpR2QbAAAAAFxGtur3qapmdk8_t0MA1IxeT22w';
 
-        require_once (dirname(__FILE__).'/autoload.php');
+        // require_once (dirname(__FILE__).'/autoload.php');
 
-        if (isset($_POST['g-recaptcha-response'])) {
+        // if (isset($_POST['g-recaptcha-response'])) {
 
-            $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+        //     $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 
-            $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+        //     $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-            if ($resp->isSuccess()) {
-                $feedback = New Feedback();
-                $feedback->pip = $request->pip;
-                $feedback->phone = $request->phone;
-                $feedback->email = $request->email;
-                $feedback->school = $request->school;
-                $feedback->option = $request->option;
+        //     if ($resp->isSuccess()) {
+        //         $feedback = New Feedback();
+        //         $feedback->pip = $request->pip;
+        //         $feedback->phone = $request->phone;
+        //         $feedback->email = $request->email;
+        //         $feedback->school = $request->school;
+        //         $feedback->option = $request->option;
 
-                $feedback->save();
+        //         $feedback->save();
 
-                return redirect()->back()->withSuccess("Запитання було успішно додано!");
-            }
-            else {
-                return redirect()->back()->withSuccess("Запитання НЕ було додано! Пройдіть капчу будь ласка!");
-            }
-        }
+        //         return redirect()->back()->withSuccess("Запитання було успішно додано!");
+        //     }
+        //     else {
+        //         return redirect()->back()->withSuccess("Запитання НЕ було додано! Пройдіть капчу будь ласка!");
+        //     }
+        // }
     }
 
     /**
